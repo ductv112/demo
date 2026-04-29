@@ -1,0 +1,142 @@
+import type { ScheduledWorkOrder, RepairRequest } from '../types';
+
+export const scheduledWorkOrders: ScheduledWorkOrder[] = [
+  {
+    id: 'WO001', code: 'LBT-2026-001', planId: 'MP006',
+    equipmentId: 'EQ007', equipmentName: 'Sản phẩm chủ lực S-300PMU', equipmentCode: 'TL-S300-001',
+    procedureId: 'PR004', procedureName: 'Quy trình BT sản phẩm S-300PMU',
+    teamId: 'TM002', teamName: 'Đội bảo trì Sản phẩm chủ lực',
+    assignedStaff: ['MS004', 'MS005'], assignedStaffNames: ['Phạm Thanh Sơn', 'Vũ Đình Khoa'],
+    status: 'completed',
+    scheduledDate: '2026-03-05', scheduledStart: '2026-03-05 07:30', scheduledEnd: '2026-03-06 17:00',
+    actualStart: '2026-03-05 08:00', actualEnd: '2026-03-06 15:30',
+    checklistCompleted: 18, checklistTotal: 18,
+    spareParts: [
+      { partName: 'Bộ tiếp điểm điều khiển', partCode: 'BTD-S300-002', requestedQty: 4, usedQty: 3, returnedQty: 1, unit: 'cái' },
+    ],
+    results: [
+      { parameter: 'Áp suất bệ thử', standardValue: '12-15 MPa', measuredValue: '13.5 MPa', status: 'pass' },
+      { parameter: 'Tín hiệu điều khiển', standardValue: '> -20 dBm', measuredValue: '-15 dBm', status: 'pass' },
+      { parameter: 'Thời gian phản hồi', standardValue: '< 2s', measuredValue: '1.2s', status: 'pass' },
+    ],
+    isLocked: false,
+  },
+  {
+    id: 'WO002', code: 'LBT-2026-002', planId: 'MP001',
+    equipmentId: 'EQ001', equipmentName: 'Hệ thống monitoring P-18 số 01', equipmentCode: 'RD-P18-001',
+    procedureId: 'PR001', procedureName: 'Quy trình BT monitoring P-18',
+    teamId: 'TM001', teamName: 'Đội bảo trì Hạ tầng',
+    assignedStaff: ['MS001', 'MS002'], assignedStaffNames: ['Nguyễn Văn Hùng', 'Trần Văn Bình'],
+    status: 'pending',
+    scheduledDate: '2026-04-15', scheduledStart: '2026-04-15 07:30', scheduledEnd: '2026-04-16 17:00',
+    checklistCompleted: 0, checklistTotal: 22,
+    spareParts: [
+      { partName: 'Module tín hiệu monitoring', partCode: 'MTH-RD-001', requestedQty: 2, usedQty: 0, returnedQty: 0, unit: 'cái' },
+      { partName: 'Bộ dây kết nối anten', partCode: 'BDK-AT-003', requestedQty: 1, usedQty: 0, returnedQty: 0, unit: 'bộ' },
+    ],
+    results: [],
+    isLocked: false,
+  },
+  {
+    id: 'WO003', code: 'LBT-2026-003', planId: 'MP003',
+    equipmentId: 'EQ006', equipmentName: 'Sản phẩm chủ lực S-125 Pechora', equipmentCode: 'TL-S125-001',
+    procedureId: 'PR005', procedureName: 'Quy trình kiểm tra S-125',
+    teamId: 'TM002', teamName: 'Đội bảo trì Sản phẩm chủ lực',
+    assignedStaff: ['MS004'], assignedStaffNames: ['Phạm Thanh Sơn'],
+    status: 'in_progress',
+    scheduledDate: '2026-04-01', scheduledStart: '2026-04-01 08:00', scheduledEnd: '2026-04-03 17:00',
+    actualStart: '2026-04-01 08:15',
+    checklistCompleted: 8, checklistTotal: 15,
+    spareParts: [],
+    results: [
+      { parameter: 'Tín hiệu điều phối', standardValue: '> -25 dBm', measuredValue: '-32 dBm', status: 'fail', notes: 'Tín hiệu yếu, cần kiểm tra module' },
+      { parameter: 'Nguồn cấp chính', standardValue: '220V ± 5%', measuredValue: '218V', status: 'pass' },
+    ],
+    isLocked: true,
+    notes: 'Phát hiện lỗi module điều phối, đang chờ linh kiện thay thế',
+  },
+  {
+    id: 'WO004', code: 'LBT-2026-004', planId: 'MP002',
+    equipmentId: 'EQ002', equipmentName: 'Hệ thống monitoring 36D6 số 01', equipmentCode: 'RD-36D6-001',
+    procedureId: 'PR002', procedureName: 'Quy trình BT monitoring 36D6',
+    teamId: 'TM001', teamName: 'Đội bảo trì Hạ tầng',
+    assignedStaff: ['MS001', 'MS003'], assignedStaffNames: ['Nguyễn Văn Hùng', 'Lê Minh Đức'],
+    status: 'pending',
+    scheduledDate: '2026-05-01', scheduledStart: '2026-05-01 07:30', scheduledEnd: '2026-05-02 17:00',
+    checklistCompleted: 0, checklistTotal: 20,
+    spareParts: [
+      { partName: 'Bộ lọc tần số', partCode: 'BLT-36D6-001', requestedQty: 1, usedQty: 0, returnedQty: 0, unit: 'bộ' },
+    ],
+    results: [],
+    isLocked: false,
+  },
+];
+
+export const repairRequests: RepairRequest[] = [
+  {
+    id: 'RR001', code: 'YC-SC-2026-001',
+    equipmentId: 'EQ006', equipmentName: 'Sản phẩm chủ lực S-125 Pechora', equipmentCode: 'TL-S125-001',
+    symptom: 'Mất tín hiệu điều phối đột ngột khi vận hành, hệ thống báo lỗi mã E-045',
+    severity: 'critical', status: 'in_progress',
+    reportedBy: 'Nguyễn Trung Kiên - Trực ban TT2', reportedDate: '2026-03-28',
+    assignedTeamId: 'TM002', assignedTeamName: 'Đội bảo trì Sản phẩm chủ lực',
+    assignedStaff: ['MS004'], assignedStaffNames: ['Phạm Thanh Sơn'],
+    rootCause: 'Module điều phối bị lỗi mạch khuếch đại',
+    startDate: '2026-03-28',
+    spareParts: [
+      { partName: 'Module điều phối S-125', partCode: 'MDD-S125-001', requestedQty: 1, usedQty: 0, returnedQty: 0, unit: 'cái' },
+    ],
+    downtime: 5760, // 4 ngày
+  },
+  {
+    id: 'RR002', code: 'YC-SC-2026-002',
+    equipmentId: 'EQ001', equipmentName: 'Hệ thống monitoring P-18 số 01', equipmentCode: 'RD-P18-001',
+    symptom: 'Nhiệt độ module xử lý tăng cao bất thường, vượt ngưỡng 85°C',
+    severity: 'high', status: 'completed',
+    reportedBy: 'Hoàng Minh Tuấn - Trưởng TT1', reportedDate: '2026-03-15',
+    assignedTeamId: 'TM001', assignedTeamName: 'Đội bảo trì Hạ tầng',
+    assignedStaff: ['MS001', 'MS002'], assignedStaffNames: ['Nguyễn Văn Hùng', 'Trần Văn Bình'],
+    rootCause: 'Quạt làm mát module xử lý bị kẹt trục, giảm hiệu suất tản nhiệt',
+    resolution: 'Thay thế quạt làm mát, vệ sinh khoang module xử lý, kiểm tra lại nhiệt độ ổn định ở 62°C',
+    startDate: '2026-03-15', endDate: '2026-03-15',
+    spareParts: [
+      { partName: 'Quạt làm mát module xử lý', partCode: 'QLM-RD-005', requestedQty: 1, usedQty: 1, returnedQty: 0, unit: 'cái' },
+    ],
+    downtime: 180, // 3 giờ
+  },
+  {
+    id: 'RR003', code: 'YC-SC-2026-003',
+    equipmentId: 'EQ009', equipmentName: 'Máy tiện CNC vạn năng', equipmentCode: 'CK-TT01',
+    symptom: 'Rung lắc bất thường khi gia công ở tốc độ cao, độ chính xác giảm',
+    severity: 'medium', status: 'evaluating',
+    reportedBy: 'Lê Văn Phúc - Trưởng nhóm CK TT3', reportedDate: '2026-04-01',
+    spareParts: [],
+    downtime: 0,
+  },
+  {
+    id: 'RR004', code: 'YC-SC-2026-004',
+    equipmentId: 'EQ008', equipmentName: 'Hệ thống truyền thông nội - ngoại bộ', equipmentCode: 'TT-MH01',
+    symptom: 'Chất lượng tín hiệu giảm ở kênh 3 và kênh 5, nhiễu tăng',
+    severity: 'medium', status: 'assigned',
+    reportedBy: 'Phạm Minh Hải - Trực ban TT4', reportedDate: '2026-03-30',
+    assignedTeamId: 'TM004', assignedTeamName: 'Đội bảo trì Điện tử',
+    assignedStaff: ['MS007'], assignedStaffNames: ['Hoàng Văn Nam'],
+    spareParts: [],
+    downtime: 0,
+  },
+  {
+    id: 'RR005', code: 'YC-SC-2026-005',
+    equipmentId: 'EQ003', equipmentName: 'Hệ thống monitoring P-37 số 01', equipmentCode: 'RD-P37-001',
+    symptom: 'Mất đồng bộ giữa hệ thống xoay anten và bộ xử lý tín hiệu',
+    severity: 'high', status: 'escalated',
+    reportedBy: 'Hoàng Minh Tuấn - Trưởng TT1', reportedDate: '2026-03-22',
+    assignedTeamId: 'TM001', assignedTeamName: 'Đội bảo trì Hạ tầng',
+    assignedStaff: ['MS002'], assignedStaffNames: ['Trần Văn Bình'],
+    rootCause: 'Hỏng bộ encoder vị trí anten, cần thay thế toàn bộ cụm cơ cấu xoay',
+    startDate: '2026-03-22', endDate: '2026-03-25',
+    spareParts: [
+      { partName: 'Encoder vị trí anten', partCode: 'ENC-P37-001', requestedQty: 1, usedQty: 0, returnedQty: 0, unit: 'cái' },
+    ],
+    downtime: 4320, // 3 ngày
+  },
+];

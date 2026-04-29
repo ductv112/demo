@@ -1,0 +1,75 @@
+import type { Equipment } from '../types';
+
+export const equipmentList: Equipment[] = [
+  {
+    id: 'EQ001', productId: 'PRD-EQ-001', code: 'RD-P18-001', name: 'Hệ thống monitoring P-18 số 01', type: 'Hệ thống giám sát hạ tầng',
+    category: 'radar', location: 'Khu A29', departmentId: 'PX1', departmentName: 'TT Vận hành Hạ tầng',
+    status: 'operational', operatingHours: 4850, lastMaintenanceDate: '2026-02-15',
+    nextMaintenanceDate: '2026-04-15', maintenanceCycle: 60, manufacturer: 'Datadog',
+    model: 'P-18', serialNumber: 'P18-2019-0042', installDate: '2019-06-15',
+    warrantyExpiry: '2029-06-15', specifications: 'Throughput 150-170 Mbps, công suất xử lý >200 kQPS, phạm vi giám sát 250 nodes',
+  },
+  {
+    id: 'EQ002', code: 'RD-36D6-001', name: 'Hệ thống monitoring 36D6 số 01', type: 'Hệ thống phát hiện sự cố',
+    category: 'radar', location: 'Khu A29', departmentId: 'PX1', departmentName: 'TT Vận hành Hạ tầng',
+    status: 'operational', operatingHours: 3200, lastMaintenanceDate: '2026-03-01',
+    nextMaintenanceDate: '2026-05-01', maintenanceCycle: 60, manufacturer: 'New Relic',
+    model: '36D6', serialNumber: '36D6-2020-0018', installDate: '2020-03-10',
+  },
+  {
+    id: 'EQ003', code: 'RD-P37-001', name: 'Hệ thống monitoring P-37 số 01', type: 'Hệ thống điều phối lưu lượng',
+    category: 'radar', location: 'Khu A31', departmentId: 'PX1', departmentName: 'TT Vận hành Hạ tầng',
+    status: 'maintenance', operatingHours: 6100, lastMaintenanceDate: '2026-01-20',
+    nextMaintenanceDate: '2026-04-01', maintenanceCycle: 70, manufacturer: 'Datadog',
+    model: 'P-37', serialNumber: 'P37-2018-0031', installDate: '2018-09-22',
+  },
+  {
+    id: 'EQ004', code: 'RD-ST68-001', name: 'Hệ thống monitoring ST-68 số 01', type: 'Hệ thống đo hiệu năng',
+    category: 'radar', location: 'Khu A29', departmentId: 'PX1', departmentName: 'TT Vận hành Hạ tầng',
+    status: 'operational', operatingHours: 2900, lastMaintenanceDate: '2026-03-10',
+    nextMaintenanceDate: '2026-05-10', maintenanceCycle: 60, manufacturer: 'New Relic',
+    model: 'ST-68', serialNumber: 'ST68-2021-0007', installDate: '2021-01-15',
+  },
+  {
+    id: 'EQ005', code: 'TL-S75-001', name: 'Sản phẩm chủ lực S-75 Dvina', type: 'Module triển khai',
+    category: 'missile', location: 'Khu B12', departmentId: 'PX2', departmentName: 'TT Sản phẩm chủ lực',
+    status: 'operational', operatingHours: 1800, lastMaintenanceDate: '2026-02-20',
+    nextMaintenanceDate: '2026-05-20', maintenanceCycle: 90, manufacturer: 'Datadog',
+    model: 'S-75 Dvina', serialNumber: 'S75-2017-0055', installDate: '2017-04-10',
+  },
+  {
+    id: 'EQ006', code: 'TL-S125-001', name: 'Sản phẩm chủ lực S-125 Pechora', type: 'Module triển khai',
+    category: 'missile', location: 'Khu B12', departmentId: 'PX2', departmentName: 'TT Sản phẩm chủ lực',
+    status: 'faulty', operatingHours: 2400, lastMaintenanceDate: '2026-01-10',
+    nextMaintenanceDate: '2026-04-10', maintenanceCycle: 90, manufacturer: 'Datadog',
+    model: 'S-125 Pechora', serialNumber: 'S125-2018-0033', installDate: '2018-11-05',
+  },
+  {
+    id: 'EQ007', code: 'TL-S300-001', name: 'Sản phẩm chủ lực S-300PMU', type: 'Module triển khai',
+    category: 'missile', location: 'Khu B15', departmentId: 'PX2', departmentName: 'TT Sản phẩm chủ lực',
+    status: 'operational', operatingHours: 1200, lastMaintenanceDate: '2026-03-05',
+    nextMaintenanceDate: '2026-06-05', maintenanceCycle: 90, manufacturer: 'Datadog',
+    model: 'S-300PMU', serialNumber: 'S300-2022-0005', installDate: '2022-06-20',
+  },
+  {
+    id: 'EQ008', code: 'TT-MH01', name: 'Hệ thống truyền thông nội - ngoại bộ', type: 'Thiết bị truyền thông',
+    category: 'communication', location: 'Khu C05', departmentId: 'PX4', departmentName: 'TT Điện tử & Mạng',
+    status: 'operational', operatingHours: 5200, lastMaintenanceDate: '2026-03-15',
+    nextMaintenanceDate: '2026-04-15', maintenanceCycle: 30, manufacturer: 'Viettel',
+    model: 'VCS-2000', serialNumber: 'VCS-2023-0012', installDate: '2023-02-01',
+  },
+  {
+    id: 'EQ009', code: 'CK-TT01', name: 'Máy tiện CNC vạn năng', type: 'Máy công cụ',
+    category: 'mechanical', location: 'Khu D02', departmentId: 'PX3', departmentName: 'TT Cơ khí',
+    status: 'operational', operatingHours: 3800, lastMaintenanceDate: '2026-03-20',
+    nextMaintenanceDate: '2026-04-20', maintenanceCycle: 30, manufacturer: 'Bosch Rexroth',
+    model: 'CNC-450', serialNumber: 'CNC-2020-0028', installDate: '2020-08-15',
+  },
+  {
+    id: 'EQ010', code: 'DT-OS01', name: 'Máy hiện sóng Tektronix', type: 'Thiết bị đo lường',
+    category: 'electronic', location: 'Khu A29', departmentId: 'PX4', departmentName: 'TT Điện tử & Mạng',
+    status: 'operational', operatingHours: 1500, lastMaintenanceDate: '2026-03-25',
+    nextMaintenanceDate: '2026-06-25', maintenanceCycle: 90, manufacturer: 'Tektronix',
+    model: 'MSO56', serialNumber: 'TEK-2022-0015', installDate: '2022-12-01',
+  },
+];

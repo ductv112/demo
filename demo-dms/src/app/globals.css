@@ -1,0 +1,245 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css";
+
+@plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+  --color-role-finance: var(--role-finance);
+  --color-role-department: var(--role-department);
+  --color-role-director: var(--role-director);
+  --color-cat-project: var(--cat-project);
+  --color-cat-research: var(--cat-research);
+  --color-cat-document: var(--cat-document);
+  --color-cat-standard: var(--cat-standard);
+  --color-cat-training: var(--cat-training);
+  --color-cat-admin: var(--cat-admin);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.625rem;
+
+  /* PKKQ palette — Navy primary + Gold accent */
+  --background: #f0f2f5;
+  --foreground: #0a1628;
+  --card: #ffffff;
+  --card-foreground: #0a1628;
+  --popover: #ffffff;
+  --popover-foreground: #0a1628;
+  --primary: #1B3A5C;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f5;
+  --secondary-foreground: #0a1628;
+  --muted: #eef1f5;
+  --muted-foreground: #5b6b7f;
+  --accent: #D4A843;
+  --accent-foreground: #0a1628;
+  --destructive: #ff4d4f;
+  --border: #e8e8e8;
+  --input: #e8e8e8;
+  --ring: #1B3A5C;
+
+  /* Extended chart palette — 6-color series for multi-series charts.
+     Tham chiếu pkkq-taichinhketoan (roleColors, categoryTypeConfig). */
+  --chart-1: #1B3A5C; /* navy */
+  --chart-2: #7c3aed; /* violet */
+  --chart-3: #0891b2; /* cyan */
+  --chart-4: #059669; /* emerald */
+  --chart-5: #D4A843; /* gold */
+  --chart-6: #6b7280; /* slate */
+
+  /* Role colors (avatars, role-tinted UI) */
+  --role-finance: #1B3A5C;
+  --role-department: #0891b2;
+  --role-director: #7c3aed;
+
+  /* Category accents (for document/content classification) */
+  --cat-project: #1B3A5C;
+  --cat-research: #7c3aed;
+  --cat-document: #0891b2;
+  --cat-standard: #059669;
+  --cat-training: #d97706;
+  --cat-admin: #6b7280;
+
+  --sidebar: #0a1628;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #1B3A5C;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(27, 58, 92, 0.6);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #D4A843;
+}
+
+.dark {
+  --background: #0a1628;
+  --foreground: #ffffff;
+  --card: #142d4a;
+  --card-foreground: #ffffff;
+  --popover: #142d4a;
+  --popover-foreground: #ffffff;
+  --primary: #D4A843;
+  --primary-foreground: #0a1628;
+  --secondary: #1B3A5C;
+  --secondary-foreground: #ffffff;
+  --muted: #1B3A5C;
+  --muted-foreground: #a8b5c8;
+  --accent: #D4A843;
+  --accent-foreground: #0a1628;
+  --destructive: #ff4d4f;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #D4A843;
+  --chart-1: #1B3A5C;
+  --chart-2: #7c3aed;
+  --chart-3: #0891b2;
+  --chart-4: #059669;
+  --chart-5: #D4A843;
+  --chart-6: #6b7280;
+
+  --role-finance: #1B3A5C;
+  --role-department: #0891b2;
+  --role-director: #a78bfa;
+
+  --cat-project: #1B3A5C;
+  --cat-research: #a78bfa;
+  --cat-document: #0891b2;
+  --cat-standard: #059669;
+  --cat-training: #d97706;
+  --cat-admin: #9ca3af;
+
+  --sidebar: #0a1628;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #1B3A5C;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(27, 58, 92, 0.6);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #D4A843;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Chat thinking animation */
+@keyframes thinking-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+  40% { transform: translateY(-6px); opacity: 1; }
+}
+
+/* Toggle switch OFF state — tăng contrast cho rõ hơn trên nền trắng */
+button[role="switch"][data-state="unchecked"] {
+  background-color: #a1a1aa !important;
+}
+
+/* PKKQ sidebar gradient — gold active bar */
+[data-slot="sidebar-container"] {
+  background: linear-gradient(180deg, #0d1b2a 0%, #0a1628 30%, #071018 100%) !important;
+}
+
+[data-sidebar="menu-button"][data-active="true"]::before,
+[data-sidebar="menu-sub-button"][data-active="true"]::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 3px;
+  background: linear-gradient(180deg, #D4A843 0%, #f0d890 100%);
+  border-radius: 0 2px 2px 0;
+}
+
+[data-sidebar="menu-button"],
+[data-sidebar="menu-sub-button"] {
+  position: relative;
+}
+
+/* ─── PKKQ card & stat card utilities ──────────────────────────
+   Tham chiếu pkkq-taichinhketoan/src/App.css: .db-chart-card, .db-stat-card.
+   Dùng cho các card ở Dashboard, AI Quality để đồng bộ look với hệ thống PKKQ.
+*/
+.pkkq-card {
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.pkkq-card:hover {
+  box-shadow: 0 8px 24px rgba(27, 58, 92, 0.1);
+  transform: translateY(-2px);
+}
+
+.pkkq-stat-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.pkkq-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27, 58, 92, 0.18);
+}
+.pkkq-stat-card .pkkq-bg-icon {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pkkq-stat-card:hover .pkkq-bg-icon {
+  transform: rotate(15deg) scale(1.15);
+}
+
+/* Chart axis & grid default tint — Recharts inline overrides only apply when
+   components pass explicit props, these classes mostly documentation. */
+.pkkq-chart-container {
+  padding: 8px 0;
+}

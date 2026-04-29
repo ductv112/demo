@@ -1,0 +1,163 @@
+import { PaymentRequest } from '../types';
+
+export const paymentRequests: PaymentRequest[] = [
+  {
+    id: 'PR-001', code: 'ĐNTT-2026-001', costPlanId: 'KHCP-2026', departmentId: 'PX1',
+    taskId: 'T-001', workItemId: 'WI-003', allocationId: 'AL-001', categoryType: 'project',
+    title: 'Mua linh kiện board xử lý radar P-18', description: 'Mua 5 board xử lý tín hiệu RF thay thế cho đài radar P-18',
+    amount: 1200, status: 'paid', createdBy: 'Nguyễn Thanh Sơn', createdAt: '2026-01-15',
+    submittedAt: '2026-01-16', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-01-20', reviewNote: 'Đã kiểm tra, đủ hồ sơ',
+    attachments: [
+      { id: 'A1', name: 'Hợp đồng mua linh kiện.pdf', type: 'pdf', size: '2.1 MB', uploadedAt: '2026-01-15' },
+      { id: 'A2', name: 'Hóa đơn VAT.pdf', type: 'pdf', size: '350 KB', uploadedAt: '2026-01-15' },
+      { id: 'A3', name: 'Biên bản nghiệm thu vật tư.pdf', type: 'pdf', size: '1.2 MB', uploadedAt: '2026-01-18' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Công ty CP Điện tử Hải Phòng', contractNo: 'HĐ-2026-015',
+  },
+  {
+    id: 'PR-002', code: 'ĐNTT-2026-002', costPlanId: 'KHCP-2026', departmentId: 'PX2',
+    taskId: 'T-003', workItemId: 'WI-007', allocationId: 'AL-002', categoryType: 'project',
+    title: 'Mua van thủy lực Rexroth', description: 'Mua 8 van thủy lực Rexroth nhập khẩu cho bệ phóng tên lửa S-125',
+    amount: 680, status: 'paid', createdBy: 'Bùi Minh Trí', createdAt: '2026-02-10',
+    submittedAt: '2026-02-11', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-02-15',
+    attachments: [
+      { id: 'A4', name: 'Đơn hàng van Rexroth.pdf', type: 'pdf', size: '1.5 MB', uploadedAt: '2026-02-10' },
+      { id: 'A5', name: 'Catalog kỹ thuật.pdf', type: 'pdf', size: '5.3 MB', uploadedAt: '2026-02-10' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Bosch Rexroth Việt Nam', contractNo: 'HĐ-2026-023',
+  },
+  {
+    id: 'PR-003', code: 'ĐNTT-2026-003', costPlanId: 'KHCP-2026', departmentId: 'PX4',
+    taskId: 'T-005', workItemId: 'WI-009', allocationId: 'AL-003', categoryType: 'project',
+    title: 'Mua module RF cho máy phát', description: 'Mua 4 module RF công suất cao cho hệ thống thông tin liên lạc',
+    amount: 1140, status: 'paid', createdBy: 'Trần Anh Dũng', createdAt: '2026-03-05',
+    submittedAt: '2026-03-06', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-03-10',
+    attachments: [
+      { id: 'A6', name: 'Bảng kê module RF.xlsx', type: 'xlsx', size: '280 KB', uploadedAt: '2026-03-05' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Công ty TNHH Viễn thông Quân đội', contractNo: 'HĐ-2026-031',
+  },
+  {
+    id: 'PR-004', code: 'ĐNTT-2026-004', costPlanId: 'KHCP-2026', departmentId: 'PKT',
+    taskId: 'T-010', workItemId: 'WI-012', allocationId: 'AL-008', categoryType: 'research',
+    title: 'Thuê phòng thí nghiệm xử lý tín hiệu', description: 'Thuê PTN Đại học Bách Khoa HN để thử nghiệm thuật toán radar',
+    amount: 480, status: 'paid', createdBy: 'Vũ Đình Thắng', createdAt: '2026-03-20',
+    submittedAt: '2026-03-21', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-03-25',
+    attachments: [
+      { id: 'A7', name: 'HĐ thuê PTN.pdf', type: 'pdf', size: '1.8 MB', uploadedAt: '2026-03-20' },
+    ],
+    paymentMethod: 'transfer', vendor: 'ĐH Bách Khoa Hà Nội',
+  },
+  {
+    id: 'PR-005', code: 'ĐNTT-2026-005', costPlanId: 'KHCP-2026', departmentId: 'PX3',
+    taskId: 'T-006', allocationId: 'AL-004', categoryType: 'project',
+    title: 'Thuê gia công phục hồi bánh răng truyền động', description: 'Thuê Nhà máy Z175 gia công phục hồi cặp bánh răng truyền động anten radar P-37',
+    amount: 280, status: 'submitted', createdBy: 'Lý Hoàng Nam', createdAt: '2026-06-18',
+    submittedAt: '2026-06-19',
+    attachments: [
+      { id: 'A8', name: 'Phương án gia công.docx', type: 'docx', size: '520 KB', uploadedAt: '2026-06-18' },
+      { id: 'A9', name: 'Bản vẽ kỹ thuật.pdf', type: 'pdf', size: '1.1 MB', uploadedAt: '2026-06-18' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Nhà máy Z175',
+  },
+  {
+    id: 'PR-006', code: 'ĐNTT-2026-006', costPlanId: 'KHCP-2026', departmentId: 'PKCDB',
+    taskId: 'T-013', allocationId: 'AL-011', categoryType: 'standard',
+    title: 'Kiểm định thiết bị đo lường đợt 2/2026', description: 'Kiểm định 25 thiết bị đo lường tại Trung tâm Đo lường QK',
+    amount: 320, status: 'submitted', createdBy: 'Đỗ Quang Huy', createdAt: '2026-06-20',
+    submittedAt: '2026-06-21',
+    attachments: [
+      { id: 'A10', name: 'Danh mục thiết bị kiểm định.xlsx', type: 'xlsx', size: '150 KB', uploadedAt: '2026-06-20' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Trung tâm Đo lường Quân khu',
+  },
+  {
+    id: 'PR-007', code: 'ĐNTT-2026-007', costPlanId: 'KHCP-2026', departmentId: 'PX4',
+    taskId: 'T-012', workItemId: 'WI-014', allocationId: 'AL-010', categoryType: 'research',
+    title: 'Mua kit FPGA và linh kiện thử nghiệm', description: 'Mua bộ kit FPGA Xilinx Artix-7 và linh kiện điện tử để nghiên cứu thay thế IC cũ',
+    amount: 420, status: 'reviewing', createdBy: 'Trần Anh Dũng', createdAt: '2026-06-15',
+    submittedAt: '2026-06-16', reviewedBy: 'Nguyễn Thị Lan',
+    attachments: [
+      { id: 'A11', name: 'Danh mục linh kiện FPGA.xlsx', type: 'xlsx', size: '180 KB', uploadedAt: '2026-06-15' },
+      { id: 'A12', name: 'Báo giá nhà cung cấp.pdf', type: 'pdf', size: '890 KB', uploadedAt: '2026-06-15' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Công ty TNHH Điện tử Hà Nội',
+  },
+  {
+    id: 'PR-008', code: 'ĐNTT-2026-008', costPlanId: 'KHCP-2026', departmentId: 'PKT',
+    taskId: 'T-009', allocationId: 'AL-007', categoryType: 'research',
+    title: 'Mua tài liệu kỹ thuật radar thế hệ mới', description: 'Mua bộ tài liệu kỹ thuật gốc phục vụ xây dựng quy trình đại tu radar',
+    amount: 350, status: 'submitted', createdBy: 'Vũ Đình Thắng', createdAt: '2026-06-22',
+    submittedAt: '2026-06-23',
+    attachments: [
+      { id: 'A13', name: 'Danh mục tài liệu cần mua.pdf', type: 'pdf', size: '1.2 MB', uploadedAt: '2026-06-22' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Viện KH-CN Quân sự',
+  },
+  {
+    id: 'PR-009', code: 'ĐNTT-2026-009', costPlanId: 'KHCP-2026', departmentId: 'PHCKT',
+    taskId: 'T-017', allocationId: 'AL-013', categoryType: 'admin',
+    title: 'Thanh toán xăng dầu tháng 5-6/2026', description: 'Thanh toán chi phí xăng dầu cho đội xe vận chuyển khí tài tháng 5 và 6',
+    amount: 186, status: 'approved', createdBy: 'Lê Văn Toàn', createdAt: '2026-06-25',
+    submittedAt: '2026-06-25', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-06-28', reviewNote: 'Duyệt thanh toán đợt 3/2026',
+    attachments: [
+      { id: 'A14', name: 'Bảng kê xăng dầu T5-6.xlsx', type: 'xlsx', size: '95 KB', uploadedAt: '2026-06-25' },
+      { id: 'A15', name: 'Hóa đơn xăng dầu.pdf', type: 'pdf', size: '1.5 MB', uploadedAt: '2026-06-25' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Petrolimex',
+  },
+  {
+    id: 'PR-010', code: 'ĐNTT-2026-010', costPlanId: 'KHCP-2026', departmentId: 'PX1',
+    taskId: 'T-002', allocationId: 'AL-001', categoryType: 'project',
+    title: 'Mua oscilloscope Tektronix', description: 'Mua 2 oscilloscope Tektronix MDO34 phục vụ sửa chữa radar 36D6',
+    amount: 520, status: 'draft', createdBy: 'Nguyễn Thanh Sơn', createdAt: '2026-07-01',
+    attachments: [],
+    paymentMethod: 'transfer', vendor: 'Tektronix Vietnam',
+  },
+  {
+    id: 'PR-011', code: 'ĐNTT-2026-011', costPlanId: 'KHCP-2026', departmentId: 'PKH',
+    taskId: 'T-014', workItemId: 'WI-016', allocationId: 'AL-012', categoryType: 'training',
+    title: 'Thanh toán khóa đào tạo radar đợt 1', description: 'Thanh toán chi phí khóa đào tạo kỹ thuật sửa chữa radar P-18 cho 15 cán bộ',
+    amount: 540, status: 'paid', createdBy: 'Hoàng Minh Tuấn', createdAt: '2026-02-20',
+    submittedAt: '2026-02-21', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-02-25', reviewNote: 'Đã kiểm tra hợp đồng đào tạo',
+    attachments: [
+      { id: 'A16', name: 'HĐ đào tạo kỹ thuật radar.pdf', type: 'pdf', size: '1.8 MB', uploadedAt: '2026-02-20' },
+      { id: 'A17', name: 'Danh sách học viên.xlsx', type: 'xlsx', size: '120 KB', uploadedAt: '2026-02-20' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Học viện KTQS',
+  },
+  {
+    id: 'PR-012', code: 'ĐNTT-2026-012', costPlanId: 'KHCP-2026', departmentId: 'PKH',
+    taskId: 'T-020', allocationId: 'AL-015', categoryType: 'admin',
+    title: 'Mua phần mềm quản lý tiến độ', description: 'Mua bản quyền phần mềm quản lý tiến độ sửa chữa khí tài',
+    amount: 180, status: 'paid', createdBy: 'Hoàng Minh Tuấn', createdAt: '2026-03-10',
+    submittedAt: '2026-03-11', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-03-15',
+    attachments: [
+      { id: 'A18', name: 'Báo giá phần mềm.pdf', type: 'pdf', size: '950 KB', uploadedAt: '2026-03-10' },
+    ],
+    paymentMethod: 'transfer', vendor: 'FPT Software',
+  },
+  {
+    id: 'PR-013', code: 'ĐNTT-2026-013', costPlanId: 'KHCP-2026', departmentId: 'PKH',
+    taskId: 'T-020', allocationId: 'AL-015', categoryType: 'admin',
+    title: 'Chi phí khảo sát Nhà máy A31', description: 'Chi phí công tác khảo sát quy trình sửa chữa radar tại Nhà máy A31 - Đà Nẵng',
+    amount: 125, status: 'submitted', createdBy: 'Hoàng Minh Tuấn', createdAt: '2026-06-20',
+    submittedAt: '2026-06-21',
+    attachments: [
+      { id: 'A19', name: 'Kế hoạch khảo sát.docx', type: 'docx', size: '680 KB', uploadedAt: '2026-06-20' },
+      { id: 'A20', name: 'Dự toán công tác phí.xlsx', type: 'xlsx', size: '95 KB', uploadedAt: '2026-06-20' },
+    ],
+    paymentMethod: 'advance',
+  },
+  {
+    id: 'PR-014', code: 'ĐNTT-2026-014', costPlanId: 'KHCP-2026', departmentId: 'PX2',
+    taskId: 'T-008', allocationId: 'AL-006', categoryType: 'research',
+    title: 'Mua phụ tùng đại tu tổ hợp S-75', description: 'Mua bộ phụ tùng thay thế cho đại tu tổ hợp tên lửa S-75',
+    amount: 850, status: 'reviewing', createdBy: 'Bùi Minh Trí', createdAt: '2026-06-25',
+    submittedAt: '2026-06-26', reviewedBy: 'Nguyễn Thị Lan',
+    attachments: [
+      { id: 'A21', name: 'Danh mục phụ tùng S-75.xlsx', type: 'xlsx', size: '320 KB', uploadedAt: '2026-06-25' },
+    ],
+    paymentMethod: 'transfer', vendor: 'Nhà máy Z111',
+  },
+];

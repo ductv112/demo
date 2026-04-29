@@ -1,0 +1,358 @@
+/* Global styles for DA-SanXuat */
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SIDEBAR — Premium dark sidebar
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Sidebar subtle gradient overlay */
+.sidebar-wrapper {
+  position: relative;
+}
+.sidebar-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(27,58,92,0.08) 0%, rgba(0,0,0,0) 40%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Menu items rounded with margin */
+.ant-layout-sider .ant-menu-item {
+  margin-inline: 8px !important;
+  border-radius: 8px !important;
+}
+.ant-layout-sider .ant-menu-submenu-title {
+  margin-inline: 8px !important;
+  border-radius: 8px !important;
+}
+
+/* Active menu item — gold left accent */
+.ant-layout-sider .ant-menu-item-selected {
+  position: relative;
+}
+.ant-layout-sider .ant-menu-item-selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 50%;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #D4A843, #f0d890);
+}
+
+/* Section divider in sidebar */
+.sidebar-section-label {
+  padding: 16px 24px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  user-select: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO BANNER — Dashboard top section
+   ═══════════════════════════════════════════════════════════════ */
+
+.hero-banner {
+  background: linear-gradient(135deg, #0a1628 0%, #1B3A5C 50%, #2d5a8e 100%);
+  border-radius: 16px;
+  padding: 28px 32px 24px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(212,168,67,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -30%; left: -10%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(45,90,142,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STAT CARDS — Gradient KPI cards with depth
+   ═══════════════════════════════════════════════════════════════ */
+
+.stat-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(27, 58, 92, 0.18) !important;
+}
+
+/* Glassmorphism stat card variant */
+.glass-stat-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 16px 18px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-stat-card:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DASHBOARD — Chart cards, feeds, etc.
+   ═══════════════════════════════════════════════════════════════ */
+
+.db-stat-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.db-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27, 58, 92, 0.18);
+}
+.db-stat-card .db-bg-icon {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.db-stat-card:hover .db-bg-icon {
+  transform: rotate(15deg) scale(1.15);
+}
+
+.db-chart-card {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.db-chart-card:hover {
+  box-shadow: 0 8px 24px rgba(27, 58, 92, 0.1);
+}
+
+.db-mini-stat {
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.db-mini-stat:hover {
+  transform: scale(1.03);
+}
+
+.db-feed-item {
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.db-feed-item:hover {
+  background: #f8fafc !important;
+}
+
+.db-dept-row {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+.db-dept-row:hover {
+  background: #f8fafc;
+}
+.db-dept-row:last-child {
+  border-bottom: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ALERT CARDS
+   ═══════════════════════════════════════════════════════════════ */
+
+.alert-card {
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+.alert-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.alert-card.critical { border-left-color: #ff4d4f; }
+.alert-card.warning { border-left-color: #faad14; }
+.alert-card.info { border-left-color: #1890ff; }
+
+/* ═══════════════════════════════════════════════════════════════
+   TABLE & DATA
+   ═══════════════════════════════════════════════════════════════ */
+
+.ant-table-row.row-highlight {
+  background-color: #fffbe6 !important;
+}
+.ant-table-row.row-executing {
+  background-color: #f0f7ff !important;
+}
+.ant-table-thead > tr > th {
+  font-weight: 600 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CARD ACCENTS — Left border color coding
+   ═══════════════════════════════════════════════════════════════ */
+
+.card-navy   { border-left: 4px solid #1B3A5C !important; }
+.card-gold   { border-left: 4px solid #D4A843 !important; }
+.card-success{ border-left: 4px solid #52c41a !important; }
+.card-warning{ border-left: 4px solid #faad14 !important; }
+.card-danger { border-left: 4px solid #ff4d4f !important; }
+.card-info   { border-left: 4px solid #1890ff !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL COMPONENT OVERRIDES
+   ═══════════════════════════════════════════════════════════════ */
+
+.ant-card {
+  border-radius: 12px;
+}
+.ant-tag {
+  border-radius: 4px;
+}
+.ant-btn {
+  border-radius: 6px;
+}
+
+/* Progress bar */
+.budget-progress .ant-progress-inner {
+  border-radius: 4px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Page enter */
+.page-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* Stagger fade-in for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease forwards;
+}
+.animate-delay-1 { animation-delay: 0.05s; opacity: 0; }
+.animate-delay-2 { animation-delay: 0.1s; opacity: 0; }
+.animate-delay-3 { animation-delay: 0.15s; opacity: 0; }
+.animate-delay-4 { animation-delay: 0.2s; opacity: 0; }
+.animate-delay-5 { animation-delay: 0.25s; opacity: 0; }
+.animate-delay-6 { animation-delay: 0.3s; opacity: 0; }
+
+/* Pulse badge for critical alerts */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 77, 79, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(255, 77, 79, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 77, 79, 0); }
+}
+.pulse-badge .ant-badge-dot {
+  animation: pulse 2s infinite;
+}
+
+/* Shimmer effect for hero */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-line {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
+
+/* Number count up effect */
+@keyframes countPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(27, 58, 92, 0.15);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(27, 58, 92, 0.3);
+}
+
+/* Sidebar scrollbar */
+.ant-layout-sider ::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+}
+.ant-layout-sider ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .ant-layout-content {
+    margin: 8px !important;
+  }
+  .hero-banner {
+    padding: 20px 16px 16px;
+    border-radius: 12px;
+  }
+}
+
+/* Chart container */
+.chart-container {
+  padding: 8px 0;
+}
+
+/* Breadcrumb */
+.page-header {
+  margin-bottom: 16px;
+}
+.page-header h4 {
+  margin-bottom: 0;
+}

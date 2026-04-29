@@ -1,0 +1,361 @@
+import type {
+  AcceptanceRecord, InspectionResult, Defect, ReworkRequest, Handover, HandoverDocument,
+} from '../types';
+
+// ─── Acceptance Records (extended với cycleNumber) ────────────────────────
+export const acceptanceRecords: AcceptanceRecord[] = [
+  // ── HD-001: WBS-001.01 — Tháo rời kiểm tra khối thu thập dữ liệu (PASSED cycle 1)
+  {
+    id: 'NT-001',
+    contractId: 'HD-001',
+    workItemId: 'WI-001',
+    code: 'NT-2026-001',
+    type: 'phase',
+    name: 'Nghiệm thu tháo rời kiểm tra khối thu thập dữ liệu P-18',
+    cycleNumber: 1,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-03-12',
+    inspectorTeam: 'P.KCS Doanh nghiệp A',
+    qualityResult: 'passed',
+    testResult: 'Hoàn thành đầy đủ nội dung kiểm tra',
+    status: 'passed',
+    isLocked: true,
+    createdAt: '2026-03-12',
+  },
+  // ── HD-001: WBS-001.03 — Sửa chữa hệ thống cảnh báo (PASSED cycle 1)
+  {
+    id: 'NT-002',
+    contractId: 'HD-001',
+    workItemId: 'WI-003',
+    code: 'NT-2026-002',
+    type: 'phase',
+    name: 'Nghiệm thu sửa chữa hệ thống cảnh báo P-18',
+    cycleNumber: 1,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-04-08',
+    inspectorTeam: 'P.KCS Doanh nghiệp A + Đại diện Khối K01',
+    qualityResult: 'passed',
+    testResult: 'Hệ thống cảnh báo hoạt động đúng thông số kỹ thuật',
+    status: 'passed',
+    isLocked: true,
+    createdAt: '2026-04-08',
+  },
+  // ── HD-001: WBS-001.02 — Sửa chữa thay thế module (FAILED cycle 1 → rework → PASSED cycle 2)
+  {
+    id: 'NT-004',
+    contractId: 'HD-001',
+    workItemId: 'WI-002',
+    code: 'NT-2026-004',
+    type: 'phase',
+    name: 'Nghiệm thu sửa chữa và thay thế module khối thu thập dữ liệu P-18',
+    cycleNumber: 1,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-04-20',
+    inspectorTeam: 'P.KCS Doanh nghiệp A + P.KT',
+    qualityResult: 'failed',
+    testResult: 'Phát hiện 2 lỗi nghiêm trọng: điện trở cách điện & khe hở ổ đỡ',
+    status: 'failed',
+    isLocked: true,
+    notes: 'Yêu cầu khắc phục trước ngày 10/05/2026',
+    createdAt: '2026-04-20',
+  },
+  {
+    id: 'NT-005',
+    contractId: 'HD-001',
+    workItemId: 'WI-002',
+    code: 'NT-2026-005',
+    type: 'phase',
+    name: 'Tái nghiệm thu sửa chữa và thay thế module khối thu thập dữ liệu P-18',
+    cycleNumber: 2,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-05-12',
+    inspectorTeam: 'P.KCS Doanh nghiệp A + Đại diện Khối K01',
+    qualityResult: 'passed',
+    testResult: 'Toàn bộ lỗi đã được khắc phục. Đạt yêu cầu kỹ thuật.',
+    status: 'handed_over',
+    isLocked: true,
+    createdAt: '2026-05-12',
+  },
+  // ── HD-002: WBS-002.01 — Tháo rời tổ hợp S-125 (CONDITIONAL PASS)
+  {
+    id: 'NT-003',
+    contractId: 'HD-002',
+    workItemId: 'WI-006',
+    code: 'NT-2026-003',
+    type: 'phase',
+    name: 'Nghiệm thu tháo rời tổ hợp module CRM S-125 Pechora',
+    cycleNumber: 1,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-04-12',
+    inspectorTeam: 'P.KCS Doanh nghiệp A',
+    qualityResult: 'conditional',
+    testResult: 'Cơ bản đạt, cần bổ sung biên bản kiểm tra 2 cụm chi tiết',
+    status: 'passed',
+    isLocked: true,
+    notes: 'Yêu cầu bổ sung hồ sơ trong 5 ngày làm việc',
+    createdAt: '2026-04-12',
+  },
+  // ── HD-002: WBS-002.02 — Kiểm tra phân loại chi tiết (IN_INSPECTION)
+  {
+    id: 'NT-006',
+    contractId: 'HD-002',
+    workItemId: 'WI-007',
+    code: 'NT-2026-006',
+    type: 'phase',
+    name: 'Nghiệm thu kiểm tra và phân loại chi tiết S-125',
+    cycleNumber: 1,
+    scopeType: 'wbs_item',
+    inspectionDate: '2026-05-20',
+    inspectorTeam: 'P.KCS Doanh nghiệp A + PX2',
+    qualityResult: 'pending',
+    status: 'inspecting',
+    createdAt: '2026-05-18',
+  },
+];
+
+// ─── Inspection Results ───────────────────────────────────────────────────
+export const inspectionResults: InspectionResult[] = [
+  // NT-004 (FAILED) — WBS-001.02
+  {
+    id: 'IR-001', acceptanceId: 'NT-004',
+    checklistItem: 'Điện trở cách điện khối thu thập dữ liệu',
+    standardRef: 'TCVN 7701-2:2007 §6.3',
+    actualValue: '8.5 MΩ',
+    passThreshold: '≥ 10 MΩ',
+    result: 'fail',
+    inspector: 'Kỹ sư Nguyễn Văn Hải',
+    inspectedAt: '2026-04-20',
+  },
+  {
+    id: 'IR-002', acceptanceId: 'NT-004',
+    checklistItem: 'Khe hở ổ đỡ trục cảnh báo',
+    standardRef: 'Tài liệu kỹ thuật P-18 §4.2.1',
+    actualValue: '0.35 mm',
+    passThreshold: '≤ 0.25 mm',
+    result: 'fail',
+    inspector: 'Kỹ sư Trần Đức Mạnh',
+    inspectedAt: '2026-04-20',
+  },
+  {
+    id: 'IR-003', acceptanceId: 'NT-004',
+    checklistItem: 'Bề mặt tiếp xúc của các mối hàn',
+    standardRef: 'TCVN 1691:2008',
+    actualValue: 'Không có vết nứt, rỗ khí',
+    passThreshold: 'Không khuyết tật nhìn thấy',
+    result: 'pass',
+    inspector: 'Kỹ sư Nguyễn Văn Hải',
+    inspectedAt: '2026-04-20',
+  },
+  {
+    id: 'IR-004', acceptanceId: 'NT-004',
+    checklistItem: 'Moment xoắn bu lông bắt chặt cụm thu thập',
+    standardRef: 'Tài liệu KT P-18 §3.5',
+    actualValue: '24 Nm',
+    passThreshold: '20 – 30 Nm',
+    result: 'pass',
+    inspector: 'Kỹ sư Trần Đức Mạnh',
+    inspectedAt: '2026-04-20',
+  },
+  {
+    id: 'IR-005', acceptanceId: 'NT-004',
+    checklistItem: 'Số lượng module thay thế theo bảng kê',
+    standardRef: 'Bảng kê vật tư HĐ-2026-001',
+    actualValue: '12/14 module',
+    passThreshold: '14/14 module',
+    result: 'fail',
+    inspector: 'Kỹ sư Lê Thị Phương',
+    inspectedAt: '2026-04-20',
+  },
+  // NT-005 (RE-ACCEPTANCE, PASSED)
+  {
+    id: 'IR-006', acceptanceId: 'NT-005',
+    checklistItem: 'Điện trở cách điện khối thu thập dữ liệu',
+    standardRef: 'TCVN 7701-2:2007 §6.3',
+    actualValue: '18.2 MΩ',
+    passThreshold: '≥ 10 MΩ',
+    result: 'pass',
+    inspector: 'Kỹ sư Nguyễn Văn Hải',
+    inspectedAt: '2026-05-12',
+  },
+  {
+    id: 'IR-007', acceptanceId: 'NT-005',
+    checklistItem: 'Khe hở ổ đỡ trục cảnh báo',
+    standardRef: 'Tài liệu kỹ thuật P-18 §4.2.1',
+    actualValue: '0.18 mm',
+    passThreshold: '≤ 0.25 mm',
+    result: 'pass',
+    inspector: 'Kỹ sư Trần Đức Mạnh',
+    inspectedAt: '2026-05-12',
+  },
+  {
+    id: 'IR-008', acceptanceId: 'NT-005',
+    checklistItem: 'Bề mặt tiếp xúc của các mối hàn',
+    standardRef: 'TCVN 1691:2008',
+    actualValue: 'Không có khuyết tật',
+    passThreshold: 'Không khuyết tật nhìn thấy',
+    result: 'pass',
+    inspector: 'Kỹ sư Nguyễn Văn Hải',
+    inspectedAt: '2026-05-12',
+  },
+  {
+    id: 'IR-009', acceptanceId: 'NT-005',
+    checklistItem: 'Moment xoắn bu lông bắt chặt cụm thu thập',
+    standardRef: 'Tài liệu KT P-18 §3.5',
+    actualValue: '25 Nm',
+    passThreshold: '20 – 30 Nm',
+    result: 'pass',
+    inspector: 'Kỹ sư Trần Đức Mạnh',
+    inspectedAt: '2026-05-12',
+  },
+  {
+    id: 'IR-010', acceptanceId: 'NT-005',
+    checklistItem: 'Số lượng module thay thế theo bảng kê',
+    standardRef: 'Bảng kê vật tư HĐ-2026-001',
+    actualValue: '14/14 module',
+    passThreshold: '14/14 module',
+    result: 'pass',
+    inspector: 'Kỹ sư Lê Thị Phương',
+    inspectedAt: '2026-05-12',
+  },
+  // NT-006 (IN_INSPECTION — đang tiến hành)
+  {
+    id: 'IR-011', acceptanceId: 'NT-006',
+    checklistItem: 'Kiểm tra số lượng chi tiết theo bảng kê tháo rời',
+    standardRef: 'Quy trình công nghệ S-125 §2.1',
+    actualValue: '247/312 chi tiết',
+    passThreshold: '312/312 chi tiết',
+    result: 'na',
+    inspector: 'Kỹ sư Phạm Tiến Dũng',
+    inspectedAt: '2026-05-20',
+  },
+  {
+    id: 'IR-012', acceptanceId: 'NT-006',
+    checklistItem: 'Kiểm tra tình trạng bề mặt chi tiết kim loại',
+    standardRef: 'TCVN 5765:2005',
+    actualValue: 'Đang kiểm tra',
+    passThreshold: 'Không có ăn mòn vượt mức',
+    result: 'na',
+    inspector: 'Kỹ sư Phạm Tiến Dũng',
+    inspectedAt: '2026-05-20',
+  },
+];
+
+// ─── Defects ──────────────────────────────────────────────────────────────
+export const defects: Defect[] = [
+  // NT-004 defects
+  {
+    id: 'DEF-001', acceptanceId: 'NT-004',
+    code: 'DEF-2026-001',
+    title: 'Điện trở cách điện dưới ngưỡng yêu cầu',
+    description: 'Đo điện trở cách điện khối thu thập dữ liệu đạt 8.5 MΩ, thấp hơn ngưỡng tối thiểu 10 MΩ theo TCVN 7701-2:2007. Nguyên nhân: lớp cách điện cuộn cảm L12 bị ẩm.',
+    severity: 'critical',
+    category: 'functional',
+    foundBy: 'Kỹ sư Nguyễn Văn Hải',
+    foundAt: '2026-04-20',
+    status: 'verified',
+  },
+  {
+    id: 'DEF-002', acceptanceId: 'NT-004',
+    code: 'DEF-2026-002',
+    title: 'Khe hở ổ đỡ trục vượt dung sai cho phép',
+    description: 'Khe hở đo được 0.35mm, vượt giới hạn tối đa 0.25mm. Có thể gây rung lắc cảnh báo khi quay ở tốc độ cao. Nguyên nhân: mòn ổ đỡ, cần thay thế.',
+    severity: 'critical',
+    category: 'dimensional',
+    foundBy: 'Kỹ sư Trần Đức Mạnh',
+    foundAt: '2026-04-20',
+    status: 'verified',
+  },
+  {
+    id: 'DEF-003', acceptanceId: 'NT-004',
+    code: 'DEF-2026-003',
+    title: 'Thiếu 2 module theo bảng kê thay thế',
+    description: 'Mới thay thế 12/14 module theo bảng kê. Còn thiếu: tụ điện C47 (10µF/50V) × 1 và transistor Q8 (2SC1815) × 1. Do thiếu vật tư tồn kho.',
+    severity: 'major',
+    category: 'functional',
+    foundBy: 'Kỹ sư Lê Thị Phương',
+    foundAt: '2026-04-20',
+    status: 'verified',
+  },
+];
+
+// ─── Rework Requests ──────────────────────────────────────────────────────
+export const reworkRequests: ReworkRequest[] = [
+  {
+    id: 'RW-001',
+    acceptanceId: 'NT-004',
+    code: 'RW-2026-001',
+    description: 'Khắc phục 3 lỗi phát hiện tại NT-2026-004: thay cuộn cảm L12, thay ổ đỡ trục, bổ sung module còn thiếu',
+    defectIds: ['DEF-001', 'DEF-002', 'DEF-003'],
+    assignedUnit: 'PX1',
+    dueDate: '2026-05-10',
+    status: 'verified',
+    progressPercent: 100,
+    reworkNotes: 'Đã thay cuộn cảm L12 mới (ĐT: 25.3 MΩ), thay ổ đỡ trục (khe hở 0.18mm), bổ sung đủ 14/14 module từ kho Doanh nghiệp A. Hoàn thành trước hạn 2 ngày.',
+    completedAt: '2026-05-08',
+    verifiedBy: 'Kỹ sư Nguyễn Văn Hải',
+  },
+];
+
+// ─── Handovers ────────────────────────────────────────────────────────────
+export const handovers: Handover[] = [
+  {
+    id: 'BG-001',
+    acceptanceId: 'NT-005',
+    contractId: 'HD-001',
+    code: 'BG-2026-001',
+    handoverType: 'partial',
+    handoverDate: '2026-05-15',
+    handoverBy: 'Phạm Quốc Hưng',
+    receivedBy: 'Nguyễn Văn Lâm',
+    receivingUnit: 'Khối K01',
+    itemsDescription: 'Bàn giao khối thu thập dữ liệu hệ thống monitoring P-18 server-1245 sau bảo trì giai đoạn 1 (tháo rời, kiểm tra, sửa chữa và thay thế module, sửa hệ thống cảnh báo)',
+    quantity: 1,
+    conditionNote: 'Hoạt động bình thường, đạt đầy đủ thông số kỹ thuật theo tài liệu',
+    status: 'signed',
+    signedAt: '2026-05-15',
+  },
+];
+
+// ─── Handover Documents ───────────────────────────────────────────────────
+export const handoverDocuments: HandoverDocument[] = [
+  {
+    id: 'HD-DOC-001', handoverId: 'BG-001',
+    docType: 'technical_doc',
+    docName: 'Biên bản nghiệm thu NT-2026-005',
+    docNumber: 'NT-2026-005',
+    isRequired: true,
+    fileAttached: true,
+  },
+  {
+    id: 'HD-DOC-002', handoverId: 'BG-001',
+    docType: 'test_report',
+    docName: 'Kết quả kiểm tra & đo lường khối thu thập dữ liệu',
+    docNumber: 'KQ-TN-2026-012',
+    isRequired: true,
+    fileAttached: true,
+  },
+  {
+    id: 'HD-DOC-003', handoverId: 'BG-001',
+    docType: 'technical_doc',
+    docName: 'Nhật ký sửa chữa và thay thế module',
+    docNumber: 'NK-SC-2026-008',
+    isRequired: true,
+    fileAttached: true,
+  },
+  {
+    id: 'HD-DOC-004', handoverId: 'BG-001',
+    docType: 'warranty',
+    docName: 'Phiếu bảo hành 12 tháng',
+    isRequired: false,
+    fileAttached: false,
+  },
+];
+
+// ─── Helper functions ─────────────────────────────────────────────────────
+export const getAcceptanceById = (id: string) => acceptanceRecords.find(a => a.id === id);
+export const getAcceptanceByContract = (contractId: string) => acceptanceRecords.filter(a => a.contractId === contractId);
+export const getInspectionByAcceptance = (acceptanceId: string) => inspectionResults.filter(r => r.acceptanceId === acceptanceId);
+export const getDefectsByAcceptance = (acceptanceId: string) => defects.filter(d => d.acceptanceId === acceptanceId);
+export const getReworkByAcceptance = (acceptanceId: string) => reworkRequests.filter(r => r.acceptanceId === acceptanceId);
+export const getHandoverByAcceptance = (acceptanceId: string) => handovers.find(h => h.acceptanceId === acceptanceId);
+export const getHandoverDocuments = (handoverId: string) => handoverDocuments.filter(d => d.handoverId === handoverId);

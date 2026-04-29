@@ -1,0 +1,58 @@
+import { KetQuaDo } from '../types';
+
+export const danhSachKetQua: KetQuaDo[] = [
+  {
+    id: 'KQ-2026-001', maYeuCau: 'YC-2026-001',
+    thietBi: 'Đồng hồ vạn năng Fluke 87V',
+    kyThuatVien: 'Trần Văn Bình', ngayDo: '2026-03-15',
+    giaTriChuan: '10.00000 V DC', giaTriDo: '10.00012 V DC',
+    saiSo: '+0.0012%', doKhongDamBao: '±0.005% (k=2)',
+    ketLuan: 'dat', trangThaiDG: 'da_cap_cc',
+    maChungChi: 'HC-2026-041', phongLab: 'LAB-01',
+  },
+  {
+    id: 'KQ-2026-002', maYeuCau: 'YC-2026-002',
+    thietBi: 'Máy hiện sóng Tektronix MSO46',
+    kyThuatVien: 'Phạm Quang Huy', ngayDo: '2026-03-22',
+    giaTriChuan: '1.000000 kHz', giaTriDo: '1.000003 kHz',
+    saiSo: '+0.0003%', doKhongDamBao: '±0.001% (k=2)',
+    ketLuan: 'dat', trangThaiDG: 'da_cap_cc',
+    maChungChi: 'HC-2026-058', phongLab: 'LAB-01',
+  },
+  {
+    id: 'KQ-2026-003', maYeuCau: 'YC-2026-007',
+    thietBi: 'Máy đo điện trở cách điện Megger MIT1025',
+    kyThuatVien: 'Trần Văn Bình', ngayDo: '2026-03-18',
+    giaTriChuan: '1.0000 GΩ', giaTriDo: '0.9847 GΩ',
+    saiSo: '-1.53%', doKhongDamBao: '±0.5% (k=2)',
+    ketLuan: 'khong_dat', trangThaiDG: 'da_danh_gia',
+    maChungChi: '', phongLab: 'LAB-01',
+  },
+  {
+    id: 'KQ-2026-004', maYeuCau: 'YC-2026-003',
+    thietBi: 'Thiết bị hiệu chuẩn áp suất Druck PACE5000',
+    kyThuatVien: 'Lê Thanh Tùng', ngayDo: '2026-03-20',
+    giaTriChuan: '100.000 bar', giaTriDo: '100.015 bar',
+    saiSo: '+0.015%', doKhongDamBao: '±0.01% (k=2)',
+    ketLuan: 'khong_dat', trangThaiDG: 'cho_danh_gia',
+    maChungChi: '', phongLab: 'LAB-02',
+  },
+  {
+    id: 'KQ-2026-005', maYeuCau: 'YC-2026-006',
+    thietBi: 'Lưu lượng kế Endress+Hauser Promass F300',
+    kyThuatVien: 'Lê Thanh Tùng', ngayDo: '2026-03-21',
+    giaTriChuan: '500.00 kg/h', giaTriDo: '500.18 kg/h',
+    saiSo: '+0.036%', doKhongDamBao: '±0.1% (k=2)',
+    ketLuan: 'dat', trangThaiDG: 'da_danh_gia',
+    maChungChi: '', phongLab: 'LAB-02',
+  },
+  {
+    id: 'KQ-2026-006', maYeuCau: 'YC-2026-005',
+    thietBi: 'Cân phân tích Mettler Toledo XPR205',
+    kyThuatVien: 'Đỗ Minh Tuấn', ngayDo: '2026-03-19',
+    giaTriChuan: '100.00000 g', giaTriDo: '100.00003 g',
+    saiSo: '+0.00003%', doKhongDamBao: '±0.015 mg (k=2)',
+    ketLuan: 'dat', trangThaiDG: 'cho_danh_gia',
+    maChungChi: '', phongLab: 'LAB-06',
+  },
+];
