@@ -77,7 +77,7 @@ const emptyForm: UserFormData = {
   fullName: "",
   username: "",
   email: "",
-  rank: "Trung úy",
+  rank: "CV cao cấp",
   department: departments[0],
   position: "",
   status: "active",
@@ -263,7 +263,7 @@ export default function UsersPage() {
             Quản lý Người dùng
           </h2>
           <p style={{ fontSize: 13, color: "#6b7280", marginTop: 4, marginBottom: 0 }}>
-            Quản lý tài khoản, cấp bậc và phân quyền người dùng Nhà máy Z119
+            Quản lý tài khoản, chức danh và phân quyền người dùng Doanh nghiệp A
           </p>
         </div>
         <Button
@@ -707,7 +707,7 @@ export default function UsersPage() {
                   <Input
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="VD: nguyenvana@z119.mil.vn"
+                    placeholder="VD: nguyenvana@doanhnghiepa.vn"
                     className="h-9 text-sm"
                   />
                 </div>

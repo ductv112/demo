@@ -19,11 +19,11 @@ interface SiteInfo {
 
 function TabSiteInfo() {
   const [form, setForm] = useState<SiteInfo>({
-    tenDonVi: "Nhà máy Z119",
-    tenVietTat: "Z119",
-    slogan: "Sáng tạo — Chính xác — Tận tâm phục vụ Tổ quốc",
+    tenDonVi: "Doanh nghiệp A",
+    tenVietTat: "DA",
+    slogan: "Sáng tạo — Chính xác — Tận tâm phục vụ khách hàng",
     soDienThoai: "(024) 3864 xxxx",
-    email: "z119@qpvn.mil.vn",
+    email: "contact@doanhnghiepa.vn",
     diaChi: "Số 2 Nguyễn Tri Phương, Hai Bà Trưng, Hà Nội",
   });
   const [saved, setSaved] = useState(false);

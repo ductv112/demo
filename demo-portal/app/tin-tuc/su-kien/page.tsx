@@ -13,10 +13,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const events = [
   {
     id: 1,
-    title: "Nhà máy Z119 kỷ niệm 60 năm Ngày truyền thống (1965–2025)",
-    excerpt: "Buổi lễ long trọng kỷ niệm chặng đường 60 năm xây dựng, phát triển và trưởng thành của Nhà máy. Nhà máy được tặng Huân chương Bảo vệ Tổ quốc hạng Nhì. Sự kiện đón tiếp đại diện lãnh đạo Quân chủng Phòng không Không quân, Bộ Quốc phòng và nhiều đoàn khách.",
+    title: "Doanh nghiệp A kỷ niệm 60 năm thành lập (1965–2025)",
+    excerpt: "Buổi lễ long trọng kỷ niệm chặng đường 60 năm xây dựng, phát triển và trưởng thành của Doanh nghiệp A. Đơn vị được tặng Bằng khen của Thủ tướng Chính phủ. Sự kiện đón tiếp đại diện lãnh đạo Tổng công ty, Bộ TT&TT và nhiều đoàn khách.",
     date: "15/04/2025",
-    location: "Hội trường lớn Nhà máy Z119, Hà Nội",
+    location: "Hội trường lớn Doanh nghiệp A, Hà Nội",
     participants: "350+",
     highlight: true,
     badge: "Kỷ niệm 60 năm",
@@ -29,7 +29,7 @@ const events = [
     title: "Hội nghị Tổng kết Công tác Năm 2025 — Triển khai nhiệm vụ năm 2026",
     excerpt: "Hội nghị đánh giá toàn diện kết quả công tác năm 2025, biểu dương cá nhân và tập thể xuất sắc, đồng thời triển khai phương hướng nhiệm vụ trọng tâm năm 2026.",
     date: "20/01/2026",
-    location: "Hội trường Nhà máy Z119",
+    location: "Hội trường Doanh nghiệp A",
     participants: "128",
     highlight: false,
     badge: "Hội nghị",
@@ -39,10 +39,10 @@ const events = [
   },
   {
     id: 3,
-    title: "Bàn giao khí tài radar 36D6 sau đại tu cho Sư đoàn 361",
-    excerpt: "Lễ bàn giao chính thức tổ hợp radar 36D6 sau đại tu toàn diện cho Sư đoàn PK 361, đánh dấu thành tựu quan trọng trong duy trì sức mạnh phòng không quốc gia.",
+    title: "Bàn giao hệ thống monitoring 36D6 sau nâng cấp cho Khối K361",
+    excerpt: "Lễ bàn giao chính thức hệ thống monitoring 36D6 sau nâng cấp toàn diện cho Khối K361, đánh dấu thành tựu quan trọng trong việc duy trì vận hành hệ thống doanh nghiệp.",
     date: "10/03/2026",
-    location: "Nhà máy Z119, Hà Nội",
+    location: "Doanh nghiệp A, Hà Nội",
     participants: "45",
     highlight: false,
     badge: "Bàn giao dự án",
@@ -52,8 +52,8 @@ const events = [
   },
   {
     id: 4,
-    title: "Hội thảo quốc tế 'Sửa chữa khí tài phòng không hiện đại — Kinh nghiệm Việt Nam'",
-    excerpt: "Hội thảo quốc tế quy mô lớn với sự tham gia của các chuyên gia kỹ thuật từ 8 quốc gia, chia sẻ kinh nghiệm và công nghệ trong lĩnh vực sửa chữa khí tài phòng không.",
+    title: "Hội thảo quốc tế 'Vận hành hệ thống monitoring hiện đại — Kinh nghiệm Việt Nam'",
+    excerpt: "Hội thảo quốc tế quy mô lớn với sự tham gia của các chuyên gia kỹ thuật từ 8 quốc gia, chia sẻ kinh nghiệm và công nghệ trong lĩnh vực vận hành hệ thống monitoring doanh nghiệp.",
     date: "25/11/2025",
     location: "Khách sạn Melia, Hà Nội",
     participants: "120",
@@ -65,8 +65,8 @@ const events = [
   },
   {
     id: 5,
-    title: "Lễ nhận Bằng khen của Thủ tướng Chính phủ cho tập thể Nhà máy",
-    excerpt: "Nhà máy Z119 vinh dự được Thủ tướng Chính phủ tặng Bằng khen về thành tích xuất sắc trong công tác sửa chữa, đại tu khí tài phòng không phục vụ bảo vệ Tổ quốc.",
+    title: "Lễ nhận Bằng khen của Thủ tướng Chính phủ cho tập thể Doanh nghiệp A",
+    excerpt: "Doanh nghiệp A vinh dự được Thủ tướng Chính phủ tặng Bằng khen về thành tích xuất sắc trong công tác phát triển, vận hành sản phẩm phần mềm phục vụ chuyển đổi số quốc gia.",
     date: "02/09/2025",
     location: "Hà Nội",
     participants: "30",
@@ -78,10 +78,10 @@ const events = [
   },
   {
     id: 6,
-    title: "Triển lãm thành tựu kỹ thuật nhân kỷ niệm 60 năm Ngày truyền thống Nhà máy",
-    excerpt: "Triển lãm trưng bày hơn 200 hiện vật, tài liệu và mô hình khí tài tiêu biểu qua 60 năm lịch sử của Nhà máy, thu hút hàng nghìn lượt khách tham quan.",
+    title: "Triển lãm thành tựu công nghệ nhân kỷ niệm 60 năm thành lập Doanh nghiệp A",
+    excerpt: "Triển lãm trưng bày hơn 200 hiện vật, tài liệu và mô hình sản phẩm tiêu biểu qua 60 năm lịch sử của đơn vị, thu hút hàng nghìn lượt khách tham quan.",
     date: "14–17/04/2025",
-    location: "Nhà máy Z119, Hà Nội",
+    location: "Doanh nghiệp A, Hà Nội",
     participants: "2000+",
     highlight: false,
     badge: "Triển lãm",
@@ -139,7 +139,7 @@ export default function SuKienPage() {
                 <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Sự kiện tiêu biểu</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Sự kiện nổi bật</h1>
-              <p className="text-blue-200 text-sm">Các sự kiện quan trọng và lễ kỷ niệm của Nhà máy Z119</p>
+              <p className="text-blue-200 text-sm">Các sự kiện quan trọng và lễ kỷ niệm của Doanh nghiệp A</p>
             </div>
             <div className="grid grid-cols-3 gap-3 shrink-0">
               {[

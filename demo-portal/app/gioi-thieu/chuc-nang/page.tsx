@@ -6,31 +6,31 @@ const functions = [
   {
     title: "I. Chức năng",
     items: [
-      "Sửa chữa, đại tu khí tài radar, tên lửa và thiết bị điện tử phòng không cho Quân đội nhân dân Việt Nam.",
-      "Tư vấn, phản biện kỹ thuật các dự án sửa chữa, nâng cấp, cải tiến khí tài phòng không.",
-      "Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực sửa chữa khí tài phòng không.",
-      "Đào tạo, bồi dưỡng đội ngũ kỹ sư, kỹ thuật viên sửa chữa khí tài cho toàn quân.",
+      "Phát triển, vận hành các hệ thống monitoring, module phần mềm và thiết bị điện tử cho Tổng công ty và đối tác công nghệ.",
+      "Tư vấn, phản biện kỹ thuật các dự án triển khai, nâng cấp, cải tiến hệ thống phần mềm.",
+      "Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực phần mềm doanh nghiệp.",
+      "Đào tạo, bồi dưỡng đội ngũ kỹ sư, chuyên viên kỹ thuật cho toàn Tổng công ty.",
     ],
   },
   {
     title: "II. Nhiệm vụ chính",
     items: [
-      "Sửa chữa, đại tu các tổ hợp radar: P-18, 36D6, P-37, ST-68 và các loại radar phòng không khác.",
-      "Sửa chữa, đại tu các tổ hợp tên lửa: S-75 Dvina, S-125 Pechora, S-300PMU và các hệ thống tên lửa phòng không.",
-      "Xây dựng, quản lý và cập nhật hệ thống tiêu chuẩn kỹ thuật, quy chuẩn sửa chữa khí tài phòng không.",
-      "Phối hợp với các đơn vị thuộc Sư đoàn 361, 363, 367 và các Trung đoàn trong tiếp nhận và bàn giao khí tài.",
-      "Nghiên cứu, ứng dụng các công nghệ tiên tiến (chẩn đoán kỹ thuật, kiểm tra không phá hủy) trong sửa chữa khí tài.",
-      "Hợp tác quốc tế về kỹ thuật sửa chữa khí tài phòng không với các quốc gia và tổ chức quốc tế.",
-      "Lưu trữ, quản lý hồ sơ kỹ thuật và tài liệu sửa chữa toàn bộ các khí tài đã thực hiện.",
+      "Triển khai, nâng cấp các hệ thống monitoring: P-18, 36D6, P-37, ST-68 và các hệ thống monitoring khác.",
+      "Triển khai, nâng cấp các module sản phẩm chủ lực: S-75 Dvina, S-125 Pechora, S-300PMU và các hệ thống module phần mềm.",
+      "Xây dựng, quản lý và cập nhật hệ thống tiêu chuẩn kỹ thuật, quy chuẩn vận hành sản phẩm phần mềm.",
+      "Phối hợp với các đơn vị thuộc Khối K361, K363, K367 và các Phòng/Trung tâm trong tiếp nhận và bàn giao thiết bị.",
+      "Nghiên cứu, ứng dụng các công nghệ tiên tiến (chẩn đoán kỹ thuật, kiểm thử tự động) trong vận hành sản phẩm.",
+      "Hợp tác quốc tế về kỹ thuật phần mềm doanh nghiệp với các quốc gia và tổ chức quốc tế.",
+      "Lưu trữ, quản lý hồ sơ kỹ thuật và tài liệu vận hành toàn bộ các sản phẩm đã triển khai.",
     ],
   },
   {
     title: "III. Quyền hạn",
     items: [
-      "Ký kết hợp đồng sửa chữa, đại tu với các đơn vị trong và ngoài quân đội theo quy định.",
-      "Yêu cầu các đơn vị liên quan cung cấp thông tin, tài liệu phục vụ công tác sửa chữa.",
+      "Ký kết hợp đồng triển khai, nâng cấp với các đơn vị trong và ngoài Tổng công ty theo quy định.",
+      "Yêu cầu các đơn vị liên quan cung cấp thông tin, tài liệu phục vụ công tác vận hành.",
       "Phê duyệt hồ sơ nghiệm thu kỹ thuật trong phạm vi thẩm quyền được giao.",
-      "Đề xuất các giải pháp kỹ thuật, tiêu chuẩn sửa chữa mới trình cấp trên phê duyệt.",
+      "Đề xuất các giải pháp kỹ thuật, tiêu chuẩn vận hành mới trình cấp trên phê duyệt.",
       "Quản lý và sử dụng con dấu, tài sản, ngân sách được giao theo quy định của pháp luật.",
     ],
   },
@@ -45,7 +45,7 @@ export default function ChucNangPage() {
           <h1 className="text-xl font-bold text-[#1B3A5C] section-title flex items-center gap-2">
             <Target className="w-5 h-5" /> Chức năng — Nhiệm vụ — Quyền hạn
           </h1>
-          <p className="text-sm text-gray-500 mt-1">Theo Quyết định số 12/QĐ-BQP của Bộ Quốc phòng</p>
+          <p className="text-sm text-gray-500 mt-1">Theo Quyết định số 12/QĐ-HĐQT của Hội đồng quản trị Tập đoàn Công nghệ</p>
         </div>
 
         <div className="space-y-4">

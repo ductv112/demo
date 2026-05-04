@@ -75,7 +75,7 @@ export default function ThongBaoPage() {
                 <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Bảng tin nội bộ</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Thông báo Nội bộ</h1>
-              <p className="text-blue-200 text-sm">Nhà máy Z119 · Toàn đơn vị</p>
+              <p className="text-blue-200 text-sm">Doanh nghiệp A · Toàn đơn vị</p>
             </div>
             {unread > 0 && (
               <div className="shrink-0 flex flex-col items-center justify-center w-20 h-20 rounded-xl bg-white/10 border border-white/20">

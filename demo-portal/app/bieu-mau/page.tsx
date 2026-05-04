@@ -69,7 +69,7 @@ export default function BieuMauPage() {
                 <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Kho biểu mẫu điện tử</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Biểu mẫu & Quy trình</h1>
-              <p className="text-blue-200 text-sm">Tải xuống và sử dụng biểu mẫu chuẩn toàn Nhà máy</p>
+              <p className="text-blue-200 text-sm">Tải xuống và sử dụng biểu mẫu chuẩn toàn Doanh nghiệp A</p>
             </div>
             <div className="grid grid-cols-3 gap-3 shrink-0">
               {[

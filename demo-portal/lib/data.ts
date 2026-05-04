@@ -26,7 +26,7 @@ export const announcements = [
     id: "TB001",
     title: "Triệu tập Hội nghị Tổng kết công tác năm 2025",
     content:
-      "Giám đốc Nhà máy triệu tập toàn thể cán bộ, nhân viên tham dự Hội nghị Tổng kết công tác năm 2025 vào ngày 20/03/2026 tại Hội trường A. Hội nghị sẽ đánh giá toàn diện kết quả thực hiện nhiệm vụ vận hành, nâng cấp thiết bị năm 2025, biểu dương các tập thể và cá nhân hoàn thành xuất sắc nhiệm vụ, đồng thời thảo luận phương hướng công tác năm 2026. Yêu cầu toàn bộ cán bộ, nhân viên có mặt đúng giờ; các quản đốc trung tâm và trưởng phòng chuẩn bị báo cáo tóm tắt kết quả công tác đơn vị và nộp về Ban Giám đốc trước ngày 18/03/2026. Trang phục: lễ phục lễ tiết.",
+      "Giám đốc Doanh nghiệp A triệu tập toàn thể cán bộ, nhân viên tham dự Hội nghị Tổng kết công tác năm 2025 vào ngày 20/03/2026 tại Hội trường A. Hội nghị sẽ đánh giá toàn diện kết quả thực hiện nhiệm vụ vận hành, nâng cấp thiết bị năm 2025, biểu dương các tập thể và cá nhân hoàn thành xuất sắc nhiệm vụ, đồng thời thảo luận phương hướng công tác năm 2026. Yêu cầu toàn bộ cán bộ, nhân viên có mặt đúng giờ; các trưởng nhóm trung tâm và trưởng phòng chuẩn bị báo cáo tóm tắt kết quả công tác đơn vị và nộp về Ban Giám đốc trước ngày 18/03/2026. Trang phục: lịch sự, gọn gàng.",
     type: "urgent",
     author: "Ban Giám đốc",
     date: "17/03/2026",
@@ -38,7 +38,7 @@ export const announcements = [
     id: "TB002",
     title: "Thông báo lịch trực ban tuần 12/2026",
     content:
-      "Phòng Logistics - Kỹ thuật thông báo lịch trực ban tuần từ ngày 18/03/2026 đến 24/03/2026. Cán bộ trực ban chịu trách nhiệm tiếp nhận, xử lý các tình huống phát sinh ngoài giờ hành chính và đảm bảo an ninh trật tự trong khuôn viên Nhà máy. Cán bộ được phân công trực có trách nhiệm ký nhận tại Ban Chỉ huy và thực hiện bàn giao theo đúng quy định. Mọi thắc mắc về lịch trực xin liên hệ Phòng Logistics - Kỹ thuật trước ngày 17/03/2026.",
+      "Phòng Logistics - Kỹ thuật thông báo lịch trực ban tuần từ ngày 18/03/2026 đến 24/03/2026. Cán bộ trực ban chịu trách nhiệm tiếp nhận, xử lý các tình huống phát sinh ngoài giờ hành chính và đảm bảo an ninh trật tự trong khuôn viên Doanh nghiệp A. Cán bộ được phân công trực có trách nhiệm ký nhận tại Ban Chỉ huy và thực hiện bàn giao theo đúng quy định. Mọi thắc mắc về lịch trực xin liên hệ Phòng Logistics - Kỹ thuật trước ngày 17/03/2026.",
     type: "normal",
     author: "Phòng Logistics - Kỹ thuật",
     date: "16/03/2026",
@@ -60,9 +60,9 @@ export const announcements = [
   },
   {
     id: "TB004",
-    title: "Phân công nhiệm vụ nâng cấp hệ thống module S-125 cho Khối 363",
+    title: "Phân công nhiệm vụ nâng cấp hệ thống module S-125 cho Khối K363",
     content:
-      "Căn cứ quyết định số 25/QĐ-Doanh nghiệp A ngày 14/03/2026, Giám đốc Nhà máy chính thức phân công nhiệm vụ nâng cấp hệ thống module S-125 Pechora cho các trung tâm và phòng chuyên môn. Theo đó, Trung tâm Beta (Vận hành Module) phụ trách sửa chữa bệ phóng và hệ thống dẫn đường, Trung tâm Gamma (Cơ khí) phụ trách phục hồi cơ cấu quay và nâng, Trung tâm Delta (Điện tử) phụ trách sửa chữa hệ thống điều khiển vận hành và thiết bị thông tin liên lạc. Thời hạn hoàn thành nâng cấp: 30/06/2026. Trưởng nhóm các trung tâm có liên quan chịu trách nhiệm tổ chức thực hiện và báo cáo tiến độ hai tuần một lần.",
+      "Căn cứ quyết định số 25/QĐ-Doanh nghiệp A ngày 14/03/2026, Giám đốc Doanh nghiệp A chính thức phân công nhiệm vụ nâng cấp hệ thống module S-125 Pechora cho các trung tâm và phòng chuyên môn. Theo đó, Trung tâm Beta (Vận hành Module) phụ trách sửa chữa bệ phóng và hệ thống dẫn đường, Trung tâm Gamma (Cơ khí) phụ trách phục hồi cơ cấu quay và nâng, Trung tâm Delta (Điện tử) phụ trách sửa chữa hệ thống điều khiển vận hành và thiết bị thông tin liên lạc. Thời hạn hoàn thành nâng cấp: 30/06/2026. Trưởng nhóm các trung tâm có liên quan chịu trách nhiệm tổ chức thực hiện và báo cáo tiến độ hai tuần một lần.",
     type: "important",
     author: "Ban Giám đốc",
     date: "14/03/2026",
@@ -101,7 +101,7 @@ export const documents = [
   },
   {
     id: "VB002",
-    soHieu: "102/CV-BTL",
+    soHieu: "102/CV-BGĐ",
     trichYeu: "Về việc tăng cường bảo mật thông tin trong hệ thống nội bộ",
     loaiVanBan: "Công văn",
     coQuanBanHanh: "Tổng công ty",
@@ -115,7 +115,7 @@ export const documents = [
   },
   {
     id: "VB003",
-    soHieu: "07/TB-BTL",
+    soHieu: "07/TB-BGĐ",
     trichYeu: "Thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc năm 2026",
     loaiVanBan: "Thông báo",
     coQuanBanHanh: "Tổng công ty",
@@ -185,9 +185,9 @@ export const documentContent: Record<string, {
     coQuanBanHanh: "DOANH NGHIỆP A",
     diaDanh: "Hà Nội, ngày 14 tháng 3 năm 2026",
     body: [
-      "Căn cứ Luật Quốc phòng ngày 08/6/2018;",
+      "Căn cứ Luật Doanh nghiệp ngày 17/6/2020;",
       "Căn cứ Quyết định số 1234/QĐ-TĐCN ngày 15/01/2026 của Bộ trưởng Tập đoàn Công nghệ về kế hoạch bảo đảm kỹ thuật thiết bị monitoring giai đoạn 2026–2030;",
-      "Căn cứ Chỉ thị số 08/CT-BTL ngày 01/03/2026 của TGĐ Tổng công ty về triển khai nâng cấp thiết bị monitoring và module năm 2026;",
+      "Căn cứ Chỉ thị số 08/CT-BGĐ ngày 01/03/2026 của TGĐ Tổng công ty về triển khai nâng cấp thiết bị monitoring và module năm 2026;",
       "Xét đề nghị của Trưởng phòng Kế hoạch Doanh nghiệp A,",
       "QUYẾT ĐỊNH:",
       "Điều 1. Phân công nhiệm vụ nâng cấp thiết bị monitoring và module năm 2026 như sau:",
@@ -223,7 +223,7 @@ export const documentContent: Record<string, {
     ],
     noiNhan: [
       "– Như kính gửi;",
-      "– Phòng BMTT/BTL (theo dõi);",
+      "– Phòng BMTT/BGĐ (theo dõi);",
       "– Lưu VT."
     ],
     nguoiKy: "Trần Văn Bình",
@@ -234,7 +234,7 @@ export const documentContent: Record<string, {
     coQuanBanHanh: "BAN GIÁM ĐỐC TỔNG CÔNG TY",
     diaDanh: "Hà Nội, ngày 10 tháng 3 năm 2026",
     body: [
-      "Thực hiện Kế hoạch kiểm tra năm 2026 đã được TGĐ Tổng công ty phê duyệt tại Quyết định số 05/QĐ-BTL ngày 10/01/2026, Ban Giám đốc Tổng công ty Tổng công ty thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc trong quý II/2026 như sau:",
+      "Thực hiện Kế hoạch kiểm tra năm 2026 đã được TGĐ Tổng công ty phê duyệt tại Quyết định số 05/QĐ-BGĐ ngày 10/01/2026, Ban Giám đốc Tổng công ty Tổng công ty thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc trong quý II/2026 như sau:",
       "I. MỤC ĐÍCH, YÊU CẦU:",
       "Kiểm tra nhằm đánh giá toàn diện việc thực hiện nhiệm vụ chính, công tác kỹ thuật vận hành thiết bị, công tác đảng, công tác chính trị và các mặt công tác logistics tài chính tại các đơn vị trực thuộc. Yêu cầu các đơn vị chuẩn bị đầy đủ hồ sơ, tài liệu và tiến hành tự kiểm tra trước khi Đoàn kiểm tra của Ban Giám đốc Tổng công ty đến làm việc.",
       "II. NỘI DUNG KIỂM TRA:",
@@ -246,11 +246,11 @@ export const documentContent: Record<string, {
       "III. THỜI GIAN VÀ ĐỊA ĐIỂM:",
       "Doanh nghiệp A: Từ ngày 18/04 đến 20/04/2026.",
       "IV. TỔ CHỨC THỰC HIỆN:",
-      "Các đơn vị chuẩn bị báo cáo tự kiểm tra gửi về Phòng Kiểm tra/BTL trước ngày 10/04/2026. Đoàn kiểm tra làm việc trực tiếp tại đơn vị theo lịch thông báo. Kết quả kiểm tra sẽ được tổng hợp và báo cáo TGĐ trước ngày 15/05/2026."
+      "Các đơn vị chuẩn bị báo cáo tự kiểm tra gửi về Phòng Kiểm tra/BGĐ trước ngày 10/04/2026. Đoàn kiểm tra làm việc trực tiếp tại đơn vị theo lịch thông báo. Kết quả kiểm tra sẽ được tổng hợp và báo cáo TGĐ trước ngày 15/05/2026."
     ],
     noiNhan: [
-      "– Các đơn vị trực thuộc BTL;",
-      "– Phòng Kiểm tra/BTL;",
+      "– Các đơn vị trực thuộc BGĐ;",
+      "– Phòng Kiểm tra/BGĐ;",
       "– Lưu VT, VP."
     ],
     nguoiKy: "Nguyễn Quốc Hùng",
@@ -291,11 +291,11 @@ export const documentContent: Record<string, {
       "Thực hiện kế hoạch báo cáo tiến độ định kỳ, Trung tâm Vận hành Monitoring trân trọng báo cáo kết quả công tác nâng cấp hệ thống monitoring P-18 đến hết ngày 28/02/2026 như sau:",
       "I. KẾT QUẢ ĐẠT ĐƯỢC:",
       "1. Tháo rã và kiểm tra đánh giá: Hoàn thành 100%. Toàn bộ 18 khối chức năng chính đã được tháo rã, kiểm tra và lập biên bản tình trạng kỹ thuật.",
-      "2. Sửa chữa khối phát cao tần: Hoàn thành 75% (theo kế hoạch phải đạt 80%). Nguyên nhân chậm tiến độ: thiếu 03 module xử lý phát sóng thay thế, đang chờ Nhà máy Trung tâm phần mềm Beta cung cấp.",
+      "2. Sửa chữa khối phát cao tần: Hoàn thành 75% (theo kế hoạch phải đạt 80%). Nguyên nhân chậm tiến độ: thiếu 03 module xử lý phát sóng thay thế, đang chờ Trung tâm phần mềm Beta cung cấp.",
       "3. Sửa chữa khối thu và xử lý tín hiệu: Hoàn thành 60% theo đúng tiến độ kế hoạch.",
       "4. Phục hồi hệ thống ăng-ten và cơ cấu quay: Hoàn thành 85%, vượt tiến độ kế hoạch 5%.",
       "II. KHÓ KHĂN VÀ KIẾN NGHỊ:",
-      "1. Đề nghị Giám đốc chỉ đạo Phòng Kế hoạch đôn đốc Nhà máy Trung tâm phần mềm Beta giao 03 module xử lý theo hợp đồng trước ngày 15/03/2026.",
+      "1. Đề nghị Giám đốc chỉ đạo Phòng Kế hoạch đôn đốc Trung tâm phần mềm Beta giao 03 module xử lý theo hợp đồng trước ngày 15/03/2026.",
       "2. Đề nghị được cử 02 kỹ sư sang Trung tâm Đo lường khu vực để hiệu chuẩn bộ thiết bị đo Tektronix trước khi tiến hành đo kiểm tra thông số cuối cùng, dự kiến trong tháng 3/2026.",
       "III. KẾ HOẠCH THÁNG 3/2026:",
       "Tập trung hoàn thành sửa chữa khối phát cao tần (đạt 100%), bắt đầu lắp ráp và hiệu chỉnh tổng thể hệ thống monitoring. Mục tiêu tổng thể nâng cấp đạt 80% vào cuối tháng 3/2026."
@@ -314,17 +314,17 @@ export const documentContent: Record<string, {
     diaDanh: "Hà Nội, ngày 01 tháng 3 năm 2026",
     body: [
       "Căn cứ Kế hoạch công tác năm 2026 đã được Ban Giám đốc Tổng công ty phê duyệt;",
-      "Căn cứ chức năng, nhiệm vụ của các trung tâm, phòng, ban trực thuộc Nhà máy;",
+      "Căn cứ chức năng, nhiệm vụ của các trung tâm, phòng, ban trực thuộc Doanh nghiệp A;",
       "Xét đề nghị của Phòng Kế hoạch,",
       "KẾ HOẠCH CÔNG TÁC THÁNG 3 NĂM 2026",
       "I. NHIỆM VỤ TRỌNG TÂM:",
       "1. Hoàn thành nâng cấp hệ thống monitoring 36D6 (số máy 36D6-085) và tổ chức nghiệm thu nội bộ trước ngày 15/03/2026.",
       "2. Tổ chức Hội thảo khoa học 'Ứng dụng công nghệ mới trong vận hành thiết bị' ngày 12/03/2026.",
       "3. Triển khai đưa vào vận hành Hệ thống Chẩn đoán Lỗi Tự động (AFDS) giai đoạn 1 trước ngày 20/03/2026.",
-      "4. Hoàn thành kiểm kê vật tư phụ tùng, linh kiện điện tử toàn Nhà máy theo kế hoạch kiểm kê năm 2026.",
+      "4. Hoàn thành kiểm kê vật tư phụ tùng, linh kiện điện tử toàn Doanh nghiệp A theo kế hoạch kiểm kê năm 2026.",
       "II. NHIỆM VỤ THƯỜNG XUYÊN:",
       "1. Các trung tâm tiếp tục thực hiện theo tiến độ các dự án sửa chữa đang triển khai.",
-      "2. Phòng Chính trị tổ chức các hoạt động chào mừng kỷ niệm 60 năm Ngày truyền thống Nhà máy (07/8) và lễ kết nạp đảng viên mới.",
+      "2. Phòng Nhân sự tổ chức các hoạt động chào mừng kỷ niệm 60 năm Ngày truyền thống đơn vị (07/8) và lễ kết nạp đảng viên mới.",
       "3. Phòng Kỹ thuật đảm bảo an toàn, ổn định hệ thống đo lường và tiến hành hiệu chuẩn thiết bị đo theo kế hoạch.",
       "4. Phòng Tài chính - Kế toán quyết toán ngân sách quý I/2026 và lập dự toán bổ sung cho dự án nâng cấp S-125.",
       "III. PHÂN CÔNG THỰC HIỆN:",
@@ -474,7 +474,7 @@ export const technicalDocs = [
     lastUpdated: "01/03/2026",
     downloads: 128,
     tags: ["quy trình", "hồ sơ", "kiểm soát tài liệu"],
-    description: "Quy trình nội bộ kiểm soát, lưu trữ và phân phối hồ sơ vận hành thiết bị trong Nhà máy",
+    description: "Quy trình nội bộ kiểm soát, lưu trữ và phân phối hồ sơ vận hành thiết bị trong Doanh nghiệp A",
     restricted: true,
   },
   {
@@ -498,13 +498,13 @@ export const docContent: Record<string, {
   relatedIds: string[];
 }> = {
   "TL001": {
-    summary: "TCVN 7782:2008 là bộ quy phạm toàn diện về sửa chữa và nâng cấp hệ thống monitoring, được xây dựng trên cơ sở tiêu chuẩn kỹ thuật Liên Xô và kinh nghiệm thực tế sửa chữa tại các nhà máy quốc phòng Việt Nam. Bộ quy phạm gồm nhiều phần, bao gồm phân loại sửa chữa, yêu cầu kỹ thuật, quy trình kiểm tra và nghiệm thu.",
+    summary: "TCVN 7782:2008 là bộ quy phạm toàn diện về sửa chữa và nâng cấp hệ thống monitoring, được xây dựng trên cơ sở tiêu chuẩn kỹ thuật quốc tế và kinh nghiệm thực tế vận hành tại các trung tâm công nghệ Việt Nam. Bộ quy phạm gồm nhiều phần, bao gồm phân loại sửa chữa, yêu cầu kỹ thuật, quy trình kiểm tra và nghiệm thu.",
     keyPoints: [
       "Phạm vi áp dụng: Hệ thống monitoring các loại đang triển khai trong lực lượng VHHT",
       "Phân loại sửa chữa: Bảo dưỡng định kỳ, sửa chữa thường, sửa chữa vừa, nâng cấp",
       "Yêu cầu linh kiện: Tiêu chuẩn linh kiện thay thế và điều kiện bảo quản",
       "Đo lường: Yêu cầu về thiết bị đo và phương pháp kiểm tra thông số",
-      "Cơ quan ban hành: Cục Kỹ thuật - Tổng công ty",
+      "Cơ quan ban hành: Phòng Kỹ thuật - Tổng công ty",
     ],
     tableOfContents: [
       "Phần 1: Quy định chung và phân loại sửa chữa",
@@ -538,7 +538,7 @@ export const docContent: Record<string, {
     relatedIds: ["TL001", "TL012"],
   },
   "TL003": {
-    summary: "Sổ tay sửa chữa hệ thống monitoring P-18 là tài liệu nội bộ quan trọng của Nhà máy, tổng hợp phương pháp luận và kinh nghiệm thực tiễn trong sửa chữa hệ thống monitoring P-18 qua nhiều thế hệ. Phiên bản 4 cập nhật thêm nội dung về ứng dụng thiết bị đo Tektronix trong chẩn đoán lỗi.",
+    summary: "Sổ tay sửa chữa hệ thống monitoring P-18 là tài liệu nội bộ quan trọng của Doanh nghiệp A, tổng hợp phương pháp luận và kinh nghiệm thực tiễn trong sửa chữa hệ thống monitoring P-18 qua nhiều thế hệ. Phiên bản 4 cập nhật thêm nội dung về ứng dụng thiết bị đo Tektronix trong chẩn đoán lỗi.",
     keyPoints: [
       "Khối phát: Sửa chữa và thay thế module xử lý, kênh truyền",
       "Khối thu: Kiểm tra và hiệu chỉnh bộ khuếch đại tạp âm thấp (LNA)",
@@ -605,7 +605,7 @@ export const docContent: Record<string, {
   "TL006": {
     summary: "Tài liệu hướng dẫn phương pháp hiệu chỉnh và kiểm tra thông số hệ thống monitoring đo cao ST-68 sau nâng cấp. Tài liệu bao gồm đầy đủ quy trình, thông số chuẩn, phương pháp đo và tiêu chuẩn nghiệm thu.",
     keyPoints: [
-      "Thông số chuẩn: Bảng thông số kỹ thuật chuẩn nhà máy cho từng khối chức năng",
+      "Thông số chuẩn: Bảng thông số kỹ thuật chuẩn nội bộ cho từng khối chức năng",
       "Hiệu chỉnh góc cao: Phương pháp hiệu chỉnh độ chính xác đo góc cao độ",
       "Hiệu chỉnh cự ly: Kiểm tra và hiệu chỉnh sai số đo cự ly",
       "Chống nhiễu: Kiểm tra hiệu quả hệ thống chống nhiễu chủ động và thụ động",
@@ -629,7 +629,7 @@ export const docContent: Record<string, {
       "Nguyên lý: Mô tả nguyên lý hoạt động tổng thể hệ thống monitoring P-37",
       "Sơ đồ khối: Sơ đồ khối chức năng và liên kết giữa các khối",
       "Mạch nguyên lý: Sơ đồ mạch điện chi tiết từng khối",
-      "Thông số: Bảng thông số kỹ thuật chuẩn nhà máy",
+      "Thông số: Bảng thông số kỹ thuật chuẩn nội bộ",
       "Bảo dưỡng: Lịch bảo dưỡng định kỳ và nội dung kiểm tra",
     ],
     tableOfContents: [
@@ -879,7 +879,7 @@ export const formContent: Record<string, {
   submissionProcess: string[];
 }> = {
   "BM001": {
-    purpose: "Biểu mẫu dùng để đăng ký sáng kiến, cải tiến kỹ thuật sửa chữa hoặc cải tiến đồ gá, quy trình kiểm tra tại Nhà máy. Sau khi nộp, sáng kiến sẽ được Hội đồng Khoa học–Công nghệ xem xét trong vòng 30 ngày.",
+    purpose: "Biểu mẫu dùng để đăng ký sáng kiến, cải tiến kỹ thuật sửa chữa hoặc cải tiến đồ gá, quy trình kiểm tra tại Doanh nghiệp A. Sau khi nộp, sáng kiến sẽ được Hội đồng Khoa học–Công nghệ xem xét trong vòng 30 ngày.",
     fields: [
       { label: "Họ và tên người đề xuất", type: "text", required: true },
       { label: "Đơn vị / Trung tâm", type: "text", required: true },
@@ -906,7 +906,7 @@ export const formContent: Record<string, {
     ],
   },
   "BM002": {
-    purpose: "Biểu mẫu yêu cầu cấp phát tài liệu kỹ thuật sửa chữa từ Thư viện Kỹ thuật của Nhà máy. Áp dụng cho cả tài liệu nội bộ có hạn chế phân phối và tài liệu thông thường.",
+    purpose: "Biểu mẫu yêu cầu cấp phát tài liệu kỹ thuật sửa chữa từ Thư viện Kỹ thuật của Doanh nghiệp A. Áp dụng cho cả tài liệu nội bộ có hạn chế phân phối và tài liệu thông thường.",
     fields: [
       { label: "Họ và tên người yêu cầu", type: "text", required: true },
       { label: "Trung tâm / Phòng ban", type: "text", required: true },
@@ -973,7 +973,7 @@ export const formContent: Record<string, {
     ],
     instructions: [
       "Ghi rõ mã linh kiện (Part Number) và thông số kỹ thuật chi tiết",
-      "Đính kèm báo giá tham khảo từ nhà cung cấp (Nhà máy Trung tâm phần mềm Beta, Trung tâm A31, Bosch Rexroth...)",
+      "Đính kèm báo giá tham khảo từ nhà cung cấp (Trung tâm phần mềm Beta, Trung tâm A31, Bosch Rexroth...)",
       "Giá trị từ 50 triệu đồng trở lên cần thêm Tờ trình riêng (BM-HC-02)",
       "Phiếu cần có chữ ký của Trưởng nhóm trung tâm và dấu đơn vị",
     ],
@@ -1000,7 +1000,7 @@ export const formContent: Record<string, {
     ],
     instructions: [
       "Kiểm tra đủ tất cả thông số kỹ thuật theo bảng chuẩn, không được bỏ qua hạng mục nào",
-      "Ghi cụ thể thông số đo được và so sánh với thông số chuẩn nhà máy",
+      "Ghi cụ thể thông số đo được và so sánh với thông số chuẩn nội bộ",
       "Chỉ ký 'Đạt' khi TẤT CẢ các thông số bắt buộc đều nằm trong dung sai cho phép",
       "Bản gốc lưu tại Phòng KCS & Đảm bảo CL, bản photo giao lại cho trung tâm sửa chữa",
     ],
@@ -1024,14 +1024,14 @@ export const formContent: Record<string, {
     ],
     instructions: [
       "Đảm bảo hồ sơ sửa chữa đầy đủ theo danh mục trước khi nộp (thiếu biên bản sẽ bị trả lại)",
-      "Thời gian nghiệm thu: Cấp trung tâm 3 ngày, Nhà máy 5 ngày, BTL Tổng công ty 15 ngày",
+      "Thời gian nghiệm thu: Cấp trung tâm 3 ngày, Doanh nghiệp A 5 ngày, BGĐ Tổng công ty 15 ngày",
       "Thiết bị nâng cấp phải kèm theo đầy đủ biên bản đo thông số và biên bản chạy thử",
       "Gửi 02 bộ hồ sơ bản cứng + 01 bộ bản điện tử (USB hoặc hệ thống DMS)",
     ],
     submissionProcess: [
       "Bước 1: Trung tâm hoàn thành sửa chữa và KCS kiểm tra đạt yêu cầu",
       "Bước 2: Trưởng nhóm ký xác nhận và nộp hồ sơ lên Phòng Kế hoạch",
-      "Bước 3: Hội đồng kỹ thuật Nhà máy họp nghiệm thu (trong 5 ngày làm việc)",
+      "Bước 3: Hội đồng kỹ thuật Doanh nghiệp A họp nghiệm thu (trong 5 ngày làm việc)",
       "Bước 4: Giám đốc ký phê duyệt biên bản nghiệm thu",
       "Bước 5: Gửi hồ sơ lên Ban Giám đốc Tổng công ty xem xét thông qua",
     ],
@@ -1157,7 +1157,7 @@ export const recentActivities = [
 
 export const departments = [
   "Ban Giám đốc",
-  "Phòng Chính trị",
+  "Phòng Nhân sự",
   "Phòng Tài chính - Kế toán",
   "Phòng Kế hoạch",
   "Phòng Kỹ thuật",

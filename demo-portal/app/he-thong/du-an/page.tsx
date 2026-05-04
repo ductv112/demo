@@ -6,10 +6,10 @@ import { PortalLayout } from "@/components/portal/portal-layout";
 import { Breadcrumb } from "@/components/portal/breadcrumb";
 
 const projects = [
-  { name: "Tàu hộ vệ tên lửa lớp 2026", phase: "Thiết kế kỹ thuật", progress: 68, status: "Đúng tiến độ", members: 12, deadline: "30/06/2026" },
-  { name: "Tàu tuần tra cao tốc TT-2026", phase: "Thiết kế cơ sở", progress: 45, status: "Đúng tiến độ", members: 8, deadline: "15/08/2026" },
-  { name: "Nâng cấp hệ thống động lực tàu TT-500", phase: "Nghiên cứu", progress: 20, status: "Chậm tiến độ", members: 5, deadline: "31/12/2026" },
-  { name: "Cải hoán tàu đổ bộ LST-01", phase: "Thiết kế chi tiết", progress: 92, status: "Hoàn thành sớm", members: 15, deadline: "10/04/2026" },
+  { name: "Hệ thống monitoring doanh nghiệp 2026", phase: "Thiết kế kỹ thuật", progress: 68, status: "Đúng tiến độ", members: 12, deadline: "30/06/2026" },
+  { name: "Module sản phẩm SaaS TT-2026", phase: "Thiết kế cơ sở", progress: 45, status: "Đúng tiến độ", members: 8, deadline: "15/08/2026" },
+  { name: "Nâng cấp hệ thống hạ tầng cluster TT-500", phase: "Nghiên cứu", progress: 20, status: "Chậm tiến độ", members: 5, deadline: "31/12/2026" },
+  { name: "Cải tiến module dữ liệu LST-01", phase: "Thiết kế chi tiết", progress: 92, status: "Hoàn thành sớm", members: 15, deadline: "10/04/2026" },
 ];
 
 const statusStyle: Record<string, string> = {
@@ -26,7 +26,7 @@ export default function DuAnPage() {
         <div className="bg-white border border-gray-200 rounded-xl px-5 py-4 shadow-sm flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-[#1B3A5C] section-title">Quản lý Dự án</h1>
-            <p className="text-sm text-gray-500 mt-0.5">Theo dõi tiến độ sửa chữa toàn Nhà máy</p>
+            <p className="text-sm text-gray-500 mt-0.5">Theo dõi tiến độ triển khai toàn Doanh nghiệp A</p>
           </div>
         </div>
 

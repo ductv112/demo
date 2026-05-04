@@ -61,12 +61,12 @@ const initialRoles: RoleDef[] = [
 ];
 
 const initialUsers: User[] = [
-  { id: "U001", name: "Nguyễn Văn Hùng", email: "hung.nv@vtktqs.mil.vn",  initials: "HN", roleName: "Quản trị viên", department: "Ban Chỉ huy",      lastLogin: "17/03/2026", active: true  },
-  { id: "U002", name: "Trần Thị Mai",    email: "mai.tt@vtktqs.mil.vn",   initials: "MT", roleName: "Biên tập viên", department: "Phòng Chính trị",  lastLogin: "16/03/2026", active: true  },
-  { id: "U003", name: "Lê Minh Đức",    email: "duc.lm@vtktqs.mil.vn",   initials: "ĐL", roleName: "Biên tập viên", department: "Phòng Kỹ thuật",   lastLogin: "15/03/2026", active: true  },
-  { id: "U004", name: "Phạm Quốc Bảo",  email: "bao.pq@vtktqs.mil.vn",   initials: "BP", roleName: "Người xem",     department: "Phòng Thiết kế 1", lastLogin: "14/03/2026", active: true  },
-  { id: "U005", name: "Hoàng Thị Lan",  email: "lan.ht@vtktqs.mil.vn",   initials: "LH", roleName: "Người xem",     department: "Phòng Hành chính", lastLogin: "10/03/2026", active: false },
-  { id: "U006", name: "Vũ Đình Khoa",   email: "khoa.vd@vtktqs.mil.vn",  initials: "KV", roleName: "Biên tập viên", department: "Phòng Thiết kế 2", lastLogin: "17/03/2026", active: true  },
+  { id: "U001", name: "Nguyễn Văn Hùng", email: "hung.nv@doanhnghiepa.vn",  initials: "HN", roleName: "Quản trị viên", department: "Ban Chỉ huy",      lastLogin: "17/03/2026", active: true  },
+  { id: "U002", name: "Trần Thị Mai",    email: "mai.tt@doanhnghiepa.vn",   initials: "MT", roleName: "Biên tập viên", department: "Phòng Nhân sự",  lastLogin: "16/03/2026", active: true  },
+  { id: "U003", name: "Lê Minh Đức",    email: "duc.lm@doanhnghiepa.vn",   initials: "ĐL", roleName: "Biên tập viên", department: "Phòng Kỹ thuật",   lastLogin: "15/03/2026", active: true  },
+  { id: "U004", name: "Phạm Quốc Bảo",  email: "bao.pq@doanhnghiepa.vn",   initials: "BP", roleName: "Người xem",     department: "Phòng Thiết kế 1", lastLogin: "14/03/2026", active: true  },
+  { id: "U005", name: "Hoàng Thị Lan",  email: "lan.ht@doanhnghiepa.vn",   initials: "LH", roleName: "Người xem",     department: "Phòng Hành chính", lastLogin: "10/03/2026", active: false },
+  { id: "U006", name: "Vũ Đình Khoa",   email: "khoa.vd@doanhnghiepa.vn",  initials: "KV", roleName: "Biên tập viên", department: "Phòng Thiết kế 2", lastLogin: "17/03/2026", active: true  },
 ];
 
 /* ══════════════════ ROLE ACTION MENU ══════════════════ */
@@ -677,7 +677,7 @@ export default function NguoiDungPage() {
           <div className="space-y-3">
             {[
               { label: "Họ và tên *", value: newName,  setter: setNewName,  ph: "Nguyễn Văn A" },
-              { label: "Email *",      value: newEmail, setter: setNewEmail, ph: "email@vtktqs.mil.vn" },
+              { label: "Email *",      value: newEmail, setter: setNewEmail, ph: "email@doanhnghiepa.vn" },
               { label: "Phòng ban",    value: newDept,  setter: setNewDept,  ph: "Phòng Kỹ thuật" },
             ].map(({ label, value, setter, ph }) => (
               <div key={label}>

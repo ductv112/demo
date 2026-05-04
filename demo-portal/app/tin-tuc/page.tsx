@@ -17,8 +17,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const allNews = [
   {
     id: "N001",
-    title: "Nhà máy Z119 triển khai thành công hệ thống quản lý sửa chữa số",
-    excerpt: "Ngày 15/3/2026, Nhà máy đã chính thức đưa vào vận hành hệ thống quản lý sửa chữa khí tài số hóa, tích hợp phần mềm chẩn đoán và hệ thống quản lý nội bộ.",
+    title: "Doanh nghiệp A triển khai thành công hệ thống quản lý vận hành số",
+    excerpt: "Ngày 15/3/2026, Doanh nghiệp A đã chính thức đưa vào vận hành hệ thống quản lý vận hành thiết bị số hóa, tích hợp phần mềm chẩn đoán và hệ thống quản lý nội bộ.",
     category: "Tin hoạt động",
     date: "15/03/2026",
     isHot: true,
@@ -27,8 +27,8 @@ const allNews = [
   },
   {
     id: "N007",
-    title: "Nhà máy Z119 kỷ niệm 60 năm Ngày truyền thống (1965–2025)",
-    excerpt: "Chặng đường 60 năm xây dựng và phát triển với hàng nghìn lượt sửa chữa, đại tu khí tài radar và tên lửa phòng không cho Quân chủng PK-KQ. Nhà máy được tặng Huân chương Bảo vệ Tổ quốc hạng Nhì.",
+    title: "Doanh nghiệp A kỷ niệm 60 năm thành lập (1965–2025)",
+    excerpt: "Chặng đường 60 năm xây dựng và phát triển với hàng nghìn dự án triển khai, nâng cấp hệ thống monitoring và module sản phẩm phần mềm cho Tổng công ty và đối tác. Doanh nghiệp A được tặng Bằng khen của Thủ tướng Chính phủ.",
     category: "Sự kiện",
     date: "05/03/2026",
     isHot: true,
@@ -37,8 +37,8 @@ const allNews = [
   },
   {
     id: "N002",
-    title: "Hội thảo khoa học 'Ứng dụng công nghệ mới trong sửa chữa khí tài phòng không'",
-    excerpt: "Hội thảo thu hút hơn 80 nhà khoa học, kỹ sư từ các đơn vị trong và ngoài quân đội, tập trung vào ứng dụng công nghệ chẩn đoán và kiểm tra không phá hủy.",
+    title: "Hội thảo khoa học 'Ứng dụng công nghệ mới trong vận hành hệ thống monitoring'",
+    excerpt: "Hội thảo thu hút hơn 80 nhà khoa học, kỹ sư từ các đơn vị trong và ngoài Tổng công ty, tập trung vào ứng dụng công nghệ chẩn đoán và kiểm thử tự động.",
     category: "Khoa học",
     date: "12/03/2026",
     isHot: false,
@@ -47,8 +47,8 @@ const allNews = [
   },
   {
     id: "N003",
-    title: "Phân xưởng 1 hoàn thành đại tu radar P-18 cho Trung đoàn 291",
-    excerpt: "Sau 8 tháng triển khai, Phân xưởng Sửa chữa Radar đã hoàn thành đại tu toàn bộ tổ hợp radar P-18 cho Trung đoàn 291.",
+    title: "Trung tâm Phần mềm Alpha hoàn thành nâng cấp hệ thống monitoring P-18 cho Phòng Triển khai P291",
+    excerpt: "Sau 8 tháng triển khai, Trung tâm Phần mềm Alpha đã hoàn thành nâng cấp toàn bộ hệ thống monitoring P-18 cho Phòng Triển khai P291.",
     category: "Dự án",
     date: "10/03/2026",
     isHot: false,
@@ -57,8 +57,8 @@ const allNews = [
   },
   {
     id: "N004",
-    title: "Đoàn cán bộ Nhà máy tham dự triển lãm INDO Defence 2026 tại Indonesia",
-    excerpt: "Đoàn cán bộ kỹ thuật 12 người đã tham dự Triển lãm Quốc phòng INDO Defence, tiếp cận nhiều công nghệ tiên tiến về radar và phòng không.",
+    title: "Đoàn cán bộ Doanh nghiệp A tham dự triển lãm Tech 2026 tại Indonesia",
+    excerpt: "Đoàn cán bộ kỹ thuật 12 người đã tham dự Triển lãm Công nghệ Tech 2026, tiếp cận nhiều công nghệ tiên tiến về monitoring và sản phẩm phần mềm.",
     category: "Hợp tác quốc tế",
     date: "08/03/2026",
     isHot: false,
@@ -67,8 +67,8 @@ const allNews = [
   },
   {
     id: "N005",
-    title: "Nghiệm thu đề tài nghiên cứu khoa học cấp Bộ Quốc phòng về nâng cao tầm phát hiện radar",
-    excerpt: "Hội đồng nghiệm thu đề tài 'Nghiên cứu, cải tiến nâng cao tầm phát hiện cho radar P-37 trong điều kiện nhiễu phức tạp' đã thông qua kết quả xuất sắc.",
+    title: "Nghiệm thu đề tài nghiên cứu khoa học cấp Tổng công ty về nâng cao khả năng phát hiện hệ thống monitoring",
+    excerpt: "Hội đồng nghiệm thu đề tài 'Nghiên cứu, cải tiến nâng cao khả năng phát hiện cho hệ thống monitoring P-37 trong điều kiện nhiễu phức tạp' đã thông qua kết quả xuất sắc.",
     category: "Nghiên cứu KH",
     date: "06/03/2026",
     isHot: false,
@@ -78,7 +78,7 @@ const allNews = [
   {
     id: "N006",
     title: "Kết nạp 25 đảng viên mới trong đợt 26/3 nhân kỷ niệm thành lập Đoàn TNCS",
-    excerpt: "Đảng ủy Nhà máy đã tổ chức lễ kết nạp đảng viên mới cho 25 quần chúng ưu tú, tiêu biểu trong phong trào thi đua của Nhà máy năm 2025.",
+    excerpt: "Đảng ủy Doanh nghiệp A đã tổ chức lễ kết nạp đảng viên mới cho 25 quần chúng ưu tú, tiêu biểu trong phong trào thi đua của đơn vị năm 2025.",
     category: "Đảng ủy",
     date: "03/03/2026",
     isHot: false,
@@ -87,8 +87,8 @@ const allNews = [
   },
   {
     id: "N008",
-    title: "Đoàn cán bộ Nhà máy thăm và học tập kinh nghiệm tại Nhà máy Z111",
-    excerpt: "Đoàn công tác đã có buổi làm việc và trao đổi kinh nghiệm về quy trình sửa chữa, đại tu khí tài điện tử phòng không.",
+    title: "Đoàn cán bộ Doanh nghiệp A thăm và học tập kinh nghiệm tại Trung tâm phần mềm Beta",
+    excerpt: "Đoàn công tác đã có buổi làm việc và trao đổi kinh nghiệm về quy trình vận hành, nâng cấp thiết bị điện tử trên hệ thống module phần mềm.",
     category: "Tin hoạt động",
     date: "01/03/2026",
     isHot: false,
@@ -124,7 +124,7 @@ function NewsImage({ src, alt, className }: { src: string; alt: string; classNam
 
 /* ── Sub-section nav cards ── */
 const sections = [
-  { href: "/tin-tuc/hoat-dong", label: "Tin hoạt động",   desc: "Hoạt động hàng ngày của Nhà máy",   icon: Activity, color: "#1B3A5C", bg: "#e8eef6" },
+  { href: "/tin-tuc/hoat-dong", label: "Tin hoạt động",   desc: "Hoạt động hàng ngày của Doanh nghiệp A",   icon: Activity, color: "#1B3A5C", bg: "#e8eef6" },
   { href: "/thong-bao",         label: "Thông báo",        desc: "Thông báo nội bộ chính thức",       icon: Bell,     color: "#D4A843", bg: "#fef2f2" },
   { href: "/tin-tuc/su-kien",   label: "Sự kiện nổi bật", desc: "Sự kiện quan trọng, lễ kỷ niệm",   icon: Star,     color: "#D4A843", bg: "#fefce8" },
 ];
@@ -161,7 +161,7 @@ export default function TinTucPage() {
               <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Bản tin nội bộ</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Tin tức — Sự kiện</h1>
-            <p className="text-blue-200 text-sm mb-5">Thông tin hoạt động và sự kiện của Nhà máy Z119</p>
+            <p className="text-blue-200 text-sm mb-5">Thông tin hoạt động và sự kiện của Doanh nghiệp A</p>
             {/* Section nav */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {sections.map(({ href, label, desc, icon: Icon, color, bg }) => (

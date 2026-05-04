@@ -7,60 +7,60 @@ import { Award, Mail, Phone } from "lucide-react";
 
 const leaders = [
   {
-    name: "Đại tá Trần Văn Đức",
-    title: "Giám đốc Nhà máy Z119",
+    name: "Trần Văn Đức",
+    title: "Giám đốc Doanh nghiệp A",
     subtitle: "Phó Bí thư Đảng ủy",
-    rank: "Đại tá",
-    education: "Tiến sĩ Kỹ thuật Điện tử — Học viện Kỹ thuật Quân sự",
-    specialty: "Sửa chữa, đại tu khí tài radar phòng không",
+    rank: "Giám đốc",
+    education: "Tiến sĩ Kỹ thuật Điện tử — Đại học Bách khoa Hà Nội",
+    specialty: "Phát triển, vận hành hệ thống monitoring doanh nghiệp",
     initials: "TD",
     color: "bg-[#1B3A5C]",
     phone: "(024) 3864 xx01",
-    email: "tv.duc.z119@qpvn.mil.vn",
-    bio: "Trực tiếp chỉ đạo các hoạt động sản xuất, sửa chữa và kế hoạch pháp lệnh của đơn vị.",
+    email: "tv.duc@doanhnghiepa.vn",
+    bio: "Trực tiếp chỉ đạo các hoạt động phát triển sản phẩm, triển khai và kế hoạch chiến lược của đơn vị.",
   },
   {
-    name: "Đại tá Đào Ngọc Đại",
-    title: "Chính ủy Nhà máy Z119",
+    name: "Đào Ngọc Đại",
+    title: "Giám đốc Nhân sự Doanh nghiệp A",
     subtitle: "Bí thư Đảng ủy",
-    rank: "Đại tá",
-    education: "Cử nhân Chính trị — Học viện Chính trị Quân sự",
-    specialty: "Công tác Đảng, công tác chính trị, tư tưởng",
+    rank: "Giám đốc",
+    education: "Cử nhân Quản trị — Đại học Kinh tế Quốc dân",
+    specialty: "Quản trị nhân sự, văn hóa doanh nghiệp, đào tạo nội bộ",
     initials: "ĐĐ",
     color: "bg-[#8b0014]",
     phone: "(024) 3864 xx02",
-    email: "dn.dai.z119@qpvn.mil.vn",
-    bio: "Chịu trách nhiệm về công tác Đảng, công tác chính trị, tư tưởng và xây dựng đơn vị vững mạnh toàn diện.",
+    email: "dn.dai@doanhnghiepa.vn",
+    bio: "Chịu trách nhiệm về công tác nhân sự, văn hóa doanh nghiệp và xây dựng tổ chức vững mạnh toàn diện.",
   },
   {
-    name: "Đại tá Nguyễn Cảnh Toàn",
-    title: "Phó Giám đốc Nhà máy Z119",
+    name: "Nguyễn Cảnh Toàn",
+    title: "Phó Giám đốc Doanh nghiệp A",
     subtitle: "",
-    rank: "Đại tá",
-    education: "Thạc sĩ Kỹ thuật — Học viện Kỹ thuật Quân sự",
-    specialty: "Kỹ thuật, tập huấn nghiệp vụ, cải tiến công nghệ",
+    rank: "Phó Giám đốc",
+    education: "Thạc sĩ Kỹ thuật — Đại học Bách khoa Hà Nội",
+    specialty: "Kỹ thuật, đào tạo nội bộ, cải tiến công nghệ",
     initials: "CT",
     color: "bg-[#2d5a8e]",
     phone: "(024) 3864 xx03",
-    email: "nc.toan.z119@qpvn.mil.vn",
-    bio: "Phụ trách công tác kỹ thuật, chỉ đạo các hoạt động tập huấn nghiệp vụ và cải tiến công nghệ.",
+    email: "nc.toan@doanhnghiepa.vn",
+    bio: "Phụ trách công tác kỹ thuật, chỉ đạo các hoạt động đào tạo nội bộ và cải tiến công nghệ.",
   },
 ];
 
 const formerLeaders = [
-  { name: "Đại tá Trần Văn Đức",     period: "2021 – Nay",             title: "Giám đốc" },
-  { name: "Đại tá Nguyễn Văn Thanh", period: "Giai đoạn 2014",         title: "Giám đốc" },
-  { name: "Đại tá Nguyễn Hữu Thắng", period: "Giai đoạn trước 2014",   title: "Giám đốc" },
+  { name: "Trần Văn Đức",     period: "2021 – Nay",             title: "Giám đốc" },
+  { name: "Nguyễn Văn Thanh", period: "Giai đoạn 2014",         title: "Giám đốc" },
+  { name: "Nguyễn Hữu Thắng", period: "Giai đoạn trước 2014",   title: "Giám đốc" },
 ];
 
 export default function LanhDaoPage() {
   return (
     <PortalLayout>
-      <Breadcrumb items={[{ label: "Giới thiệu", href: "/gioi-thieu" }, { label: "Lãnh đạo Nhà máy" }]} />
+      <Breadcrumb items={[{ label: "Giới thiệu", href: "/gioi-thieu" }, { label: "Ban Giám đốc" }]} />
       <div className="space-y-5">
         <div className="bg-white border border-gray-200 rounded-lg px-5 py-4 shadow-sm">
           <h1 className="text-xl font-bold text-[#1B3A5C] section-title flex items-center gap-2">
-            <Award className="w-5 h-5" /> Ban Lãnh đạo Nhà máy
+            <Award className="w-5 h-5" /> Ban Giám đốc Doanh nghiệp A
           </h1>
           <p className="text-sm text-gray-500 mt-1">Nhiệm kỳ 2022 – 2027</p>
         </div>

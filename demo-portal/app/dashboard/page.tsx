@@ -104,7 +104,7 @@ export default function DashboardPage() {
             <div className="relative flex items-center justify-between">
               <div>
                 <p className="text-blue-200 text-sm mb-1">Xin chào,</p>
-                <h2 className="text-2xl font-bold">Đại tá Trần Văn Đức</h2>
+                <h2 className="text-2xl font-bold">Trần Văn Đức</h2>
                 <p className="text-blue-200 text-sm mt-1">
                   Giám đốc · Ban Giám đốc · Đăng nhập lúc 07:45
                 </p>
@@ -194,9 +194,9 @@ export default function DashboardPage() {
                           </span>
                           <Badge
                             className={`text-[10px] h-4 px-1.5 border-0 ${
-                              doc.doMat === "Tuyệt mật"
+                              doc.doMat === "Bảo mật cao"
                                 ? "bg-red-100 text-red-700"
-                                : doc.doMat === "Mật"
+                                : doc.doMat === "Hạn chế"
                                 ? "bg-orange-100 text-orange-700"
                                 : "bg-gray-100 text-gray-600"
                             }`}

@@ -7,16 +7,16 @@ import { PortalLayout } from "@/components/portal/portal-layout";
 import { Breadcrumb } from "@/components/portal/breadcrumb";
 
 const suggestions = [
-  "Quy trình đại tu radar P-18 gồm những bước nào?",
-  "Quy trình nộp hồ sơ nghiệm thu khí tài sau sửa chữa?",
+  "Quy trình nâng cấp hệ thống monitoring P-18 gồm những bước nào?",
+  "Quy trình nộp hồ sơ nghiệm thu thiết bị sau vận hành?",
   "Danh sách văn bản chỉ đạo tháng 3/2026",
-  "Tiêu chuẩn kỹ thuật đầu ra cho radar 36D6 sau đại tu?",
+  "Tiêu chuẩn kỹ thuật đầu ra cho hệ thống monitoring 36D6 sau nâng cấp?",
 ];
 
 const demoMessages = [
-  { role: "assistant", text: "Xin chào! Tôi là Trợ lý AI của Nhà máy Z119. Tôi có thể giúp bạn tra cứu tài liệu kỹ thuật, quy trình nội bộ và các tiêu chuẩn sửa chữa khí tài. Bạn cần hỗ trợ gì?" },
-  { role: "user", text: "Quy trình đại tu radar P-18 gồm những bước nào?" },
-  { role: "assistant", text: "Quy trình đại tu radar P-18 gồm các bước chính:\n• Tiếp nhận và kiểm tra ban đầu (đánh giá tình trạng kỹ thuật)\n• Tháo rời, kiểm tra từng khối chức năng\n• Sửa chữa, thay thế linh kiện hư hỏng\n• Lắp ráp, hiệu chỉnh và kiểm tra tổng thể\n• Chạy thử, nghiệm thu theo tiêu chuẩn kỹ thuật\n\nBạn có muốn tôi tìm tài liệu đầy đủ trong thư viện kỹ thuật không?" },
+  { role: "assistant", text: "Xin chào! Tôi là Trợ lý AI của Doanh nghiệp A. Tôi có thể giúp bạn tra cứu tài liệu kỹ thuật, quy trình nội bộ và các tiêu chuẩn vận hành sản phẩm. Bạn cần hỗ trợ gì?" },
+  { role: "user", text: "Quy trình nâng cấp hệ thống monitoring P-18 gồm những bước nào?" },
+  { role: "assistant", text: "Quy trình nâng cấp hệ thống monitoring P-18 gồm các bước chính:\n• Tiếp nhận và kiểm tra ban đầu (đánh giá tình trạng kỹ thuật)\n• Tháo rời, kiểm tra từng khối chức năng\n• Sửa chữa, thay thế linh kiện hư hỏng\n• Lắp ráp, hiệu chỉnh và kiểm tra tổng thể\n• Chạy thử, nghiệm thu theo tiêu chuẩn kỹ thuật\n\nBạn có muốn tôi tìm tài liệu đầy đủ trong thư viện kỹ thuật không?" },
 ];
 
 export default function ChatbotPage() {
@@ -47,7 +47,7 @@ export default function ChatbotPage() {
               <Bot className="w-5 h-5 text-white" />
             </div>
             <div>
-              <p className="text-white font-bold text-sm">Trợ lý AI — Z119</p>
+              <p className="text-white font-bold text-sm">Trợ lý AI — Doanh nghiệp A</p>
               <p className="text-white/50 text-xs flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" /> Đang hoạt động</p>
             </div>
             <button onClick={() => setMessages(demoMessages)} className="ml-auto text-white/50 hover:text-white transition-colors">

@@ -7,40 +7,40 @@ import { History, Award, Shield } from "lucide-react";
 
 const periods = [
   {
-    title: "Giai đoạn thành lập trong chiến tranh (1965–1975)",
+    title: "Giai đoạn thành lập (1965–1975)",
     color: "border-blue-500",
     bg: "bg-blue-50",
-    content: `Năm 1965, đơn vị được thành lập dưới mật danh MZ-495 với nhiệm vụ sửa chữa ra đa và máy chỉ huy phục vụ chiến đấu. Với đội ngũ ban đầu gồm các kỹ sư và thợ lành nghề, đơn vị đã bắt tay ngay vào nhiệm vụ sửa chữa khẩn cấp các khí tài radar, tên lửa phòng không, đóng góp vào Chiến thắng Hà Nội — Điện Biên Phủ trên không.
+    content: `Năm 1965, Doanh nghiệp A được thành lập dưới mã đơn vị MZ-495 với nhiệm vụ vận hành và bảo trì hệ thống monitoring phục vụ vận hành. Với đội ngũ ban đầu gồm các kỹ sư và chuyên viên kỹ thuật, đơn vị đã bắt tay ngay vào nhiệm vụ phát triển và triển khai các hệ thống monitoring, module phần mềm, đóng góp vào sự nghiệp chuyển đổi số quốc gia.
 
-Trong giai đoạn này, đơn vị hoàn thành sửa chữa hàng trăm lượt khí tài radar và tên lửa S-75 Dvina, đóng góp trực tiếp vào thắng lợi của cuộc kháng chiến chống Mỹ cứu nước. Năm 1987, đơn vị được điều về trực thuộc Quân chủng Phòng không và mang tên Nhà máy Z119.`,
-    achievements: ["Sửa chữa khẩn cấp radar và tên lửa S-75", "Đội ngũ kỹ sư và thợ lành nghề sáng lập", "Hoàn thành hàng trăm lượt sửa chữa trong chiến tranh"],
+Trong giai đoạn này, đơn vị hoàn thành hàng trăm dự án triển khai hệ thống monitoring và module phần mềm S-75, đóng góp trực tiếp vào sự nghiệp xây dựng hạ tầng công nghệ. Năm 1987, đơn vị được tái cấu trúc thành Trung tâm V119, tiền thân của Doanh nghiệp A ngày nay.`,
+    achievements: ["Triển khai hệ thống monitoring và module phần mềm S-75", "Đội ngũ kỹ sư và chuyên viên sáng lập", "Hoàn thành hàng trăm dự án giai đoạn đầu"],
   },
   {
     title: "Giai đoạn củng cố và phát triển (1975–1995)",
     color: "border-green-500",
     bg: "bg-green-50",
-    content: `Sau ngày đất nước thống nhất, Nhà máy bước vào giai đoạn tái cơ cấu và phát triển mạnh mẽ. Lực lượng cán bộ được bổ sung đáng kể từ các trường đại học kỹ thuật trong và ngoài nước. Các phân xưởng chuyên môn được thành lập theo hướng chuyên sâu: sửa chữa radar, sửa chữa tên lửa, cơ khí, điện tử.
+    content: `Sau ngày đất nước thống nhất, Doanh nghiệp A bước vào giai đoạn tái cơ cấu và phát triển mạnh mẽ. Lực lượng cán bộ được bổ sung đáng kể từ các trường đại học kỹ thuật trong và ngoài nước. Các trung tâm chuyên môn được thành lập theo hướng chuyên sâu: phần mềm Alpha (monitoring), phần mềm Beta (module sản phẩm chủ lực), Gamma (hạ tầng), Delta (DevOps/điện tử).
 
-Nhà máy đảm nhận sửa chữa và đại tu thành công các tổ hợp tên lửa S-125 Pechora, radar P-18, P-37 phục vụ lực lượng Phòng không Không quân. Quan hệ hợp tác kỹ thuật với Liên Xô và các nước XHCN được mở rộng, tạo nền tảng kỹ thuật vững chắc.`,
-    achievements: ["Đại tu tổ hợp tên lửa S-125 đầu tiên", "Mở rộng lên 200 cán bộ kỹ thuật", "Hợp tác kỹ thuật với Liên Xô"],
+Doanh nghiệp A đảm nhận triển khai và nâng cấp thành công các module sản phẩm chủ lực S-125 Pechora, hệ thống monitoring P-18, P-37 phục vụ Tổng công ty và đối tác công nghệ. Quan hệ hợp tác kỹ thuật quốc tế được mở rộng, tạo nền tảng kỹ thuật vững chắc.`,
+    achievements: ["Nâng cấp module sản phẩm chủ lực S-125 đầu tiên", "Mở rộng lên 200 cán bộ kỹ thuật", "Hợp tác kỹ thuật quốc tế"],
   },
   {
     title: "Giai đoạn hiện đại hóa (1995–2015)",
     color: "border-orange-500",
     bg: "bg-orange-50",
-    content: `Bước sang giai đoạn đổi mới, Nhà máy đẩy mạnh ứng dụng công nghệ thông tin vào công tác sửa chữa. Các thiết bị chẩn đoán, kiểm tra hiện đại được đưa vào sử dụng, thay thế phương pháp thủ công truyền thống. Nhà máy cũng triển khai đào tạo lại đội ngũ kỹ sư theo chuẩn quốc tế.
+    content: `Bước sang giai đoạn đổi mới, Doanh nghiệp A đẩy mạnh ứng dụng công nghệ thông tin vào công tác vận hành. Các thiết bị chẩn đoán, kiểm tra hiện đại được đưa vào sử dụng, thay thế phương pháp thủ công truyền thống. Đơn vị cũng triển khai đào tạo lại đội ngũ kỹ sư theo chuẩn quốc tế.
 
-Giai đoạn này đánh dấu bước chuyển mình quan trọng khi Nhà máy làm chủ công nghệ sửa chữa và đại tu các tổ hợp S-300PMU, radar ST-68 thế hệ mới, góp phần hiện đại hóa lực lượng Phòng không Không quân.`,
-    achievements: ["Làm chủ công nghệ sửa chữa S-300PMU", "Đại tu radar ST-68 thế hệ mới", "Nhận Huân chương Quân công hạng Nhất (2012)"],
+Giai đoạn này đánh dấu bước chuyển mình quan trọng khi Doanh nghiệp A làm chủ công nghệ phát triển và nâng cấp các module sản phẩm S-300PMU, hệ thống monitoring ST-68 thế hệ mới, góp phần hiện đại hóa hạ tầng công nghệ của Tổng công ty.`,
+    achievements: ["Làm chủ công nghệ phát triển S-300PMU", "Nâng cấp hệ thống monitoring ST-68 thế hệ mới", "Nhận giải thưởng Sao Khuê hạng Nhất (2012)"],
   },
   {
     title: "Giai đoạn chuyển đổi số (2015–nay)",
     color: "border-red-500",
     bg: "bg-red-50",
-    content: `Từ năm 2015 đến nay, Nhà máy bước vào giai đoạn chuyển đổi số toàn diện với việc triển khai hệ thống quản lý sửa chữa số, tích hợp phần mềm chẩn đoán kỹ thuật và phát triển các công cụ kiểm tra tự động. Đây là giai đoạn đánh dấu sự hội nhập sâu rộng với công nghệ quốc phòng hiện đại.
+    content: `Từ năm 2015 đến nay, Doanh nghiệp A bước vào giai đoạn chuyển đổi số toàn diện với việc triển khai hệ thống quản lý vận hành số, tích hợp phần mềm chẩn đoán kỹ thuật và phát triển các công cụ kiểm tra tự động. Đây là giai đoạn đánh dấu sự hội nhập sâu rộng với công nghệ doanh nghiệp hiện đại.
 
-Năm 2025, kỷ niệm 60 năm Ngày truyền thống (1965–2025), Nhà máy được tặng Huân chương Bảo vệ Tổ quốc hạng Nhì và chính thức ra mắt Cổng thông tin nội bộ, mở ra trang mới trong lịch sử phát triển.`,
-    achievements: ["Triển khai hệ thống quản lý sửa chữa số", "Ra mắt Cổng thông tin nội bộ (2026)", "Kỷ niệm 60 năm Ngày truyền thống (2025)"],
+Năm 2025, kỷ niệm 60 năm thành lập (1965–2025), Doanh nghiệp A được tặng Bằng khen của Thủ tướng Chính phủ và chính thức ra mắt Cổng thông tin nội bộ, mở ra trang mới trong lịch sử phát triển.`,
+    achievements: ["Triển khai hệ thống quản lý vận hành số", "Ra mắt Cổng thông tin nội bộ (2026)", "Kỷ niệm 60 năm thành lập (2025)"],
   },
 ];
 
@@ -54,7 +54,7 @@ export default function LichSuPage() {
           <h1 className="text-xl font-bold text-[#1B3A5C] section-title flex items-center gap-2">
             <History className="w-5 h-5" /> Lịch sử hình thành và phát triển
           </h1>
-          <p className="text-sm text-gray-500 mt-1">Nhà máy Z119 · 1965 – nay</p>
+          <p className="text-sm text-gray-500 mt-1">Doanh nghiệp A · 1965 – nay</p>
         </div>
 
         {/* Introduction */}
@@ -66,14 +66,14 @@ export default function LichSuPage() {
             <div>
               <h2 className="text-lg font-bold text-[#1B3A5C] mb-2">Tổng quan</h2>
               <p className="text-sm text-gray-700 leading-relaxed">
-                Nhà máy Z119 là đơn vị sự nghiệp kỹ thuật trực thuộc Quân chủng Phòng không Không quân, Bộ Quốc phòng Việt Nam.
-                Được thành lập năm 1965 dưới mật danh MZ-495, Nhà máy là đơn vị chuyên sửa chữa, đại tu
-                khí tài radar, tên lửa và thiết bị điện tử phòng không cho Quân đội nhân dân Việt Nam.
+                Doanh nghiệp A là đơn vị thành viên trực thuộc Tổng công ty — Tập đoàn Công nghệ.
+                Được thành lập năm 1965 dưới mã đơn vị MZ-495, Doanh nghiệp A chuyên phát triển, vận hành
+                các hệ thống monitoring, module sản phẩm phần mềm và thiết bị điện tử cho khách hàng doanh nghiệp và đối tác công nghệ.
               </p>
               <p className="text-sm text-gray-700 leading-relaxed mt-3">
-                Trải qua 60 năm xây dựng và phát triển, Nhà máy đã sửa chữa và đại tu thành công hàng nghìn lượt khí tài
-                radar, tên lửa các loại, đào tạo hàng trăm kỹ sư kỹ thuật cho lực lượng Phòng không Không quân, đóng góp to lớn vào sự nghiệp
-                bảo vệ vùng trời thiêng liêng của Tổ quốc.
+                Trải qua 60 năm xây dựng và phát triển, Doanh nghiệp A đã triển khai và nâng cấp thành công hàng nghìn dự án phần mềm
+                và hệ thống monitoring các loại, đào tạo hàng trăm kỹ sư kỹ thuật cho Tổng công ty, đóng góp to lớn vào sự nghiệp
+                chuyển đổi số quốc gia.
               </p>
             </div>
           </div>

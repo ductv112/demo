@@ -22,9 +22,10 @@ const loaiColors: Record<string, string> = {
 };
 
 const doMatColors: Record<string, { bg: string; text: string; border: string }> = {
-  "Tuyệt mật": { bg: "#fde8eb", text: "#D4A843",  border: "#f0a0ab" },
-  "Mật":       { bg: "#fdf5e0", text: "#8a6a00",  border: "#e8d08a" },
-  "Thường":    { bg: "#f3f4f6", text: "#6b7280",  border: "#e5e7eb" },
+  "Bảo mật cao": { bg: "#fde8eb", text: "#D4A843",  border: "#f0a0ab" },
+  "Hạn chế":     { bg: "#fdf5e0", text: "#8a6a00",  border: "#e8d08a" },
+  "Nội bộ":      { bg: "#e8eef6", text: "#1B3A5C",  border: "#b8cce0" },
+  "Thường":      { bg: "#f3f4f6", text: "#6b7280",  border: "#e5e7eb" },
 };
 
 function isBold(line: string): boolean {

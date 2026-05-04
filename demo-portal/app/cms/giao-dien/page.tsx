@@ -178,7 +178,7 @@ export default function GiaoDienPage() {
                   {selectedFont === f.value && <Check className="w-3.5 h-3.5 text-[#1B3A5C]" />}
                 </div>
                 <p className="text-sm font-bold text-gray-800" style={{ fontFamily: f.value }}>
-                  Nhà máy Z119
+                  Doanh nghiệp A
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5" style={{ fontFamily: f.value }}>
                   Cổng thông tin nội bộ

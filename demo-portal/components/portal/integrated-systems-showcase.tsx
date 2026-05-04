@@ -80,8 +80,8 @@ const MODULE_GROUPS: ModuleGroup[] = [
   },
   {
     number: "03",
-    label: "Vận hành sản xuất & Sửa chữa",
-    description: "Chuỗi cung ứng, sản xuất và phục hồi khí tài",
+    label: "Vận hành phát triển & Khắc phục sự cố",
+    description: "Chuỗi cung ứng, phát triển và khắc phục sự cố hệ thống",
     accent: "#5eead4",
     accentSoft: "rgba(94,234,212,0.18)",
     bar: "linear-gradient(90deg, #115e59 0%, #14b8a6 100%)",
@@ -208,7 +208,7 @@ function ModuleRow({
               className="mt-0.5 truncate text-[10px] font-bold tracking-wider tabular-nums"
               style={{ color: group.accent, letterSpacing: "0.06em" }}
             >
-              Z119·{m.code}
+              DA·{m.code}
             </p>
           </div>
 
@@ -276,13 +276,13 @@ export function IntegratedSystemsShowcase() {
             <h2 className="text-[22px] font-black leading-tight text-white md:text-[26px]">
               Cổng điều hành{" "}
               <span className="bg-gradient-to-r from-[#D4A843] via-[#f0d890] to-[#D4A843] bg-clip-text text-transparent">
-                tích hợp Z119
+                tích hợp Doanh nghiệp A
               </span>
             </h2>
             <p className="mt-1 max-w-xl text-[13px] leading-snug text-white/85">
               Hệ sinh thái <span className="font-bold text-white">19 phân hệ</span> chia thành{" "}
               <span className="font-bold text-white">04 nhóm</span>, kết nối qua một lần đăng nhập
-              SSO — phục vụ toàn bộ vòng đời sửa chữa, đại tu khí tài Nhà máy Z119.
+              SSO — phục vụ toàn bộ vòng đời phát triển, vận hành sản phẩm phần mềm của Doanh nghiệp A.
             </p>
           </div>
 

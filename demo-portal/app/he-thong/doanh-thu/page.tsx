@@ -6,10 +6,10 @@ import { PortalLayout } from "@/components/portal/portal-layout";
 import { Breadcrumb } from "@/components/portal/breadcrumb";
 
 const contracts = [
-  { name: "Hợp đồng đại tu radar 36D6 cho Sư đoàn 361", value: "4.800.000.000", status: "Đang thực hiện", paid: 40 },
-  { name: "Hợp đồng sửa chữa tổ hợp S-125 Pechora", value: "1.200.000.000", status: "Quyết toán", paid: 100 },
-  { name: "Hợp đồng đại tu radar P-18 cho Trung đoàn 291", value: "2.500.000.000", status: "Đang thực hiện", paid: 25 },
-  { name: "Hợp đồng sửa chữa thiết bị điện tử tên lửa S-75", value: "800.000.000", status: "Chờ nghiệm thu", paid: 80 },
+  { name: "Hợp đồng nâng cấp hệ thống monitoring 36D6 cho Khối K361", value: "4.800.000.000", status: "Đang thực hiện", paid: 40 },
+  { name: "Hợp đồng triển khai module S-125 Pechora", value: "1.200.000.000", status: "Quyết toán", paid: 100 },
+  { name: "Hợp đồng nâng cấp hệ thống monitoring P-18 cho Phòng Triển khai P291", value: "2.500.000.000", status: "Đang thực hiện", paid: 25 },
+  { name: "Hợp đồng vận hành thiết bị điện tử module S-75", value: "800.000.000", status: "Chờ nghiệm thu", paid: 80 },
 ];
 
 const statusStyle: Record<string, string> = {

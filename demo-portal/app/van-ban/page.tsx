@@ -88,7 +88,7 @@ export default function VanBanPage() {
                 <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Hệ thống văn bản điện tử</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Văn bản — Chỉ đạo — Mệnh lệnh</h1>
-              <p className="text-blue-200 text-sm">Nhà máy Z119 · Quân chủng Phòng không Không quân</p>
+              <p className="text-blue-200 text-sm">Doanh nghiệp A · Tổng công ty Công nghệ</p>
             </div>
             <div className="grid grid-cols-3 gap-3 shrink-0">
               {[

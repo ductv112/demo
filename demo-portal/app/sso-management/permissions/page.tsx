@@ -160,7 +160,7 @@ export default function PermissionsPage() {
             Phân quyền Hệ thống
           </h2>
           <p style={{ fontSize: 13, color: "#6b7280", marginTop: 4, marginBottom: 0 }}>
-            Ma trận quyền theo tính năng và hành động — Nhà máy Z119
+            Ma trận quyền theo tính năng và hành động — Doanh nghiệp A
           </p>
         </div>
       </div>

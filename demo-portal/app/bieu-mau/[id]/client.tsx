@@ -317,9 +317,9 @@ export default function BieuMauDetailClient() {
               {/* Official header */}
               <div className="grid grid-cols-2 gap-4 mb-6 text-center">
                 <div>
-                  <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider">Bộ Quốc phòng</p>
+                  <p className="text-[10px] font-bold text-gray-600 uppercase tracking-wider">Tổng công ty Công nghệ</p>
                   <p className="text-[11px] font-black uppercase tracking-wide mt-0.5" style={{ color: NAVY }}>
-                    Nhà máy Z119
+                    Doanh nghiệp A
                   </p>
                   <div className="mt-1.5 mx-auto w-14 h-0.5" style={{ background: NAVY }} />
                 </div>

@@ -27,65 +27,65 @@ const initialDocs: DocItem[] = [
   {
     id: "VB001",
     soHieu: "25/QĐ-VTK",
-    trichYeu: "Quyết định phân công nhiệm vụ đại tu radar 36D6 năm 2026",
+    trichYeu: "Quyết định phân công nhiệm vụ nâng cấp hệ thống monitoring 36D6 năm 2026",
     loai: "Quyết định",
-    coQuan: "Nhà máy Z119",
+    coQuan: "Doanh nghiệp A",
     ngay: "14/03/2026",
-    body: "Căn cứ Quyết định số 120/QĐ-BTL ngày 10/01/2026 của Bộ Tư lệnh PK-KQ về kế hoạch sửa chữa khí tài năm 2026.\nCăn cứ đề nghị của Trưởng phòng Kỹ thuật ngày 12/03/2026.\n\nQUYẾT ĐỊNH:\n\nĐiều 1. Phân công nhiệm vụ đại tu radar 36D6 cho Phân xưởng 1 chủ trì, phối hợp với Phân xưởng Điện tử và Phòng Kỹ thuật thực hiện.\nĐiều 2. Thời gian hoàn thành đại tu: trước ngày 30/09/2026.\nĐiều 3. Kinh phí thực hiện theo dự toán được phê duyệt tại Phụ lục kèm theo.\nĐiều 4. Quyết định này có hiệu lực kể từ ngày ký.",
+    body: "Căn cứ Quyết định số 120/QĐ-BGĐ ngày 10/01/2026 của Tổng công ty về kế hoạch nâng cấp thiết bị năm 2026.\nCăn cứ đề nghị của Trưởng phòng Kỹ thuật ngày 12/03/2026.\n\nQUYẾT ĐỊNH:\n\nĐiều 1. Phân công nhiệm vụ nâng cấp hệ thống monitoring 36D6 cho Trung tâm Phần mềm Alpha chủ trì, phối hợp với Trung tâm DevOps và Phòng Kỹ thuật thực hiện.\nĐiều 2. Thời gian hoàn thành nâng cấp: trước ngày 30/09/2026.\nĐiều 3. Kinh phí thực hiện theo dự toán được phê duyệt tại Phụ lục kèm theo.\nĐiều 4. Quyết định này có hiệu lực kể từ ngày ký.",
   },
   {
     id: "VB002",
-    soHieu: "102/CV-BTL",
+    soHieu: "102/CV-BGĐ",
     trichYeu: "Về việc tăng cường bảo mật thông tin trong hệ thống nội bộ",
     loai: "Công văn",
-    coQuan: "Bộ Tư lệnh PK-KQ",
+    coQuan: "Tổng công ty",
     ngay: "12/03/2026",
-    body: "Kính gửi: Nhà máy Z119.\n\nBộ Tư lệnh PK-KQ thông báo về việc tăng cường công tác bảo mật thông tin trong các hệ thống nội bộ theo Chỉ thị theo Chỉ thị số 08/CT-BQP ngày 05/03/2026 của Bộ Quốc phòng.\n\n– Yêu cầu các đơn vị trực thuộc rà soát, kiểm tra định kỳ tất cả tài khoản truy cập hệ thống.\n– Cập nhật mật khẩu theo quy định mới (tối thiểu 12 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt).\n– Báo cáo kết quả thực hiện về Phòng Công nghệ Thông tin – BTL trước ngày 25/03/2026.",
+    body: "Kính gửi: Doanh nghiệp A.\n\nTổng công ty thông báo về việc tăng cường công tác bảo mật thông tin trong các hệ thống nội bộ theo Chỉ thị số 08/CT-HĐQT ngày 05/03/2026 của Hội đồng quản trị.\n\n– Yêu cầu các đơn vị trực thuộc rà soát, kiểm tra định kỳ tất cả tài khoản truy cập hệ thống.\n– Cập nhật mật khẩu theo quy định mới (tối thiểu 12 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt).\n– Báo cáo kết quả thực hiện về Phòng Công nghệ Thông tin – BGĐ trước ngày 25/03/2026.",
   },
   {
     id: "VB003",
-    soHieu: "07/TB-BTL",
+    soHieu: "07/TB-BGĐ",
     trichYeu: "Thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc năm 2026",
     loai: "Thông báo",
-    coQuan: "Bộ Tư lệnh PK-KQ",
+    coQuan: "Tổng công ty",
     ngay: "10/03/2026",
-    body: "Căn cứ Kế hoạch công tác năm 2026 của Bộ Tư lệnh PK-KQ.\n\nBộ Tư lệnh PK-KQ thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc năm 2026 như sau:\n\n1. Thời gian: Quý II/2026 (từ tháng 4 đến tháng 6/2026).\n2. Nội dung kiểm tra: công tác chính trị tư tưởng, kỷ luật và kỷ cương, thực hiện các nhiệm vụ được giao, quản lý tài chính và tài sản.\n3. Thành phần đoàn kiểm tra: theo quyết định riêng của Tư lệnh.\n4. Các đơn vị chuẩn bị báo cáo và hồ sơ theo hướng dẫn tại Phụ lục đính kèm.",
+    body: "Căn cứ Kế hoạch công tác năm 2026 của Tổng công ty.\n\nTổng công ty thông báo kế hoạch kiểm tra định kỳ các đơn vị trực thuộc năm 2026 như sau:\n\n1. Thời gian: Quý II/2026 (từ tháng 4 đến tháng 6/2026).\n2. Nội dung kiểm tra: công tác chính trị tư tưởng, kỷ luật và kỷ cương, thực hiện các nhiệm vụ được giao, quản lý tài chính và tài sản.\n3. Thành phần đoàn kiểm tra: theo quyết định riêng của Tổng giám đốc.\n4. Các đơn vị chuẩn bị báo cáo và hồ sơ theo hướng dẫn tại Phụ lục đính kèm.",
   },
   {
     id: "VB004",
     soHieu: "15/ML-VTK",
-    trichYeu: "Mệnh lệnh triển khai giai đoạn 2 dự án đại tu radar P-18",
+    trichYeu: "Mệnh lệnh triển khai giai đoạn 2 dự án nâng cấp hệ thống monitoring P-18",
     loai: "Mệnh lệnh",
-    coQuan: "Nhà máy Z119",
+    coQuan: "Doanh nghiệp A",
     ngay: "08/03/2026",
-    body: "LỆNH:\n\nCăn cứ hợp đồng ký kết giữa Nhà máy Z119 và Cục Kỹ thuật PK-KQ ngày 15/01/2026 về dự án đại tu radar P-18 cho Trung đoàn 291.\n\nĐiều 1. Triển khai giai đoạn 2 dự án đại tu radar P-18 kể từ ngày 10/03/2026.\nĐiều 2. Phân xưởng Sửa chữa Radar chủ trì, các phòng liên quan phối hợp theo phân công tại Kế hoạch chi tiết.\nĐiều 3. Thời gian hoàn thành giai đoạn 2: 30/06/2026.",
+    body: "LỆNH:\n\nCăn cứ hợp đồng ký kết giữa Doanh nghiệp A và Phòng Kỹ thuật Tổng công ty ngày 15/01/2026 về dự án nâng cấp hệ thống monitoring P-18 cho Phòng Triển khai P291.\n\nĐiều 1. Triển khai giai đoạn 2 dự án nâng cấp hệ thống monitoring P-18 kể từ ngày 10/03/2026.\nĐiều 2. Trung tâm Phần mềm Alpha chủ trì, các phòng liên quan phối hợp theo phân công tại Kế hoạch chi tiết.\nĐiều 3. Thời gian hoàn thành giai đoạn 2: 30/06/2026.",
   },
   {
     id: "VB005",
     soHieu: "38/BC-P1",
-    trichYeu: "Báo cáo tiến độ đại tu tổ hợp S-125 Pechora - Phân xưởng Tên lửa",
+    trichYeu: "Báo cáo tiến độ nâng cấp module S-125 Pechora - Trung tâm Phần mềm Beta",
     loai: "Báo cáo",
-    coQuan: "PX Sửa chữa Tên lửa",
+    coQuan: "TT Phần mềm Beta",
     ngay: "05/03/2026",
-    body: "Kính gửi: Giám đốc Nhà máy Z119.\n\nPX Sửa chữa Tên lửa báo cáo tiến độ thực hiện nhiệm vụ đại tu tổ hợp tên lửa S-125 Pechora tính đến ngày 05/03/2026:\n\nI. Kết quả đã đạt được\n– Hoàn thành 85% sửa chữa bệ phóng và hệ thống nạp đạn.\n– Hoàn thành 70% sửa chữa hệ thống dẫn đường.\n– Đang thực hiện sửa chữa hệ thống điều khiển hỏa lực (đạt 45%).\n\nII. Khó khăn, vướng mắc\n– Thiếu linh kiện thay thế cho khối điều khiển. Đề nghị Nhà máy hỗ trợ tìm kiếm từ nguồn đối tác quốc tế.\n\nIII. Kế hoạch thời gian tới\n– Hoàn thiện bệ phóng trước ngày 20/03/2026.\n– Hoàn thành hệ thống dẫn đường trước ngày 15/04/2026.",
+    body: "Kính gửi: Giám đốc Doanh nghiệp A.\n\nTrung tâm Phần mềm Beta báo cáo tiến độ thực hiện nhiệm vụ nâng cấp module S-125 Pechora tính đến ngày 05/03/2026:\n\nI. Kết quả đã đạt được\n– Hoàn thành 85% triển khai giá đỡ và hệ thống nạp dữ liệu.\n– Hoàn thành 70% triển khai hệ thống định tuyến.\n– Đang thực hiện triển khai hệ thống điều khiển vận hành (đạt 45%).\n\nII. Khó khăn, vướng mắc\n– Thiếu linh kiện thay thế cho khối điều khiển. Đề nghị Doanh nghiệp A hỗ trợ tìm kiếm từ nguồn đối tác quốc tế.\n\nIII. Kế hoạch thời gian tới\n– Hoàn thiện giá đỡ trước ngày 20/03/2026.\n– Hoàn thành hệ thống định tuyến trước ngày 15/04/2026.",
   },
   {
     id: "VB006",
     soHieu: "12/KH-VTK",
-    trichYeu: "Kế hoạch sản xuất tháng 3 năm 2026 của Nhà máy Z119",
+    trichYeu: "Kế hoạch sản xuất tháng 3 năm 2026 của Doanh nghiệp A",
     loai: "Kế hoạch",
-    coQuan: "Nhà máy Z119",
+    coQuan: "Doanh nghiệp A",
     ngay: "01/03/2026",
-    body: "Căn cứ Kế hoạch công tác năm 2026 của Nhà máy Z119.\n\nNhà máy Z119 ban hành kế hoạch công tác tháng 3/2026 như sau:\n\n1. Tiếp tục triển khai sửa chữa, đại tu các khí tài đang thực hiện theo tiến độ.\n2. Tổ chức Hội nghị Tổng kết công tác năm 2025 (ngày 20/3/2026).\n3. Kiểm tra an toàn thông tin nội bộ theo kế hoạch.\n4. Tiếp đón đoàn kiểm tra của Bộ Tư lệnh PK-KQ (dự kiến cuối tháng 3).\n5. Hoàn thiện báo cáo tiến độ gửi Cục Kỹ thuật PK-KQ trước ngày 25/03/2026.",
+    body: "Căn cứ Kế hoạch công tác năm 2026 của Doanh nghiệp A.\n\nDoanh nghiệp A ban hành kế hoạch công tác tháng 3/2026 như sau:\n\n1. Tiếp tục triển khai vận hành, nâng cấp các thiết bị đang thực hiện theo tiến độ.\n2. Tổ chức Hội nghị Tổng kết công tác năm 2025 (ngày 20/3/2026).\n3. Kiểm tra an toàn thông tin nội bộ theo kế hoạch.\n4. Tiếp đón đoàn kiểm tra của Tổng công ty (dự kiến cuối tháng 3).\n5. Hoàn thiện báo cáo tiến độ gửi Phòng Kỹ thuật Tổng công ty trước ngày 25/03/2026.",
   },
   {
     id: "VB007",
     soHieu: "05/KH-VTK",
     trichYeu: "Kế hoạch đào tạo, bồi dưỡng cán bộ kỹ thuật năm 2026",
     loai: "Kế hoạch",
-    coQuan: "Nhà máy Z119",
+    coQuan: "Doanh nghiệp A",
     ngay: "28/02/2026",
-    body: "Căn cứ nhu cầu đào tạo cán bộ kỹ thuật và nguồn kinh phí được phân bổ năm 2026.\n\nNhà máy Z119 ban hành kế hoạch đào tạo, bồi dưỡng cán bộ kỹ thuật năm 2026:\n\n1. Cử 5 cán bộ học khóa chẩn đoán kỹ thuật radar nâng cao tại Hà Nội (Quý I/2026).\n2. Tổ chức 2 khóa bồi dưỡng nội bộ về ứng dụng công nghệ mới trong sửa chữa khí tài (Quý II và Quý III).\n3. Cử 2 cán bộ học tiếng Anh chuyên ngành kỹ thuật (cả năm).\n4. Tham quan học tập tại cơ sở sửa chữa khí tài trong nước 1 chuyến (Quý III).",
+    body: "Căn cứ nhu cầu đào tạo cán bộ kỹ thuật và nguồn kinh phí được phân bổ năm 2026.\n\nDoanh nghiệp A ban hành kế hoạch đào tạo, bồi dưỡng cán bộ kỹ thuật năm 2026:\n\n1. Cử 5 cán bộ học khóa chẩn đoán kỹ thuật monitoring nâng cao tại Hà Nội (Quý I/2026).\n2. Tổ chức 2 khóa bồi dưỡng nội bộ về ứng dụng công nghệ mới trong vận hành thiết bị (Quý II và Quý III).\n3. Cử 2 cán bộ học tiếng Anh chuyên ngành kỹ thuật (cả năm).\n4. Tham quan học tập tại cơ sở vận hành thiết bị trong nước 1 chuyến (Quý III).",
   },
 ];
 
@@ -240,7 +240,7 @@ function DocEditor({
               <div>
                 <p className="text-xs text-gray-500 mb-1">Cơ quan ban hành</p>
                 <Input
-                  placeholder="VD: Nhà máy Z119 / BTL PK-KQ"
+                  placeholder="VD: Doanh nghiệp A / BTL PK-KQ"
                   value={coQuan}
                   onChange={(e) => setCoQuan(e.target.value)}
                   className="text-xs"

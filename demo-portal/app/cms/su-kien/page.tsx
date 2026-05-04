@@ -30,22 +30,22 @@ interface EventItem {
 const initialEvents: EventItem[] = [
   {
     id: "SK001",
-    title: "Nhà máy Z119 kỷ niệm 60 năm Ngày truyền thống và đón nhận Huân chương Bảo vệ Tổ quốc hạng Nhì",
-    description: "Sáng 07/8/2025, Nhà máy Z119 tổ chức lễ kỷ niệm 60 năm thành lập (1965–2025) và đón nhận Huân chương Bảo vệ Tổ quốc hạng Nhì. Buổi lễ có sự tham dự của Thượng tướng Lê Huy Vịnh, Thiếu tướng Vũ Hồng Sơn — Tư lệnh Quân chủng PK-KQ. Bộ trưởng Bộ Quốc phòng gửi Thư khen.",
+    title: "Doanh nghiệp A kỷ niệm 60 năm thành lập và đón nhận Bằng khen của Thủ tướng Chính phủ",
+    description: "Sáng 07/8/2025, Doanh nghiệp A tổ chức lễ kỷ niệm 60 năm thành lập (1965–2025) và đón nhận Bằng khen của Thủ tướng Chính phủ. Buổi lễ có sự tham dự của Lê Huy Vịnh — TGĐ Tổng công ty, Vũ Hồng Sơn — Phó TGĐ phụ trách công nghệ. Lãnh đạo Bộ TT&TT gửi Thư khen.",
     type: "Lễ kỷ niệm",
     date: "2025-08-07",
-    location: "Hội trường Nhà máy",
+    location: "Hội trường Doanh nghiệp A",
     image: "",
     status: "ended",
     featured: true,
   },
   {
     id: "SK002",
-    title: "Hội thảo khoa học ứng dụng AI trong sửa chữa khí tài phòng không",
-    description: "Hội thảo khoa học với chủ đề ứng dụng Trí tuệ nhân tạo và học máy trong quá trình sửa chữa khí tài phòng không hiện đại. Các báo cáo khoa học đến từ Nhà máy Z119, Học viện Kỹ thuật Quân sự và các chuyên gia trong ngành.",
+    title: "Hội thảo khoa học ứng dụng AI trong vận hành hệ thống monitoring",
+    description: "Hội thảo khoa học với chủ đề ứng dụng Trí tuệ nhân tạo và học máy trong quá trình vận hành sản phẩm phần mềm hiện đại. Các báo cáo khoa học đến từ Doanh nghiệp A, Đại học Bách khoa Hà Nội và các chuyên gia trong ngành.",
     type: "Hội thảo",
     date: "2026-03-12",
-    location: "Hội trường Nhà máy",
+    location: "Hội trường Doanh nghiệp A",
     image: "",
     status: "ended",
     featured: false,
@@ -53,10 +53,10 @@ const initialEvents: EventItem[] = [
   {
     id: "SK003",
     title: "Hội nghị Tổng kết công tác năm 2025",
-    description: "Hội nghị tổng kết công tác năm 2025 và triển khai nhiệm vụ năm 2026. Thành phần dự: toàn thể cán bộ chủ chốt các phòng, ban thuộc Nhà máy. Nội dung: đánh giá kết quả công tác năm 2025, xác định phương hướng nhiệm vụ năm 2026.",
+    description: "Hội nghị tổng kết công tác năm 2025 và triển khai nhiệm vụ năm 2026. Thành phần dự: toàn thể cán bộ chủ chốt các phòng, ban thuộc Doanh nghiệp A. Nội dung: đánh giá kết quả công tác năm 2025, xác định phương hướng nhiệm vụ năm 2026.",
     type: "Hội nghị",
     date: "2026-03-20",
-    location: "Hội trường Nhà máy Z119",
+    location: "Hội trường Doanh nghiệp A",
     image: "",
     status: "upcoming",
     featured: true,
@@ -64,7 +64,7 @@ const initialEvents: EventItem[] = [
   {
     id: "SK004",
     title: "Triển lãm IMDEX Asia 2026 – Singapore",
-    description: "Đoàn đại biểu Nhà máy tham dự Triển lãm Quốc phòng INDO Defence 2026 tại Indonesia. Đây là cơ hội giao lưu, học tập kinh nghiệm và tìm kiếm đối tác hợp tác quốc tế trong lĩnh vực sửa chữa khí tài phòng không.",
+    description: "Đoàn đại biểu Doanh nghiệp A tham dự Triển lãm Công nghệ Tech 2026 tại Indonesia. Đây là cơ hội giao lưu, học tập kinh nghiệm và tìm kiếm đối tác hợp tác quốc tế trong lĩnh vực vận hành sản phẩm phần mềm.",
     type: "Triển lãm",
     date: "2026-03-06",
     location: "Changi, Singapore",
@@ -75,21 +75,21 @@ const initialEvents: EventItem[] = [
   {
     id: "SK005",
     title: "Lễ kết nạp đảng viên mới đợt 26/3",
-    description: "Lễ kết nạp đảng viên mới nhân kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh 26/3. Chi bộ Nhà máy tổ chức lễ kết nạp cho các quần chúng ưu tú hoàn thành chương trình học cảm tình Đảng.",
+    description: "Lễ kết nạp đảng viên mới nhân kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh 26/3. Chi bộ Doanh nghiệp A tổ chức lễ kết nạp cho các quần chúng ưu tú hoàn thành chương trình học cảm tình Đảng.",
     type: "Lễ kỷ niệm",
     date: "2026-03-26",
-    location: "Hội trường Nhà máy",
+    location: "Hội trường Doanh nghiệp A",
     image: "",
     status: "upcoming",
     featured: false,
   },
   {
     id: "SK006",
-    title: "Nghiệm thu đề tài NCKH cấp Bộ Quốc phòng",
-    description: "Hội đồng nghiệm thu cấp Bộ Quốc phòng tiến hành đánh giá, nghiệm thu đề tài nghiên cứu khoa học về nâng cao tầm phát hiện cho radar P-37 trong điều kiện nhiễu phức tạp do Nhà máy Z119 chủ trì thực hiện.",
+    title: "Nghiệm thu đề tài NCKH cấp Tổng công ty",
+    description: "Hội đồng nghiệm thu cấp Tổng công ty tiến hành đánh giá, nghiệm thu đề tài nghiên cứu khoa học về nâng cao khả năng phát hiện cho hệ thống monitoring P-37 trong điều kiện nhiễu phức tạp do Doanh nghiệp A chủ trì thực hiện.",
     type: "Hội đồng",
     date: "2026-03-06",
-    location: "Bộ Quốc phòng, Hà Nội",
+    location: "Trụ sở Tổng công ty, Hà Nội",
     image: "",
     status: "ended",
     featured: false,
@@ -303,7 +303,7 @@ function EventEditor({
               <div>
                 <p className="text-xs text-gray-500 mb-1">Địa điểm</p>
                 <Input
-                  placeholder="VD: Hội trường Nhà máy"
+                  placeholder="VD: Hội trường Doanh nghiệp A"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
                   className="text-xs"

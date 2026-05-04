@@ -8,31 +8,31 @@ import {
 } from "lucide-react";
 
 const userProfile = {
-  name: "Đại tá Trần Văn Đức",
+  name: "Trần Văn Đức",
   initials: "TD",
-  rank: "Đại tá",
-  position: "Giám đốc Nhà máy",
+  rank: "Giám đốc",
+  position: "Giám đốc Doanh nghiệp A",
   department: "Ban Giám đốc",
-  unit: "Nhà máy Z119 — Quân chủng Phòng không Không quân",
+  unit: "Doanh nghiệp A — Tổng công ty Công nghệ",
   phone: "(024) 3827 xxxx — Ext 101",
-  email: "tv.duc.z119@qpvn.mil.vn",
+  email: "tv.duc@doanhnghiepa.vn",
   address: "Phường Yên Viên, Gia Lâm, Hà Nội",
   birthYear: "1975",
   joinDate: "1997",
   currentSince: "2020",
-  education: "Thạc sĩ Kỹ thuật Điện tử — Học viện KTQS",
-  specialization: "Kỹ thuật Radar và Điều khiển tên lửa",
+  education: "Thạc sĩ Kỹ thuật Điện tử — Đại học Bách khoa Hà Nội",
+  specialization: "Kỹ thuật Monitoring và Điều khiển sản phẩm phần mềm",
   awards: [
-    "Huân chương Chiến công hạng Ba (2018)",
-    "Bằng khen Bộ Quốc phòng (2022, 2024)",
-    "Chiến sĩ thi đua toàn quân (2019, 2021)",
+    "Giải thưởng Sao Khuê (2018)",
+    "Bằng khen của Tổng giám đốc Tập đoàn (2022, 2024)",
+    "Cá nhân xuất sắc toàn Tổng công ty (2019, 2021)",
   ],
   experience: [
-    { period: "2020 – nay", role: "Giám đốc Nhà máy Z119" },
-    { period: "2015 – 2020", role: "Phó Giám đốc Kỹ thuật — Nhà máy Z119" },
-    { period: "2010 – 2015", role: "Trưởng phòng Kỹ thuật — Nhà máy Z119" },
-    { period: "2003 – 2010", role: "Phó Trưởng phòng Kỹ thuật — Nhà máy Z119" },
-    { period: "1997 – 2003", role: "Kỹ sư Phân xưởng Sửa chữa Radar (PX1)" },
+    { period: "2020 – nay", role: "Giám đốc Doanh nghiệp A" },
+    { period: "2015 – 2020", role: "Phó Giám đốc Kỹ thuật — Doanh nghiệp A" },
+    { period: "2010 – 2015", role: "Trưởng phòng Kỹ thuật — Doanh nghiệp A" },
+    { period: "2003 – 2010", role: "Phó Trưởng phòng Kỹ thuật — Doanh nghiệp A" },
+    { period: "1997 – 2003", role: "Kỹ sư Trung tâm Phần mềm Alpha" },
   ],
 };
 
@@ -47,7 +47,7 @@ export default function ProfilePage() {
         <div className="max-w-[1200px] mx-auto px-4 py-2 flex items-center justify-between text-xs">
           <div className="flex items-center gap-2">
             <Shield className="w-3.5 h-3.5 text-[#D4A843]" />
-            <span className="text-white/70">Hệ thống nội bộ — Nhà máy Z119</span>
+            <span className="text-white/70">Hệ thống nội bộ — Doanh nghiệp A</span>
           </div>
           <div className="flex items-center gap-3">
             <Link href="/"><span className="flex items-center gap-1 hover:text-white/90 text-white/60 cursor-pointer"><Home className="w-3 h-3" /> Trang chủ</span></Link>
@@ -90,12 +90,12 @@ export default function ProfilePage() {
                 </div>
                 <div className="p-5 space-y-4">
                   {[
-                    { icon: Award, label: "Cấp bậc", value: userProfile.rank },
+                    { icon: Award, label: "Chức danh", value: userProfile.rank },
                     { icon: Briefcase, label: "Chức vụ", value: userProfile.position },
                     { icon: Building2, label: "Đơn vị", value: userProfile.department },
                     { icon: Calendar, label: "Năm sinh", value: userProfile.birthYear },
                     { icon: Clock, label: "Nhận chức vụ hiện tại", value: userProfile.currentSince },
-                    { icon: Calendar, label: "Năm nhập ngũ", value: userProfile.joinDate },
+                    { icon: Calendar, label: "Năm vào công ty", value: userProfile.joinDate },
                   ].map((row) => (
                     <div key={row.label} className="flex items-start gap-3">
                       <row.icon className="w-4 h-4 text-gray-400 mt-0.5 shrink-0" />

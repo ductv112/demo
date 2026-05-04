@@ -66,7 +66,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                 Cổng thông tin
               </p>
               <p className="text-[11px] whitespace-nowrap" style={{ color: "rgba(255,255,255,0.35)" }}>
-                Nhà máy Z119
+                Doanh nghiệp A
               </p>
             </motion.div>
           )}
@@ -192,9 +192,9 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
                 className="flex-1 min-w-0"
               >
                 <p className="text-xs font-semibold text-white truncate">
-                  Đại tá Phạm Quốc Hưng
+                  Phạm Quốc Hưng
                 </p>
-                <p className="text-[10px] truncate" style={{ color: "rgba(255,255,255,0.35)" }}>Giám đốc Nhà máy</p>
+                <p className="text-[10px] truncate" style={{ color: "rgba(255,255,255,0.35)" }}>Giám đốc</p>
               </motion.div>
             )}
           </AnimatePresence>

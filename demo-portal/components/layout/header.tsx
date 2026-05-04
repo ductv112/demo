@@ -24,7 +24,7 @@ interface HeaderProps {
 }
 
 const notifications = [
-  { id: 1, title: "Có văn bản mới cần xử lý", desc: "102/CV-BTL - Về bảo mật thông tin", time: "5 phút", unread: true },
+  { id: 1, title: "Có văn bản mới cần xử lý", desc: "102/CV-BGĐ - Về bảo mật thông tin", time: "5 phút", unread: true },
   { id: 2, title: "Thông báo hội nghị tổng kết", desc: "Ngày 20/03/2026 tại Hội trường A", time: "1 giờ", unread: true },
   { id: 3, title: "Biểu mẫu đã được phê duyệt", desc: "BM-SKKT-02/2026 đã được duyệt", time: "2 giờ", unread: false },
 ];
@@ -125,7 +125,7 @@ export function Header({ title, subtitle }: HeaderProps) {
             </AvatarFallback>
           </Avatar>
           <div className="hidden md:block text-left">
-            <p className="text-xs font-semibold leading-tight">Đ/tá Phạm Q. Hưng</p>
+            <p className="text-xs font-semibold leading-tight">Phạm Q. Hưng</p>
             <p className="text-[10px] text-muted-foreground">Giám đốc</p>
           </div>
           <ChevronDown className="w-3 h-3 text-muted-foreground" />
@@ -141,7 +141,7 @@ export function Header({ title, subtitle }: HeaderProps) {
               className="absolute right-0 top-12 w-56 bg-card border border-border rounded-xl shadow-xl z-50 overflow-hidden"
             >
               <div className="px-4 py-3 border-b border-border">
-                <p className="text-sm font-semibold">Đại tá Phạm Quốc Hưng</p>
+                <p className="text-sm font-semibold">Phạm Quốc Hưng</p>
                 <p className="text-xs text-muted-foreground">Giám đốc</p>
                 <div className="flex items-center gap-1 mt-1">
                   <Shield className="w-3 h-3 text-[#1B3A5C]" />

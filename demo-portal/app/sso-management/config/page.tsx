@@ -270,7 +270,7 @@ export default function ConfigPage() {
             <Input
               value={config.clientId}
               onChange={(e) => update("clientId", e.target.value)}
-              placeholder="z119-sso-client"
+              placeholder="doanhnghiepa-sso-client"
               className="h-9 text-sm font-mono"
             />
           </div>
@@ -324,7 +324,7 @@ export default function ConfigPage() {
             <Input
               value={config.ssoEndpoint}
               onChange={(e) => update("ssoEndpoint", e.target.value)}
-              placeholder="ldap://ldap.z119.mil.vn:389/dc=z119,dc=mil,dc=vn"
+              placeholder="ldap://ldap.doanhnghiepa.vn:389/dc=doanhnghiepa,dc=vn"
               className="h-9 text-sm font-mono"
             />
           </div>

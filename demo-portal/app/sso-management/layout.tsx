@@ -112,7 +112,7 @@ export default function SsoManagementLayout({ children }: { children: React.Reac
                 Quản lý SSO
               </p>
               <p style={{ color: "rgba(255,255,255,0.35)", fontSize: 11, marginTop: 2 }}>
-                Nhà máy Z119
+                Doanh nghiệp A
               </p>
             </div>
           )}

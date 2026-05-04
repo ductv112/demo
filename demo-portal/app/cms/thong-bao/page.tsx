@@ -30,7 +30,7 @@ const initialAnns: AnnItem[] = [
   {
     id: "A001",
     title: "Triệu tập Hội nghị Tổng kết công tác 2025 ngày 20/03/2026",
-    content: "Căn cứ Kế hoạch công tác năm 2026 của Nhà máy Z119, Nhà máy tổ chức Hội nghị Tổng kết công tác năm 2025 và triển khai nhiệm vụ năm 2026. Hội nghị được tổ chức vào ngày 20/03/2026 tại Hội trường Nhà máy Z119. Yêu cầu tất cả cán bộ, nhân viên thuộc Nhà máy tham dự đầy đủ, đúng giờ.",
+    content: "Căn cứ Kế hoạch công tác năm 2026 của Doanh nghiệp A, Doanh nghiệp A tổ chức Hội nghị Tổng kết công tác năm 2025 và triển khai nhiệm vụ năm 2026. Hội nghị được tổ chức vào ngày 20/03/2026 tại Hội trường Doanh nghiệp A. Yêu cầu tất cả cán bộ, nhân viên thuộc Doanh nghiệp A tham dự đầy đủ, đúng giờ.",
     type: "urgent",
     author: "Ban Lãnh đạo",
     date: "17/03/2026",
@@ -40,9 +40,9 @@ const initialAnns: AnnItem[] = [
   {
     id: "A002",
     title: "Thông báo lịch trực ban tuần 12/2026",
-    content: "Văn phòng Nhà máy thông báo lịch trực ban tuần 12/2026 (từ ngày 16/03 đến 22/03/2026). Đề nghị các cán bộ được phân công trực ban thực hiện nghiêm túc nhiệm vụ theo quy định.",
+    content: "Văn phòng Doanh nghiệp A thông báo lịch trực ban tuần 12/2026 (từ ngày 16/03 đến 22/03/2026). Đề nghị các cán bộ được phân công trực ban thực hiện nghiêm túc nhiệm vụ theo quy định.",
     type: "normal",
-    author: "VP Nhà máy",
+    author: "VP Doanh nghiệp A",
     date: "16/03/2026",
     time: "14:30",
     status: "published",
@@ -50,7 +50,7 @@ const initialAnns: AnnItem[] = [
   {
     id: "A003",
     title: "Lịch tiêm phòng định kỳ cho cán bộ nhân viên",
-    content: "Phòng Hành chính thông báo lịch tiêm phòng định kỳ cho toàn thể cán bộ, nhân viên của Nhà máy. Thời gian tiêm phòng từ 08:00 đến 11:30 ngày 15/03/2026 tại Phòng Y tế – Tầng 1 nhà A.",
+    content: "Phòng Hành chính thông báo lịch tiêm phòng định kỳ cho toàn thể cán bộ, nhân viên của Doanh nghiệp A. Thời gian tiêm phòng từ 08:00 đến 11:30 ngày 15/03/2026 tại Phòng Y tế – Tầng 1 nhà A.",
     type: "important",
     author: "Phòng HC",
     date: "12/03/2026",

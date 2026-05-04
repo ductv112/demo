@@ -35,7 +35,7 @@ const groupTheme: Record<string, { color: string; bg: string; border: string; ac
   "Chất lượng":         { color: "#92400e", bg: "#fef3c7", border: "#fcd34d", accent: "#d97706" },
 };
 
-interface PkkqSystem {
+interface SystemItem {
   icon: React.ElementType;
   badge: string;
   label: string;
@@ -44,7 +44,7 @@ interface PkkqSystem {
   group: string;
 }
 
-const systems: PkkqSystem[] = [
+const systems: SystemItem[] = [
   // ── Nền tảng ─────────────────────────────────────────────────────────────
   {
     icon: Fingerprint,
@@ -58,7 +58,7 @@ const systems: PkkqSystem[] = [
     icon: BarChart3,
     badge: "BI",
     label: "Trung tâm điều hành số",
-    desc: "Tổng hợp và trực quan hóa dữ liệu toàn nhà máy, hỗ trợ ban lãnh đạo ra quyết định chiến lược",
+    desc: "Tổng hợp và trực quan hóa dữ liệu toàn doanh nghiệp, hỗ trợ Ban Giám đốc ra quyết định chiến lược",
     href: "https://pkkq-dieuhanhbi-staging.dft.vn",
     group: "Nền tảng",
   },
@@ -74,7 +74,7 @@ const systems: PkkqSystem[] = [
     icon: Bot,
     badge: "AI",
     label: "Chatbot trợ lý AI",
-    desc: "Tra cứu tài liệu kỹ thuật, tư vấn quy trình nghiệp vụ và hỗ trợ sửa chữa khí tài 24/7",
+    desc: "Tra cứu tài liệu kỹ thuật, tư vấn quy trình nghiệp vụ và hỗ trợ vận hành thiết bị 24/7",
     href: "https://pkkq-chatbot-staging.dft.vn",
     group: "Nền tảng",
   },
@@ -91,7 +91,7 @@ const systems: PkkqSystem[] = [
     icon: Banknote,
     badge: "TC",
     label: "Tài chính Kế toán",
-    desc: "Hạch toán, tính giá thành sản phẩm và quyết toán hợp đồng sửa chữa",
+    desc: "Hạch toán, tính giá thành sản phẩm và quyết toán hợp đồng dịch vụ",
     href: "https://pkkq-taichinhketoan-staging.dft.vn",
     group: "Tài chính & Nguồn lực",
   },
@@ -141,7 +141,7 @@ const systems: PkkqSystem[] = [
     icon: Hammer,
     badge: "SC",
     label: "Quản lý Sửa chữa",
-    desc: "Tiếp nhận khí tài hỏng, lên phương án và phục hồi linh kiện, mô-đun",
+    desc: "Tiếp nhận thiết bị hỏng, lên phương án và phục hồi linh kiện, mô-đun",
     href: "https://pkkq-suachua-staging.dft.vn",
     group: "Thực thi kỹ thuật",
   },
@@ -149,7 +149,7 @@ const systems: PkkqSystem[] = [
     icon: RefreshCw,
     badge: "DT",
     label: "Quản lý Đại tu",
-    desc: "Tháo rã toàn bộ, phục hồi và nâng cấp toàn diện hệ thống khí tài",
+    desc: "Tháo rã toàn bộ, phục hồi và nâng cấp toàn diện hệ thống thiết bị",
     href: "https://pkkq-daitu-staging.dft.vn",
     group: "Thực thi kỹ thuật",
   },
@@ -174,7 +174,7 @@ const systems: PkkqSystem[] = [
     icon: AlertOctagon,
     badge: "SG",
     label: "Sự cố & Chẩn đoán",
-    desc: "Phân tích nguyên nhân gốc và cảnh báo sớm xu hướng hỏng hóc khí tài",
+    desc: "Phân tích nguyên nhân gốc và cảnh báo sớm xu hướng hỏng hóc thiết bị",
     href: "https://pkkq-suco-staging.dft.vn",
     group: "Chất lượng",
   },
@@ -220,7 +220,7 @@ export default function HeThongPage() {
                 Phần mềm nghiệp vụ
               </h1>
               <p className="text-sm text-gray-500">
-                Hệ thống {systems.length} phần mềm tích hợp phục vụ quản lý kỹ thuật Nhà máy Z119.
+                Hệ thống {systems.length} phần mềm tích hợp phục vụ quản lý kỹ thuật Doanh nghiệp A.
                 Đăng nhập SSO một lần để truy cập tất cả.
               </p>
             </div>

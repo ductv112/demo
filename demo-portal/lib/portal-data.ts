@@ -177,7 +177,7 @@ export const latestNews = [
   },
   {
     id: "N003",
-    title: "Trung tâm Vận hành Hệ thống hoàn thành nâng cấp hệ thống 36D6 cho Phòng Triển khai 261",
+    title: "Trung tâm Vận hành Hệ thống hoàn thành nâng cấp hệ thống 36D6 cho Phòng Triển khai P261",
     excerpt: "Sau 6 tháng vận hành và hiệu chỉnh, Trung tâm Alpha đã hoàn thành nâng cấp hệ thống monitoring 36D6, đáp ứng yêu cầu kỹ thuật của Ban Giám đốc.",
     category: "Dự án",
     date: "10/03/2026",
@@ -276,13 +276,13 @@ export const newsContent: Record<string, {
     author: "Trung tâm Vận hành Hệ thống",
     authorTitle: "Doanh nghiệp A",
     tags: ["Vận hành", "Hệ thống 36D6", "Phòng Triển khai 261"],
-    sapo: "Sau 6 tháng vận hành và hiệu chỉnh tập trung, Trung tâm Alpha đã hoàn thiện toàn bộ công tác nâng cấp hệ thống monitoring 36D6 cho Phòng Triển khai 261, đáp ứng đầy đủ các yêu cầu kỹ thuật do Ban Giám đốc đề ra.",
+    sapo: "Sau 6 tháng vận hành và hiệu chỉnh tập trung, Trung tâm Alpha đã hoàn thiện toàn bộ công tác nâng cấp hệ thống monitoring 36D6 cho Phòng Triển khai P261, đáp ứng đầy đủ các yêu cầu kỹ thuật do Ban Giám đốc đề ra.",
     body: [
-      "Ngày 10/03/2026, Trung tâm Vận hành Hệ thống đã tổ chức buổi báo cáo kết quả và bàn giao hồ sơ nâng cấp hệ thống monitoring 36D6 lên Ban Giám đốc Doanh nghiệp A. Đây là dự án nâng cấp cấp Tổng công ty cho hệ thống có tầm phát hiện 360km, phục vụ nhiệm vụ giám sát hệ thống của Phòng Triển khai module 261 thuộc Khối 361.",
+      "Ngày 10/03/2026, Trung tâm Vận hành Hệ thống đã tổ chức buổi báo cáo kết quả và bàn giao hồ sơ nâng cấp hệ thống monitoring 36D6 lên Ban Giám đốc Doanh nghiệp A. Đây là dự án nâng cấp cấp Tổng công ty cho hệ thống có khả năng giám sát phạm vi rộng, phục vụ nhiệm vụ giám sát hệ thống của Phòng Triển khai module P261 thuộc Khối K361.",
       "Hồ sơ nâng cấp gồm hơn 120 biên bản kiểm tra kỹ thuật, 15 phiếu đo lường thông số và 08 biên bản hiệu chỉnh chi tiết. Đặc biệt, lần đầu tiên toàn bộ dữ liệu đo lường được số hóa trên hệ thống chẩn đoán AFDS, cho phép so sánh tự động giữa thông số thực tế và thông số chuẩn nội bộ.",
-      "Về thông số kỹ thuật sau nâng cấp, hệ thống monitoring 36D6 đạt tầm phát hiện sự kiện tối đa 360km (vượt 5% so với yêu cầu), độ chính xác đo cự ly sai lệch nhỏ hơn 200m, độ chính xác đo góc phương vị sai lệch nhỏ hơn 20 phút góc. Toàn bộ 24 khối chức năng chính đều đạt tiêu chuẩn kỹ thuật sau khi thay thế linh kiện và hiệu chỉnh.",
-      "Trưởng nhóm Trung tâm Alpha, Trưởng phòng Nguyễn Hữu Toàn, cho biết trong quá trình thực hiện, nhóm vận hành đã vượt qua nhiều thách thức kỹ thuật, đặc biệt là việc phục hồi khối thu cao tần khi một số linh kiện gốc đã ngừng sản xuất. Giải pháp thay thế bằng linh kiện tương đương do Trung tâm A31 cung cấp đã được thử nghiệm và đạt yêu cầu.",
-      "Sau khi được Ban Giám đốc phê duyệt, hệ thống monitoring sẽ được vận chuyển về Phòng Triển khai 261 để lắp đặt và thử nghiệm thực địa. Dự kiến bàn giao chính thức vào cuối tháng 3/2026 sau khi hoàn thành giai đoạn chạy thử 72 giờ liên tục tại trung tâm dữ liệu."
+      "Về thông số kỹ thuật sau nâng cấp, hệ thống monitoring 36D6 đạt khả năng phát hiện sự kiện trên dải rộng (vượt 5% so với yêu cầu), độ chính xác đo cự ly sai lệch nhỏ hơn 200m, độ chính xác đo góc phương vị sai lệch nhỏ hơn 20 phút góc. Toàn bộ 24 khối chức năng chính đều đạt tiêu chuẩn kỹ thuật sau khi thay thế linh kiện và hiệu chỉnh.",
+      "Trưởng nhóm Trung tâm Alpha, Trưởng phòng Nguyễn Hữu Toàn, cho biết trong quá trình thực hiện, nhóm vận hành đã vượt qua nhiều thách thức kỹ thuật, đặc biệt là việc phục hồi khối thu cao tần khi một số linh kiện gốc đã ngừng sản xuất. Giải pháp thay thế bằng linh kiện tương đương do Trung tâm R&D Hà Nội cung cấp đã được thử nghiệm và đạt yêu cầu.",
+      "Sau khi được Ban Giám đốc phê duyệt, hệ thống monitoring sẽ được vận chuyển về Phòng Triển khai P261 để lắp đặt và thử nghiệm thực địa. Dự kiến bàn giao chính thức vào cuối tháng 3/2026 sau khi hoàn thành giai đoạn chạy thử 72 giờ liên tục tại trung tâm dữ liệu."
     ]
   },
   "N004": {
@@ -292,10 +292,10 @@ export const newsContent: Record<string, {
     sapo: "Đoàn cán bộ kỹ thuật 12 người của Doanh nghiệp A đã đến Trung tâm phần mềm Beta trao đổi kinh nghiệm vận hành hệ thống điều khiển module S-300PMU và thiết bị điện tử hiện đại.",
     body: [
       "Từ ngày 06/03 đến 08/03/2026, đoàn công tác gồm 12 cán bộ kỹ thuật và chuyên viên lành nghề của Doanh nghiệp A đã đến thăm và trao đổi kinh nghiệm tại Trung tâm phần mềm Beta. Đây là hoạt động nằm trong chương trình hợp tác kỹ thuật giữa các trung tâm vận hành thiết bị thuộc Tổng công ty công nghệ, nhằm nâng cao năng lực vận hành các hệ thống module thế hệ mới.",
-      "Trong 03 ngày làm việc, đoàn đã tham quan và trao đổi kỹ thuật tại các trung tâm vận hành chuyên dụng, đặc biệt tập trung vào 03 lĩnh vực: (1) Quy trình vận hành hệ thống điều khiển module S-300PMU; (2) Công nghệ phục hồi mạch in nhiều lớp trên các bo mạch điều khiển; (3) Phương pháp hiệu chỉnh hệ thống dẫn đường module SA-3 sau vận hành.",
-      "Đặc biệt, đoàn đã có buổi làm việc chính thức với phòng kỹ thuật của Trung tâm phần mềm Beta về khả năng chuyển giao quy trình vận hành khối nguồn cung cấp cao áp cho hệ thống P-37. Phía Beta đã chia sẻ kinh nghiệm xử lý sự cố thường gặp và bày tỏ sẵn sàng hỗ trợ kỹ thuật cho Doanh nghiệp A trong quá trình tiếp nhận vận hành hệ thống P-37 từ Khối 367.",
+      "Trong 03 ngày làm việc, đoàn đã tham quan và trao đổi kỹ thuật tại các trung tâm vận hành chuyên dụng, đặc biệt tập trung vào 03 lĩnh vực: (1) Quy trình vận hành hệ thống điều khiển module S-300PMU; (2) Công nghệ phục hồi mạch in nhiều lớp trên các bo mạch điều khiển; (3) Phương pháp hiệu chỉnh hệ thống định tuyến module SA-3 sau vận hành.",
+      "Đặc biệt, đoàn đã có buổi làm việc chính thức với phòng kỹ thuật của Trung tâm phần mềm Beta về khả năng chuyển giao quy trình vận hành khối nguồn cung cấp cao áp cho hệ thống P-37. Phía Beta đã chia sẻ kinh nghiệm xử lý sự cố thường gặp và bày tỏ sẵn sàng hỗ trợ kỹ thuật cho Doanh nghiệp A trong quá trình tiếp nhận vận hành hệ thống P-37 từ Khối K367.",
       "Trưởng đoàn, Phó Giám đốc Nguyễn Cảnh Toàn, đánh giá chuyến công tác đã mang lại nhiều thông tin và kinh nghiệm thực tế quý báu. Ông cho biết đoàn đã thu thập được nhiều tài liệu kỹ thuật, quy trình vận hành và phương pháp kiểm tra hiện đại, sẽ là nguồn tham khảo quan trọng cho công tác nâng cao năng lực vận hành trong thời gian tới.",
-      "Kết thúc chuyến công tác, đoàn đã tổng hợp báo cáo và đề xuất lên Ban Giám đốc về một số hướng hợp tác kỹ thuật tiềm năng, trong đó đặc biệt nhấn mạnh việc nghiên cứu ứng dụng công nghệ kiểm tra không phá hủy (NDT) trong đánh giá tình trạng kỹ thuật các bộ phận cơ khí của bệ phóng module, nhằm kéo dài tuổi thọ và đảm bảo an toàn vận hành."
+      "Kết thúc chuyến công tác, đoàn đã tổng hợp báo cáo và đề xuất lên Ban Giám đốc về một số hướng hợp tác kỹ thuật tiềm năng, trong đó đặc biệt nhấn mạnh việc nghiên cứu ứng dụng công nghệ kiểm tra không phá hủy (NDT) trong đánh giá tình trạng kỹ thuật các bộ phận cơ khí của giá đỡ module, nhằm kéo dài tuổi thọ và đảm bảo an toàn vận hành."
     ]
   },
   "N005": {
@@ -343,7 +343,7 @@ export const recentAnnouncements = [
   { id: "A1", title: "Triệu tập Hội nghị Tổng kết công tác năm 2025 vào ngày 20/03/2026", date: "17/03/2026", urgent: true },
   { id: "A2", title: "Thông báo lịch trực ban tuần 12/2026 (18-24/3)", date: "16/03/2026", urgent: false },
   { id: "A3", title: "Kết quả xét duyệt sáng kiến cải tiến kỹ thuật quý I/2026", date: "15/03/2026", urgent: false },
-  { id: "A4", title: "Phân công nhiệm vụ nâng cấp hệ thống module S-125 cho Khối 363", date: "14/03/2026", urgent: true },
+  { id: "A4", title: "Phân công nhiệm vụ nâng cấp hệ thống module S-125 cho Khối K363", date: "14/03/2026", urgent: true },
   { id: "A5", title: "Mời tham gia đào tạo sử dụng thiết bị đo Tektronix MDO34 - khóa 3/2026", date: "13/03/2026", urgent: false },
   { id: "A6", title: "Thông báo lịch tiêm phòng định kỳ cho cán bộ nhân viên", date: "12/03/2026", urgent: false },
 ];
@@ -371,9 +371,9 @@ export const libraryItems = [
   { id: "L004", title: "Quy trình nâng cấp hệ thống module S-125 Pechora", type: "Nội bộ", category: "Tài liệu nội bộ", downloads: 89 },
   { id: "L005", title: "Tiêu chuẩn kỹ thuật thiết bị monitoring - Tập 2", type: "Nội bộ", category: "Tài liệu nội bộ", downloads: 53 },
   { id: "L006", title: "Hướng dẫn hiệu chỉnh hệ thống monitoring đo cao ST-68", type: "Nội bộ", category: "Tài liệu nội bộ", downloads: 112 },
-  { id: "L007", title: "MIL-STD-461G - EMC Requirements for Equipment", type: "MIL", category: "Tiêu chuẩn quốc tế", downloads: 78 },
+  { id: "L007", title: "ISO/IEC 17025:2017 - Yêu cầu chung cho phòng thử nghiệm", type: "ISO", category: "Tiêu chuẩn quốc tế", downloads: 78 },
   { id: "L008", title: "Quy trình kiểm tra hệ thống điều khiển module S-300PMU", type: "Nội bộ", category: "Tài liệu nội bộ", downloads: 44 },
-  { id: "L009", title: "Tài liệu kỹ thuật hệ thống dẫn đường P-37", type: "Kỹ thuật", category: "Thiết bị", downloads: 61 },
+  { id: "L009", title: "Tài liệu kỹ thuật hệ thống định tuyến P-37", type: "Kỹ thuật", category: "Thiết bị", downloads: 61 },
   { id: "L010", title: "Hướng dẫn sử dụng thiết bị đo Tektronix MDO34", type: "Kỹ thuật", category: "Thiết bị", downloads: 37 },
 ];
 

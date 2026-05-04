@@ -102,7 +102,7 @@ export default function CmsLayout({ children }: { children: React.ReactNode }) {
                 Quản trị nội dung
               </p>
               <p className="text-[11px] whitespace-nowrap" style={{ color: "rgba(255,255,255,0.35)" }}>
-                Nhà máy Z119
+                Doanh nghiệp A
               </p>
             </div>
           )}

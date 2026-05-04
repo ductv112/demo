@@ -17,46 +17,46 @@ const navItems = [
   { id: "lich-su",   label: "Lịch sử hình thành", icon: History, num: "01" },
   { id: "chuc-nang", label: "Chức năng nhiệm vụ",  icon: Target,  num: "02" },
   { id: "co-cau",    label: "Cơ cấu tổ chức",      icon: Users,   num: "03" },
-  { id: "lanh-dao",  label: "Lãnh đạo Nhà máy",      icon: Award,   num: "04" },
+  { id: "lanh-dao",  label: "Ban Giám đốc",      icon: Award,   num: "04" },
 ];
 
 // accent: navy | gold | red | navy-light — all from the website palette
 const periods = [
   {
-    title: "Giai đoạn thành lập trong chiến tranh (1965–1975)",
+    title: "Giai đoạn thành lập (1965–1975)",
     year: "1965",
     badgeBg: "#1B3A5C", badgeText: "#ffffff", badgeBorder: "#1B3A5C",
     cardBg: "#e8eef6",  cardBorder: "#b8cce0", iconColor: "#1B3A5C",
-    content: `Năm 1965, đơn vị được thành lập dưới mật danh MZ-495 với nhiệm vụ sửa chữa ra đa và máy chỉ huy phục vụ chiến đấu. Với đội ngũ ban đầu gồm các kỹ sư và thợ lành nghề, đơn vị đã bắt tay ngay vào nhiệm vụ sửa chữa khẩn cấp các khí tài radar, tên lửa phòng không, đóng góp vào Chiến thắng Hà Nội — Điện Biên Phủ trên không.
+    content: `Năm 1965, Doanh nghiệp A được thành lập dưới mã đơn vị MZ-495 với nhiệm vụ vận hành và bảo trì hệ thống monitoring phục vụ vận hành. Với đội ngũ ban đầu gồm các kỹ sư và chuyên viên kỹ thuật, đơn vị đã bắt tay ngay vào nhiệm vụ phát triển và triển khai các hệ thống monitoring, module phần mềm cho khách hàng nội bộ và đối tác.
 
-Trong giai đoạn này, đơn vị hoàn thành sửa chữa hàng trăm lượt khí tài radar và tên lửa S-75 Dvina, đóng góp trực tiếp vào thắng lợi của cuộc kháng chiến chống Mỹ cứu nước. Năm 1987, đơn vị được điều về trực thuộc Quân chủng Phòng không và mang tên Nhà máy Z119.`,
-    achievements: ["Sửa chữa khẩn cấp radar và tên lửa S-75", "Đội ngũ kỹ sư và thợ lành nghề sáng lập", "Hoàn thành hàng trăm lượt sửa chữa trong chiến tranh"],
+Trong giai đoạn này, đơn vị hoàn thành hàng trăm dự án triển khai hệ thống monitoring và module phần mềm S-75, đóng góp trực tiếp vào sự nghiệp chuyển đổi số quốc gia. Năm 1987, đơn vị được tái cấu trúc thành Trung tâm V119, tiền thân của Doanh nghiệp A ngày nay.`,
+    achievements: ["Triển khai hệ thống monitoring và module phần mềm S-75", "Đội ngũ kỹ sư và chuyên viên sáng lập", "Hoàn thành hàng trăm dự án giai đoạn đầu"],
   },
   {
     title: "Giai đoạn củng cố và phát triển (1975–1995)",
     year: "1975",
     badgeBg: "#D4A843", badgeText: "#ffffff", badgeBorder: "#D4A843",
     cardBg: "#fdf5e0",  cardBorder: "#e8d08a", iconColor: "#8a6a00",
-    content: `Sau ngày đất nước thống nhất, Nhà máy bước vào giai đoạn tái cơ cấu và phát triển mạnh mẽ. Lực lượng cán bộ được bổ sung đáng kể từ các trường đại học kỹ thuật trong và ngoài nước. Các phân xưởng chuyên môn được thành lập theo hướng chuyên sâu: sửa chữa radar, sửa chữa tên lửa, cơ khí, điện tử.
+    content: `Sau ngày đất nước thống nhất, Doanh nghiệp A bước vào giai đoạn tái cơ cấu và phát triển mạnh mẽ. Lực lượng cán bộ được bổ sung đáng kể từ các trường đại học kỹ thuật trong và ngoài nước. Các trung tâm chuyên môn được thành lập theo hướng chuyên sâu: phần mềm Alpha (monitoring), phần mềm Beta (module sản phẩm chủ lực), Gamma (hạ tầng), Delta (điện tử/DevOps).
 
-Nhà máy đảm nhận sửa chữa và đại tu thành công các tổ hợp tên lửa S-125, radar P-18, P-37 phục vụ lực lượng Phòng không Không quân.`,
-    achievements: ["Đại tu tổ hợp tên lửa S-125 đầu tiên", "Mở rộng lên 200 cán bộ kỹ thuật", "Hợp tác kỹ thuật với Liên Xô"],
+Doanh nghiệp A đảm nhận triển khai và nâng cấp thành công các module sản phẩm chủ lực S-125, hệ thống monitoring P-18, P-37 phục vụ Tổng công ty và đối tác công nghệ.`,
+    achievements: ["Nâng cấp module sản phẩm chủ lực S-125 đầu tiên", "Mở rộng lên 200 cán bộ kỹ thuật", "Hợp tác kỹ thuật quốc tế"],
   },
   {
     title: "Giai đoạn hiện đại hóa (1995–2015)",
     year: "1995",
     badgeBg: "#2d5a8e", badgeText: "#ffffff", badgeBorder: "#2d5a8e",
     cardBg: "#eaf0fa",  cardBorder: "#a8bedd", iconColor: "#2d5a8e",
-    content: `Bước sang giai đoạn đổi mới, Nhà máy đẩy mạnh ứng dụng công nghệ thông tin vào sửa chữa. Các thiết bị chẩn đoán hiện đại được đưa vào sử dụng. Nhà máy làm chủ công nghệ sửa chữa và đại tu các tổ hợp S-300PMU, radar ST-68 thế hệ mới.`,
-    achievements: ["Làm chủ công nghệ sửa chữa S-300PMU", "Đại tu radar ST-68 thế hệ mới", "Nhận Huân chương Quân công hạng Nhất (2012)"],
+    content: `Bước sang giai đoạn đổi mới, Doanh nghiệp A đẩy mạnh ứng dụng công nghệ thông tin vào vận hành. Các thiết bị chẩn đoán hiện đại được đưa vào sử dụng. Đơn vị làm chủ công nghệ phát triển và nâng cấp các module sản phẩm S-300PMU, hệ thống monitoring ST-68 thế hệ mới.`,
+    achievements: ["Làm chủ công nghệ phát triển S-300PMU", "Nâng cấp hệ thống monitoring ST-68 thế hệ mới", "Nhận giải thưởng Sao Khuê hạng Nhất (2012)"],
   },
   {
     title: "Giai đoạn chuyển đổi số (2015–nay)",
     year: "2015",
     badgeBg: "#D4A843", badgeText: "#ffffff", badgeBorder: "#D4A843",
     cardBg: "#fde8eb",  cardBorder: "#f0a0ab", iconColor: "#D4A843",
-    content: `Từ năm 2015 đến nay, Nhà máy bước vào giai đoạn chuyển đổi số toàn diện với việc triển khai hệ thống quản lý sửa chữa số, tích hợp phần mềm chẩn đoán và phát triển các công cụ kiểm tra tự động. Năm 2025, kỷ niệm 60 năm Ngày truyền thống (1965–2025), Nhà máy được tặng Huân chương Bảo vệ Tổ quốc hạng Nhì và chính thức ra mắt Cổng thông tin nội bộ.`,
-    achievements: ["Triển khai hệ thống quản lý sửa chữa số", "Ra mắt Cổng thông tin nội bộ (2026)", "Kỷ niệm 60 năm Ngày truyền thống (2025)"],
+    content: `Từ năm 2015 đến nay, Doanh nghiệp A bước vào giai đoạn chuyển đổi số toàn diện với việc triển khai hệ thống quản lý vận hành số, tích hợp phần mềm chẩn đoán và phát triển các công cụ kiểm tra tự động. Năm 2025, kỷ niệm 60 năm thành lập (1965–2025), Doanh nghiệp A được tặng Bằng khen của Thủ tướng Chính phủ và chính thức ra mắt Cổng thông tin nội bộ.`,
+    achievements: ["Triển khai hệ thống quản lý vận hành số", "Ra mắt Cổng thông tin nội bộ (2026)", "Kỷ niệm 60 năm thành lập (2025)"],
   },
 ];
 
@@ -64,58 +64,58 @@ const functions = [
   {
     title: "I. Chức năng",
     items: [
-      "Sửa chữa, đại tu khí tài radar, tên lửa và thiết bị điện tử phòng không cho Quân đội nhân dân Việt Nam.",
-      "Tư vấn, phản biện kỹ thuật các dự án sửa chữa, nâng cấp, cải tiến khí tài phòng không.",
-      "Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực sửa chữa khí tài phòng không.",
-      "Đào tạo, bồi dưỡng đội ngũ kỹ sư, kỹ thuật viên sửa chữa khí tài cho toàn quân.",
+      "Phát triển, vận hành các hệ thống monitoring, module phần mềm và thiết bị điện tử cho Tổng công ty và đối tác công nghệ.",
+      "Tư vấn, phản biện kỹ thuật các dự án triển khai, nâng cấp, cải tiến hệ thống phần mềm.",
+      "Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực phần mềm doanh nghiệp.",
+      "Đào tạo, bồi dưỡng đội ngũ kỹ sư, chuyên viên kỹ thuật cho toàn Tổng công ty.",
     ],
   },
   {
     title: "II. Nhiệm vụ chính",
     items: [
-      "Sửa chữa, đại tu các tổ hợp radar: P-18, 36D6, P-37, ST-68 và các hệ thống tên lửa: S-75, S-125, S-300PMU.",
-      "Nghiên cứu, chẩn đoán kỹ thuật, kiểm tra không phá hủy và đánh giá tình trạng khí tài phòng không.",
-      "Xây dựng, quản lý và cập nhật hệ thống tiêu chuẩn kỹ thuật, quy chuẩn sửa chữa khí tài phòng không.",
-      "Phối hợp với các đơn vị thuộc Sư đoàn 361, 363, 367 trong tiếp nhận và bàn giao khí tài.",
-      "Nghiên cứu, ứng dụng các công nghệ tiên tiến (chẩn đoán kỹ thuật, kiểm tra không phá hủy) trong sửa chữa khí tài.",
-      "Hợp tác quốc tế về kỹ thuật sửa chữa khí tài phòng không với các quốc gia và tổ chức quốc tế.",
-      "Lưu trữ, quản lý hồ sơ kỹ thuật và tài liệu sửa chữa toàn bộ các khí tài đã thực hiện.",
+      "Triển khai, nâng cấp các hệ thống monitoring: P-18, 36D6, P-37, ST-68 và các module sản phẩm: S-75, S-125, S-300PMU.",
+      "Nghiên cứu, chẩn đoán kỹ thuật, kiểm tra và đánh giá tình trạng hệ thống phần mềm.",
+      "Xây dựng, quản lý và cập nhật hệ thống tiêu chuẩn kỹ thuật, quy chuẩn vận hành sản phẩm phần mềm.",
+      "Phối hợp với các đơn vị thuộc Khối K361, K363, K367 trong tiếp nhận và bàn giao thiết bị.",
+      "Nghiên cứu, ứng dụng các công nghệ tiên tiến (chẩn đoán kỹ thuật, kiểm thử tự động) trong vận hành sản phẩm.",
+      "Hợp tác quốc tế về kỹ thuật phần mềm doanh nghiệp với các quốc gia và tổ chức quốc tế.",
+      "Lưu trữ, quản lý hồ sơ kỹ thuật và tài liệu vận hành toàn bộ các sản phẩm đã triển khai.",
     ],
   },
   {
     title: "III. Quyền hạn",
     items: [
-      "Ký kết hợp đồng sửa chữa, đại tu với các đơn vị trong và ngoài quân đội theo quy định.",
-      "Yêu cầu các đơn vị liên quan cung cấp thông tin, tài liệu phục vụ công tác sửa chữa.",
+      "Ký kết hợp đồng triển khai, nâng cấp với các đơn vị trong và ngoài Tổng công ty theo quy định.",
+      "Yêu cầu các đơn vị liên quan cung cấp thông tin, tài liệu phục vụ công tác vận hành.",
       "Phê duyệt hồ sơ nghiệm thu kỹ thuật trong phạm vi thẩm quyền được giao.",
-      "Đề xuất các giải pháp kỹ thuật, tiêu chuẩn sửa chữa mới trình cấp trên phê duyệt.",
+      "Đề xuất các giải pháp kỹ thuật, tiêu chuẩn vận hành mới trình cấp trên phê duyệt.",
       "Quản lý và sử dụng con dấu, tài sản, ngân sách được giao theo quy định của pháp luật.",
     ],
   },
 ];
 
 const orgChart = {
-  top: { name: "BAN GIÁM ĐỐC NHÀ MÁY", sub: "Giám đốc + 02 Phó Giám đốc" },
+  top: { name: "BAN GIÁM ĐỐC TỔNG CÔNG TY", sub: "Tổng giám đốc + 02 Phó Tổng giám đốc" },
   departments: [
     {
       group: "Phòng Chức năng",
       color: "bg-[#2d5a8e]",
       units: [
-        { name: "Phòng Chính trị (P.CT)", sub: "Công tác chính trị, tư tưởng" },
-        { name: "Phòng Kế hoạch (P.KH)", sub: "Lập kế hoạch, điều phối sản xuất" },
+        { name: "Phòng Nhân sự (P.NS)", sub: "Quản trị nhân sự, văn hóa doanh nghiệp" },
+        { name: "Phòng Kế hoạch (P.KH)", sub: "Lập kế hoạch, điều phối triển khai" },
         { name: "Phòng Tài chính - Kế toán (P.TCKT)", sub: "Ngân sách, kế toán" },
-        { name: "Phòng Hậu cần - Kỹ thuật (P.HCKT)", sub: "HC, hậu cần, đời sống" },
+        { name: "Phòng Logistics - Kỹ thuật (P.LGKT)", sub: "Logistics, kho vận, đời sống" },
         { name: "Phòng Kỹ thuật (P.KT)", sub: "Quản lý kỹ thuật, công nghệ" },
       ],
     },
     {
-      group: "Phân xưởng Sản xuất",
+      group: "Trung tâm chuyên môn",
       color: "bg-[#D4A843]",
       units: [
-        { name: "PX Sửa chữa Radar (PX1)", sub: "Radar P-18, 36D6, P-37, ST-68" },
-        { name: "PX Sửa chữa Tên lửa (PX2)", sub: "S-75, S-125, S-300PMU" },
-        { name: "PX Cơ khí (PX3)", sub: "Gia công cơ khí, phục hồi chi tiết" },
-        { name: "PX Điện tử (PX4)", sub: "Sửa chữa mạch điện tử, bo mạch" },
+        { name: "Trung tâm Phần mềm Alpha", sub: "Hệ thống monitoring P-18, 36D6, P-37, ST-68" },
+        { name: "Trung tâm Phần mềm Beta", sub: "Module sản phẩm S-75, S-125, S-300PMU" },
+        { name: "Trung tâm Hạ tầng (Gamma)", sub: "Hạ tầng máy chủ, mạng, lưu trữ" },
+        { name: "Trung tâm DevOps (Delta)", sub: "CI/CD, vận hành mạch điện tử, bo mạch" },
         { name: "Phòng KCS & Đảm bảo CL (P.KCS)", sub: "Kiểm tra chất lượng, nghiệm thu" },
       ],
     },
@@ -124,47 +124,47 @@ const orgChart = {
 
 const leaders = [
   {
-    name: "Đại tá Trần Văn Đức",
-    title: "Giám đốc Nhà máy Z119",
+    name: "Trần Văn Đức",
+    title: "Giám đốc Doanh nghiệp A",
     subtitle: "Phó Bí thư Đảng ủy",
-    education: "Tiến sĩ Kỹ thuật Điện tử — Học viện Kỹ thuật Quân sự",
-    specialty: "Sửa chữa, đại tu khí tài radar phòng không",
+    education: "Tiến sĩ Kỹ thuật Điện tử — Đại học Bách khoa Hà Nội",
+    specialty: "Phát triển, vận hành hệ thống monitoring doanh nghiệp",
     initials: "TD",
     color: "from-[#1B3A5C] to-[#2d5a8e]",
     phone: "(024) 3864 xx01",
-    email: "tv.duc.z119@qpvn.mil.vn",
-    bio: "Trực tiếp chỉ đạo các hoạt động sản xuất, sửa chữa và kế hoạch pháp lệnh của đơn vị.",
+    email: "tv.duc@doanhnghiepa.vn",
+    bio: "Trực tiếp chỉ đạo các hoạt động phát triển sản phẩm, triển khai và kế hoạch chiến lược của đơn vị.",
   },
   {
-    name: "Đại tá Đào Ngọc Đại",
-    title: "Chính ủy Nhà máy Z119",
+    name: "Đào Ngọc Đại",
+    title: "Giám đốc Nhân sự Doanh nghiệp A",
     subtitle: "Bí thư Đảng ủy",
-    education: "Cử nhân Chính trị — Học viện Chính trị Quân sự",
-    specialty: "Công tác Đảng, công tác chính trị, tư tưởng",
+    education: "Cử nhân Quản trị — Đại học Kinh tế Quốc dân",
+    specialty: "Quản trị nhân sự, văn hóa doanh nghiệp, đào tạo nội bộ",
     initials: "ĐĐ",
     color: "from-[#8b0014] to-[#c0392b]",
     phone: "(024) 3864 xx02",
-    email: "dn.dai.z119@qpvn.mil.vn",
-    bio: "Chịu trách nhiệm về công tác Đảng, công tác chính trị, tư tưởng và xây dựng đơn vị vững mạnh toàn diện.",
+    email: "dn.dai@doanhnghiepa.vn",
+    bio: "Chịu trách nhiệm về công tác nhân sự, văn hóa doanh nghiệp và xây dựng tổ chức vững mạnh toàn diện.",
   },
   {
-    name: "Đại tá Nguyễn Cảnh Toàn",
-    title: "Phó Giám đốc Nhà máy Z119",
+    name: "Nguyễn Cảnh Toàn",
+    title: "Phó Giám đốc Doanh nghiệp A",
     subtitle: "",
-    education: "Thạc sĩ Kỹ thuật — Học viện Kỹ thuật Quân sự",
-    specialty: "Kỹ thuật, tập huấn nghiệp vụ, cải tiến công nghệ",
+    education: "Thạc sĩ Kỹ thuật — Đại học Bách khoa Hà Nội",
+    specialty: "Kỹ thuật, đào tạo nội bộ, cải tiến công nghệ",
     initials: "CT",
     color: "from-[#2d5a8e] to-[#1e4d8c]",
     phone: "(024) 3864 xx03",
-    email: "nc.toan.z119@qpvn.mil.vn",
-    bio: "Phụ trách công tác kỹ thuật, chỉ đạo các hoạt động tập huấn nghiệp vụ và cải tiến công nghệ.",
+    email: "nc.toan@doanhnghiepa.vn",
+    bio: "Phụ trách công tác kỹ thuật, chỉ đạo các hoạt động đào tạo nội bộ và cải tiến công nghệ.",
   },
 ];
 
 const formerLeaders = [
-  { name: "Đại tá Trần Văn Đức",     period: "2021 – Nay",             title: "Giám đốc" },
-  { name: "Đại tá Nguyễn Văn Thanh", period: "Giai đoạn 2014",         title: "Giám đốc" },
-  { name: "Đại tá Nguyễn Hữu Thắng", period: "Giai đoạn trước 2014",   title: "Giám đốc" },
+  { name: "Trần Văn Đức",     period: "2021 – Nay",             title: "Giám đốc" },
+  { name: "Nguyễn Văn Thanh", period: "Giai đoạn 2014",         title: "Giám đốc" },
+  { name: "Nguyễn Hữu Thắng", period: "Giai đoạn trước 2014",   title: "Giám đốc" },
 ];
 
 /* ─────────────────────────────────────────────
@@ -224,11 +224,11 @@ export default function GioiThieuPage() {
             <ShieldIcon className="w-10 h-10 text-[#D4A843]" />
           </div>
           <div className="flex-1">
-            <p className="text-blue-300 text-xs font-semibold uppercase tracking-widest mb-1">Quân chủng Phòng không Không quân · Bộ Quốc phòng</p>
-            <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">NHÀ MÁY Z119</h1>
+            <p className="text-blue-300 text-xs font-semibold uppercase tracking-widest mb-1">Tổng công ty · Tập đoàn Công nghệ</p>
+            <h1 className="text-3xl md:text-4xl font-black text-white leading-tight">DOANH NGHIỆP A</h1>
             <p className="text-blue-200 text-sm mt-1">Thành lập năm 1965 · 60 năm xây dựng và phát triển</p>
             <div className="flex flex-wrap gap-6 mt-4">
-              {[["180+", "Cán bộ"], ["20+", "Loại khí tài"], ["1000+", "Lượt sửa chữa"], ["50+", "Năm"]].map(([v, l]) => (
+              {[["180+", "Cán bộ"], ["20+", "Sản phẩm chủ lực"], ["1000+", "Dự án triển khai"], ["50+", "Năm"]].map(([v, l]) => (
                 <div key={l} className="text-center">
                   <p className="text-2xl font-black text-[#f0d890]">{v}</p>
                   <p className="text-xs text-blue-300">{l}</p>
@@ -254,13 +254,13 @@ export default function GioiThieuPage() {
               <div>
                 <h3 className="font-bold text-[#1B3A5C] text-lg mb-2">Tổng quan</h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  Nhà máy Z119 là đơn vị sự nghiệp kỹ thuật trực thuộc Quân chủng Phòng không Không quân, Bộ Quốc phòng Việt Nam.
-                  Được thành lập năm 1965 dưới mật danh MZ-495, Nhà máy là đơn vị chuyên sửa chữa, đại tu khí tài radar,
-                  tên lửa và thiết bị điện tử phòng không cho Quân đội nhân dân Việt Nam.
+                  Doanh nghiệp A là đơn vị thành viên trực thuộc Tổng công ty — Tập đoàn Công nghệ.
+                  Được thành lập năm 1965 dưới mã đơn vị MZ-495, Doanh nghiệp A chuyên phát triển, vận hành các hệ thống monitoring,
+                  module sản phẩm phần mềm và thiết bị điện tử cho khách hàng doanh nghiệp và đối tác công nghệ.
                 </p>
                 <p className="text-sm text-gray-700 leading-relaxed mt-2">
-                  Trải qua 60 năm xây dựng và phát triển, Nhà máy đã sửa chữa và đại tu thành công hàng nghìn lượt khí tài,
-                  đóng góp to lớn vào sự nghiệp bảo vệ vùng trời thiêng liêng của Tổ quốc.
+                  Trải qua 60 năm xây dựng và phát triển, Doanh nghiệp A đã triển khai và nâng cấp thành công hàng nghìn dự án phần mềm,
+                  đóng góp to lớn vào sự nghiệp chuyển đổi số quốc gia.
                 </p>
               </div>
             </div>
@@ -364,7 +364,7 @@ export default function GioiThieuPage() {
           {/* ════════ 02 CHỨC NĂNG NHIỆM VỤ ════════ */}
           <section id="chuc-nang" style={{ scrollMarginTop: "80px" }}>
             <SectionHeading num="02" label="Chức năng — Nhiệm vụ — Quyền hạn" icon={Target} />
-            <p className="text-sm text-gray-500 -mt-4 mb-6">Theo Quyết định số 12/QĐ-BQP của Bộ Quốc phòng</p>
+            <p className="text-sm text-gray-500 -mt-4 mb-6">Theo Quyết định số 12/QĐ-HĐQT của Hội đồng quản trị Tập đoàn Công nghệ</p>
 
             <div className="space-y-5">
               {functions.map((sec, si) => (
@@ -444,7 +444,7 @@ export default function GioiThieuPage() {
                 <table className="w-full text-sm">
                   <thead className="bg-gray-50 border-b border-gray-100">
                     <tr>
-                      {["Đơn vị", "Quân số", "Sĩ quan", "Kỹ sư", "Ghi chú"].map((h) => (
+                      {["Đơn vị", "Tổng số", "Quản lý", "Kỹ sư", "Ghi chú"].map((h) => (
                         <th key={h} className="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">{h}</th>
                       ))}
                     </tr>
@@ -452,15 +452,15 @@ export default function GioiThieuPage() {
                   <tbody className="divide-y divide-gray-50">
                     {[
                       ["Ban Giám đốc","3","3","3","Giám đốc + 2 Phó"],
-                      ["Phòng Chính trị","10","4","3","P.CT"],
+                      ["Phòng Nhân sự","10","4","3","P.NS"],
                       ["Phòng Kế hoạch","8","3","5","P.KH"],
                       ["Phòng TC-KT","6","2","4","P.TCKT"],
-                      ["Phòng HC-KT","12","2","3","P.HCKT"],
+                      ["Phòng Logistics-KT","12","2","3","P.LGKT"],
                       ["Phòng Kỹ thuật","15","6","12","P.KT"],
-                      ["PX Sửa chữa Radar","35","10","28","PX1"],
-                      ["PX Sửa chữa Tên lửa","30","8","24","PX2"],
-                      ["PX Cơ khí","25","5","18","PX3"],
-                      ["PX Điện tử","20","6","16","PX4"],
+                      ["TT Phần mềm Alpha","35","10","28","Alpha"],
+                      ["TT Phần mềm Beta","30","8","24","Beta"],
+                      ["TT Hạ tầng (Gamma)","25","5","18","Gamma"],
+                      ["TT DevOps (Delta)","20","6","16","Delta"],
                       ["Phòng KCS","16","5","14","P.KCS"],
                       ["Tổng cộng","180","54","130",""],
                     ].map(([unit, total, officers, engineers, note], i) => (
@@ -480,7 +480,7 @@ export default function GioiThieuPage() {
 
           {/* ════════ 04 LÃNH ĐẠO VIỆN ════════ */}
           <section id="lanh-dao" style={{ scrollMarginTop: "80px" }}>
-            <SectionHeading num="04" label="Ban Lãnh đạo Nhà máy" icon={Award} />
+            <SectionHeading num="04" label="Ban Giám đốc Doanh nghiệp A" icon={Award} />
             <p className="text-sm text-gray-500 -mt-4 mb-6">Nhiệm kỳ 2022 – 2027</p>
 
             {/* Current leaders */}

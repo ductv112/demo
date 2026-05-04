@@ -78,7 +78,7 @@ const initialForms: FormItem[] = [
   {
     id: "BM001", title: "Phiếu đề xuất - Sáng kiến cải tiến kỹ thuật", code: "BM-SKKT-01",
     category: "Sáng kiến", version: "2.1", lastUpdated: "01/02/2026", usageCount: 38, status: "active",
-    purpose: "Biểu mẫu dùng để đăng ký sáng kiến, cải tiến kỹ thuật hoặc cải tiến quy trình công tác tại Nhà máy.",
+    purpose: "Biểu mẫu dùng để đăng ký sáng kiến, cải tiến kỹ thuật hoặc cải tiến quy trình công tác tại Doanh nghiệp A.",
     fields: [
       { id: "f1", label: "Họ và tên người đề xuất", type: "text",     required: true,  note: "" },
       { id: "f2", label: "Đơn vị / Phòng ban",       type: "text",     required: true,  note: "" },
@@ -147,7 +147,7 @@ const initialForms: FormItem[] = [
       { id: "h4", label: "Người vẽ",                       type: "text",      required: true,  note: "" },
       { id: "h5", label: "Ngày kiểm tra",                  type: "date",      required: true,  note: "" },
       { id: "h6", label: "Người kiểm tra",                 type: "text",      required: true,  note: "" },
-      { id: "h7", label: "Danh mục kiểm tra (checklist)",  type: "checklist", required: true,  note: "15 hạng mục theo VTKTQS-QT-04" },
+      { id: "h7", label: "Danh mục kiểm tra (checklist)",  type: "checklist", required: true,  note: "15 hạng mục theo DA-QT-04" },
       { id: "h8", label: "Kết luận",                       type: "radio",     required: true,  note: "Đạt / Không đạt / Cần sửa" },
       { id: "h9", label: "Nội dung cần sửa đổi (nếu có)", type: "textarea",  required: false, note: "" },
     ],

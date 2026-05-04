@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Activity, Eye, Calendar, ChevronRight, Search, Flame, X } from "lucide-react";
 import { PortalLayout } from "@/components/portal/portal-layout";
@@ -14,8 +13,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const activities = [
   {
     id: 1,
-    title: "Nhà máy Z119 triển khai thành công hệ thống quản lý sửa chữa số",
-    excerpt: "Ngày 15/3/2026, Nhà máy đã chính thức đưa vào vận hành hệ thống quản lý sửa chữa khí tài số hóa, tích hợp phần mềm chẩn đoán và quản lý nội bộ, bước đầu đạt kết quả tốt.",
+    title: "Doanh nghiệp A triển khai thành công hệ thống quản lý vận hành số",
+    excerpt: "Ngày 15/3/2026, Doanh nghiệp A đã chính thức đưa vào vận hành hệ thống quản lý vận hành thiết bị số hóa, tích hợp phần mềm chẩn đoán và quản lý nội bộ, bước đầu đạt kết quả tốt.",
     date: "15/03/2026",
     views: 342,
     isNew: true,
@@ -24,8 +23,8 @@ const activities = [
   },
   {
     id: 2,
-    title: "Hội thảo khoa học 'Ứng dụng công nghệ mới trong sửa chữa khí tài phòng không'",
-    excerpt: "Hội thảo thu hút hơn 80 nhà khoa học, kỹ sư từ các đơn vị trong và ngoài quân đội, tập trung vào việc ứng dụng công nghệ chẩn đoán và kiểm tra không phá hủy trong sửa chữa khí tài.",
+    title: "Hội thảo khoa học 'Ứng dụng công nghệ mới trong vận hành hệ thống monitoring'",
+    excerpt: "Hội thảo thu hút hơn 80 nhà khoa học, kỹ sư từ các đơn vị trong và ngoài Tổng công ty, tập trung vào việc ứng dụng công nghệ chẩn đoán và kiểm thử tự động trong vận hành thiết bị.",
     date: "12/03/2026",
     views: 218,
     isNew: false,
@@ -34,8 +33,8 @@ const activities = [
   },
   {
     id: 3,
-    title: "Phân xưởng 1 hoàn thành đại tu radar P-18 cho Trung đoàn 291",
-    excerpt: "Sau 8 tháng triển khai, Phân xưởng Sửa chữa Radar đã hoàn thành đại tu toàn bộ tổ hợp radar P-18, đáp ứng đầy đủ yêu cầu kỹ thuật.",
+    title: "Trung tâm Phần mềm Alpha hoàn thành nâng cấp hệ thống monitoring P-18 cho Phòng Triển khai P291",
+    excerpt: "Sau 8 tháng triển khai, Trung tâm Phần mềm Alpha đã hoàn thành nâng cấp toàn bộ hệ thống monitoring P-18, đáp ứng đầy đủ yêu cầu kỹ thuật.",
     date: "10/03/2026",
     views: 195,
     isNew: false,
@@ -44,8 +43,8 @@ const activities = [
   },
   {
     id: 4,
-    title: "Đoàn cán bộ Nhà máy tham dự triển lãm INDO Defence 2026 tại Indonesia",
-    excerpt: "Đoàn cán bộ kỹ thuật 12 người đã tham dự Triển lãm Quốc phòng INDO Defence, tiếp cận nhiều công nghệ tiên tiến trong lĩnh vực sửa chữa khí tài phòng không thế giới.",
+    title: "Đoàn cán bộ Doanh nghiệp A tham dự triển lãm Tech 2026 tại Indonesia",
+    excerpt: "Đoàn cán bộ kỹ thuật 12 người đã tham dự Triển lãm Công nghệ Tech 2026, tiếp cận nhiều công nghệ tiên tiến trong lĩnh vực vận hành sản phẩm phần mềm thế giới.",
     date: "08/03/2026",
     views: 276,
     isNew: false,
@@ -54,8 +53,8 @@ const activities = [
   },
   {
     id: 5,
-    title: "Nghiệm thu đề tài nghiên cứu khoa học cấp Bộ Quốc phòng về nâng cao tầm phát hiện radar",
-    excerpt: "Hội đồng nghiệm thu đề tài 'Nghiên cứu, cải tiến nâng cao tầm phát hiện cho radar P-37 trong điều kiện nhiễu phức tạp' đã thông qua kết quả nghiên cứu xuất sắc.",
+    title: "Nghiệm thu đề tài nghiên cứu khoa học cấp Tổng công ty về nâng cao khả năng phát hiện hệ thống monitoring",
+    excerpt: "Hội đồng nghiệm thu đề tài 'Nghiên cứu, cải tiến nâng cao khả năng phát hiện cho hệ thống monitoring P-37 trong điều kiện nhiễu phức tạp' đã thông qua kết quả nghiên cứu xuất sắc.",
     date: "06/03/2026",
     views: 163,
     isNew: false,
@@ -64,8 +63,8 @@ const activities = [
   },
   {
     id: 6,
-    title: "Tổ chức lớp tập huấn phần mềm chẩn đoán kỹ thuật cho cán bộ Nhà máy",
-    excerpt: "Nhà máy phối hợp với đối tác kỹ thuật tổ chức khóa tập huấn nâng cao về phần mềm chẩn đoán khí tài, nâng cao năng lực sửa chữa cho đội ngũ kỹ sư.",
+    title: "Tổ chức lớp đào tạo phần mềm chẩn đoán kỹ thuật cho cán bộ Doanh nghiệp A",
+    excerpt: "Doanh nghiệp A phối hợp với đối tác kỹ thuật tổ chức khóa đào tạo nâng cao về phần mềm chẩn đoán thiết bị, nâng cao năng lực vận hành cho đội ngũ kỹ sư.",
     date: "04/03/2026",
     views: 142,
     isNew: false,
@@ -74,8 +73,8 @@ const activities = [
   },
   {
     id: 7,
-    title: "Đoàn cán bộ Nhà máy thăm và học tập kinh nghiệm tại Nhà máy Z111",
-    excerpt: "Đoàn công tác đã có buổi làm việc và trao đổi kinh nghiệm về quy trình sửa chữa, đại tu khí tài điện tử phòng không tại thực địa.",
+    title: "Đoàn cán bộ Doanh nghiệp A thăm và học tập kinh nghiệm tại Trung tâm phần mềm Beta",
+    excerpt: "Đoàn công tác đã có buổi làm việc và trao đổi kinh nghiệm về quy trình vận hành, nâng cấp thiết bị điện tử trên hệ thống module phần mềm tại thực địa.",
     date: "01/03/2026",
     views: 98,
     isNew: false,
@@ -85,7 +84,7 @@ const activities = [
   {
     id: 8,
     title: "Kết nạp 25 đảng viên mới trong đợt 26/3 nhân kỷ niệm thành lập Đoàn TNCS",
-    excerpt: "Đảng ủy Nhà máy đã tổ chức lễ kết nạp đảng viên mới cho 25 quần chúng ưu tú, tiêu biểu trong phong trào thi đua của Nhà máy năm 2025.",
+    excerpt: "Đảng ủy Doanh nghiệp A đã tổ chức lễ kết nạp đảng viên mới cho 25 quần chúng ưu tú, tiêu biểu trong phong trào thi đua của đơn vị năm 2025.",
     date: "03/03/2026",
     views: 134,
     isNew: false,
@@ -153,7 +152,7 @@ export default function HoatDongPage() {
                 <span className="text-[#D4A843] text-xs font-semibold tracking-widest uppercase">Bản tin nội bộ</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black text-white mb-1">Tin hoạt động</h1>
-              <p className="text-blue-200 text-sm">Thông tin về các hoạt động của Nhà máy Z119</p>
+              <p className="text-blue-200 text-sm">Thông tin về các hoạt động của Doanh nghiệp A</p>
             </div>
             <div className="grid grid-cols-3 gap-3 shrink-0">
               {[
