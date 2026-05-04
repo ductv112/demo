@@ -6,8 +6,30 @@ echo ============================================================
 echo   Doanh nghiep A - Demo launcher (6 module)
 echo ============================================================
 echo.
-echo Yeu cau: da chay setup-demo.bat truoc do.
-echo.
+
+REM Pre-flight check: cac module phai co node_modules truoc khi npm run dev.
+set MISSING=
+for %%M in (demo-portal demo-dms demo-chatbot demo-sso demo-taichinhketoan demo-sanxuat) do (
+    if not exist "%~dp0%%M\node_modules\" set MISSING=!MISSING! %%M
+)
+setlocal enabledelayedexpansion
+set MISSING=
+for %%M in (demo-portal demo-dms demo-chatbot demo-sso demo-taichinhketoan demo-sanxuat) do (
+    if not exist "%~dp0%%M\node_modules\" set "MISSING=!MISSING! %%M"
+)
+
+if defined MISSING (
+    echo *** Chua cai dependencies cho cac module:!MISSING! ***
+    echo.
+    echo Hay double-click "setup-demo.bat" TRUOC khi chay file nay.
+    echo Setup chi can chay 1 lan dau, mat ~20-30 phut.
+    echo.
+    pause
+    endlocal
+    exit /b 1
+)
+endlocal
+
 echo Mo 6 cua so terminal, moi cua chay 1 module dev server.
 echo Server san sang sau ~5-15 giay.
 echo.
@@ -29,8 +51,5 @@ echo   DMS:             http://localhost:3010
 echo   Chatbot:         http://localhost:3011
 echo.
 echo De dung: dong tung cua so terminal, hoac chay stop-demo.bat.
-echo.
-echo Neu thay loi "Cannot find module" trong cua so nao do
-echo  -^> dong het, chay setup-demo.bat truoc roi quay lai day.
 echo.
 pause
