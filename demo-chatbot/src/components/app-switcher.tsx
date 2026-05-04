@@ -7,7 +7,7 @@
  * sang shadcn/Radix Popover + Tailwind (Next.js 16).
  *
  * - Trigger: icon-only button (LayoutGrid) vừa header 56px
- * - Content: grid 4 cột, mỗi tile link tới `https://pkkq-<name>-staging.dft.vn` (DNS staging giữ nguyên)
+ * - Content: grid 4 cột, mỗi tile link tới `http://localhost:PORT` (mỗi module một port) (DNS staging giữ nguyên)
  * - Highlight app hiện tại bằng ring gold `#D4A843`
  * - Bao phủ đủ 18 apps: 16 PM trong CLAUDE.md + DMS + Chatbot
  */
@@ -61,7 +61,7 @@ const APPS: AppDef[] = [
     icon: Fingerprint,
     color: '#1B3A5C',
     bg: '#e8eef6',
-    url: 'https://pkkq-sso-staging.dft.vn/',
+    url: 'http://localhost:5173/',
     description: 'Đăng nhập SSO & Phân quyền',
   },
   {
@@ -70,7 +70,7 @@ const APPS: AppDef[] = [
     icon: LayoutDashboard,
     color: '#1B3A5C',
     bg: '#e8eef6',
-    url: 'https://pkkq-portal-staging.dft.vn/',
+    url: 'http://localhost:3000/',
     description: 'Cổng thông tin nội bộ',
   },
   {
@@ -79,7 +79,7 @@ const APPS: AppDef[] = [
     icon: Banknote,
     color: '#4c1d95',
     bg: '#f5f3ff',
-    url: 'https://pkkq-taichinhketoan-staging.dft.vn/',
+    url: 'http://localhost:5175/',
     description: 'Quản lý Tài chính Kế toán',
   },
   {
@@ -88,7 +88,7 @@ const APPS: AppDef[] = [
     icon: ShoppingCart,
     color: '#0369a1',
     bg: '#e0f2fe',
-    url: 'https://pkkq-muahang-staging.dft.vn/',
+    url: 'http://localhost:5177/',
     description: 'Quản lý Mua hàng',
   },
   {
@@ -97,7 +97,7 @@ const APPS: AppDef[] = [
     icon: ClipboardList,
     color: '#4c1d95',
     bg: '#f5f3ff',
-    url: 'https://pkkq-hopdongnhiemvu-staging.dft.vn/',
+    url: 'http://localhost:5176/',
     description: 'Quản lý Hợp đồng & Nhiệm vụ',
   },
   {
@@ -106,7 +106,7 @@ const APPS: AppDef[] = [
     icon: Warehouse,
     color: '#0369a1',
     bg: '#e0f2fe',
-    url: 'https://pkkq-kho-staging.dft.vn/',
+    url: 'http://localhost:5178/',
     description: 'Quản lý Kho tàng',
   },
   {
@@ -115,7 +115,7 @@ const APPS: AppDef[] = [
     icon: Factory,
     color: '#065f46',
     bg: '#d1fae5',
-    url: 'https://pkkq-sanxuat-staging.dft.vn/',
+    url: 'http://localhost:5179/',
     description: 'Quản lý Sản xuất',
   },
   {
@@ -124,7 +124,7 @@ const APPS: AppDef[] = [
     icon: Wrench,
     color: '#065f46',
     bg: '#d1fae5',
-    url: 'https://pkkq-baotri-staging.dft.vn/',
+    url: 'http://localhost:5180/',
     description: 'Quản lý Bảo trì',
   },
   {
@@ -133,7 +133,7 @@ const APPS: AppDef[] = [
     icon: Hammer,
     color: '#065f46',
     bg: '#d1fae5',
-    url: 'https://pkkq-suachua-staging.dft.vn/',
+    url: 'http://localhost:5181/',
     description: 'Quản lý Sửa chữa',
   },
   {
@@ -142,7 +142,7 @@ const APPS: AppDef[] = [
     icon: RefreshCw,
     color: '#065f46',
     bg: '#d1fae5',
-    url: 'https://pkkq-daitu-staging.dft.vn/',
+    url: 'http://localhost:5182/',
     description: 'Quản lý Đại tu',
   },
   {
@@ -151,7 +151,7 @@ const APPS: AppDef[] = [
     icon: Network,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-vongdoi-staging.dft.vn/',
+    url: 'http://localhost:5183/',
     description: 'Vòng đời & Cấu hình',
   },
   {
@@ -160,7 +160,7 @@ const APPS: AppDef[] = [
     icon: ClipboardCheck,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-chatluong-staging.dft.vn/',
+    url: 'http://localhost:5184/',
     description: 'Chất lượng QA/QC',
   },
   {
@@ -169,7 +169,7 @@ const APPS: AppDef[] = [
     icon: AlertOctagon,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-suco-staging.dft.vn/',
+    url: 'http://localhost:5185/',
     description: 'Sự cố & Chẩn đoán',
   },
   {
@@ -178,7 +178,7 @@ const APPS: AppDef[] = [
     icon: FlaskConical,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-thunghiem-staging.dft.vn/',
+    url: 'http://localhost:5186/',
     description: 'Thử nghiệm & Nghiệm thu',
   },
   {
@@ -187,7 +187,7 @@ const APPS: AppDef[] = [
     icon: Scale,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-doluong-staging.dft.vn/',
+    url: 'http://localhost:5187/',
     description: 'Đo lường & Kiểm định',
   },
   {
@@ -196,7 +196,7 @@ const APPS: AppDef[] = [
     icon: HardHat,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-antoan-staging.dft.vn/',
+    url: 'http://localhost:5188/',
     description: 'An toàn Kỹ thuật',
   },
   // ── 2 PM bổ sung ngoài danh sách 16 (CLAUDE.md) ──────────────
@@ -206,7 +206,7 @@ const APPS: AppDef[] = [
     icon: FileText,
     color: '#1B3A5C',
     bg: '#e8eef6',
-    url: 'https://pkkq-dms-staging.dft.vn/',
+    url: 'http://localhost:3010/',
     description: 'Quản lý tài liệu & Tri thức',
   },
   {
@@ -215,7 +215,7 @@ const APPS: AppDef[] = [
     icon: Bot,
     color: '#92400e',
     bg: '#fef3c7',
-    url: 'https://pkkq-chatbot-staging.dft.vn/',
+    url: 'http://localhost:3011/',
     description: 'Trợ lý AI nội bộ',
   },
 ];
@@ -258,7 +258,7 @@ export function AppSwitcher({ currentApp = 'dms' }: AppSwitcherProps) {
             </span>
           </div>
           <a
-            href="https://pkkq-portal-staging.dft.vn/"
+            href="http://localhost:3000/"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
@@ -329,7 +329,7 @@ export function AppSwitcher({ currentApp = 'dms' }: AppSwitcherProps) {
         {/* Footer */}
         <div className="border-t border-border/60 px-4 py-3">
           <a
-            href="https://pkkq-portal-staging.dft.vn/he-thong"
+            href="http://localhost:3000/he-thong"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

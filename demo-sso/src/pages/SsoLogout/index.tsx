@@ -14,9 +14,9 @@
  *   4. Redirect về URI hợp lệ hoặc về /sso/login
  *
  * Client apps gọi bằng cách redirect trình duyệt đến:
- *   https://pkkq-sso-staging.dft.vn/sso/logout
+ *   http://localhost:5173/sso/logout
  *     ?client_id=pkkq-portal
- *     &post_logout_redirect_uri=https://pkkq-portal-staging.dft.vn/dang-nhap
+ *     &post_logout_redirect_uri=http://localhost:3000/dang-nhap
  */
 
 import { useEffect, useState } from 'react';

@@ -162,7 +162,7 @@ export function Header({ title, subtitle }: HeaderProps) {
                   </button>
                 ))}
                 <Separator className="my-1" />
-                <a href="https://pkkq-sso-staging.dft.vn" onClick={() => setShowUser(false)}>
+                <a href="http://localhost:5173" onClick={() => setShowUser(false)}>
                   <button className="flex items-center gap-3 w-full px-3 py-2 text-sm text-red-500 hover:bg-red-50 rounded-lg transition-colors">
                     <LogOut className="w-4 h-4" />
                     Đăng xuất

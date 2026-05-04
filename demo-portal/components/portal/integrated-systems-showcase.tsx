@@ -60,9 +60,9 @@ const MODULE_GROUPS: ModuleGroup[] = [
     modules: [
       { code: "SSO",  icon: Fingerprint,    label: "SSO & Phân quyền",       desc: "Xác thực tập trung, quản lý định danh",        href: "/sso-management" },
       { code: "CMS",  icon: LayoutDashboard,label: "Quản trị nội dung",      desc: "Quản lý tin tức, văn bản trên Portal",         href: "/cms" },
-      { code: "DMS",  icon: FileStack,      label: "Quản lý tài liệu",       desc: "Lưu trữ, kiểm soát phiên bản tài liệu KT",     href: "https://pkkq-dms-staging.dft.vn", external: true },
-      { code: "BOT",  icon: Bot,            label: "Trợ lý AI Doanh nghiệp A",desc: "Tra cứu, tư vấn quy trình nghiệp vụ 24/7",    href: "https://pkkq-chatbot-staging.dft.vn", external: true },
-      { code: "BI",   icon: BarChart3,      label: "Trung tâm điều hành số", desc: "Tổng hợp & trực quan hóa dữ liệu doanh nghiệp",href: "https://pkkq-dieuhanhbi-staging.dft.vn", external: true },
+      { code: "DMS",  icon: FileStack,      label: "Quản lý tài liệu",       desc: "Lưu trữ, kiểm soát phiên bản tài liệu KT",     href: "http://localhost:3010", external: true },
+      { code: "BOT",  icon: Bot,            label: "Trợ lý AI Doanh nghiệp A",desc: "Tra cứu, tư vấn quy trình nghiệp vụ 24/7",    href: "http://localhost:3011", external: true },
+      { code: "BI",   icon: BarChart3,      label: "Trung tâm điều hành số", desc: "Tổng hợp & trực quan hóa dữ liệu doanh nghiệp",href: "http://localhost:5174", external: true },
     ],
   },
   {
@@ -73,9 +73,9 @@ const MODULE_GROUPS: ModuleGroup[] = [
     accentSoft: "rgba(167,139,250,0.18)",
     bar: "linear-gradient(90deg, #5b21b6 0%, #8b5cf6 100%)",
     modules: [
-      { code: "TCKT", icon: Banknote,       label: "Tài chính Kế toán",      desc: "Hạch toán, tính giá thành & quyết toán",       href: "https://pkkq-taichinhketoan-staging.dft.vn", external: true },
-      { code: "MUA",  icon: ShoppingCart,   label: "Quản lý Mua hàng",       desc: "Đặt hàng, phê duyệt & theo dõi NCC",           href: "https://pkkq-muahang-staging.dft.vn", external: true },
-      { code: "HĐNV", icon: ClipboardList,  label: "Hợp đồng & Nhiệm vụ",    desc: "Ký HĐ, phân rã WBS, theo dõi tiến độ",         href: "https://pkkq-hopdongnhiemvu-staging.dft.vn", external: true },
+      { code: "TCKT", icon: Banknote,       label: "Tài chính Kế toán",      desc: "Hạch toán, tính giá thành & quyết toán",       href: "http://localhost:5175", external: true },
+      { code: "MUA",  icon: ShoppingCart,   label: "Quản lý Mua hàng",       desc: "Đặt hàng, phê duyệt & theo dõi NCC",           href: "http://localhost:5177", external: true },
+      { code: "HĐNV", icon: ClipboardList,  label: "Hợp đồng & Nhiệm vụ",    desc: "Ký HĐ, phân rã WBS, theo dõi tiến độ",         href: "http://localhost:5176", external: true },
     ],
   },
   {
@@ -86,11 +86,11 @@ const MODULE_GROUPS: ModuleGroup[] = [
     accentSoft: "rgba(94,234,212,0.18)",
     bar: "linear-gradient(90deg, #115e59 0%, #14b8a6 100%)",
     modules: [
-      { code: "KHO",  icon: Warehouse,      label: "Quản lý Kho tàng",       desc: "Tồn kho, vị trí & truy vết lô / sê-ri",        href: "https://pkkq-kho-staging.dft.vn", external: true },
-      { code: "SX",   icon: Factory,        label: "Quản lý Sản xuất",       desc: "BOM, quy trình & điều phối lệnh chế tạo",      href: "https://pkkq-sanxuat-staging.dft.vn", external: true },
-      { code: "BT",   icon: Wrench,         label: "Quản lý Bảo trì",        desc: "Lịch bảo trì định kỳ & giám sát thiết bị",     href: "https://pkkq-baotri-staging.dft.vn", external: true },
-      { code: "SC",   icon: Hammer,         label: "Quản lý Sửa chữa",       desc: "Tiếp nhận, lập phương án & phục hồi",          href: "https://pkkq-suachua-staging.dft.vn", external: true },
-      { code: "ĐT",   icon: RefreshCw,      label: "Quản lý Đại tu",         desc: "Tháo rã, phục hồi toàn diện hệ thống",         href: "https://pkkq-daitu-staging.dft.vn", external: true },
+      { code: "KHO",  icon: Warehouse,      label: "Quản lý Kho tàng",       desc: "Tồn kho, vị trí & truy vết lô / sê-ri",        href: "http://localhost:5178", external: true },
+      { code: "SX",   icon: Factory,        label: "Quản lý Sản xuất",       desc: "BOM, quy trình & điều phối lệnh chế tạo",      href: "http://localhost:5179", external: true },
+      { code: "BT",   icon: Wrench,         label: "Quản lý Bảo trì",        desc: "Lịch bảo trì định kỳ & giám sát thiết bị",     href: "http://localhost:5180", external: true },
+      { code: "SC",   icon: Hammer,         label: "Quản lý Sửa chữa",       desc: "Tiếp nhận, lập phương án & phục hồi",          href: "http://localhost:5181", external: true },
+      { code: "ĐT",   icon: RefreshCw,      label: "Quản lý Đại tu",         desc: "Tháo rã, phục hồi toàn diện hệ thống",         href: "http://localhost:5182", external: true },
     ],
   },
   {
@@ -101,12 +101,12 @@ const MODULE_GROUPS: ModuleGroup[] = [
     accentSoft: "rgba(251,191,36,0.18)",
     bar: "linear-gradient(90deg, #92400e 0%, #f59e0b 100%)",
     modules: [
-      { code: "VĐ",   icon: Network,        label: "Vòng đời & Cấu hình",    desc: "Cấu hình thiết kế chuẩn & lý lịch thực tế",    href: "https://pkkq-vongdoi-staging.dft.vn", external: true },
-      { code: "CL",   icon: ClipboardCheck, label: "Chất lượng QA/QC",       desc: "Kiểm soát đầu vào, quá trình & đầu ra",        href: "https://pkkq-chatluong-staging.dft.vn", external: true },
-      { code: "SCO",  icon: AlertOctagon,   label: "Sự cố & Chẩn đoán",      desc: "Phân tích nguyên nhân gốc & cảnh báo sớm",     href: "https://pkkq-suco-staging.dft.vn", external: true },
-      { code: "TN",   icon: FlaskConical,   label: "Thử nghiệm & Nghiệm thu",desc: "Kịch bản đo kiểm & nghiệm thu nhiều cấp",      href: "https://pkkq-thunghiem-staging.dft.vn", external: true },
-      { code: "ĐL",   icon: Scale,          label: "Đo lường & Kiểm định",   desc: "Thiết bị đo, chứng thư & cảnh báo hết hạn",    href: "https://pkkq-doluong-staging.dft.vn", external: true },
-      { code: "AT",   icon: HardHat,        label: "An toàn Kỹ thuật",       desc: "Nhận diện rủi ro & tuân thủ ATLĐ",             href: "https://pkkq-antoan-staging.dft.vn", external: true },
+      { code: "VĐ",   icon: Network,        label: "Vòng đời & Cấu hình",    desc: "Cấu hình thiết kế chuẩn & lý lịch thực tế",    href: "http://localhost:5183", external: true },
+      { code: "CL",   icon: ClipboardCheck, label: "Chất lượng QA/QC",       desc: "Kiểm soát đầu vào, quá trình & đầu ra",        href: "http://localhost:5184", external: true },
+      { code: "SCO",  icon: AlertOctagon,   label: "Sự cố & Chẩn đoán",      desc: "Phân tích nguyên nhân gốc & cảnh báo sớm",     href: "http://localhost:5185", external: true },
+      { code: "TN",   icon: FlaskConical,   label: "Thử nghiệm & Nghiệm thu",desc: "Kịch bản đo kiểm & nghiệm thu nhiều cấp",      href: "http://localhost:5186", external: true },
+      { code: "ĐL",   icon: Scale,          label: "Đo lường & Kiểm định",   desc: "Thiết bị đo, chứng thư & cảnh báo hết hạn",    href: "http://localhost:5187", external: true },
+      { code: "AT",   icon: HardHat,        label: "An toàn Kỹ thuật",       desc: "Nhận diện rủi ro & tuân thủ ATLĐ",             href: "http://localhost:5188", external: true },
     ],
   },
 ];

@@ -51,7 +51,7 @@ export default function ProfilePage() {
           </div>
           <div className="flex items-center gap-3">
             <Link href="/"><span className="flex items-center gap-1 hover:text-white/90 text-white/60 cursor-pointer"><Home className="w-3 h-3" /> Trang chủ</span></Link>
-            <a href="https://pkkq-sso-staging.dft.vn"><span className="flex items-center gap-1 hover:text-red-400 text-white/60 cursor-pointer"><LogOut className="w-3 h-3" /> Đăng xuất</span></a>
+            <a href="http://localhost:5173"><span className="flex items-center gap-1 hover:text-red-400 text-white/60 cursor-pointer"><LogOut className="w-3 h-3" /> Đăng xuất</span></a>
           </div>
         </div>
       </div>

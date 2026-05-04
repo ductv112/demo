@@ -199,7 +199,7 @@ export function Sidebar({ collapsed, onToggle }: SidebarProps) {
             )}
           </AnimatePresence>
           {!collapsed && (
-            <a href="https://pkkq-sso-staging.dft.vn">
+            <a href="http://localhost:5173">
               <LogOut className="w-4 h-4 transition-colors shrink-0" style={{ color: "rgba(255,255,255,0.3)" }} />
             </a>
           )}

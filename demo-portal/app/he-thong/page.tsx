@@ -59,7 +59,7 @@ const systems: SystemItem[] = [
     badge: "BI",
     label: "Trung tâm điều hành số",
     desc: "Tổng hợp và trực quan hóa dữ liệu toàn doanh nghiệp, hỗ trợ Ban Giám đốc ra quyết định chiến lược",
-    href: "https://pkkq-dieuhanhbi-staging.dft.vn",
+    href: "http://localhost:5174",
     group: "Nền tảng",
   },
   {
@@ -75,7 +75,7 @@ const systems: SystemItem[] = [
     badge: "AI",
     label: "Chatbot trợ lý AI",
     desc: "Tra cứu tài liệu kỹ thuật, tư vấn quy trình nghiệp vụ và hỗ trợ vận hành thiết bị 24/7",
-    href: "https://pkkq-chatbot-staging.dft.vn",
+    href: "http://localhost:3011",
     group: "Nền tảng",
   },
   {
@@ -83,7 +83,7 @@ const systems: SystemItem[] = [
     badge: "DM",
     label: "Quản lý tài liệu (DMS)",
     desc: "Lưu trữ, tìm kiếm và kiểm soát phiên bản tài liệu kỹ thuật, quy trình và hồ sơ nội bộ",
-    href: "https://pkkq-dms-staging.dft.vn",
+    href: "http://localhost:3010",
     group: "Nền tảng",
   },
   // ── Tài chính & Nguồn lực ────────────────────────────────────────────────
@@ -92,7 +92,7 @@ const systems: SystemItem[] = [
     badge: "TC",
     label: "Tài chính Kế toán",
     desc: "Hạch toán, tính giá thành sản phẩm và quyết toán hợp đồng dịch vụ",
-    href: "https://pkkq-taichinhketoan-staging.dft.vn",
+    href: "http://localhost:5175",
     group: "Tài chính & Nguồn lực",
   },
   {
@@ -100,7 +100,7 @@ const systems: SystemItem[] = [
     badge: "HD",
     label: "Hợp đồng & Nhiệm vụ",
     desc: "Lập dự toán, ký hợp đồng, phân rã WBS và theo dõi tiến độ nhiệm vụ",
-    href: "https://pkkq-hopdongnhiemvu-staging.dft.vn",
+    href: "http://localhost:5176",
     group: "Tài chính & Nguồn lực",
   },
   // ── Chuỗi cung ứng ───────────────────────────────────────────────────────
@@ -109,7 +109,7 @@ const systems: SystemItem[] = [
     badge: "MH",
     label: "Quản lý Mua hàng",
     desc: "Khởi tạo, phê duyệt và theo dõi đơn đặt hàng vật tư với nhà cung cấp",
-    href: "https://pkkq-muahang-staging.dft.vn",
+    href: "http://localhost:5177",
     group: "Chuỗi cung ứng",
   },
   {
@@ -117,7 +117,7 @@ const systems: SystemItem[] = [
     badge: "KT",
     label: "Quản lý Kho tàng",
     desc: "Quản lý tồn kho, vị trí lưu trữ và truy vết vòng đời vật tư theo lô/sê-ri",
-    href: "https://pkkq-kho-staging.dft.vn",
+    href: "http://localhost:5178",
     group: "Chuỗi cung ứng",
   },
   // ── Thực thi kỹ thuật ────────────────────────────────────────────────────
@@ -126,7 +126,7 @@ const systems: SystemItem[] = [
     badge: "SX",
     label: "Quản lý Sản xuất",
     desc: "Quản lý BOM, quy trình công nghệ và điều phối lệnh chế tạo vật tư, phụ tùng",
-    href: "https://pkkq-sanxuat-staging.dft.vn",
+    href: "http://localhost:5179",
     group: "Thực thi kỹ thuật",
   },
   {
@@ -134,7 +134,7 @@ const systems: SystemItem[] = [
     badge: "BT",
     label: "Quản lý Bảo trì",
     desc: "Lập lịch bảo trì định kỳ và giám sát tình trạng thiết bị tại hiện trường",
-    href: "https://pkkq-baotri-staging.dft.vn",
+    href: "http://localhost:5180",
     group: "Thực thi kỹ thuật",
   },
   {
@@ -142,7 +142,7 @@ const systems: SystemItem[] = [
     badge: "SC",
     label: "Quản lý Sửa chữa",
     desc: "Tiếp nhận thiết bị hỏng, lên phương án và phục hồi linh kiện, mô-đun",
-    href: "https://pkkq-suachua-staging.dft.vn",
+    href: "http://localhost:5181",
     group: "Thực thi kỹ thuật",
   },
   {
@@ -150,7 +150,7 @@ const systems: SystemItem[] = [
     badge: "DT",
     label: "Quản lý Đại tu",
     desc: "Tháo rã toàn bộ, phục hồi và nâng cấp toàn diện hệ thống thiết bị",
-    href: "https://pkkq-daitu-staging.dft.vn",
+    href: "http://localhost:5182",
     group: "Thực thi kỹ thuật",
   },
   // ── Chất lượng ───────────────────────────────────────────────────────────
@@ -159,7 +159,7 @@ const systems: SystemItem[] = [
     badge: "VD",
     label: "Vòng đời & Cấu hình",
     desc: "Quản lý cấu hình thiết kế chuẩn và lý lịch cấu hình thực tế theo số hiệu",
-    href: "https://pkkq-vongdoi-staging.dft.vn",
+    href: "http://localhost:5183",
     group: "Chất lượng",
   },
   {
@@ -167,7 +167,7 @@ const systems: SystemItem[] = [
     badge: "CL",
     label: "Chất lượng QA/QC",
     desc: "Kiểm soát chất lượng đầu vào, trong quá trình và đầu ra theo chuẩn kỹ thuật",
-    href: "https://pkkq-chatluong-staging.dft.vn",
+    href: "http://localhost:5184",
     group: "Chất lượng",
   },
   {
@@ -175,7 +175,7 @@ const systems: SystemItem[] = [
     badge: "SG",
     label: "Sự cố & Chẩn đoán",
     desc: "Phân tích nguyên nhân gốc và cảnh báo sớm xu hướng hỏng hóc thiết bị",
-    href: "https://pkkq-suco-staging.dft.vn",
+    href: "http://localhost:5185",
     group: "Chất lượng",
   },
   {
@@ -183,7 +183,7 @@ const systems: SystemItem[] = [
     badge: "TN",
     label: "Thử nghiệm & Nghiệm thu",
     desc: "Xây dựng kịch bản, đo kiểm thông số và nghiệm thu kỹ thuật nhiều cấp",
-    href: "https://pkkq-thunghiem-staging.dft.vn",
+    href: "http://localhost:5186",
     group: "Chất lượng",
   },
   {
@@ -191,7 +191,7 @@ const systems: SystemItem[] = [
     badge: "DL",
     label: "Đo lường & Kiểm định",
     desc: "Quản lý danh mục thiết bị đo, chứng thư kiểm định và cảnh báo hết hạn",
-    href: "https://pkkq-doluong-staging.dft.vn",
+    href: "http://localhost:5187",
     group: "Chất lượng",
   },
   {
@@ -199,7 +199,7 @@ const systems: SystemItem[] = [
     badge: "AT",
     label: "An toàn Kỹ thuật",
     desc: "Nhận diện rủi ro, kiểm soát nguy hiểm và giám sát tuân thủ an toàn lao động",
-    href: "https://pkkq-antoan-staging.dft.vn",
+    href: "http://localhost:5188",
     group: "Chất lượng",
   },
 ];

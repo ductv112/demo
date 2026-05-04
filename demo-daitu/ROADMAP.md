@@ -2,7 +2,7 @@
 
 > Phần mềm #10 trong hệ thống 16 phần mềm Doanh nghiệp A
 > Tham chiếu cấu trúc từ `pkkq-taichinhketoan`
-> Domain: `pkkq-daitu-staging.dft.vn`
+> Domain: `localhost:5182`
 
 ---
 

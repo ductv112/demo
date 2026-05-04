@@ -15,26 +15,26 @@ const CLIENTS_KEY = 'sso_clients'; // danh sách app đang dùng SSO session
  */
 export const ALLOWED_REDIRECT_URIS: string[] = [
   // Staging domains
-  'https://pkkq-portal-staging.dft.vn',
-  'https://pkkq-taichinhketoan-staging.dft.vn',
-  'https://pkkq-muahang-staging.dft.vn',
-  'https://pkkq-hopdongnhiemvu-staging.dft.vn',
-  'https://pkkq-kho-staging.dft.vn',
-  'https://pkkq-sanxuat-staging.dft.vn',
-  'https://pkkq-baotri-staging.dft.vn',
-  'https://pkkq-suachua-staging.dft.vn',
-  'https://pkkq-daitu-staging.dft.vn',
-  'https://pkkq-vongdoi-staging.dft.vn',
-  'https://pkkq-chatluong-staging.dft.vn',
-  'https://pkkq-suco-staging.dft.vn',
-  'https://pkkq-thunghiem-staging.dft.vn',
-  'https://pkkq-doluong-staging.dft.vn',
-  'https://pkkq-antoan-staging.dft.vn',
+  'http://localhost:3000',
+  'http://localhost:5175',
+  'http://localhost:5177',
+  'http://localhost:5176',
+  'http://localhost:5178',
+  'http://localhost:5179',
+  'http://localhost:5180',
+  'http://localhost:5181',
+  'http://localhost:5182',
+  'http://localhost:5183',
+  'http://localhost:5184',
+  'http://localhost:5185',
+  'http://localhost:5186',
+  'http://localhost:5187',
+  'http://localhost:5188',
   // SSO chính
-  'https://pkkq-sso-staging.dft.vn',
+  'http://localhost:5173',
   // Local dev — các port thường dùng
   'http://localhost:3000',
-  'http://localhost:3001',
+  'http://localhost:3011',
   'http://localhost:4000',
   'http://localhost:5173',
   'http://localhost:5174',
@@ -51,21 +51,21 @@ export const ALLOWED_REDIRECT_URIS: string[] = [
  * Dùng để validate client khi nhận request logout/callback.
  */
 export const REGISTERED_CLIENTS: Record<string, string> = {
-  'pkkq-portal': 'https://pkkq-portal-staging.dft.vn',
-  'pkkq-taichinhketoan': 'https://pkkq-taichinhketoan-staging.dft.vn',
-  'pkkq-muahang': 'https://pkkq-muahang-staging.dft.vn',
-  'pkkq-hopdongnhiemvu': 'https://pkkq-hopdongnhiemvu-staging.dft.vn',
-  'pkkq-kho': 'https://pkkq-kho-staging.dft.vn',
-  'pkkq-sanxuat': 'https://pkkq-sanxuat-staging.dft.vn',
-  'pkkq-baotri': 'https://pkkq-baotri-staging.dft.vn',
-  'pkkq-suachua': 'https://pkkq-suachua-staging.dft.vn',
-  'pkkq-daitu': 'https://pkkq-daitu-staging.dft.vn',
-  'pkkq-vongdoi': 'https://pkkq-vongdoi-staging.dft.vn',
-  'pkkq-chatluong': 'https://pkkq-chatluong-staging.dft.vn',
-  'pkkq-suco': 'https://pkkq-suco-staging.dft.vn',
-  'pkkq-thunghiem': 'https://pkkq-thunghiem-staging.dft.vn',
-  'pkkq-doluong': 'https://pkkq-doluong-staging.dft.vn',
-  'pkkq-antoan': 'https://pkkq-antoan-staging.dft.vn',
+  'pkkq-portal': 'http://localhost:3000',
+  'pkkq-taichinhketoan': 'http://localhost:5175',
+  'pkkq-muahang': 'http://localhost:5177',
+  'pkkq-hopdongnhiemvu': 'http://localhost:5176',
+  'pkkq-kho': 'http://localhost:5178',
+  'pkkq-sanxuat': 'http://localhost:5179',
+  'pkkq-baotri': 'http://localhost:5180',
+  'pkkq-suachua': 'http://localhost:5181',
+  'pkkq-daitu': 'http://localhost:5182',
+  'pkkq-vongdoi': 'http://localhost:5183',
+  'pkkq-chatluong': 'http://localhost:5184',
+  'pkkq-suco': 'http://localhost:5185',
+  'pkkq-thunghiem': 'http://localhost:5186',
+  'pkkq-doluong': 'http://localhost:5187',
+  'pkkq-antoan': 'http://localhost:5188',
 };
 
 // ============================================================
@@ -113,7 +113,7 @@ export function validateRedirectUri(uri: string): boolean {
   if (!uri) return false;
   try {
     const parsed = new URL(uri);
-    const origin = parsed.origin; // e.g. "https://pkkq-portal-staging.dft.vn"
+    const origin = parsed.origin; // e.g. "http://localhost:3000"
     return ALLOWED_REDIRECT_URIS.some(allowed => {
       const allowedOrigin = new URL(allowed).origin;
       return origin === allowedOrigin;

@@ -351,7 +351,7 @@ export const ssoConfig: SsoConfig = {
   provider: "LDAP",
   clientId: "doanhnghiepa-sso-client",
   clientSecret: "s3cr3t-da-k3yc10ak-2026",
-  redirectUrl: "https://pkkq-portal-staging.dft.vn/auth/callback",
+  redirectUrl: "http://localhost:3000/auth/callback",
   ssoEndpoint: "ldap://ldap.doanhnghiepa.vn:389/dc=doanhnghiepa,dc=vn",
   enabled: true,
   sessionTimeout: 480,

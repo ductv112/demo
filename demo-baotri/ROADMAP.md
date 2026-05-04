@@ -13,7 +13,7 @@
 | **Tên** | Quản lý Bảo trì |
 | **Nhóm** | Thực thi kỹ thuật |
 | **Badge** | BT |
-| **Domain staging** | pkkq-baotri-staging.dft.vn |
+| **Domain staging** | localhost:5180 |
 | **Tech stack** | React 19 + TypeScript 5.9 + Vite 7 + Ant Design 5 |
 
 ---

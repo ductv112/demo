@@ -10,10 +10,10 @@
  */
 
 export const SSO_URL =
-  process.env.NEXT_PUBLIC_SSO_URL ?? "https://pkkq-sso-staging.dft.vn";
+  process.env.NEXT_PUBLIC_SSO_URL ?? "http://localhost:5173";
 
 export const PORTAL_URL =
-  process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://pkkq-portal-staging.dft.vn";
+  process.env.NEXT_PUBLIC_PORTAL_URL ?? "http://localhost:3000";
 
 export const PORTAL_TOKEN_KEY = "portal_token";
 

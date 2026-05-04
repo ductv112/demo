@@ -314,7 +314,7 @@ export default function ConfigPage() {
             <Input
               value={config.redirectUrl}
               onChange={(e) => update("redirectUrl", e.target.value)}
-              placeholder="https://pkkq-portal-staging.dft.vn/auth/callback"
+              placeholder="http://localhost:3000/auth/callback"
               className="h-9 text-sm"
             />
           </div>
