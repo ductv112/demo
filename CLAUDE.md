@@ -2,11 +2,27 @@
 
 Workspace này chứa 19 demo modules dùng để chạy prototype cho khách hàng doanh nghiệp. Mỗi module là một app React/Next.js độc lập (Vite hoặc Next.js).
 
-## Bối cảnh & nhiệm vụ đang làm dở
+## Bối cảnh
 
 **Nhiệm vụ:** Rebrand toàn bộ mockdata + UI text từ chủ đề Quân đội PKKQ (Phòng Không – Không Quân) sang doanh nghiệp generic **"Doanh nghiệp A"** — công ty công nghệ (sản xuất + cung ứng phần mềm).
 
-**Trạng thái:** Partial. Commit đầu tiên (`b2947f6`) đã push 1042 files lên `origin/main`. Phần đã làm xong và phần cần làm tiếp ghi rõ ở [§ Trạng thái từng module](#trạng-thái-từng-module) bên dưới.
+**Trạng thái: HOÀN TẤT.** Toàn bộ 19 module đã sạch user-visible military terminology. Lịch sử commit:
+- `b2947f6` — Initial 1042 files (partial rebrand)
+- `6277e38` — Add CLAUDE.md
+- `53e51eb` — Wave 1 (demo-suachua, demo-antoan, demo-vongdoi)
+- `06f2b4f` — Wave 2 (demo-chatbot, demo-dms)
+- `bcfcf49` — Wave 3+4 (demo-daitu, demo-sanxuat, demo-taichinhketoan, sweep)
+
+**Match còn lại (đều intentional):**
+- AppSwitcher URLs `pkkq-*-staging.dft.vn` — DNS staging thật, KHÔNG đổi
+- `package.json` field `name` (vd `pkkq-suachua`) — KHÔNG đổi
+- TS type literals `'radar' | 'missile'`, `'pkkq-suachua' | 'pkkq-daitu'` — KHÔNG đổi
+- Code identifier values: `unitId: 'Z119'`, `equipmentCode: 'RADAR-001'`, `source: 'pkkq-daitu'` — KHÔNG đổi
+- CSS variables `--pkkq-*`, CSS classes `.pkkq-*`, TS exports `PKKQ_CHART_COLORS`, function/interface `PkkqTooltip` — KHÔNG đổi
+- localStorage keys `pkkq_authenticated` / `pkkq_remember_me` — KHÔNG đổi
+- File `pkkq-tooltip.tsx`, `chart-theme.ts` — KHÔNG đổi
+- `Đối tác chiến lược` (strategic partner) trong demo-muahang — false positive `tác chiến`, đã rebrand từ "military supplier" → giữ
+- Bilingual comment `// Khí tài / Thiết bị` (rất ít chỗ) — comment, không user-visible
 
 ## Quy ước thay thế (mapping bắt buộc)
 
@@ -108,27 +124,33 @@ CHỈ đổi NỘI DUNG STRING mà người dùng nhìn thấy.
 
 ## Trạng thái từng module
 
-### Sạch (không cần làm gì thêm)
-- `demo-portal` — landing/hub. Branding mới: "Hệ thống quản trị Doanh nghiệp A".
-- `demo-sso` — login + user list. Branding: "DOANH NGHIỆP A". Còn file ảnh `public/bg-sso.jpg` + `image/background SSO.jpg` chưa thay (đã có TODO trong `App.css`).
-- `demo-doluong` — đo lường KPI/chất lượng phần mềm.
-- `demo-kho` — kho IT asset / license.
-- `demo-sanxuat` — phát triển phần mềm / DevOps pipeline.
-- `demo-taichinhketoan` — finance & accounting (giữ TK VAS).
-- `demo-daitu` — đại tu hệ thống/server.
-- `demo-chatluong` / `demo-suco` / `demo-thunghiem` — chỉ có 1 file `AppSwitcher.tsx` (skeleton module). Không có content cần đổi.
+**TẤT CẢ 19 MODULE ĐÃ SẠCH** user-visible military terminology (verify cuối: 0 match cho mọi keyword quân sự, ngoại trừ các identifier intentional và 1 false-positive "Đối tác chiến lược" trong demo-muahang).
 
-### Đã làm phần lớn, còn dư mockdata cần quét
-- `demo-baotri` — còn `data/equipment.ts` (4), `data/procedures.ts` (2), `ROADMAP.md` (3), `App.css` (1).
-- `demo-muahang` — còn `data/receiving.ts` (8), `data/materialRequests.ts` (8), `data/materials.ts` (1), `utils/format.ts` (5), `types/index.ts` (3), một số pages.
-- `demo-hopdongnhiemvu` — còn `pages/ProposalCreate/index.tsx` (5), `pages/ProposalEdit/index.tsx` (5).
-- `demo-vongdoi` — partial. **Còn nguyên/lớn:** `data/actualConfigurations.ts` (30), `data/equipment.ts` (17), `data/configurations.ts` (10), `data/changeRequests.ts` (7), `pages/Configuration` (16), `pages/ChangeRequest` (13), `pages/ActualConfiguration` (10), `pages/Categories` (7), `types/index.ts` (7).
+| Module | Stack | Branding | Notes |
+|---|---|---|---|
+| `demo-portal` | Next.js | Hệ thống quản trị Doanh nghiệp A | Hub/landing |
+| `demo-sso` | Vite + AntD | DOANH NGHIỆP A | Còn file ảnh `public/bg-sso.jpg` + `image/background SSO.jpg` (TODO trong App.css) |
+| `demo-doluong` | Vite + AntD | Doanh nghiệp A | Đo lường chất lượng phần mềm / KPI |
+| `demo-kho` | Vite + AntD | Doanh nghiệp A | Kho IT asset / license |
+| `demo-sanxuat` | Vite + AntD | Trung tâm Phần mềm Alpha | Phát triển phần mềm / DevOps |
+| `demo-taichinhketoan` | Vite + AntD | Doanh nghiệp A | Finance & accounting (giữ TK VAS) |
+| `demo-daitu` | Vite + AntD | Doanh nghiệp A | Đại tu hệ thống / major upgrade |
+| `demo-baotri` | Vite + AntD | Doanh nghiệp A | Bảo trì hệ thống / server |
+| `demo-suachua` | Vite + AntD | Doanh nghiệp A | Khắc phục sự cố / sửa chữa thiết bị |
+| `demo-antoan` | Vite + AntD | Doanh nghiệp A | An toàn / IT Security |
+| `demo-vongdoi` | Vite + AntD | Doanh nghiệp A | SDLC sản phẩm phần mềm |
+| `demo-muahang` | Vite + AntD | Doanh nghiệp A | IT Procurement |
+| `demo-hopdongnhiemvu` | Vite + AntD | Doanh nghiệp A | Hợp đồng dự án / SOW |
+| `demo-chatbot` | Next.js | Doanh nghiệp A | Chatbot AI doanh nghiệp |
+| `demo-dms` | Next.js | Doanh nghiệp A | Document Management System |
+| `demo-chatluong` / `demo-suco` / `demo-thunghiem` | Vite + AntD | (skeleton) | Chỉ có 1 file `AppSwitcher.tsx` mỗi module — không có nghiệp vụ |
 
-### Còn nguyên gần như chưa chạm — cần ưu tiên
-- `demo-antoan` — `data/incidents.ts` (20), `data/violations.ts` (15), `data/improvements.ts` (13), `data/risks.ts` (10), `data/controlSheets.ts` (9). Plus pages (Risks, Violations, SafetyControl, Improvements, Incidents, Reports), `contexts/UserContext.tsx`, `layouts/MainLayout.tsx`, `App.css`. Mọi user-visible string còn nguyên: "Tên lửa S-75", "PX2 — Sửa chữa Tên lửa", "Thiếu tá Phạm Văn Tùng", "radar 36D6"...
-- `demo-suachua` — `data/workOrders.ts` (63), `data/materialRequests.ts` (9), `data/repairRequests.ts` (6), `data/repairHistory.ts` (6), `data/inspections.ts` (5), `data/diagnosticResults.ts` (5), `data/alerts.ts` (4), `data/repairTasks.ts` (3), `data/inventory.ts` (2). Plus `ROADMAP.md` (17), `App.css`, nhiều pages. Mọi data file giữ "Đài radar P-18", "Sư đoàn 361", "Đại tá Phạm Quốc Hưng", "Phân xưởng Sửa chữa Radar/Tên lửa".
-- `demo-chatbot` — `lib/mock-data.ts` (53), `lib/chat-api.ts` (8), `lib/documents-api.ts` (4), `lib/ai-quality-api.ts` (3), `lib/auth.ts` (2), `lib/profile-api.ts` (2), `lib/api/chat-upload.ts` (2), `lib/departments-api.ts` (2), `app/globals.css` (13), `app/layout.tsx` (2), `app/(protected)/layout.tsx` (2), `components/app-switcher.tsx` (25 — gần như URLs), `components/documents/document-preview-dialog.tsx` (2), `contexts/auth-context.tsx` (3). Glossary, chat samples, Q&A có nhiều thuật ngữ quân sự đặc thù — đọc context kỹ.
-- `demo-dms` — `lib/mock-data.ts` (14), `lib/auth.ts` (6), `app/globals.css` (13), `components/dashboard/documents-chart.tsx` (8), `components/dashboard/data-classification.tsx` (1), `components/dashboard/user-dashboard.tsx` (1), `components/app-switcher.tsx` (25), `contexts/auth-context.tsx` (4), `app/login/page.tsx` (1). Document types: Điều lệnh → Quy chế, Mệnh lệnh → Chỉ thị/Quyết định, Văn bản mật → Văn bản nội bộ.
+### File ảnh chưa thay (không phá build, có thể thay sau bằng tay)
+- `demo-sso/public/bg-sso.jpg` + `demo-sso/image/background SSO.jpg` — ảnh nền hero login (TODO trong `App.css`)
+- `demo-portal/image portal/` + `demo-portal/public/` — chưa kiểm kê hết; agent KHÔNG xóa file ảnh
+
+### Các module còn lại
+Logo trong sidebar dùng inline SVG hoặc lucide-react icon (đã thay text "DA" hoặc giữ icon trung tính).
 
 ## Cách quét nhanh để biết chỗ nào còn cần sửa
 
@@ -149,30 +171,19 @@ Hoặc dùng grep tool của Claude:
 - `-i: true`
 - `output_mode: "content"`
 
-## Cách tiếp tục
+## Nếu tìm thấy chỗ sót
+
+Rebrand đã hoàn tất nhưng nếu phát hiện chỗ sót:
 
 1. Pull về máy: `git pull origin main`
-2. `cd` vào module cần làm tiếp (ưu tiên theo thứ tự: `demo-suachua` → `demo-antoan` → `demo-vongdoi` → `demo-chatbot` → `demo-dms` → các module dư ít).
-3. Chạy grep ở trên để lấy danh sách file còn match.
-4. Edit từng file theo mapping ở trên.
-5. Commit theo từng module nhỏ (vd: `git commit -m "rebrand demo-suachua: data files + ROADMAP"`).
+2. Chạy grep ở trên trong module nghi ngờ.
+3. Phân biệt: nếu là code identifier (variable name, type literal, file name, CSS var, package name, AppSwitcher URL, equipmentCode data ID) — KHÔNG đổi. Nếu là user-visible text — đổi theo mapping table.
+4. Edit + commit nhỏ.
 
-**Có thể nhờ Claude Code chạy lại theo từng module:** copy section "Mapping bắt buộc" + "KHÔNG đổi" + "Phạm vi" ở trên, kèm tên module → giao cho 1 agent mỗi lần. Tránh giao 19 module song song như lần trước (1 vài agent bị truncate khi work load lớn).
-
-## Stack tham khảo
-
-- Module Vite (React + TypeScript + Ant Design 5): `demo-antoan`, `demo-baotri`, `demo-daitu`, `demo-doluong`, `demo-hopdongnhiemvu`, `demo-kho`, `demo-muahang`, `demo-sanxuat`, `demo-sso`, `demo-suachua`, `demo-vongdoi`, `demo-taichinhketoan`
-- Module Next.js (App Router + Tailwind/shadcn): `demo-portal`, `demo-chatbot`, `demo-dms`
-- Module skeleton (1 file): `demo-chatluong`, `demo-suco`, `demo-thunghiem`
-
-## Logo / file ảnh chưa thay
-
-- `demo-sso/public/bg-sso.jpg` + `demo-sso/image/background SSO.jpg` — ảnh nền hero login (TODO đã ghi trong `demo-sso/src/App.css`).
-- `demo-portal/image portal/` + `demo-portal/public/` — chưa kiểm kê hết; agent đã được dặn KHÔNG xóa file ảnh, chỉ note.
-- Các module còn lại: logo trong sidebar dùng inline SVG hoặc lucide-react icon (đã thay text "DA" hoặc giữ icon trung tính).
+**Lessons learned từ session đầu tiên:** Tránh giao >5 module song song cho agent — vài agent bị truncate khi load nặng. Wave 3-5 module / lần là an toàn.
 
 ## Repo
 
 - Origin: https://github.com/ductv112/demo
 - Branch: `main`
-- Commit khởi tạo: `b2947f6` (1042 files, đã exclude `node_modules`)
+- Commits: `b2947f6` (init) → `6277e38` (CLAUDE.md) → `53e51eb` (W1) → `06f2b4f` (W2) → `bcfcf49` (W3+W4)
