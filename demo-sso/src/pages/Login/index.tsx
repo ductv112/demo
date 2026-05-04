@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Form, Input, Button, Checkbox, message, Typography } from 'antd';
 import {
   UserOutlined,
@@ -10,14 +10,13 @@ import {
   AuditOutlined,
 } from '@ant-design/icons';
 import { useAuth } from '../../contexts/UserContext';
-import { PORTAL_URL } from '../../utils/portal';
-import { getToken } from '../../utils/ssoAuth';
 
 const { Text } = Typography;
 
 export default function Login() {
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
   const onFinish = (values: { username: string; password: string; remember: boolean }) => {
@@ -25,23 +24,16 @@ export default function Login() {
     setTimeout(() => {
       const result = login(values.username, values.password);
       if (result.success && result.user) {
-        message.success('Đăng nhập thành công');
         const redirect = searchParams.get('redirect');
         if (redirect) {
           // Có redirect param từ app gọi → quay về app đó trực tiếp
+          message.success('Đăng nhập thành công');
           window.location.href = redirect;
         } else {
-          // Mặc định: redirect sang Portal kèm SSO token để Portal nhận user.
-          // Nếu Portal chưa chạy (localhost:3000 down), browser sẽ ERR_CONNECTION_REFUSED;
-          // người dùng có thể quay lại http://localhost:5173/admin để dùng SSO admin.
-          const token = getToken();
-          const params = new URLSearchParams({
-            sso_token: token?.token || '',
-            sso_user_id: result.user.id,
-            sso_username: result.user.username,
-            sso_expires: token?.expiresAt || '',
-          });
-          window.location.href = `${PORTAL_URL}?${params.toString()}`;
+          // Không có redirect → về "/" để RootRedirect xử lý (admin/portal)
+          // Dùng navigate nội bộ, tránh double redirect với AuthLayout
+          message.success('Đăng nhập thành công');
+          navigate('/', { replace: true });
         }
       } else {
         message.error(result.error || 'Đăng nhập thất bại');

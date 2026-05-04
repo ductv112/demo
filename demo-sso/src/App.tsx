@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ConfigProvider, App as AntApp } from 'antd';
 import viVN from 'antd/locale/vi_VN';
@@ -17,6 +18,8 @@ import Settings from './pages/Settings';
 import SsoLogout from './pages/SsoLogout';
 import SsoSession from './pages/SsoSession';
 import SsoCallback from './pages/SsoCallback';
+import { PORTAL_URL } from './utils/portal';
+import { getToken } from './utils/ssoAuth';
 import './App.css';
 
 // ============================================================
@@ -32,16 +35,31 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 }
 
 /**
- * Route "/" — login xong vào /admin của SSO. User muốn sang Portal thì
- * click qua AppSwitcher (yêu cầu Portal đã khởi ở localhost:3000).
- * Trong demo local nhẹ RAM, không bắt buộc Portal phải chạy.
+ * Route "/" — Sysadmin (R06) → /admin, user thường → Portal.
+ * Chưa login → về /sso/login.
  */
 function RootRedirect() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, currentUser } = useAuth();
+
+  useEffect(() => {
+    if (isAuthenticated && currentUser) {
+      // Mọi tài khoản sau đăng nhập đều vào Portal.
+      // localStorage không chia sẻ giữa 2 domain → truyền token qua URL param.
+      const token = getToken();
+      const params = new URLSearchParams({
+        sso_token: token?.token || '',
+        sso_user_id: currentUser.id,
+        sso_username: currentUser.username,
+        sso_expires: token?.expiresAt || '',
+      });
+      window.location.href = `${PORTAL_URL}?${params.toString()}`;
+    }
+  }, [isAuthenticated, currentUser]);
+
   if (!isAuthenticated) {
     return <Navigate to="/sso/login" replace />;
   }
-  return <Navigate to="/admin" replace />;
+  return null;
 }
 
 // ============================================================
