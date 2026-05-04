@@ -193,7 +193,7 @@ const ProductionOrderDetail: React.FC = () => {
       },
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'workshopName',
       width: '10%',
       render: (ws: string) => <Tag icon={<ToolOutlined />}>{ws}</Tag>,
@@ -361,7 +361,7 @@ const ProductionOrderDetail: React.FC = () => {
               <Tag color="#1B3A5C">{order.routingVersion}</Tag>
             </Col>
             <Col span={6}>
-              <Text type="secondary" style={{ fontSize: 12 }}>Phân xưởng tham gia</Text>
+              <Text type="secondary" style={{ fontSize: 12 }}>Trung tâm tham gia</Text>
               <br />
               <Space size={4} wrap>
                 {workshopTags.length > 0 ? workshopTags.map((w) => (

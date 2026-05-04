@@ -251,8 +251,8 @@ const ProductionOrderFormPage: React.FC = () => {
 
           <Row gutter={16}>
             <Col span={8}>
-              <Form.Item name="workshopId" label="Phân xưởng" rules={[{ required: true, message: 'Chọn phân xưởng' }]}>
-                <Select placeholder="Chọn phân xưởng" options={workshopOptions} />
+              <Form.Item name="workshopId" label="Trung tâm" rules={[{ required: true, message: 'Chọn trung tâm' }]}>
+                <Select placeholder="Chọn trung tâm" options={workshopOptions} />
               </Form.Item>
             </Col>
             <Col span={8}>

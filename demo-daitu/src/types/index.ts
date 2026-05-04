@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// Cấu trúc dữ liệu PKKQ - Quản lý Đại tu - Nhà máy Z119
+// Cấu trúc dữ liệu Doanh nghiệp A - Quản lý Đại tu - Trung tâm phần mềm Alpha
 // Flow: Tiếp nhận → Kế hoạch → Tháo rã → Kiểm tra → Phục hồi → Lắp ráp → Thử nghiệm → Truy vết
 // ═══════════════════════════════════════════════════════════════
 
@@ -12,7 +12,7 @@ export interface Department {
   head: string;
 }
 
-// ─── Khí tài / Thiết bị ──────────────────────────────────────
+// ─── Thiết bị ──────────────────────────────────────
 export type EquipmentCategory = 'radar' | 'missile' | 'communication' | 'electronic' | 'mechanical';
 
 export interface Equipment {
@@ -63,7 +63,7 @@ export interface OverhaulReception {
   overhaulScope: 'full' | 'partial';
   overhaulType: 'scheduled' | 'condition_based' | 'priority';
   routingWorkshop: string;
-  routingWorkshopName?: string;      // Tên đầy đủ phân xưởng
+  routingWorkshopName?: string;      // Tên đầy đủ trung tâm
   routingReason?: string;            // Lý do định tuyến
   // Bước 6: Liên kết hồ sơ đại tu
   linkedOrderId?: string;            // Mã lệnh đại tu được tạo từ hồ sơ này

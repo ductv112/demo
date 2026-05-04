@@ -151,7 +151,7 @@ const ReportsPage: React.FC = () => {
                 <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
                   <Col xs={24} md={16}>
                     <Card className="db-chart-card" style={{ borderRadius: 14 }} styles={{ body: { padding: 20 } }}>
-                      <Text strong style={{ color: '#1B3A5C', fontSize: 14 }}>Sản lượng kế hoạch vs hoàn thành theo phân xưởng</Text>
+                      <Text strong style={{ color: '#1B3A5C', fontSize: 14 }}>Sản lượng kế hoạch vs hoàn thành theo trung tâm</Text>
                       <div style={{ marginTop: 12, height: 280 }}>
                         <Column data={wsChartData} xField="workshop" yField="value" seriesField="category" isGroup
                           color={['#1B3A5C', '#52c41a']} columnWidthRatio={0.4}
@@ -223,16 +223,16 @@ const ReportsPage: React.FC = () => {
           // === Tab 4: Tổng hợp theo PX ===
           {
             key: 'workshop',
-            label: <span><TeamOutlined style={{ marginRight: 6 }} />Theo phân xưởng</span>,
+            label: <span><TeamOutlined style={{ marginRight: 6 }} />Theo trung tâm</span>,
             children: (
               <Card className="db-chart-card" style={{ borderRadius: 14 }} styles={{ body: { padding: 0 } }}>
                 <div style={{ padding: '16px 20px 8px' }}>
-                  <Text strong style={{ color: '#1B3A5C', fontSize: 14 }}>Tổng hợp kết quả sản xuất theo phân xưởng</Text>
+                  <Text strong style={{ color: '#1B3A5C', fontSize: 14 }}>Tổng hợp kết quả sản xuất theo trung tâm</Text>
                 </div>
                 <Table
                   dataSource={workshopSummary} rowKey="workshopId" size="middle" pagination={false}
                   columns={[
-                    { title: 'Phân xưởng', dataIndex: 'name', width: 200 },
+                    { title: 'Trung tâm', dataIndex: 'name', width: 200 },
                     { title: 'Tổng lệnh', dataIndex: 'totalOrders', width: 90, align: 'center' },
                     { title: 'Đang SX', dataIndex: 'inProgress', width: 80, align: 'center', render: (v: number) => v > 0 ? <Tag color="processing">{v}</Tag> : <Text type="secondary">0</Text> },
                     { title: 'Hoàn thành', dataIndex: 'completed', width: 90, align: 'center', render: (v: number) => v > 0 ? <Tag color="success">{v}</Tag> : <Text type="secondary">0</Text> },

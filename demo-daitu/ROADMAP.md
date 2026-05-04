@@ -1,6 +1,6 @@
 # ROADMAP - Quản lý Đại tu (pkkq-daitu)
 
-> Phần mềm #10 trong hệ thống 16 phần mềm PKKQ
+> Phần mềm #10 trong hệ thống 16 phần mềm Doanh nghiệp A
 > Tham chiếu cấu trúc từ `pkkq-taichinhketoan`
 > Domain: `pkkq-daitu-staging.dft.vn`
 
@@ -8,7 +8,7 @@
 
 ## Tổng quan hệ thống
 
-Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy Z119, từ tiếp nhận đánh giá, lập kế hoạch, tháo rã, kiểm tra, phục hồi/thay thế, lắp ráp, thử nghiệm đến truy vết cấu hình sau đại tu.
+Quản lý toàn bộ quy trình đại tu thiết bị / hệ thống / sản phẩm phần mềm tại Trung tâm phần mềm Alpha, từ tiếp nhận đánh giá, lập kế hoạch, tháo rã, kiểm tra, phục hồi/thay thế, lắp ráp, thử nghiệm đến truy vết cấu hình sau đại tu.
 
 **8 quy trình nghiệp vụ chính** + Dashboard + Báo cáo + Danh mục
 
@@ -36,7 +36,7 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 | 16 | Traceability | `/traceability` | Truy vết & cấu hình sau đại tu |
 | 17 | TraceabilityDetail | `/traceability/:id` | Chi tiết truy vết thiết bị |
 | 18 | Reports | `/reports` | Báo cáo đại tu (31 loại) |
-| 19 | Categories | `/categories/*` | Danh mục (khí tài, đơn vị, vật tư...) |
+| 19 | Categories | `/categories/*` | Danh mục (thiết bị, đơn vị, vật tư...) |
 
 ---
 
@@ -67,7 +67,7 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 | Mock data tổng quan | `src/data/dashboard.ts` — số liệu KPI, thống kê | [ ] |
 | Stat Cards (KPI) | Tổng lệnh đại tu, Đang thực hiện, Hoàn thành, Chậm tiến độ | [ ] |
 | Biểu đồ tiến độ đại tu | Pie/Bar chart trạng thái lệnh đại tu | [ ] |
-| Biểu đồ theo phân xưởng | Bar chart khối lượng công việc PX1-PX4 | [ ] |
+| Biểu đồ theo trung tâm | Bar chart khối lượng công việc PX1-PX4 | [ ] |
 | Bảng lệnh đại tu gần đây | Table top 5-10 lệnh mới nhất | [ ] |
 | Cảnh báo & thông báo | Chậm tiến độ, thiếu vật tư, chờ nghiệm thu | [ ] |
 | Timeline tiến độ | Gantt-like hoặc Steps cho lệnh đang chạy | [ ] |
@@ -75,14 +75,14 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 ---
 
 ### Phase 3: Tiếp nhận & Đánh giá tổng thể
-> Quy trình 1: Tiếp nhận khí tài, đánh giá kỹ thuật, xác định phạm vi đại tu
+> Quy trình 1: Tiếp nhận thiết bị, đánh giá kỹ thuật, xác định phạm vi đại tu
 
 | Task | Chi tiết | Trạng thái |
 |------|---------|-----------|
 | Mock data tiếp nhận | `src/data/overhaulReceptions.ts` | [ ] |
-| Trang danh sách OverhaulReception | Bảng + filter theo trạng thái, khí tài, đơn vị gửi | [ ] |
-| Trang chi tiết OverhaulReceptionDetail | Thông tin khí tài, hồ sơ kỹ thuật, kết quả đánh giá | [ ] |
-| Tab: Thông tin khí tài | Loại, serial, đơn vị gửi, số giờ vận hành | [ ] |
+| Trang danh sách OverhaulReception | Bảng + filter theo trạng thái, thiết bị, đơn vị gửi | [ ] |
+| Trang chi tiết OverhaulReceptionDetail | Thông tin thiết bị, hồ sơ kỹ thuật, kết quả đánh giá | [ ] |
+| Tab: Thông tin thiết bị | Loại, serial, đơn vị gửi, số giờ vận hành | [ ] |
 | Tab: Kiểm tra ban đầu | Checklist kiểm tra ngoại quan, rò rỉ, biến dạng | [ ] |
 | Tab: Đánh giá hao mòn | Bảng đánh giá từng cụm, mức độ hao mòn | [ ] |
 | Tab: Phạm vi & định tuyến | Phạm vi đại tu, phân loại cấp đại tu | [ ] |
@@ -99,7 +99,7 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 | Mock data lệnh đại tu | `src/data/overhaulOrders.ts` | [ ] |
 | Mock data công đoạn | `src/data/workStages.ts` | [ ] |
 | Mock data vật tư | `src/data/materials.ts` | [ ] |
-| Trang danh sách OverhaulOrder | Bảng + filter theo trạng thái, khí tài, phân xưởng | [ ] |
+| Trang danh sách OverhaulOrder | Bảng + filter theo trạng thái, thiết bị, trung tâm | [ ] |
 | Trang chi tiết OverhaulOrderDetail | Toàn bộ thông tin lệnh đại tu | [ ] |
 | Tab: Phương án tổng thể | Chiến lược, mức độ can thiệp từng cụm | [ ] |
 | Tab: Hạng mục & công đoạn | Bảng các bước: tháo rã → kiểm tra → phục hồi → lắp ráp → thử nghiệm | [ ] |
@@ -244,14 +244,14 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 | **Nhóm 6: Vật tư & Chi phí** | | |
 | — Báo cáo vật tư sử dụng trong đại tu | Tổng hợp vật tư theo lệnh | [ ] |
 | — Báo cáo tiêu hao vật tư | So sánh định mức vs thực tế | [ ] |
-| — Báo cáo linh kiện thay thế theo thiết bị | Thống kê theo từng khí tài | [ ] |
+| — Báo cáo linh kiện thay thế theo thiết bị | Thống kê theo từng thiết bị | [ ] |
 | — Báo cáo chi phí đại tu theo thiết bị | Chi phí từng lệnh | [ ] |
 | — Báo cáo chi phí vật tư | Tổng chi phí vật tư | [ ] |
 | — Báo cáo chi phí nhân công | Tổng chi phí nhân công | [ ] |
 | — Báo cáo tổng chi phí đại tu | Tổng hợp tất cả chi phí | [ ] |
 | — Báo cáo so sánh chi phí KH và thực tế | Kế hoạch vs thực tế | [ ] |
 | **Nhóm 7: Truy vết & Vòng đời** | | |
-| — Báo cáo lịch sử đại tu thiết bị | Timeline đại tu từng khí tài | [ ] |
+| — Báo cáo lịch sử đại tu thiết bị | Timeline đại tu từng thiết bị | [ ] |
 | — Báo cáo thay đổi cấu hình sau đại tu | Trước/sau đại tu | [ ] |
 | — Báo cáo truy vết linh kiện | Linh kiện → nguồn gốc → lệnh đại tu | [ ] |
 | — Báo cáo vòng đời cấu phần | Tuổi thọ, số lần phục hồi | [ ] |
@@ -266,9 +266,9 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 
 | Task | Chi tiết | Trạng thái |
 |------|---------|-----------|
-| Danh mục khí tài | Radar, tên lửa, TTLL — loại, model, thông số | [ ] |
-| Danh mục đơn vị quân đội | Sư đoàn, trung đoàn gửi khí tài | [ ] |
-| Danh mục phân xưởng | PX1-PX4, năng lực, chuyên môn | [ ] |
+| Danh mục thiết bị | Hệ thống monitoring, module, hệ thống truyền thông — loại, model, thông số | [ ] |
+| Danh mục đơn vị | Khối, Phòng / Trung tâm gửi thiết bị | [ ] |
+| Danh mục trung tâm | PX1-PX4, năng lực, chuyên môn | [ ] |
 | Danh mục loại đại tu | Cấp xưởng, chuyên sâu, ưu tiên | [ ] |
 | Danh mục vật tư & linh kiện | Mã, tên, nhóm, nhà cung cấp | [ ] |
 | Danh mục loại kiểm tra | NDT, đo kiểm, kiểm tra bề mặt... | [ ] |
@@ -280,7 +280,7 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 
 | File | Nội dung | Entities |
 |------|---------|----------|
-| `overhaulReceptions.ts` | Hồ sơ tiếp nhận khí tài | ~8-10 records |
+| `overhaulReceptions.ts` | Hồ sơ tiếp nhận thiết bị | ~8-10 records |
 | `overhaulOrders.ts` | Lệnh đại tu | ~8-10 records |
 | `workStages.ts` | Công đoạn theo lệnh | ~30-40 records |
 | `materials.ts` | Vật tư & linh kiện | ~20-30 records |
@@ -291,8 +291,8 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 | `assemblies.ts` | Phiên lắp ráp | ~8-10 records |
 | `testAcceptances.ts` | Thử nghiệm & nghiệm thu | ~8-10 records |
 | `traceability.ts` | Lịch sử & cấu hình | ~8-10 records |
-| `departments.ts` | Phòng ban Z119 | 11 records |
-| `equipment.ts` | Danh mục khí tài | ~15-20 records |
+| `departments.ts` | Phòng ban Trung tâm Alpha | 11 records |
+| `equipment.ts` | Danh mục thiết bị | ~15-20 records |
 | `alerts.ts` | Cảnh báo hệ thống | ~10-15 records |
 
 ---
@@ -303,7 +303,7 @@ Quản lý toàn bộ quy trình đại tu khí tài quân sự tại Nhà máy 
 OverhaulReception    — Hồ sơ tiếp nhận & đánh giá
 OverhaulOrder        — Lệnh đại tu (Work Order)
 WorkStage            — Công đoạn trong lệnh đại tu
-Equipment            — Khí tài / Thiết bị
+Equipment            — Thiết bị / Hệ thống
 Component            — Cấu phần / Linh kiện
 DisassemblyRecord    — Phiên tháo rã
 InspectionResult     — Kết quả kiểm tra kỹ thuật
@@ -312,7 +312,7 @@ AssemblyRecord       — Phiên lắp ráp & hiệu chỉnh
 TestAcceptance       — Thử nghiệm & nghiệm thu
 TraceabilityRecord   — Truy vết & cấu hình sau đại tu
 Material             — Vật tư, linh kiện
-Department           — Phòng ban / Phân xưởng
+Department           — Phòng ban / Trung tâm
 Personnel            — Nhân sự kỹ thuật
 Alert                — Cảnh báo hệ thống
 ```
@@ -348,7 +348,7 @@ BÁO CÁO & DANH MỤC
 ## Luồng nghiệp vụ tổng thể
 
 ```
-Tiếp nhận khí tài ──→ Đánh giá tổng thể ──→ Lập kế hoạch ──→ Lệnh đại tu
+Tiếp nhận thiết bị ──→ Đánh giá tổng thể ──→ Lập kế hoạch ──→ Lệnh đại tu
                                                                      │
         ┌────────────────────────────────────────────────────────────┘
         ▼
@@ -384,7 +384,7 @@ Tiếp nhận khí tài ──→ Đánh giá tổng thể ──→ Lập kế 
 
 - **Thứ tự build**: Phase 1 → 2 → 3 → 4 → ... → 12 (tuần tự theo luồng nghiệp vụ)
 - **Tham chiếu**: Copy pattern từ `pkkq-taichinhketoan` cho layout, theme, stat cards, table, status tags
-- **Mock data**: Ngữ cảnh Nhà máy Z119, khí tài radar P-18/36D6/P-37/ST-68, tên lửa S-75/S-125/S-300PMU
+- **Mock data**: Ngữ cảnh Trung tâm phần mềm Alpha, hệ thống monitoring P-18/36D6/P-37/ST-68, module S-75/S-125/S-300PMU
 - **Locale**: Toàn bộ tiếng Việt, `viVN` locale, ngày `DD/MM/YYYY`
 - **Build check**: `npm run build` phải pass trước khi push
 - **Branch**: Commit vào `develop`, không commit trực tiếp `main`

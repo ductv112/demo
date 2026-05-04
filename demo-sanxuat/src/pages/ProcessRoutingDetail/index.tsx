@@ -280,7 +280,7 @@ const ProcessRoutingDetailPage: React.FC = () => {
         {[
           { label: 'Tổng công đoạn', value: totalSteps, suffix: 'bước', gradient: 'linear-gradient(135deg, #1B3A5C, #2d5a8e)' },
           { label: 'Tổng giờ công', value: totalHours, suffix: 'giờ', gradient: 'linear-gradient(135deg, #0891b2, #06b6d4)' },
-          { label: 'Phân xưởng tham gia', value: uniqueWorkshops, suffix: 'đơn vị', gradient: 'linear-gradient(135deg, #d97706, #f59e0b)' },
+          { label: 'Trung tâm tham gia', value: uniqueWorkshops, suffix: 'đơn vị', gradient: 'linear-gradient(135deg, #d97706, #f59e0b)' },
           { label: 'Nhân lực cần thiết', value: totalWorkers, suffix: 'người', gradient: 'linear-gradient(135deg, #7c3aed, #8b5cf6)' },
         ].map((stat, idx) => (
           <Col xs={12} sm={6} key={idx}>
@@ -348,7 +348,7 @@ const ProcessRoutingDetailPage: React.FC = () => {
                 ),
               },
               {
-                title: 'Phân xưởng', dataIndex: 'workshopName', key: 'workshopName', width: 120,
+                title: 'Trung tâm', dataIndex: 'workshopName', key: 'workshopName', width: 120,
                 render: (v: string) => <Tag color="#1B3A5C" style={{ fontSize: 11 }}>{v}</Tag>,
               },
               {

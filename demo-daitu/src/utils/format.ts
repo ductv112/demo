@@ -125,8 +125,8 @@ export const alertSeverityConfig: Record<AlertSeverity, { label: string; color: 
 };
 
 export const equipmentCategoryConfig: Record<EquipmentCategory, { label: string; color: string }> = {
-  radar: { label: 'Radar', color: '#1B3A5C' },
-  missile: { label: 'Tên lửa', color: '#7c3aed' },
+  radar: { label: 'Hệ thống monitoring', color: '#1B3A5C' },
+  missile: { label: 'Module', color: '#7c3aed' },
   communication: { label: 'Thông tin liên lạc', color: '#0891b2' },
   electronic: { label: 'Điện tử', color: '#059669' },
   mechanical: { label: 'Cơ khí', color: '#d97706' },

@@ -120,13 +120,13 @@ const ProposalEditPage: React.FC = () => {
     code: proposal.configReference.split(' ')[0] || 'CFG-LOADED',
     version: 'V3.0',
     status: 'Đang sử dụng',
-    components: ['Khối thu phát', 'Hệ thống anten', 'Khối xử lý tín hiệu', 'Bộ nguồn cung cấp điện', 'Hệ thống điều khiển', 'Khối hiển thị'],
+    components: ['Khối thu thập dữ liệu', 'Hệ thống cảnh báo', 'Khối xử lý tín hiệu', 'Bộ nguồn cung cấp điện', 'Hệ thống điều khiển', 'Khối hiển thị'],
     specs: [
       { label: 'Tần số hoạt động', value: '150-170 MHz (VHF)' },
-      { label: 'Công suất phát xung', value: '160 kW' },
-      { label: 'Tầm phát hiện', value: '250 km' },
-      { label: 'Độ cao phát hiện', value: '10.000 m' },
-      { label: 'Tốc độ quay anten', value: '6 vòng/phút' },
+      { label: 'Công suất xử lý', value: '160 kW' },
+      { label: 'Phạm vi giám sát', value: '250 km' },
+      { label: 'Phạm vi quan sát', value: '10.000 m' },
+      { label: 'Tốc độ thu thập', value: '6 vòng/phút' },
       { label: 'Nguồn cung cấp', value: '380V / 50Hz, 3 pha' },
     ],
     maintenance: {
@@ -135,9 +135,9 @@ const ProposalEditPage: React.FC = () => {
       condition: 'Hư hỏng cục bộ, cần sửa chữa',
     },
     consumables: [
-      { name: 'Đèn Magnetron', lifespan: '3.000 giờ', status: 'Hết hạn' },
-      { name: 'Bộ lọc sóng', lifespan: '5 năm', status: 'Còn 6 tháng' },
-      { name: 'Ắc quy dự phòng', lifespan: '3 năm', status: 'Hết hạn' },
+      { name: 'Bộ phát tín hiệu', lifespan: '3.000 giờ', status: 'Hết hạn' },
+      { name: 'Bộ lọc tín hiệu', lifespan: '5 năm', status: 'Còn 6 tháng' },
+      { name: 'Pin dự phòng', lifespan: '3 năm', status: 'Hết hạn' },
     ],
   } : null);
   const [processSteps, setProcessSteps] = useState<ProcessStep[]>([]);

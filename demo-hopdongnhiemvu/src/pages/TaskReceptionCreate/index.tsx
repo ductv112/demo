@@ -267,7 +267,7 @@ const TaskReceptionCreatePage: React.FC = () => {
         </Col>
         <Col xs={24} md={12}>
           <Form.Item label="Phân hệ xử lý chính" name="assignedDepartment" rules={[{ required: true, message: 'Chọn đơn vị' }]}>
-            <Select placeholder="Chọn phân xưởng / phòng ban">
+            <Select placeholder="Chọn trung tâm / phòng ban">
               {technicalDepts.map(d => <Select.Option key={d.id} value={d.id}>{d.name}</Select.Option>)}
             </Select>
           </Form.Item>

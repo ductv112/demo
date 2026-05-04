@@ -10,7 +10,7 @@ export const costPlans: CostPlan[] = [
     spentBudget: 0,
     remainingBudget: 0,
     registrationDeadline: '2026-11-30',
-    note: 'Đang thu thập nhu cầu kinh phí từ các phòng ban, phân xưởng',
+    note: 'Đang thu thập nhu cầu kinh phí từ các phòng ban, trung tâm',
     createdAt: '2026-04-15',
     updatedAt: '2026-06-20',
   },
@@ -24,7 +24,7 @@ export const costPlans: CostPlan[] = [
     remainingBudget: 18700,
     registrationDeadline: '2025-11-30',
     approvedDate: '2025-12-20',
-    approvedBy: 'Đại tá Phạm Quốc Hưng',
+    approvedBy: 'Phạm Quốc Hưng',
     note: 'Kế hoạch chi phí năm 2026 - Đang thực hiện',
     createdAt: '2025-04-10',
     updatedAt: '2026-06-15',
@@ -38,7 +38,7 @@ export const costPlans: CostPlan[] = [
     spentBudget: 47100,
     remainingBudget: 1400,
     approvedDate: '2024-12-18',
-    approvedBy: 'Đại tá Phạm Quốc Hưng',
+    approvedBy: 'Phạm Quốc Hưng',
     note: 'Kế hoạch chi phí năm 2025 - Đã quyết toán',
     createdAt: '2024-04-05',
     updatedAt: '2026-03-01',
@@ -52,7 +52,7 @@ export const costPlans: CostPlan[] = [
     spentBudget: 41500,
     remainingBudget: 800,
     approvedDate: '2023-12-15',
-    approvedBy: 'Đại tá Phạm Quốc Hưng',
+    approvedBy: 'Phạm Quốc Hưng',
     createdAt: '2023-04-10',
     updatedAt: '2025-03-01',
   },
@@ -69,17 +69,17 @@ export const budgetSources: BudgetSource[] = [
 
 export const costCategories: CostCategory[] = [
   {
-    id: 'CC-SC', code: 'SC', name: 'Chi phí sửa chữa khí tài',
+    id: 'CC-SC', code: 'SC', name: 'Chi phí bảo trì hệ thống',
     children: [
       { id: 'CC-SC-VT', code: 'SC-01', name: 'Vật tư, linh kiện thay thế' },
-      { id: 'CC-SC-NC', code: 'SC-02', name: 'Nhân công sửa chữa' },
+      { id: 'CC-SC-NC', code: 'SC-02', name: 'Nhân công bảo trì' },
       { id: 'CC-SC-TB', code: 'SC-03', name: 'Thuê thiết bị đo, kiểm' },
       { id: 'CC-SC-CG', code: 'SC-04', name: 'Thuê chuyên gia' },
-      { id: 'CC-SC-VC', code: 'SC-05', name: 'Vận chuyển khí tài' },
+      { id: 'CC-SC-VC', code: 'SC-05', name: 'Logistics thiết bị' },
     ],
   },
   {
-    id: 'CC-DTU', code: 'DTU', name: 'Chi phí đại tu khí tài',
+    id: 'CC-DTU', code: 'DTU', name: 'Chi phí nâng cấp lớn hệ thống',
     children: [
       { id: 'CC-DTU-VT', code: 'DTU-01', name: 'Vật tư, phụ tùng đại tu' },
       { id: 'CC-DTU-NC', code: 'DTU-02', name: 'Nhân công đại tu' },
@@ -102,7 +102,7 @@ export const costCategories: CostCategory[] = [
     ],
   },
   {
-    id: 'CC-HCHC', code: 'HCHC', name: 'Chi phí hành chính, hậu cần',
+    id: 'CC-HCHC', code: 'HCHC', name: 'Chi phí hành chính, logistics',
     children: [
       { id: 'CC-HCHC-VP', code: 'HCHC-01', name: 'Văn phòng phẩm' },
       { id: 'CC-HCHC-XD', code: 'HCHC-02', name: 'Xăng dầu, phương tiện' },

@@ -281,7 +281,7 @@ const ProductionOrderPage: React.FC = () => {
       },
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'workshopName',
       width: 130,
       render: (name: string) => <Text style={{ fontSize: 13 }}>{name}</Text>,

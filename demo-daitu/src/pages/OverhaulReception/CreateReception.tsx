@@ -15,10 +15,10 @@ import { colors } from '../../theme/themeConfig';
 const { Title, Text } = Typography;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 – Phân xưởng Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 – Phân xưởng Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 – Phân xưởng Cơ khí' },
-  { value: 'PX4', label: 'PX4 – Phân xưởng Điện tử' },
+  { value: 'PX1', label: 'TT Alpha – Bảo trì Hệ thống monitoring' },
+  { value: 'PX2', label: 'TT Beta – Module sản phẩm' },
+  { value: 'PX3', label: 'TT Hạ tầng – Cơ khí phần cứng' },
+  { value: 'PX4', label: 'TT DevOps – Điện tử & Mạng' },
 ];
 
 const equipmentOptions = equipment.map(e => ({
@@ -114,7 +114,7 @@ const CreateReception: React.FC = () => {
                     Tạo hồ sơ tiếp nhận đại tu
                   </Title>
                   <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>
-                    Quy trình 1 · Tiếp nhận khí tài, kiểm tra ban đầu và xác định phạm vi đại tu
+                    Quy trình 1 · Tiếp nhận thiết bị, kiểm tra ban đầu và xác định phạm vi đại tu
                   </Text>
                 </div>
               </Space>
@@ -149,12 +149,12 @@ const CreateReception: React.FC = () => {
           {/* ═══ Cột trái: Bước 1 → 3 ═══ */}
           <Col xs={24} lg={16}>
 
-            {/* BƯỚC 1: Tiếp nhận khí tài và hồ sơ kỹ thuật */}
-            <StepCard step={1} color={colors.navy} title="Tiếp nhận khí tài và hồ sơ kỹ thuật"
-              subtitle="Xác định khí tài, ghi nhận thông tin tiếp nhận từ đơn vị bàn giao"
+            {/* BƯỚC 1: Tiếp nhận thiết bị và hồ sơ kỹ thuật */}
+            <StepCard step={1} color={colors.navy} title="Tiếp nhận thiết bị và hồ sơ kỹ thuật"
+              subtitle="Xác định thiết bị, ghi nhận thông tin tiếp nhận từ đơn vị bàn giao"
               icon={<RadarChartOutlined />}>
 
-              <Form.Item label="Chọn khí tài" name="equipmentId" rules={[{ required: true, message: 'Vui lòng chọn khí tài' }]}>
+              <Form.Item label="Chọn thiết bị" name="equipmentId" rules={[{ required: true, message: 'Vui lòng chọn thiết bị' }]}>
                 <Select
                   showSearch size="large"
                   placeholder="Tìm theo tên, model, serial..."
@@ -187,7 +187,7 @@ const CreateReception: React.FC = () => {
               <Row gutter={16}>
                 <Col span={10}>
                   <Form.Item label="Đơn vị bàn giao" name="sendingUnit" rules={[{ required: true, message: 'Nhập đơn vị' }]}>
-                    <Input placeholder="VD: Sư đoàn 361, Trung đoàn 291, Đơn vị A42..." />
+                    <Input placeholder="VD: Khối K361, Phòng P291, Đơn vị A42..." />
                   </Form.Item>
                 </Col>
                 <Col span={7}>
@@ -375,13 +375,13 @@ const CreateReception: React.FC = () => {
 
               <Divider style={{ margin: '8px 0 14px' }} />
 
-              <Form.Item label="Phân xưởng định tuyến" name="routingWorkshop" rules={[{ required: true, message: 'Chọn phân xưởng' }]}>
-                <Select options={workshopOptions} placeholder="Chọn phân xưởng phụ trách..." />
+              <Form.Item label="Trung tâm định tuyến" name="routingWorkshop" rules={[{ required: true, message: 'Chọn trung tâm' }]}>
+                <Select options={workshopOptions} placeholder="Chọn trung tâm phụ trách..." />
               </Form.Item>
 
               <Form.Item label="Lý do định tuyến" name="routingReason" style={{ marginBottom: 0 }}>
                 <Input.TextArea rows={2}
-                  placeholder="VD: Radar P-18 thuộc năng lực PX1; Yêu cầu thiết bị hiệu chỉnh chuyên dụng tại PX1..." />
+                  placeholder="VD: Hệ thống monitoring P-18 thuộc năng lực TT Alpha; Yêu cầu thiết bị hiệu chỉnh chuyên dụng tại TT Alpha..." />
               </Form.Item>
             </StepCard>
 

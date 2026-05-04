@@ -101,7 +101,7 @@ const OverhaulReception: React.FC = () => {
                   </div>
                   <div>
                     <Title level={5} style={{ color: '#fff', margin: 0, fontWeight: 700 }}>Tiếp nhận & Đánh giá tổng thể</Title>
-                    <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>Quy trình 1 · Tiếp nhận khí tài và đánh giá tình trạng kỹ thuật</Text>
+                    <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>Quy trình 1 · Tiếp nhận thiết bị và đánh giá tình trạng kỹ thuật</Text>
                   </div>
                 </Space>
               </Col>

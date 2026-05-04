@@ -185,7 +185,7 @@ const OverhaulReceptionDetail: React.FC = () => {
         {/* ═══ Cột trái: Nội dung 6 bước ═══ */}
         <Col xs={24} lg={17}>
 
-          {/* ── BƯỚC 1: Tiếp nhận khí tài ── */}
+          {/* ── BƯỚC 1: Tiếp nhận thiết bị ── */}
           <Card
             style={{ borderRadius: 12, marginBottom: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
             bodyStyle={{ padding: '20px 24px' }}
@@ -193,7 +193,7 @@ const OverhaulReceptionDetail: React.FC = () => {
               <Space size={10}>
                 <StepBadge step={1} done={step1Done} active={!step1Done} />
                 <div>
-                  <Text strong style={{ color: colors.navy, fontSize: 14 }}>Tiếp nhận khí tài & Hồ sơ kỹ thuật</Text>
+                  <Text strong style={{ color: colors.navy, fontSize: 14 }}>Tiếp nhận thiết bị & Hồ sơ kỹ thuật</Text>
                   <Text type="secondary" style={{ fontSize: 11, marginLeft: 8 }}>Bước 1</Text>
                 </div>
               </Space>
@@ -202,7 +202,7 @@ const OverhaulReceptionDetail: React.FC = () => {
             {/* Thông tin thiết bị */}
             <div style={{ background: '#f8fafc', borderRadius: 8, padding: '14px 16px', marginBottom: 16 }}>
               <Text strong style={{ color: '#555', fontSize: 12, display: 'block', marginBottom: 10 }}>
-                <RadarChartOutlined style={{ marginRight: 6 }} />THÔNG TIN KHÍ TÀI
+                <RadarChartOutlined style={{ marginRight: 6 }} />THÔNG TIN THIẾT BỊ
               </Text>
               <Descriptions column={{ xs: 1, sm: 2, md: 3 }} size="small" labelStyle={{ color: '#888', fontWeight: 500, minWidth: 100 }}>
                 <Descriptions.Item label="Tên thiết bị" span={2}>
@@ -478,10 +478,10 @@ const OverhaulReceptionDetail: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Định tuyến phân xưởng */}
+                {/* Định tuyến trung tâm */}
                 <div>
                   <Text strong style={{ color: '#555', fontSize: 11, display: 'block', marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                    <ApartmentOutlined style={{ marginRight: 6 }} />Phân xưởng định tuyến
+                    <ApartmentOutlined style={{ marginRight: 6 }} />Trung tâm định tuyến
                   </Text>
                   <Row gutter={12} align="middle">
                     <Col>
@@ -496,7 +496,7 @@ const OverhaulReceptionDetail: React.FC = () => {
                           <Text style={{ color: '#fff', fontSize: 13, fontWeight: 600, display: 'block', lineHeight: 1.3 }}>
                             {reception.routingWorkshopName || reception.routingWorkshop}
                           </Text>
-                          <Text style={{ color: 'rgba(255,255,255,0.65)', fontSize: 11 }}>Phân xưởng phụ trách đại tu</Text>
+                          <Text style={{ color: 'rgba(255,255,255,0.65)', fontSize: 11 }}>Trung tâm phụ trách đại tu</Text>
                         </div>
                       </div>
                     </Col>
@@ -514,7 +514,7 @@ const OverhaulReceptionDetail: React.FC = () => {
                 )}
               </Space>
             ) : (
-              <EmptyState text="Chưa định tuyến phân xưởng (cần hoàn thành đánh giá kỹ thuật trước)" />
+              <EmptyState text="Chưa định tuyến trung tâm (cần hoàn thành đánh giá kỹ thuật trước)" />
             )}
           </Card>
 
@@ -601,7 +601,7 @@ const OverhaulReceptionDetail: React.FC = () => {
                   children: (
                     <div>
                       <Text strong style={{ fontSize: 12, color: step1Done ? '#16a34a' : colors.navy }}>
-                        Bước 1: Tiếp nhận khí tài
+                        Bước 1: Tiếp nhận thiết bị
                       </Text>
                       <br />
                       <Text type="secondary" style={{ fontSize: 11 }}>
@@ -720,7 +720,7 @@ const OverhaulReceptionDetail: React.FC = () => {
                 { label: 'Bước hiện tại', value: <Tag color="processing">Bước {currentStep}/6</Tag> },
                 { label: 'Thiết bị', value: <Text style={{ fontSize: 12 }}>{reception.equipmentName}</Text> },
                 { label: 'Đơn vị gửi', value: <Text style={{ fontSize: 12 }}>{reception.sendingUnit}</Text> },
-                { label: 'Phân xưởng', value: <Text style={{ fontSize: 12 }}>{reception.routingWorkshopName || reception.routingWorkshop}</Text> },
+                { label: 'Trung tâm', value: <Text style={{ fontSize: 12 }}>{reception.routingWorkshopName || reception.routingWorkshop}</Text> },
               ].map((item, i) => (
                 <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '7px 0', borderBottom: i < 5 ? '1px solid #f0f0f0' : 'none' }}>
                   <Text type="secondary" style={{ fontSize: 12 }}>{item.label}</Text>

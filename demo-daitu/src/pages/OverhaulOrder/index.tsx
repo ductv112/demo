@@ -98,7 +98,7 @@ const OverhaulOrder: React.FC = () => {
 
           {/* Card body */}
           <div style={{ padding: '12px 16px', display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {/* Phân xưởng + phạm vi */}
+            {/* Trung tâm + phạm vi */}
             <Row justify="space-between" align="middle">
               <Space size={4}>
                 <ApartmentOutlined style={{ color: '#888', fontSize: 12 }} />
@@ -214,7 +214,7 @@ const OverhaulOrder: React.FC = () => {
           </Col>
           <Col>
             <Select value={workshopFilter} onChange={setWorkshopFilter} style={{ width: 180 }}
-              options={[{ value: '', label: 'Tất cả phân xưởng' }, { value: 'PX1', label: 'PX1 - Radar' }, { value: 'PX2', label: 'PX2 - Tên lửa' }]}
+              options={[{ value: '', label: 'Tất cả trung tâm' }, { value: 'PX1', label: 'TT Alpha - Hệ thống monitoring' }, { value: 'PX2', label: 'TT Beta - Module sản phẩm' }]}
             />
           </Col>
           <Col>

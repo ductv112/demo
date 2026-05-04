@@ -17,7 +17,7 @@ export const paymentRequests: PaymentRequest[] = [
   {
     id: 'PR-002', code: 'ĐNTT-2026-002', costPlanId: 'KHCP-2026', departmentId: 'PX2',
     taskId: 'T-003', workItemId: 'WI-007', allocationId: 'AL-002', categoryType: 'project',
-    title: 'Mua van thủy lực Rexroth', description: 'Mua 8 van thủy lực Rexroth nhập khẩu cho bệ phóng tên lửa S-125',
+    title: 'Mua van thủy lực Rexroth', description: 'Mua 8 van thủy lực Rexroth nhập khẩu cho module triển khai S-125',
     amount: 680, status: 'paid', createdBy: 'Bùi Minh Trí', createdAt: '2026-02-10',
     submittedAt: '2026-02-11', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-02-15',
     attachments: [
@@ -97,7 +97,7 @@ export const paymentRequests: PaymentRequest[] = [
   {
     id: 'PR-009', code: 'ĐNTT-2026-009', costPlanId: 'KHCP-2026', departmentId: 'PHCKT',
     taskId: 'T-017', allocationId: 'AL-013', categoryType: 'admin',
-    title: 'Thanh toán xăng dầu tháng 5-6/2026', description: 'Thanh toán chi phí xăng dầu cho đội xe vận chuyển khí tài tháng 5 và 6',
+    title: 'Thanh toán xăng dầu tháng 5-6/2026', description: 'Thanh toán chi phí xăng dầu cho đội xe logistics thiết bị tháng 5 và 6',
     amount: 186, status: 'approved', createdBy: 'Lê Văn Toàn', createdAt: '2026-06-25',
     submittedAt: '2026-06-25', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-06-28', reviewNote: 'Duyệt thanh toán đợt 3/2026',
     attachments: [
@@ -129,7 +129,7 @@ export const paymentRequests: PaymentRequest[] = [
   {
     id: 'PR-012', code: 'ĐNTT-2026-012', costPlanId: 'KHCP-2026', departmentId: 'PKH',
     taskId: 'T-020', allocationId: 'AL-015', categoryType: 'admin',
-    title: 'Mua phần mềm quản lý tiến độ', description: 'Mua bản quyền phần mềm quản lý tiến độ sửa chữa khí tài',
+    title: 'Mua phần mềm quản lý tiến độ', description: 'Mua bản quyền phần mềm quản lý tiến độ bảo trì hệ thống',
     amount: 180, status: 'paid', createdBy: 'Hoàng Minh Tuấn', createdAt: '2026-03-10',
     submittedAt: '2026-03-11', reviewedBy: 'Nguyễn Thị Lan', reviewedAt: '2026-03-15',
     attachments: [
@@ -152,7 +152,7 @@ export const paymentRequests: PaymentRequest[] = [
   {
     id: 'PR-014', code: 'ĐNTT-2026-014', costPlanId: 'KHCP-2026', departmentId: 'PX2',
     taskId: 'T-008', allocationId: 'AL-006', categoryType: 'research',
-    title: 'Mua phụ tùng đại tu tổ hợp S-75', description: 'Mua bộ phụ tùng thay thế cho đại tu tổ hợp tên lửa S-75',
+    title: 'Mua phụ tùng nâng cấp sản phẩm S-75', description: 'Mua bộ phụ tùng thay thế cho nâng cấp lớn sản phẩm chủ lực S-75',
     amount: 850, status: 'reviewing', createdBy: 'Bùi Minh Trí', createdAt: '2026-06-25',
     submittedAt: '2026-06-26', reviewedBy: 'Nguyễn Thị Lan',
     attachments: [

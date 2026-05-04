@@ -33,7 +33,7 @@ const workshopOptions = [
   { value: 'PX4', label: 'PX4 - Phát triển PM' },
 ];
 
-// Gợi ý phân xưởng theo loại vật tư
+// Gợi ý trung tâm theo loại vật tư
 const suggestWorkshop = (code: string, name: string): string => {
   const lower = (code + name).toLowerCase();
   if (lower.includes('bm-') || lower.includes('bo mạch') || lower.includes('pcb') || lower.includes('ic') || lower.includes('tụ') || lower.includes('điện trở') || lower.includes('cáp') || lower.includes('adc') || lower.includes('cầu chì')) return 'PX4';

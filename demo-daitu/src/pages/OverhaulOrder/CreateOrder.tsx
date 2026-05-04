@@ -27,17 +27,17 @@ const GANTT_COLORS = [
 ];
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 – Phân xưởng Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 – Phân xưởng Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 – Phân xưởng Cơ khí' },
-  { value: 'PX4', label: 'PX4 – Phân xưởng Điện tử' },
+  { value: 'PX1', label: 'TT Alpha – Bảo trì Hệ thống monitoring' },
+  { value: 'PX2', label: 'TT Beta – Module sản phẩm' },
+  { value: 'PX3', label: 'TT Hạ tầng – Cơ khí phần cứng' },
+  { value: 'PX4', label: 'TT DevOps – Điện tử & Mạng' },
 ];
 
 const workshopNameMap: Record<string, string> = {
-  PX1: 'Phân xưởng Sửa chữa Radar',
-  PX2: 'Phân xưởng Sửa chữa Tên lửa',
-  PX3: 'Phân xưởng Cơ khí',
-  PX4: 'Phân xưởng Điện tử',
+  PX1: 'TT Alpha – Bảo trì Hệ thống monitoring',
+  PX2: 'TT Beta – Module sản phẩm',
+  PX3: 'TT Hạ tầng – Cơ khí phần cứng',
+  PX4: 'TT DevOps – Điện tử & Mạng',
 };
 
 const receptionOptions = overhaulReceptions
@@ -339,9 +339,9 @@ const CreateOrder: React.FC = () => {
         <div style={{ padding: '4px 0' }}>
           <Row gutter={[16, 0]}>
             <Col xs={24} md={12}>
-              <Form.Item name="workshopId" label="Phân xưởng thực hiện"
-                rules={[{ required: true, message: 'Chọn phân xưởng' }]}>
-                <Select placeholder="Chọn phân xưởng..." options={workshopOptions}
+              <Form.Item name="workshopId" label="Trung tâm thực hiện"
+                rules={[{ required: true, message: 'Chọn trung tâm' }]}>
+                <Select placeholder="Chọn trung tâm..." options={workshopOptions}
                   onChange={(v) => setSelectedWorkshop(v)} />
               </Form.Item>
             </Col>
@@ -589,7 +589,7 @@ const CreateOrder: React.FC = () => {
                   <Row gutter={[12, 10]}>
                     {[
                       { label: 'Hồ sơ tiếp nhận', value: rec ? `${rec.code} — ${rec.equipmentName}` : '—' },
-                      { label: 'Phân xưởng', value: workshopId ? workshopNameMap[workshopId] : '—' },
+                      { label: 'Trung tâm', value: workshopId ? workshopNameMap[workshopId] : '—' },
                       { label: 'Phạm vi', value: getFieldValue('overhaulScope') === 'full' ? 'Đại tu toàn bộ' : getFieldValue('overhaulScope') === 'partial' ? 'Đại tu một phần' : '—' },
                       { label: 'Số công đoạn', value: stages.length ? `${stages.length} công đoạn` : '—' },
                       { label: 'Vật tư chính', value: materials.length ? `${materials.length} hạng mục` : '—' },
@@ -637,7 +637,7 @@ const CreateOrder: React.FC = () => {
               <div>
                 <Title level={4} style={{ margin: 0, color: '#fff' }}>Lập lệnh đại tu mới</Title>
                 <Text style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13 }}>
-                  Nhà máy Z119 · Tạo mới lệnh đại tu từ hồ sơ tiếp nhận
+                  Trung tâm phần mềm Alpha · Tạo mới lệnh đại tu từ hồ sơ tiếp nhận
                 </Text>
               </div>
             </Col>
@@ -750,7 +750,7 @@ const CreateOrder: React.FC = () => {
                   )}
                   {selectedReception.routingWorkshop && (
                     <div style={{ padding: '7px 12px', background: `${colors.navy}08`, borderRadius: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <Text style={{ fontSize: 12, color: '#666' }}>Phân xưởng đề xuất</Text>
+                      <Text style={{ fontSize: 12, color: '#666' }}>Trung tâm đề xuất</Text>
                       <Tag color="blue" style={{ fontSize: 11 }}>{selectedReception.routingWorkshopName || selectedReception.routingWorkshop}</Tag>
                     </div>
                   )}
@@ -765,7 +765,7 @@ const CreateOrder: React.FC = () => {
 
             {selectedWorkshop && (
               <Card style={{ borderRadius: 12, marginBottom: 16 }} styles={{ body: { padding: '14px 18px' } }}>
-                <Text strong style={{ fontSize: 13, color: colors.navy }}>Phân xưởng thực hiện</Text>
+                <Text strong style={{ fontSize: 13, color: colors.navy }}>Trung tâm thực hiện</Text>
                 <div style={{ marginTop: 10, padding: '10px 14px', background: `${colors.navy}08`, borderRadius: 8 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: colors.navy, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: 12, flexShrink: 0 }}>

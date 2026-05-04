@@ -81,7 +81,7 @@ const DisassemblyDetail: React.FC = () => {
           <Descriptions.Item label="Thiết bị" span={2}>
             <Text strong>{record.equipmentName}</Text>
           </Descriptions.Item>
-          <Descriptions.Item label="Phân xưởng phụ trách" span={2}>
+          <Descriptions.Item label="Trung tâm phụ trách" span={2}>
             <Text>{record.performedBy}</Text>
           </Descriptions.Item>
         </Descriptions>
@@ -617,7 +617,7 @@ const DisassemblyDetail: React.FC = () => {
                 {[
                   { label: 'Mã lệnh', value: order?.code || record.orderId },
                   { label: 'Phạm vi', value: order?.overhaulScope === 'full' ? 'Đại tu toàn bộ' : 'Đại tu một phần' },
-                  { label: 'Phân xưởng', value: order?.workshopName || '—' },
+                  { label: 'Trung tâm', value: order?.workshopName || '—' },
                   { label: 'Bắt đầu', value: formatDate(record.startDate) },
                   { label: 'Kết thúc', value: record.endDate ? formatDate(record.endDate) : '—' },
                 ].map((item, i) => (

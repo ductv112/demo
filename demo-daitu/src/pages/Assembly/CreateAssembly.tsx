@@ -69,7 +69,7 @@ const CreateAssembly: React.FC = () => {
               <div style={{ marginTop: 12, padding: '10px 14px', background: '#eff6ff', borderRadius: 8, border: '1px solid #bfdbfe' }}>
                 <Row gutter={16}>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Thiết bị</Text><div><Text strong>{selectedOrder.equipmentName}</Text></div></Col>
-                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Phân xưởng</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
+                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Trung tâm</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Cấu phần sẵn sàng</Text><div><Text strong style={{ color: readyComponents.length > 0 ? '#16a34a' : '#d97706' }}>{readyComponents.length} cấu phần</Text></div></Col>
                 </Row>
               </div>
@@ -107,13 +107,13 @@ const CreateAssembly: React.FC = () => {
           <Card size="small" style={{ borderRadius: 10 }}>
             <Text strong style={{ color: '#1B3A5C', fontSize: 13 }}>Thông tin chuẩn bị</Text>
             <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column' as const, gap: 12 }}>
-              <Form.Item label="Phân xưởng thực hiện" name="workshopName" style={{ marginBottom: 0 }}>
-                <Select placeholder="Chọn phân xưởng..." style={{ width: '100%' }}
+              <Form.Item label="Trung tâm thực hiện" name="workshopName" style={{ marginBottom: 0 }}>
+                <Select placeholder="Chọn trung tâm..." style={{ width: '100%' }}
                   options={[
-                    { value: 'Phân xưởng PX1 - Sửa chữa Radar', label: 'PX1 — Sửa chữa Radar' },
-                    { value: 'Phân xưởng PX2 - Sửa chữa Tên lửa', label: 'PX2 — Sửa chữa Tên lửa' },
-                    { value: 'Phân xưởng PX3 - Cơ khí', label: 'PX3 — Cơ khí' },
-                    { value: 'Phân xưởng PX4 - Điện tử', label: 'PX4 — Điện tử' },
+                    { value: 'TT Alpha – Bảo trì Hệ thống monitoring', label: 'TT Alpha — Hệ thống monitoring' },
+                    { value: 'TT Beta – Module sản phẩm', label: 'TT Beta — Module sản phẩm' },
+                    { value: 'TT Hạ tầng – Cơ khí phần cứng', label: 'TT Hạ tầng — Cơ khí phần cứng' },
+                    { value: 'TT DevOps – Điện tử & Mạng', label: 'TT DevOps — Điện tử & Mạng' },
                   ]}
                 />
               </Form.Item>

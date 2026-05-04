@@ -272,7 +272,7 @@ export default function ChiTietYeuCau() {
                       <IF icon={<LockOutlined />} label="Mức độ mật" value="Thường" />
                     </div>
                   </SC>
-                  <SC title="Thông tin đối tượng đo" subtitle="Khí tài / hệ thống được yêu cầu đo">
+                  <SC title="Thông tin đối tượng đo" subtitle="Thiết bị / hệ thống được yêu cầu đo">
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '18px 32px' }}>
                       <IF icon={<AimOutlined />} label="Tên đối tượng đo" value={yc.thietBi} />
                       <IF icon={<FileTextOutlined />} label="Mã quản lý / Số hiệu" value={yc.maThietBi} mono />

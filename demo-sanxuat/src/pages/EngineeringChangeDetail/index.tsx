@@ -114,7 +114,7 @@ const defaultChecklist: ChecklistItem[] = [
   { key: 'routing', task: 'Cập nhật quy trình công nghệ (Routing)', description: 'Điều chỉnh các bước công nghệ nếu ảnh hưởng', checked: false, note: '' },
   { key: 'material', task: 'Cập nhật danh mục vật tư (Kho)', description: 'Cập nhật mã vật tư mới vào hệ thống kho', checked: false, note: '' },
   { key: 'deprecate', task: 'Đánh dấu vật tư/version cũ ngừng sử dụng', description: 'Chuyển BOM/vật tư version cũ sang trạng thái ngừng sử dụng', checked: false, note: '' },
-  { key: 'notify', task: 'Thông báo phân xưởng', description: 'Gửi thông báo đến các phân xưởng bị ảnh hưởng', checked: false, note: '' },
+  { key: 'notify', task: 'Thông báo trung tâm', description: 'Gửi thông báo đến các trung tâm bị ảnh hưởng', checked: false, note: '' },
 ];
 
 const EngineeringChangeDetail: React.FC = () => {

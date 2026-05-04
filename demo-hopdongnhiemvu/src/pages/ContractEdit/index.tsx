@@ -152,7 +152,7 @@ const ContractEditPage: React.FC = () => {
               <Descriptions.Item label="Loại nhiệm vụ">{typeCfg ? <Tag color={typeCfg.color}>{typeCfg.label}</Tag> : '—'}</Descriptions.Item>
               <Descriptions.Item label="Mức ưu tiên">{prioCfg ? <Tag color={prioCfg.color}>{prioCfg.label}</Tag> : '—'}</Descriptions.Item>
               <Descriptions.Item label="Hạn hoàn thành">{formatDate(linkedMission.deadline)}</Descriptions.Item>
-              <Descriptions.Item label="Phân xưởng xử lý">
+              <Descriptions.Item label="Trung tâm xử lý">
                 {linkedMission.assignedDepartment ? departments.find(d => d.id === linkedMission.assignedDepartment)?.name || linkedMission.assignedDepartment : '—'}
               </Descriptions.Item>
             </Descriptions>

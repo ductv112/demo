@@ -230,7 +230,7 @@ const TaskReceptionDetailPage: React.FC = () => {
               </Tag>
             </Descriptions.Item>
           )}
-          <Descriptions.Item label={'Phân xưởng xử lý'}>
+          <Descriptions.Item label={'Trung tâm xử lý'}>
             {dept ? dept.name : <Text type="secondary">{'Chưa phân công'}</Text>}
           </Descriptions.Item>
           {mission.technicalRequirements && (

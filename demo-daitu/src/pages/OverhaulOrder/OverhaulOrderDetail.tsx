@@ -192,7 +192,7 @@ const OverhaulOrderDetail: React.FC = () => {
 
           <Divider style={{ margin: '16px 0 10px' }} />
           <Descriptions column={2} size="small" labelStyle={{ color: '#888', fontSize: 12 }} contentStyle={{ fontSize: 13 }}>
-            <Descriptions.Item label="Phân xưởng thực hiện">
+            <Descriptions.Item label="Trung tâm thực hiện">
               <Text strong style={{ color: colors.navy }}>{order.workshopName}</Text>
             </Descriptions.Item>
             <Descriptions.Item label="Phạm vi">
@@ -580,7 +580,7 @@ const OverhaulOrderDetail: React.FC = () => {
               contentStyle={{ fontSize: 13, fontWeight: 500 }}>
               <Descriptions.Item label="Thiết bị">{order.equipmentName}</Descriptions.Item>
               <Descriptions.Item label="Model">{order.equipmentModel}</Descriptions.Item>
-              <Descriptions.Item label="Phân xưởng">
+              <Descriptions.Item label="Trung tâm">
                 <Text style={{ color: colors.navy, fontWeight: 600 }}>{order.workshopName}</Text>
               </Descriptions.Item>
               <Descriptions.Item label="Phạm vi">

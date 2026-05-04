@@ -144,7 +144,7 @@ export const restorations: RestorationRecord[] = [
     newPartName: 'BCH dẫn hướng S-125 thế hệ mới (Trung tâm Đại tu hệ thống Alpha dự phòng)', newPartSerial: 'NHZK-DH-S125-2024-007', oldPartSerial: 'GDN-S125-2016-0003',
     materialsUsed: ['Mô-đun dẫn hướng S-125 mới', 'Cáp kết nối 50 chân x3', 'Đầu nối D-SUB 50P x3', 'Bu lông M5 x12'],
     performedBy: 'KTV Hoàng Văn Minh — PX4 Điện tử', startDate: '2026-02-15', endDate: '2026-02-19', status: 'completed', cost: 280,
-    qualityCheckResult: 'POST pass. Tín hiệu 10 kênh điều khiển đạt thông số. Liên kết radar và bệ triển khai thành công',
+    qualityCheckResult: 'POST pass. Tín hiệu 10 kênh điều khiển đạt thông số. Liên kết hệ thống monitoring và bệ triển khai thành công',
     approvedBy: 'Kỹ sư Phạm Đức Thành — P.KCS', approvedDate: '2026-02-20', readyForAssembly: true,
     notes: 'Mô-đun từ kho dự phòng chiến lược nội bộ Trung tâm Đại tu hệ thống Alpha — đã kiểm định đủ điều kiện',
   },

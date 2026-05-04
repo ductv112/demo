@@ -613,7 +613,7 @@ const Reports: React.FC = () => {
 
       {/* Footer note */}
       <div style={{ textAlign: 'center', padding: '16px 0', color: '#bbb', fontSize: 11 }}>
-        Báo cáo được tạo tự động từ hệ thống Quản lý TCKT — Nhà máy Z119 · Dữ liệu cập nhật: 01/07/2026
+        Báo cáo được tạo tự động từ hệ thống Quản lý TCKT — Doanh nghiệp A · Dữ liệu cập nhật: 01/07/2026
       </div>
     </div>
   );

@@ -72,7 +72,7 @@ const CreateTestAcceptance: React.FC = () => {
               <div style={{ marginTop: 12, padding: '10px 14px', background: '#eff6ff', borderRadius: 8, border: '1px solid #bfdbfe' }}>
                 <Row gutter={16}>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Thiết bị</Text><div><Text strong>{selectedOrder.equipmentName}</Text></div></Col>
-                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Phân xưởng</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
+                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Trung tâm</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Lắp ráp</Text><div>
                     {selectedAssembly
                       ? <Tag color={selectedAssembly.status === 'pending_test' ? 'warning' : 'success'} style={{ fontSize: 11 }}>
@@ -144,7 +144,7 @@ const CreateTestAcceptance: React.FC = () => {
                 <TextArea rows={3} placeholder="Mô tả kịch bản: đo thông số chức năng, thử nghiệm tải, chạy liên tục..." style={{ borderRadius: 6, fontSize: 12 }} />
               </Form.Item>
               <Form.Item label="Môi trường / Bệ thử" name="testEnvironment" style={{ marginBottom: 0 }}>
-                <Input placeholder="VD: Bệ thử sân kỹ thuật Nhà máy Z119; nhiệt độ 22–28°C" style={{ borderRadius: 6 }} />
+                <Input placeholder="VD: Bệ thử kỹ thuật Trung tâm phần mềm Alpha; nhiệt độ 22–28°C" style={{ borderRadius: 6 }} />
               </Form.Item>
               <Form.Item label="Tiêu chuẩn đánh giá" name="testRequirements" style={{ marginBottom: 0 }}>
                 <TextArea rows={3} placeholder="VD: Tầm phát hiện: ≥250km; Công suất: ≥95kW; Vận hành liên tục: 8 giờ không lỗi;..." style={{ borderRadius: 6, fontSize: 12 }} />

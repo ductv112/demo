@@ -20,7 +20,7 @@ const reportGroups = [
     reports: [
       { id: 'R01', name: 'Tổng hợp tình hình đại tu theo kỳ', type: 'Định kỳ', format: 'PDF/Excel' },
       { id: 'R02', name: 'Tình hình thực hiện so với kế hoạch', type: 'Định kỳ', format: 'PDF' },
-      { id: 'R03', name: 'Báo cáo tiến độ theo phân xưởng', type: 'Định kỳ', format: 'Excel' },
+      { id: 'R03', name: 'Báo cáo tiến độ theo trung tâm', type: 'Định kỳ', format: 'Excel' },
       { id: 'R04', name: 'Tổng hợp chi phí đại tu thực tế', type: 'Tài chính', format: 'PDF/Excel' },
     ],
   },
@@ -41,7 +41,7 @@ const reportGroups = [
     icon: <SafetyCertificateOutlined />,
     color: '#16a34a',
     reports: [
-      { id: 'R10', name: 'Kết quả nghiệm thu theo tiêu chuẩn kỹ thuật quân sự', type: 'Nghiệm thu', format: 'PDF' },
+      { id: 'R10', name: 'Kết quả nghiệm thu theo tiêu chuẩn kỹ thuật doanh nghiệp', type: 'Nghiệm thu', format: 'PDF' },
       { id: 'R11', name: 'Thống kê lỗi và không phù hợp', type: 'Chất lượng', format: 'Excel' },
       { id: 'R12', name: 'Theo dõi hành động khắc phục phòng ngừa', type: 'Chất lượng', format: 'PDF' },
       { id: 'R13', name: 'Phân tích nguyên nhân cấu phần hư hỏng', type: 'Phân tích', format: 'PDF' },
@@ -76,7 +76,7 @@ const reportGroups = [
     reports: [
       { id: 'R22', name: 'Lịch sử đại tu theo thiết bị', type: 'Truy vết', format: 'PDF' },
       { id: 'R23', name: 'Hồ sơ cấu hình sau đại tu', type: 'Truy vết', format: 'PDF' },
-      { id: 'R24', name: 'Thống kê số lần đại tu theo loại khí tài', type: 'Thống kê', format: 'Excel' },
+      { id: 'R24', name: 'Thống kê số lần đại tu theo loại thiết bị', type: 'Thống kê', format: 'Excel' },
       { id: 'R25', name: 'Danh sách thiết bị đã bàn giao', type: 'Bàn giao', format: 'PDF' },
     ],
   },
@@ -95,9 +95,9 @@ const reportGroups = [
 ];
 
 const workshopData = [
-  { workshop: 'PX1 - Radar', value: overhaulOrders.filter(o => o.workshopId === 'PX1').length },
-  { workshop: 'PX2 - Tên lửa', value: overhaulOrders.filter(o => o.workshopId === 'PX2').length },
-  { workshop: 'PX3 - Cơ khí', value: overhaulOrders.filter(o => o.workshopId === 'PX3').length },
+  { workshop: 'TT Alpha - Hệ thống monitoring', value: overhaulOrders.filter(o => o.workshopId === 'PX1').length },
+  { workshop: 'TT Beta - Module sản phẩm', value: overhaulOrders.filter(o => o.workshopId === 'PX2').length },
+  { workshop: 'TT Hạ tầng - Cơ khí phần cứng', value: overhaulOrders.filter(o => o.workshopId === 'PX3').length },
 ];
 
 const statusChartData = [
@@ -140,7 +140,7 @@ const Reports: React.FC = () => {
 
       <Row gutter={[16, 16]} style={{ marginBottom: 20 }}>
         <Col xs={24} lg={14}>
-          <Card style={{ borderRadius: 12 }} title={<Space><BarChartOutlined style={{ color: colors.navy }} /><Text strong style={{ color: colors.navy }}>Lệnh đại tu theo phân xưởng</Text></Space>}>
+          <Card style={{ borderRadius: 12 }} title={<Space><BarChartOutlined style={{ color: colors.navy }} /><Text strong style={{ color: colors.navy }}>Lệnh đại tu theo trung tâm</Text></Space>}>
             <Column data={workshopData} xField="workshop" yField="value" color={colors.navy}
               columnWidthRatio={0.5}
               label={{ position: 'top', style: { fill: colors.navy, fontWeight: 600 } }}

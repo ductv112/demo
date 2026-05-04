@@ -108,7 +108,7 @@ function WorkRowForm({ row, idx, actionKey, updateRow }: {
       )}
       <Col span={12}>
         <Form.Item label="Người / đơn vị thực hiện" style={{ marginBottom: 0 }}>
-          <Input placeholder="Tên KTV — Phân xưởng" value={row.performedBy}
+          <Input placeholder="Tên KTV — Trung tâm" value={row.performedBy}
             onChange={e => updateRow(idx, 'performedBy', e.target.value)} style={{ borderRadius: 6, fontSize: 12 }} />
         </Form.Item>
       </Col>
@@ -220,7 +220,7 @@ const CreateRestoration: React.FC = () => {
               <div style={{ marginTop: 12, padding: '10px 14px', background: '#eff6ff', borderRadius: 8, border: '1px solid #bfdbfe' }}>
                 <Row gutter={16}>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Thiết bị</Text><div><Text strong>{selectedOrder.equipmentName}</Text></div></Col>
-                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Phân xưởng</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
+                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Trung tâm</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Cấu phần cần xử lý</Text><div><Text strong style={{ color: '#d97706' }}>{orderInspections.length} cấu phần</Text></div></Col>
                 </Row>
               </div>

@@ -17,16 +17,16 @@ import { routingStatusConfig } from '../../utils/format';
 const { Text } = Typography;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Radar' },
-  { value: 'PX2', label: 'PX2 - Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'PX1 - Phần mềm Alpha' },
+  { value: 'PX2', label: 'PX2 - Phần mềm Beta' },
+  { value: 'PX3', label: 'PX3 - Hạ tầng' },
+  { value: 'PX4', label: 'PX4 - DevOps' },
   { value: 'KTR', label: 'Khu kiểm tra tổng hợp' },
 ];
 
 const workshopNameMap: Record<string, string> = {
-  PX1: 'PX1 - Radar', PX2: 'PX2 - Tên lửa', PX3: 'PX3 - Cơ khí',
-  PX4: 'PX4 - Điện tử', KTR: 'Khu kiểm tra tổng hợp',
+  PX1: 'PX1 - Phần mềm Alpha', PX2: 'PX2 - Phần mềm Beta', PX3: 'PX3 - Hạ tầng',
+  PX4: 'PX4 - DevOps', KTR: 'Khu kiểm tra tổng hợp',
 };
 
 const ProcessRoutingFormPage: React.FC = () => {
@@ -100,7 +100,7 @@ const ProcessRoutingFormPage: React.FC = () => {
       name: '',
       description: '',
       workshopId: 'PX1',
-      workshopName: 'PX1 - Radar',
+      workshopName: 'PX1 - Phần mềm Alpha',
       equipmentRequired: [],
       skillRequired: [],
       requiredWorkers: 1,
@@ -159,7 +159,7 @@ const ProcessRoutingFormPage: React.FC = () => {
       ),
     },
     {
-      title: 'Phân xưởng', dataIndex: 'workshopId', key: 'workshopId', width: 130,
+      title: 'Trung tâm', dataIndex: 'workshopId', key: 'workshopId', width: 130,
       render: (v: string, record: ProcessStep) => (
         <Select size="small" value={v} options={workshopOptions} style={{ width: 120 }}
           onChange={(val) => updateStep(record.id, 'workshopId', val)} />

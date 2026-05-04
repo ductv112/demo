@@ -160,7 +160,7 @@ const TestAcceptanceDetail: React.FC = () => {
             title={<Space><SendOutlined style={{ color: '#0891b2' }} /><Text strong style={{ color: '#0891b2', fontSize: 13 }}>Thông tin yêu cầu thử nghiệm</Text></Space>}>
             <Descriptions column={2} size="small" labelStyle={{ color: '#888', fontSize: 12 }} contentStyle={{ fontSize: 13 }}>
               <Descriptions.Item label="Lệnh đại tu"><Text strong style={{ color: colors.navy }}>{order?.code || record.orderId}</Text></Descriptions.Item>
-              <Descriptions.Item label="Phân xưởng"><Text>{record.workshopName || order?.workshopName}</Text></Descriptions.Item>
+              <Descriptions.Item label="Trung tâm"><Text>{record.workshopName || order?.workshopName}</Text></Descriptions.Item>
               <Descriptions.Item label="Ngày gửi yêu cầu">
                 {record.testRequestDate ? <Text strong>{formatDate(record.testRequestDate)}</Text> : <Text type="secondary">Chưa gửi</Text>}
               </Descriptions.Item>
@@ -488,11 +488,11 @@ const TestAcceptanceDetail: React.FC = () => {
           </Form.Item>
 
           <Form.Item label="Người nghiệm thu" name="acceptedBy">
-            <Input placeholder="Đại tá / Kỹ sư phê duyệt nghiệm thu" style={{ borderRadius: 6 }} />
+            <Input placeholder="Giám đốc / Kỹ sư phê duyệt nghiệm thu" style={{ borderRadius: 6 }} />
           </Form.Item>
 
           <Form.Item label="Bàn giao cho" name="deliveredTo">
-            <Input placeholder="Đơn vị / Trung đoàn tiếp nhận" style={{ borderRadius: 6 }} />
+            <Input placeholder="Đơn vị / Phòng tiếp nhận" style={{ borderRadius: 6 }} />
           </Form.Item>
 
           <Form.Item label="Ghi chú" name="notes">

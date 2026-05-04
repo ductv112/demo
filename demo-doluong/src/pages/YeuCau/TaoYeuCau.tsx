@@ -203,7 +203,7 @@ export default function TaoYeuCau() {
                     </SectionCard>
 
                     {/* Đối tượng đo */}
-                    <SectionCard title="Thông tin đối tượng đo" subtitle="Khí tài / hệ thống kỹ thuật được yêu cầu đo, kiểm tra, đánh giá">
+                    <SectionCard title="Thông tin đối tượng đo" subtitle="Thiết bị / hệ thống kỹ thuật được yêu cầu đo, kiểm tra, đánh giá">
                       <Row gutter={16}>
                         <Col span={10}>
                           <FieldLabel label="Tên đối tượng đo" required />

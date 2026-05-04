@@ -92,11 +92,11 @@ const Dashboard: React.FC = () => {
     { label: 'Đã đóng',         value: overhaulOrders.filter(o => o.status === 'closed').length,           color: '#555' },
   ].filter(d => d.value > 0);
 
-  // ── Chart 2: Phân bổ theo phân xưởng ─────────────────────────────────────
+  // ── Chart 2: Phân bổ theo trung tâm ─────────────────────────────────────
   const workshopRows = [
-    { label: 'PX1 – Sửa chữa Radar',    value: overhaulOrders.filter(o => o.workshopId === 'PX1').length, color: 'linear-gradient(90deg, #1B3A5C, #2d5a8e)' },
-    { label: 'PX2 – Sửa chữa Tên lửa', value: overhaulOrders.filter(o => o.workshopId === 'PX2').length, color: 'linear-gradient(90deg, #0891b2, #06b6d4)' },
-    { label: 'PX3 – Cơ khí',            value: overhaulOrders.filter(o => o.workshopId === 'PX3').length, color: 'linear-gradient(90deg, #7c3aed, #9d5ff7)' },
+    { label: 'TT Alpha – Hệ thống monitoring',    value: overhaulOrders.filter(o => o.workshopId === 'PX1').length, color: 'linear-gradient(90deg, #1B3A5C, #2d5a8e)' },
+    { label: 'TT Beta – Module sản phẩm',         value: overhaulOrders.filter(o => o.workshopId === 'PX2').length, color: 'linear-gradient(90deg, #0891b2, #06b6d4)' },
+    { label: 'TT Hạ tầng – Cơ khí phần cứng',     value: overhaulOrders.filter(o => o.workshopId === 'PX3').length, color: 'linear-gradient(90deg, #7c3aed, #9d5ff7)' },
   ];
   const maxWorkshop = Math.max(...workshopRows.map(w => w.value), 1);
 
@@ -141,7 +141,7 @@ const Dashboard: React.FC = () => {
   const orderColumns = [
     { title: 'Mã lệnh', dataIndex: 'code', key: 'code', width: 140, render: (v: string) => <Text strong style={{ color: colors.navy, fontSize: 13 }}>{v}</Text> },
     { title: 'Thiết bị', dataIndex: 'equipmentName', key: 'equipmentName', width: 200 },
-    { title: 'Phân xưởng', dataIndex: 'workshopName', key: 'workshopName', width: 240, render: (v: string) => <Text style={{ fontSize: 12 }}>{v}</Text> },
+    { title: 'Trung tâm', dataIndex: 'workshopName', key: 'workshopName', width: 240, render: (v: string) => <Text style={{ fontSize: 12 }}>{v}</Text> },
     {
       title: 'Tiến độ', key: 'progress', width: 160,
       render: (_: unknown, record: typeof overhaulOrders[0]) => (
@@ -180,8 +180,8 @@ const Dashboard: React.FC = () => {
               <ToolOutlined style={{ fontSize: 24, color: '#D4A843' }} />
             </div>
             <div>
-              <Title level={4} style={{ color: '#fff', marginBottom: 2, fontWeight: 700, letterSpacing: '-0.3px' }}>Quản lý Đại tu — Nhà máy Z119</Title>
-              <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13 }}>Quân chủng Phòng không Không quân · Năm 2026</Text>
+              <Title level={4} style={{ color: '#fff', marginBottom: 2, fontWeight: 700, letterSpacing: '-0.3px' }}>Quản lý Đại tu — Trung tâm phần mềm Alpha</Title>
+              <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13 }}>Doanh nghiệp A · Năm 2026</Text>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ const Dashboard: React.FC = () => {
 
       <Row gutter={[16, 16]}>
 
-        {/* ── Row 1: Trạng thái + Phân xưởng ── */}
+        {/* ── Row 1: Trạng thái + Trung tâm ── */}
         <Col xs={24} lg={10}>
           <Card className="db-chart-card" title={cardTitle(<FileTextOutlined />, 'Trạng thái lệnh đại tu', colors.navy)} style={{ height: '100%' }}>
             <DonutChart segments={statusSegments} centerLabel="lệnh" />
@@ -219,7 +219,7 @@ const Dashboard: React.FC = () => {
         </Col>
 
         <Col xs={24} lg={14}>
-          <Card className="db-chart-card" title={cardTitle(<ToolOutlined />, 'Phân bổ theo phân xưởng', '#0891b2')} style={{ height: '100%' }}>
+          <Card className="db-chart-card" title={cardTitle(<ToolOutlined />, 'Phân bổ theo trung tâm', '#0891b2')} style={{ height: '100%' }}>
             <div style={{ paddingTop: 8 }}>
               {workshopRows.map((row, i) => (
                 <div key={i} style={{ marginBottom: 20 }}>

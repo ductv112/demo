@@ -132,7 +132,7 @@ const CreateTechnicalInspection: React.FC = () => {
               <div style={{ marginTop: 12, padding: '10px 14px', background: '#eff6ff', borderRadius: 8, border: '1px solid #bfdbfe' }}>
                 <Row gutter={16}>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Thiết bị</Text><div><Text strong>{selectedOrder.equipmentName}</Text></div></Col>
-                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Phân xưởng</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
+                  <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Trung tâm</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
                   <Col span={8}><Text type="secondary" style={{ fontSize: 11 }}>Cấu phần chờ KT</Text><div><Text strong style={{ color: '#d97706' }}>{orderComponents.length} cấu phần</Text></div></Col>
                 </Row>
               </div>
@@ -323,7 +323,7 @@ const CreateTechnicalInspection: React.FC = () => {
               <Row gutter={24}>
                 <Col span={8}><Text type="secondary" style={{ fontSize: 12 }}>Mã lệnh</Text><div><Text strong>{selectedOrder.code}</Text></div></Col>
                 <Col span={8}><Text type="secondary" style={{ fontSize: 12 }}>Thiết bị</Text><div><Text strong>{selectedOrder.equipmentName}</Text></div></Col>
-                <Col span={8}><Text type="secondary" style={{ fontSize: 12 }}>Phân xưởng</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
+                <Col span={8}><Text type="secondary" style={{ fontSize: 12 }}>Trung tâm</Text><div><Text strong>{selectedOrder.workshopName}</Text></div></Col>
               </Row>
             </Card>
           )}

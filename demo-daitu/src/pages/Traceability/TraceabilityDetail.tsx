@@ -271,7 +271,7 @@ const TraceabilityDetail: React.FC = () => {
               <Descriptions.Item label="Lệnh đại tu">
                 <Text strong style={{ color: colors.navy }}>{record.orderId}</Text>
               </Descriptions.Item>
-              <Descriptions.Item label="Phân xưởng">
+              <Descriptions.Item label="Trung tâm">
                 <Text>{record.workshopName}</Text>
               </Descriptions.Item>
               <Descriptions.Item label="Thời gian đại tu">
@@ -1039,7 +1039,7 @@ const TraceabilityDetail: React.FC = () => {
           {record.status === 'configuring' && (
             <>
               <Form.Item label="Tiêu chuẩn kỹ thuật áp dụng" name="standard">
-                <Input placeholder="VD: TCQS-2025-RADAR" />
+                <Input placeholder="VD: TCQS-2025-MON" />
               </Form.Item>
               <Form.Item label="Bản sửa đổi kỹ thuật" name="designChange">
                 <Input placeholder="VD: BK-2024-015" />

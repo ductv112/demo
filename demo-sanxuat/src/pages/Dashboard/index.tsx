@@ -542,7 +542,7 @@ const Dashboard: React.FC = () => {
           </Card>
         </Col>
 
-        {/* Column chart: Sản lượng theo phân xưởng */}
+        {/* Column chart: Sản lượng theo trung tâm */}
         <Col xs={24} lg={12}>
           <Card
             className="db-chart-card animate-fade-in animate-delay-6"

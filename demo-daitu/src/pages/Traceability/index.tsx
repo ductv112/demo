@@ -104,7 +104,7 @@ const Traceability: React.FC = () => {
       render: (v: string) => <Text style={{ color: colors.navy }}>{v}</Text>,
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'workshopName',
       key: 'workshopName',
       width: 220,

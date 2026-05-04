@@ -119,7 +119,7 @@ const WIPTrackingPage: React.FC = () => {
     blocked: wipItems.filter(w => w.status === 'blocked').length,
   };
 
-  // Tồn theo phân xưởng
+  // Tồn theo trung tâm
   const workshopCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     wipItems.filter(w => w.status !== 'completed' && w.status !== 'not_started').forEach(w => {
@@ -132,7 +132,7 @@ const WIPTrackingPage: React.FC = () => {
     const nextStepName = getStepName(record.orderCode, record.currentStep + 1);
     const currentStepName = getStepName(record.orderCode, record.currentStep);
 
-    // Tìm phân xưởng của bước tiếp theo
+    // Tìm trung tâm của bước tiếp theo
     const order = productionOrders.find(o => o.code === record.orderCode);
     const routing = order ? processRoutings.find(r => r.productId === order.productId) : null;
     const nextStep = routing ? processSteps.find(s => s.routingId === routing.id && s.stepNo === record.currentStep + 1) : null;
@@ -349,7 +349,7 @@ const WIPTrackingPage: React.FC = () => {
         ))}
       </Row>
 
-      {/* Tồn theo phân xưởng */}
+      {/* Tồn theo trung tâm */}
       {Object.keys(workshopCounts).length > 0 && (
         <Card size="small" style={{ borderRadius: 14, marginBottom: 20, border: 'none', boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
           styles={{ body: { padding: '12px 20px' } }}>

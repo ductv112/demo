@@ -119,7 +119,7 @@ const RestorationDetail: React.FC = () => {
                 <Descriptions column={3} size="small" labelStyle={{ color: '#888', fontWeight: 500, fontSize: 12 }} contentStyle={{ fontSize: 13 }}>
                   <Descriptions.Item label="Mã phiếu"><Text strong style={{ color: colors.navy }}>{record.id}</Text></Descriptions.Item>
                   <Descriptions.Item label="Lệnh đại tu"><Text strong>{order?.code || record.orderId}</Text></Descriptions.Item>
-                  <Descriptions.Item label="Phân xưởng"><Text>{order?.workshopName}</Text></Descriptions.Item>
+                  <Descriptions.Item label="Trung tâm"><Text>{order?.workshopName}</Text></Descriptions.Item>
                   <Descriptions.Item label="Phương án"><Tag color={actionCfg?.color}>{actionCfg?.label}</Tag></Descriptions.Item>
                   <Descriptions.Item label="Trạng thái"><Tag style={{ background: statusCfg?.color, color: '#fff', border: 'none' }}>{statusCfg?.label}</Tag></Descriptions.Item>
                   <Descriptions.Item label="Chi phí">

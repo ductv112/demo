@@ -110,7 +110,7 @@ const CreateMaterialRequest: React.FC = () => {
                 <div><Text strong style={{ fontSize: 13 }}>{selectedOrder.equipmentName}</Text></div>
               </Col>
               <Col span={12}>
-                <Text type="secondary" style={{ fontSize: 11 }}>Phân xưởng</Text>
+                <Text type="secondary" style={{ fontSize: 11 }}>Trung tâm</Text>
                 <div><Text style={{ fontSize: 13 }}>{selectedOrder.workshopName}</Text></div>
               </Col>
             </Row>
@@ -400,7 +400,7 @@ const CreateMaterialRequest: React.FC = () => {
                 {[
                   { label: 'Mã lệnh', value: selectedOrder.code },
                   { label: 'Thiết bị', value: selectedOrder.equipmentName },
-                  { label: 'Phân xưởng', value: selectedOrder.workshopName },
+                  { label: 'Trung tâm', value: selectedOrder.workshopName },
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', gap: 8, marginBottom: 6 }}>
                     <Text type="secondary" style={{ fontSize: 11, flexShrink: 0 }}>{item.label}</Text>

@@ -105,7 +105,7 @@ const Categories: React.FC = () => {
   const tabItems = [
     {
       key: 'equipment',
-      label: <Space><DatabaseOutlined />Danh mục khí tài ({equipment.length})</Space>,
+      label: <Space><DatabaseOutlined />Danh mục thiết bị ({equipment.length})</Space>,
       children: (
         <Table dataSource={filteredEquipment} columns={equipmentColumns} rowKey="id" size="small" scroll={{ x: 1200 }}
           pagination={{ pageSize: 10, showSizeChanger: true, showTotal: (t) => `${t} thiết bị` }} />
@@ -113,7 +113,7 @@ const Categories: React.FC = () => {
     },
     {
       key: 'departments',
-      label: <Space><DatabaseOutlined />Phòng ban / Phân xưởng ({departments.length})</Space>,
+      label: <Space><DatabaseOutlined />Phòng ban / Trung tâm ({departments.length})</Space>,
       children: (
         <Table dataSource={departments} columns={departmentColumns} rowKey="id" size="small" scroll={{ x: 800 }}
           pagination={{ pageSize: 10, showSizeChanger: true, showTotal: (t) => `${t} đơn vị` }} />
@@ -141,7 +141,7 @@ const Categories: React.FC = () => {
                 </div>
                 <div>
                   <Title level={5} style={{ color: '#fff', margin: 0, fontWeight: 700 }}>Danh mục dữ liệu</Title>
-                  <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>Quản lý danh mục khí tài, phòng ban, vật tư và dữ liệu tham chiếu</Text>
+                  <Text style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>Quản lý danh mục thiết bị, phòng ban, vật tư và dữ liệu tham chiếu</Text>
                 </div>
               </Space>
             </Col>
@@ -156,8 +156,8 @@ const Categories: React.FC = () => {
 
       <div style={{ display: 'flex', gap: 16, marginBottom: 20, flexWrap: 'wrap' }}>
         {[
-          { label: 'Khí tài', value: equipment.length, gradient: 'linear-gradient(135deg, #1B3A5C, #2d5a8e)', icon: <DatabaseOutlined /> },
-          { label: 'Phòng ban / Phân xưởng', value: departments.length, gradient: 'linear-gradient(135deg, #0891b2, #06b6d4)', icon: <TeamOutlined /> },
+          { label: 'Thiết bị', value: equipment.length, gradient: 'linear-gradient(135deg, #1B3A5C, #2d5a8e)', icon: <DatabaseOutlined /> },
+          { label: 'Phòng ban / Trung tâm', value: departments.length, gradient: 'linear-gradient(135deg, #0891b2, #06b6d4)', icon: <TeamOutlined /> },
           { label: 'Vật tư & Linh kiện', value: materials.length, gradient: 'linear-gradient(135deg, #16a34a, #22c55e)', icon: <AppstoreOutlined /> },
           { label: 'Đang đại tu', value: equipment.filter(e => e.status === 'in_overhaul').length, gradient: 'linear-gradient(135deg, #d97706, #f59e0b)', icon: <ToolOutlined /> },
         ].map((card, i) => (

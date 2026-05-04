@@ -102,7 +102,7 @@ const ProductionPlanDetailPage: React.FC = () => {
       },
     },
     {
-      title: 'Phân xưởng', dataIndex: 'workshopName', key: 'workshopName', width: 130,
+      title: 'Trung tâm', dataIndex: 'workshopName', key: 'workshopName', width: 130,
     },
     {
       title: 'Ưu tiên', dataIndex: 'priority', key: 'priority', width: 100, align: 'center',

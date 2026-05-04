@@ -91,7 +91,7 @@ const MaterialRequestDetail: React.FC = () => {
         <Descriptions.Item label="Mã phiếu"><Text strong style={{ color: colors.navy }}>{req.code}</Text></Descriptions.Item>
         <Descriptions.Item label="Lệnh đại tu"><Text strong style={{ color: colors.navy }}>{req.orderCode}</Text></Descriptions.Item>
         <Descriptions.Item label="Thiết bị" span={2}><Text strong>{req.equipmentName}</Text></Descriptions.Item>
-        <Descriptions.Item label="Phân xưởng" span={2}>{req.workshopName}</Descriptions.Item>
+        <Descriptions.Item label="Trung tâm" span={2}>{req.workshopName}</Descriptions.Item>
         <Descriptions.Item label="Người lập phiếu" span={2}>{req.requestedBy}</Descriptions.Item>
         <Descriptions.Item label="Ngày lập phiếu">{formatDate(req.requestDate)}</Descriptions.Item>
         <Descriptions.Item label="Ngày cần có">
@@ -493,7 +493,7 @@ const MaterialRequestDetail: React.FC = () => {
                   { label: 'Lệnh đại tu', value: req.orderCode },
                   { label: 'Ngày lập', value: formatDate(req.requestDate) },
                   { label: 'Cần trước', value: formatDate(req.requiredDate) },
-                  { label: 'Phân xưởng', value: req.workshopName },
+                  { label: 'Trung tâm', value: req.workshopName },
                 ].map((item, i) => (
                   <div key={i} style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
                     <Text type="secondary" style={{ fontSize: 11, flexShrink: 0 }}>{item.label}</Text>

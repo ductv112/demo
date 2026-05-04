@@ -662,7 +662,7 @@ const ContractCreatePage: React.FC = () => {
                         <Select
                           size="small"
                           style={{ width: '100%' }}
-                          placeholder="Chọn phân xưởng/bộ phận"
+                          placeholder="Chọn trung tâm/bộ phận"
                           value={asgn.unit || undefined}
                           onChange={val => {
                             updateAssignment(wv.id, 'unit', val);
