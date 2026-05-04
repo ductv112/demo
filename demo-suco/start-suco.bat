@@ -1,0 +1,21 @@
+@echo off
+chcp 65001 >nul
+title demo-suco :5185
+cd /d %~dp0
+
+if not exist node_modules (
+    echo Chua co node_modules. Dang chay npm install...
+    echo.
+    call npm install
+    if errorlevel 1 (
+        echo.
+        echo *** npm install loi. Dong cua so va kiem tra.
+        pause
+        exit /b 1
+    )
+    echo.
+)
+
+echo Khoi dong demo-suco - http://localhost:5185
+echo.
+call npm run dev
