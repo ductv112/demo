@@ -29,10 +29,10 @@ const stepLabels = [
 ];
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 - Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'TT Phần mềm Alpha' },
+  { value: 'PX2', label: 'TT Phần mềm Beta' },
+  { value: 'PX3', label: 'TT Phần mềm Gamma' },
+  { value: 'PX4', label: 'TT DevOps' },
   { value: 'PKT', label: 'Phòng Kỹ thuật' },
   { value: 'PKCDB', label: 'Phòng KCS & Đảm bảo CL' },
 ];
@@ -249,7 +249,7 @@ const IncidentFormPage: React.FC = () => {
               Ghi nhận sự cố mới
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Nhà máy Z119 — Điền đầy đủ thông tin sự cố
+              Doanh nghiệp A — Điền đầy đủ thông tin sự cố
             </Text>
           </div>
         </Space>
@@ -304,8 +304,8 @@ const IncidentFormPage: React.FC = () => {
 
               <Row gutter={16}>
                 <Col span={12}>
-                  <Form.Item name="workshopId" label="Phân xưởng / Bộ phận" rules={[{ required: true }]}>
-                    <Select placeholder="Chọn phân xưởng" options={workshopOptions} />
+                  <Form.Item name="workshopId" label="Trung tâm / Bộ phận" rules={[{ required: true }]}>
+                    <Select placeholder="Chọn trung tâm" options={workshopOptions} />
                   </Form.Item>
                 </Col>
                 <Col span={12}>

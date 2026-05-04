@@ -4,7 +4,7 @@ export const materialRequests: MaterialRequest[] = [
   {
     id: 'MR001', code: 'YCVT-2026-001',
     workOrderId: 'WO001', workOrderCode: 'LSC-2026-001',
-    equipmentName: 'Đài radar P-18', unitName: 'Sư đoàn 361',
+    equipmentName: 'Hệ thống monitoring P-18', unitName: 'Khối Vận hành K01',
     items: [
       { id: 'MRI001', name: 'Mô-đun thu phát RF P-18', code: 'LK-RF-P18', quantity: 1, unit: 'cái', estimatedPrice: 85, note: '' },
       { id: 'MRI002', name: 'Mạch khuếch đại công suất 500W', code: 'LK-KD-500', quantity: 2, unit: 'cái', estimatedPrice: 18, note: '' },
@@ -20,7 +20,7 @@ export const materialRequests: MaterialRequest[] = [
   {
     id: 'MR002', code: 'YCVT-2026-002',
     workOrderId: 'WO002', workOrderCode: 'LSC-2026-002',
-    equipmentName: 'Đài radar 36D6', unitName: 'Trung đoàn 291',
+    equipmentName: 'Hệ thống monitoring 36D6', unitName: 'Trung tâm 291',
     items: [
       { id: 'MRI004', name: 'Đầu đọc encoder quang học', code: 'LK-EC-001', quantity: 1, unit: 'cái', estimatedPrice: 32, note: '' },
       { id: 'MRI005', name: 'Bộ khuếch đại tạp âm thấp LNA', code: 'LK-LNA-36D', quantity: 1, unit: 'cái', estimatedPrice: 45, note: '' },
@@ -35,7 +35,7 @@ export const materialRequests: MaterialRequest[] = [
   {
     id: 'MR003', code: 'YCVT-2026-003',
     workOrderId: 'WO003', workOrderCode: 'LSC-2026-003',
-    equipmentName: 'Hệ thống dẫn S-125 Pechora', unitName: 'Sư đoàn 363',
+    equipmentName: 'Module S-125 Pechora', unitName: 'Khối Vận hành K03',
     items: [
       { id: 'MRI006', name: 'Board xử lý trung tâm S-125', code: 'LK-CPU-S125', quantity: 1, unit: 'cái', estimatedPrice: 165, note: 'Ưu tiên cao' },
       { id: 'MRI007', name: 'Chip firmware v3.2.1', code: 'LK-FW-321', quantity: 1, unit: 'cái', estimatedPrice: 12, note: '' },
@@ -46,28 +46,28 @@ export const materialRequests: MaterialRequest[] = [
     approvedBy: 'Trưởng kho Lê Hồng Phong', approvedDate: '2026-01-30',
     issuedBy: 'Thủ kho Nguyễn Văn Tùng', issuedDate: '2026-02-01',
     receivedBy: 'KTV Lê Văn Cường', receivedDate: '2026-02-01',
-    warehouseNote: 'Đã xuất đủ, board CPU nhập từ Nhà máy Z111', notes: 'Vật tư ưu tiên cho S-125',
+    warehouseNote: 'Đã xuất đủ, board CPU nhập từ Trung tâm phần mềm Alpha', notes: 'Vật tư ưu tiên cho S-125',
   },
   {
     id: 'MR004', code: 'YCVT-2026-004',
     workOrderId: 'WO005', workOrderCode: 'LSC-2026-005',
-    equipmentName: 'Đài radar P-37', unitName: 'Sư đoàn 367',
+    equipmentName: 'Hệ thống monitoring P-37', unitName: 'Khối Vận hành K07',
     items: [
-      { id: 'MRI009', name: 'Mô-đun nguồn chính P-37', code: 'LK-PSU-P37', quantity: 1, unit: 'cái', estimatedPrice: 120, note: 'Đặt hàng từ Z111' },
+      { id: 'MRI009', name: 'Mô-đun nguồn chính P-37', code: 'LK-PSU-P37', quantity: 1, unit: 'cái', estimatedPrice: 120, note: 'Đặt hàng từ Trung tâm phần mềm Alpha' },
     ],
     status: 'issuing', totalEstimatedCost: 120,
     requestedBy: 'Trần Văn Đức', requestedDate: '2026-02-17',
     approvedBy: 'Trưởng kho Lê Hồng Phong', approvedDate: '2026-02-18',
     issuedBy: '', issuedDate: '',
     receivedBy: '', receivedDate: '',
-    warehouseNote: 'Đang chờ nhập từ nhà cung cấp Z111, dự kiến 15/04', notes: 'Mô-đun nguồn đặt hàng đặc biệt',
+    warehouseNote: 'Đang chờ nhập từ nhà cung cấp Trung tâm phần mềm Alpha, dự kiến 15/04', notes: 'Mô-đun nguồn đặt hàng đặc biệt',
   },
   {
     id: 'MR005', code: 'YCVT-2026-005',
     workOrderId: 'WO010', workOrderCode: 'LSC-2026-010',
-    equipmentName: 'Hệ thống điều khiển hỏa lực S-300PMU', unitName: 'Sư đoàn 361',
+    equipmentName: 'Hệ thống điều khiển vận hành S-300PMU', unitName: 'Khối Vận hành K01',
     items: [
-      { id: 'MRI010', name: 'Module DSP radar dẫn bắn', code: 'LK-DSP-S300', quantity: 1, unit: 'cái', estimatedPrice: 150, note: 'Linh kiện nhập khẩu' },
+      { id: 'MRI010', name: 'Module DSP xử lý chính', code: 'LK-DSP-S300', quantity: 1, unit: 'cái', estimatedPrice: 150, note: 'Linh kiện nhập khẩu' },
       { id: 'MRI011', name: 'Connector hệ thống MIL-STD-1553', code: 'LK-CON-1553', quantity: 8, unit: 'cái', estimatedPrice: 5, note: '' },
     ],
     status: 'received', totalEstimatedCost: 190,
@@ -75,12 +75,12 @@ export const materialRequests: MaterialRequest[] = [
     approvedBy: 'Trưởng kho Lê Hồng Phong', approvedDate: '2026-03-30',
     issuedBy: 'Thủ kho Nguyễn Văn Tùng', issuedDate: '2026-04-01',
     receivedBy: 'KTV Lê Văn Cường', receivedDate: '2026-04-01',
-    warehouseNote: 'Xuất đủ, module DSP từ kho dự trữ chiến lược', notes: 'Sửa chữa hiện trường S-300PMU',
+    warehouseNote: 'Xuất đủ, module DSP từ kho dự trữ chính', notes: 'Sửa chữa hiện trường S-300PMU',
   },
   {
     id: 'MR006', code: 'YCVT-2026-006',
     workOrderId: 'WO008', workOrderCode: 'LSC-2026-008',
-    equipmentName: 'Đài đo cao ST-68', unitName: 'Sư đoàn 361',
+    equipmentName: 'Module đo cao ST-68', unitName: 'Khối Vận hành K01',
     items: [
       { id: 'MRI012', name: 'Chip FPGA xử lý tín hiệu', code: 'LK-FPGA-ST68', quantity: 1, unit: 'cái', estimatedPrice: 25, note: '' },
       { id: 'MRI013', name: 'Bộ nhớ tham số hiệu chuẩn', code: 'LK-MEM-CAL', quantity: 1, unit: 'cái', estimatedPrice: 8, note: '' },
@@ -95,7 +95,7 @@ export const materialRequests: MaterialRequest[] = [
   {
     id: 'MR007', code: 'YCVT-2026-007',
     workOrderId: 'WO016', workOrderCode: 'LSC-2026-016',
-    equipmentName: 'Hệ thống S-75 Dvina', unitName: 'Sư đoàn 363',
+    equipmentName: 'Server S-75 Dvina', unitName: 'Khối Vận hành K03',
     items: [
       { id: 'MRI014', name: 'Gioăng thủy lực chịu áp cao', code: 'VT-GL-TL01', quantity: 4, unit: 'cái', estimatedPrice: 8, note: '' },
       { id: 'MRI015', name: 'Van điều khiển thủy lực', code: 'LK-VAN-TL', quantity: 2, unit: 'cái', estimatedPrice: 35, note: 'Nhập từ Bosch Rexroth' },
@@ -111,7 +111,7 @@ export const materialRequests: MaterialRequest[] = [
   {
     id: 'MR008', code: 'YCVT-2026-008',
     workOrderId: 'WO015', workOrderCode: 'LSC-2026-015',
-    equipmentName: 'Trạm thông tin vệ tinh di động', unitName: 'Trung đoàn 285',
+    equipmentName: 'Trạm thu phát dữ liệu vệ tinh di động', unitName: 'Trung tâm 285',
     items: [
       { id: 'MRI017', name: 'Motor quay anten 24V DC', code: 'LK-MOT-ANT', quantity: 1, unit: 'cái', estimatedPrice: 18, note: '' },
       { id: 'MRI018', name: 'Vòng bi chịu tải trọng', code: 'VT-VB-001', quantity: 2, unit: 'cái', estimatedPrice: 5, note: '' },

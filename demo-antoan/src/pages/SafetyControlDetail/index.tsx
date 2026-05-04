@@ -173,7 +173,7 @@ const SafetyControlDetailPage: React.FC = () => {
         {/* Info strip */}
         <div style={{ padding: '16px 24px 0', display: 'flex', gap: 40, flexWrap: 'wrap' }}>
           {[
-            { label: 'Phân xưởng',    value: <span style={{ color: '#fff', fontWeight: 600 }}>{sheet.workshopName}</span> },
+            { label: 'Trung tâm',     value: <span style={{ color: '#fff', fontWeight: 600 }}>{sheet.workshopName}</span> },
             { label: 'Ca làm việc',   value: <span style={{ color: '#fff', fontWeight: 600 }}>{shiftConfig[sheet.shift].label}</span> },
             { label: 'Ngày kiểm tra', value: <span style={{ color: '#fff', fontWeight: 600 }}>{formatDate(sheet.date)}</span> },
             { label: 'Người kiểm tra', value: <span style={{ color: '#fff', fontWeight: 600 }}>{sheet.inspector}</span> },
@@ -336,7 +336,7 @@ const SafetyControlDetailPage: React.FC = () => {
               <Descriptions.Item label="Ca làm việc">
                 {shiftConfig[sheet.shift].label}
               </Descriptions.Item>
-              <Descriptions.Item label="Phân xưởng">
+              <Descriptions.Item label="Trung tâm">
                 <Text strong>{sheet.workshopName}</Text>
               </Descriptions.Item>
               {sheet.submittedAt && (

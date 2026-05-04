@@ -22,10 +22,10 @@ import { useUser } from '../../contexts/UserContext';
 const { Title, Text } = Typography;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Radar' },
-  { value: 'PX2', label: 'PX2 - Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'TT Phần mềm Alpha' },
+  { value: 'PX2', label: 'TT Phần mềm Beta' },
+  { value: 'PX3', label: 'TT Phần mềm Gamma' },
+  { value: 'PX4', label: 'TT DevOps' },
 ];
 
 const SafetyStandardsPage: React.FC = () => {
@@ -125,7 +125,7 @@ const SafetyStandardsPage: React.FC = () => {
       },
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'applicableWorkshops',
       width: 160,
       render: (wsList: string[]) => (
@@ -193,7 +193,7 @@ const SafetyStandardsPage: React.FC = () => {
               Quy trình & Tiêu chuẩn An toàn Kỹ thuật
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Xây dựng, phê duyệt, ban hành và phổ biến tiêu chuẩn an toàn — Nhà máy Z119
+              Xây dựng, phê duyệt, ban hành và phổ biến tiêu chuẩn an toàn — Doanh nghiệp A
             </Text>
           </div>
         </Space>
@@ -255,7 +255,7 @@ const SafetyStandardsPage: React.FC = () => {
           <Select placeholder="Loại nguy cơ" value={catFilter} onChange={v => setCatFilter(v)} allowClear style={{ width: 150 }}
             options={Object.entries(hazardCategoryConfig).map(([k, v]) => ({ value: k, label: v.label }))}
           />
-          <Select placeholder="Phân xưởng" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
+          <Select placeholder="Trung tâm" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
           <div style={{ marginLeft: 'auto', fontSize: 13, color: '#8c8c8c' }}>
             Hiển thị <Text strong>{filteredData.length}</Text>/{safetyStandards.length} tiêu chuẩn
           </div>
@@ -355,8 +355,8 @@ const SafetyStandardsPage: React.FC = () => {
               </Col>
             </Row>
 
-            <Form.Item label="Phân xưởng áp dụng" name="applicableWorkshops" rules={[{ required: true, message: 'Chọn ít nhất 1 phân xưởng' }]}>
-              <Select mode="multiple" style={{ borderRadius: 8 }} options={workshopOptions} placeholder="Chọn phân xưởng..." />
+            <Form.Item label="Trung tâm áp dụng" name="applicableWorkshops" rules={[{ required: true, message: 'Chọn ít nhất 1 trung tâm' }]}>
+              <Select mode="multiple" style={{ borderRadius: 8 }} options={workshopOptions} placeholder="Chọn trung tâm..." />
             </Form.Item>
 
             <Row gutter={16}>
@@ -382,7 +382,7 @@ const SafetyStandardsPage: React.FC = () => {
             </Form.Item>
 
             <Form.Item label="Người soạn thảo" name="issuedBy">
-              <Input placeholder="VD: Trung tá Nguyễn Văn Đức" style={{ borderRadius: 8 }} />
+              <Input placeholder="VD: Nguyễn Văn Đức — Phó giám đốc" style={{ borderRadius: 8 }} />
             </Form.Item>
           </Form>
         </div>

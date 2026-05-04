@@ -108,7 +108,7 @@ const IncidentDetailPage: React.FC = () => {
         {/* Info strip */}
         <div style={{ padding: '16px 24px 0', display: 'flex', gap: 40, flexWrap: 'wrap' }}>
           {[
-            { label: 'Phân xưởng', value: <span style={{ color: '#fff', fontWeight: 600 }}>{incident.workshopName}</span> },
+            { label: 'Trung tâm', value: <span style={{ color: '#fff', fontWeight: 600 }}>{incident.workshopName}</span> },
             { label: 'Vị trí', value: <span style={{ color: 'rgba(255,255,255,0.85)' }}>{incident.location}</span> },
             { label: 'Thời điểm xảy ra', value: <span style={{ color: '#fff', fontWeight: 600 }}>{formatDateTime(incident.occurredAt)}</span> },
             { label: 'Người báo cáo', value: <span style={{ color: '#fff', fontWeight: 600 }}>{incident.reportedBy}</span> },

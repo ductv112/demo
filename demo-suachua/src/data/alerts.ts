@@ -3,13 +3,13 @@ import type { Alert } from '../types';
 export const alerts: Alert[] = [
   {
     id: 'ALT001', type: 'overdue', severity: 'critical',
-    title: 'Lệnh SC chậm tiến độ', description: 'LSC-2026-002 (Đài radar 36D6) đã vượt thời hạn dự kiến 5 ngày',
+    title: 'Lệnh SC chậm tiến độ', description: 'LSC-2026-002 (Hệ thống monitoring 36D6) đã vượt thời hạn dự kiến 5 ngày',
     relatedId: 'WO002', relatedCode: 'LSC-2026-002',
     createdDate: '2026-03-05', isRead: false, isResolved: false,
   },
   {
     id: 'ALT002', type: 'pending_approval', severity: 'warning',
-    title: 'Lệnh SC chờ phê duyệt', description: 'LSC-2026-006 (Đài radar P-18 - hiện trường) đang chờ phê duyệt từ Ban Giám đốc',
+    title: 'Lệnh SC chờ phê duyệt', description: 'LSC-2026-006 (Hệ thống monitoring P-18 - hiện trường) đang chờ phê duyệt từ Ban Giám đốc',
     relatedId: 'WO006', relatedCode: 'LSC-2026-006',
     createdDate: '2026-03-12', isRead: false, isResolved: false,
   },
@@ -21,7 +21,7 @@ export const alerts: Alert[] = [
   },
   {
     id: 'ALT004', type: 'recurring_failure', severity: 'warning',
-    title: 'Lỗi lặp lại', description: 'Đài radar 36D6 (EQ-RDR-002) có lỗi lặp lại lần thứ 2 trong 12 tháng - suy giảm bộ thu',
+    title: 'Lỗi lặp lại', description: 'Hệ thống monitoring 36D6 (EQ-RDR-002) có lỗi lặp lại lần thứ 2 trong 12 tháng - suy giảm bộ thu',
     relatedId: 'RR002', relatedCode: 'YCSC-2026-002',
     createdDate: '2026-01-20', isRead: true, isResolved: false,
   },
@@ -33,7 +33,7 @@ export const alerts: Alert[] = [
   },
   {
     id: 'ALT006', type: 'overdue', severity: 'warning',
-    title: 'Sắp đến hạn sửa chữa', description: 'LSC-2026-005 (Đài radar P-37) còn 5 ngày đến hạn, tiến độ mới đạt 45%',
+    title: 'Sắp đến hạn sửa chữa', description: 'LSC-2026-005 (Hệ thống monitoring P-37) còn 5 ngày đến hạn, tiến độ mới đạt 45%',
     relatedId: 'WO005', relatedCode: 'LSC-2026-005',
     createdDate: '2026-03-15', isRead: false, isResolved: false,
   },

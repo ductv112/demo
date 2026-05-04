@@ -18,10 +18,10 @@ const { Text } = Typography;
 const { TextArea } = Input;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 - Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'TT Phần mềm Alpha' },
+  { value: 'PX2', label: 'TT Phần mềm Beta' },
+  { value: 'PX3', label: 'TT Phần mềm Gamma' },
+  { value: 'PX4', label: 'TT DevOps' },
 ];
 
 const standardOptions = safetyStandards.map(s => ({
@@ -89,7 +89,7 @@ const ImprovementFormPage: React.FC = () => {
             Đề xuất cải tiến & phòng ngừa
           </div>
           <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 12, marginTop: 2 }}>
-            Ghi nhận phân tích và đề xuất biện pháp cải tiến an toàn — Nhà máy Z119
+            Ghi nhận phân tích và đề xuất biện pháp cải tiến an toàn — Doanh nghiệp A
           </div>
         </div>
       </div>
@@ -190,14 +190,14 @@ const ImprovementFormPage: React.FC = () => {
             </Col>
             <Col xs={24} sm={16}>
               <Form.Item
-                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Phân xưởng áp dụng <span style={{ color: '#ff4d4f' }}>*</span></Text>}
+                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Trung tâm áp dụng <span style={{ color: '#ff4d4f' }}>*</span></Text>}
                 name="workshopIds"
-                rules={[{ required: true, message: 'Vui lòng chọn phân xưởng' }]}
+                rules={[{ required: true, message: 'Vui lòng chọn trung tâm' }]}
               >
                 <Select
                   mode="multiple"
                   style={{ borderRadius: 8 }}
-                  placeholder="Chọn phân xưởng..."
+                  placeholder="Chọn trung tâm..."
                   options={workshopOptions}
                 />
               </Form.Item>

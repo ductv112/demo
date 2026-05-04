@@ -554,7 +554,7 @@ const ImprovementDetailPage: React.FC = () => {
           <Form.Item
             label="Người phê duyệt"
             name="approvedBy"
-            initialValue="Đại tá Phạm Quốc Hưng"
+            initialValue="Phạm Quốc Hưng — Giám đốc"
             rules={[{ required: true, message: 'Vui lòng nhập tên người phê duyệt' }]}
           >
             <Input style={{ borderRadius: 8 }} />
@@ -600,7 +600,7 @@ const ImprovementDetailPage: React.FC = () => {
             initialValue={merged.implementedBy ?? ''}
             rules={[{ required: true, message: 'Vui lòng nhập tên người triển khai' }]}
           >
-            <Input style={{ borderRadius: 8 }} placeholder="Họ tên, quân hàm..." />
+            <Input style={{ borderRadius: 8 }} placeholder="Họ tên, chức danh..." />
           </Form.Item>
         </Form>
       </Modal>
@@ -627,7 +627,7 @@ const ImprovementDetailPage: React.FC = () => {
           <Form.Item
             label="Người đánh giá"
             name="evaluatedBy"
-            initialValue="Trung tá Nguyễn Văn Đức"
+            initialValue="Nguyễn Văn Đức — Phó giám đốc"
             rules={[{ required: true, message: 'Vui lòng nhập tên người đánh giá' }]}
           >
             <Input style={{ borderRadius: 8 }} />

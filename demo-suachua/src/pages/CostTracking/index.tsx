@@ -143,7 +143,7 @@ const CostTracking: React.FC = () => {
       ),
     },
     {
-      title: 'Khí tài',
+      title: 'Thiết bị',
       dataIndex: 'equipmentName',
       key: 'equipmentName',
       width: 200,

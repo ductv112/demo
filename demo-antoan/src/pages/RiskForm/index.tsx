@@ -21,10 +21,10 @@ const { Text } = Typography;
 const { TextArea } = Input;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 - Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'TT Phần mềm Alpha' },
+  { value: 'PX2', label: 'TT Phần mềm Beta' },
+  { value: 'PX3', label: 'TT Phần mềm Gamma' },
+  { value: 'PX4', label: 'TT DevOps' },
 ];
 
 const probabilityOptions = [
@@ -135,7 +135,7 @@ const RiskFormPage: React.FC = () => {
             {isEdit ? `Chỉnh sửa: ${existing?.title ?? ''}` : 'Nhận diện & Đánh giá rủi ro mới'}
           </div>
           <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 12, marginTop: 2 }}>
-            {isEdit ? `Mã: ${existing?.code}` : 'Ghi nhận rủi ro kỹ thuật tại Nhà máy Z119'}
+            {isEdit ? `Mã: ${existing?.code}` : 'Ghi nhận rủi ro kỹ thuật tại Doanh nghiệp A'}
           </div>
         </div>
       </div>
@@ -191,11 +191,11 @@ const RiskFormPage: React.FC = () => {
             </Col>
             <Col xs={24} sm={8}>
               <Form.Item
-                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Phân xưởng <span style={{ color: '#ff4d4f' }}>*</span></Text>}
+                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Trung tâm <span style={{ color: '#ff4d4f' }}>*</span></Text>}
                 name="workshopId"
-                rules={[{ required: true, message: 'Vui lòng chọn phân xưởng' }]}
+                rules={[{ required: true, message: 'Vui lòng chọn trung tâm' }]}
               >
-                <Select style={{ borderRadius: 8 }} placeholder="Chọn phân xưởng..." options={workshopOptions} />
+                <Select style={{ borderRadius: 8 }} placeholder="Chọn trung tâm..." options={workshopOptions} />
               </Form.Item>
             </Col>
             <Col xs={24} sm={8}>
@@ -218,7 +218,7 @@ const RiskFormPage: React.FC = () => {
             rules={[{ required: true, message: 'Vui lòng nhập thiết bị/quy trình' }]}
             style={{ marginBottom: 0 }}
           >
-            <Input style={{ borderRadius: 8 }} placeholder="VD: Radar P-18, Quy trình nạp nhiên liệu..." />
+            <Input style={{ borderRadius: 8 }} placeholder="VD: Hệ thống monitoring P-18, Quy trình nạp chất làm mát..." />
           </Form.Item>
         </div>
 

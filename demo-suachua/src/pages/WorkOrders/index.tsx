@@ -380,8 +380,8 @@ const WorkOrdersPage: React.FC = () => {
       <SectionHeader title="Phân công nhân lực" icon={<TeamOutlined />} />
       <Row gutter={16}>
         <Col span={12}>
-          <Form.Item name="assignedTeamId" label="Tổ/Phân xưởng thực hiện" rules={[{ required: true, message: 'Vui lòng chọn' }]}>
-            <Select placeholder="Chọn phân xưởng"
+          <Form.Item name="assignedTeamId" label="Tổ/Trung tâm thực hiện" rules={[{ required: true, message: 'Vui lòng chọn' }]}>
+            <Select placeholder="Chọn trung tâm"
               options={technicalDepts.map((d) => ({ value: d.id, label: d.name }))}
             />
           </Form.Item>
@@ -625,7 +625,7 @@ const WorkOrdersPage: React.FC = () => {
             </div>
           </div>
           <div style={{ fontSize: 11, color: '#8c8c8c', paddingLeft: 36 }}>
-            Dữ liệu tồn kho từ phân hệ <b>Quản lý Kho tàng (pkkq-kho)</b>. Tồn kho = 0 sẽ cần đặt hàng.
+            Dữ liệu tồn kho từ phân hệ <b>Quản lý Kho (pkkq-kho)</b>. Tồn kho = 0 sẽ cần đặt hàng.
           </div>
         </div>
       </div>
@@ -679,7 +679,7 @@ const WorkOrdersPage: React.FC = () => {
               </div>
               <div>
                 <div style={{ fontWeight: 700, color: colors.navy, fontSize: 15 }}>Lập lệnh & Kế hoạch sửa chữa</div>
-                <div style={{ fontSize: 12, color: '#999', fontWeight: 400 }}>Quản lý lệnh sửa chữa khí tài tại Nhà máy Z119</div>
+                <div style={{ fontSize: 12, color: '#999', fontWeight: 400 }}>Quản lý lệnh sửa chữa thiết bị tại Doanh nghiệp A</div>
               </div>
             </div>
             <Button type="primary" icon={<PlusOutlined />} onClick={handleCreateOpen}
@@ -698,7 +698,7 @@ const WorkOrdersPage: React.FC = () => {
         <div style={{ marginBottom: 16 }}>
           <Space wrap size="middle">
             <Input
-              placeholder="Tìm kiếm mã lệnh, khí tài, đơn vị..."
+              placeholder="Tìm kiếm mã lệnh, thiết bị, đơn vị..."
               allowClear
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
@@ -855,7 +855,7 @@ const WorkOrdersPage: React.FC = () => {
               Tạo lệnh sửa chữa mới
             </div>
             <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: '18px' }}>
-              Lập kế hoạch sửa chữa khí tài
+              Lập kế hoạch sửa chữa thiết bị
             </div>
           </div>
         </div>

@@ -62,10 +62,10 @@ const complianceTrendData = [
 ];
 
 const workshopComplianceData = [
-  { xuong: 'PX1 - Radar',     tiLe: 88, soViPham: 2 },
-  { xuong: 'PX2 - Tên lửa',  tiLe: 72, soViPham: 3 },
-  { xuong: 'PX3 - Cơ khí',   tiLe: 91, soViPham: 1 },
-  { xuong: 'PX4 - Điện tử',  tiLe: 69, soViPham: 3 },
+  { xuong: 'TT Phần mềm Alpha', tiLe: 88, soViPham: 2 },
+  { xuong: 'TT Phần mềm Beta',  tiLe: 72, soViPham: 3 },
+  { xuong: 'TT Phần mềm Gamma', tiLe: 91, soViPham: 1 },
+  { xuong: 'TT DevOps',         tiLe: 69, soViPham: 3 },
 ];
 
 const kpiCards = [
@@ -187,7 +187,7 @@ const Dashboard: React.FC = () => {
               Tổng quan An toàn Kỹ thuật
             </Title>
             <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, marginTop: 4 }}>
-              Nhà máy Z119 — Xin chào, <strong style={{ color: '#D4A843' }}>{currentUser.name}</strong>
+              Doanh nghiệp A — Xin chào, <strong style={{ color: '#D4A843' }}>{currentUser.name}</strong>
             </div>
           </Col>
           <Col>
@@ -402,7 +402,7 @@ const Dashboard: React.FC = () => {
                   <SafetyOutlined style={{ color: '#fff', fontSize: 15 }} />
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, color: '#1B3A5C', fontSize: 14 }}>Tình trạng tuân thủ theo phân xưởng</div>
+                  <div style={{ fontWeight: 700, color: '#1B3A5C', fontSize: 14 }}>Tình trạng tuân thủ theo trung tâm</div>
                   <div style={{ fontSize: 11, color: '#8c8c8c', fontWeight: 400 }}>Tháng 04/2026</div>
                 </div>
               </Space>

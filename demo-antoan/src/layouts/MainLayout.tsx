@@ -290,7 +290,7 @@ const MainLayout: React.FC = () => {
                 An toàn Kỹ thuật
               </div>
               <div style={{ color: 'rgba(255,255,255,0.35)', fontSize: 11, whiteSpace: 'nowrap' }}>
-                Nhà máy Z119
+                Doanh nghiệp A
               </div>
             </div>
           )}

@@ -438,8 +438,8 @@ const WorkOrderDetail: React.FC = () => {
           <Descriptions.Item label="Trạng thái">
             <Tag color={statusCfg.color}>{statusCfg.label}</Tag>
           </Descriptions.Item>
-          <Descriptions.Item label="Khí tài">{workOrder.equipmentName}</Descriptions.Item>
-          <Descriptions.Item label="Loại khí tài">
+          <Descriptions.Item label="Thiết bị">{workOrder.equipmentName}</Descriptions.Item>
+          <Descriptions.Item label="Loại thiết bị">
             <Tag color={eqTypeCfg.color}>{eqTypeCfg.label}</Tag>
           </Descriptions.Item>
           <Descriptions.Item label="Đơn vị">{workOrder.unitName}</Descriptions.Item>

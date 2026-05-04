@@ -148,14 +148,14 @@ const RepairHistory: React.FC = () => {
 
   const columns = [
     {
-      title: 'Tên khí tài',
+      title: 'Tên thiết bị',
       dataIndex: 'equipmentName',
       key: 'equipmentName',
       width: 220,
       ellipsis: true,
     },
     {
-      title: 'Loại khí tài',
+      title: 'Loại thiết bị',
       dataIndex: 'equipmentType',
       key: 'equipmentType',
       width: 140,
@@ -313,7 +313,7 @@ const RepairHistory: React.FC = () => {
       >
         <Space style={{ marginBottom: 16 }} wrap>
           <Input
-            placeholder="Tìm kiếm theo tên khí tài"
+            placeholder="Tìm kiếm theo tên thiết bị"
             prefix={<SearchOutlined style={{ color: colors.navy }} />}
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
@@ -321,7 +321,7 @@ const RepairHistory: React.FC = () => {
             allowClear
           />
           <Select
-            placeholder="Loại khí tài"
+            placeholder="Loại thiết bị"
             value={selectedType}
             onChange={(val) => setSelectedType(val)}
             allowClear
@@ -355,10 +355,10 @@ const RepairHistory: React.FC = () => {
       >
         {detailRecord && (
           <Descriptions bordered column={2} size="small">
-            <Descriptions.Item label="Tên khí tài" span={2}>
+            <Descriptions.Item label="Tên thiết bị" span={2}>
               {detailRecord.equipmentName}
             </Descriptions.Item>
-            <Descriptions.Item label="Loại khí tài">
+            <Descriptions.Item label="Loại thiết bị">
               <Tag color={equipmentTypeConfig[detailRecord.equipmentType]?.color}>
                 {equipmentTypeConfig[detailRecord.equipmentType]?.label}
               </Tag>

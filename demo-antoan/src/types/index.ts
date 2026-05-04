@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// Domain types — Quản lý An toàn Kỹ thuật (pkkq-antoan)
+// Domain types — Quản lý An toàn Kỹ thuật (Doanh nghiệp A — module antoan)
 // ═══════════════════════════════════════════════════════════════
 
 // --- Đơn vị tổ chức ---

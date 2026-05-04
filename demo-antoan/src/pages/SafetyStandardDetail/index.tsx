@@ -147,7 +147,7 @@ const SafetyStandardDetailPage: React.FC = () => {
             { label: 'Hiệu lực từ',    value: <span style={{ color: '#fff', fontWeight: 600 }}>{formatDate(std.effectiveFrom)}</span> },
             { label: 'Người soạn thảo', value: <span style={{ color: '#fff', fontWeight: 600 }}>{std.issuedBy}</span> },
             ...(stdApprovedBy ? [{ label: 'Người phê duyệt', value: <span style={{ color: '#52c41a', fontWeight: 600 }}>{stdApprovedBy}</span> }] : []),
-            { label: 'Phân xưởng', value: (
+            { label: 'Trung tâm', value: (
               <Space size={4}>
                 {std.applicableWorkshops.map(ws => (
                   <Tag key={ws} style={{ background: 'rgba(255,255,255,0.12)', color: 'rgba(255,255,255,0.8)', border: 'none', margin: 0, fontSize: 11 }}>{ws}</Tag>
@@ -454,7 +454,7 @@ const SafetyStandardDetailPage: React.FC = () => {
           <Form.Item
             label="Người phê duyệt"
             name="approvedBy"
-            initialValue="Đại tá Phạm Quốc Hưng"
+            initialValue="Phạm Quốc Hưng — Giám đốc"
             rules={[{ required: true, message: 'Vui lòng nhập tên người phê duyệt' }]}
           >
             <Input style={{ borderRadius: 8 }} />
@@ -524,7 +524,7 @@ const SafetyStandardDetailPage: React.FC = () => {
               { value: 'khac',        label: 'Khác' },
             ]} />
           </Form.Item>
-          <Form.Item label="Phân xưởng áp dụng" name="applicableWorkshops">
+          <Form.Item label="Trung tâm áp dụng" name="applicableWorkshops">
             <Select mode="multiple" style={{ borderRadius: 8 }} options={workshopOptions} />
           </Form.Item>
           <Form.Item label="Ngày hiệu lực" name="effectiveFrom">

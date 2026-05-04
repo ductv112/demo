@@ -349,7 +349,7 @@ const Dashboard: React.FC = () => {
       ),
     },
     {
-      title: 'Khí tài',
+      title: 'Thiết bị',
       dataIndex: 'equipmentName',
       key: 'equipmentName',
       width: 220,
@@ -419,7 +419,7 @@ const Dashboard: React.FC = () => {
             Xin chào, {currentUser.name}
           </Title>
           <Text className="hero-subtitle">
-            Tổng quan tình hình sửa chữa khí tài -- Nhà máy Z119
+            Tổng quan tình hình sửa chữa thiết bị -- Doanh nghiệp A
           </Text>
 
         </div>
@@ -624,7 +624,7 @@ const Dashboard: React.FC = () => {
 
       </Row>
 
-      {/* Biểu đồ cột - Chi phí theo phân xưởng */}
+      {/* Biểu đồ cột - Chi phí theo trung tâm */}
       <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
         <Col xs={24}>
           <Card className="db-chart-card animate-fade-in animate-delay-5"
@@ -632,7 +632,7 @@ const Dashboard: React.FC = () => {
               <span className="db-card-title-icon" style={{ background: `linear-gradient(135deg, ${colors.success}, #3d9a50)` }}>
                 <BarChartOutlined />
               </span>
-              <span>Chi phí sửa chữa theo phân xưởng (triệu đồng)</span>
+              <span>Chi phí sửa chữa theo trung tâm (triệu đồng)</span>
             </Space>}
           >
             <Column
@@ -640,7 +640,7 @@ const Dashboard: React.FC = () => {
                 const teamCosts: Record<string, { materialCost: number; laborCost: number }> = {};
                 workOrders.forEach(wo => {
                   if (wo.actualCost > 0) {
-                    const team = wo.assignedTeam.replace('Phân xưởng ', '');
+                    const team = wo.assignedTeam.replace('Trung tâm ', '');
                     if (!teamCosts[team]) teamCosts[team] = { materialCost: 0, laborCost: 0 };
                     teamCosts[team].materialCost += wo.materialCost;
                     teamCosts[team].laborCost += wo.laborCost;

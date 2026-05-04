@@ -1,20 +1,20 @@
 # ROADMAP - Phần mềm Quản lý Sửa chữa (pkkq-suachua)
 
-> Phần mềm #9 trong hệ thống 16 phần mềm PKKQ
-> Đơn vị demo: **Nhà máy Z119**
+> Phần mềm #9 trong hệ thống 16 phần mềm Doanh nghiệp A
+> Đơn vị demo: **Doanh nghiệp A**
 > Tham chiếu: `pkkq-taichinhketoan`
 
 ---
 
 ## Tổng quan nghiệp vụ
 
-Hệ thống Quản lý Sửa chữa quản lý toàn bộ quy trình sửa chữa khí tài, thiết bị quân sự tại Nhà máy Z119, từ tiếp nhận yêu cầu đến bàn giao và theo dõi hiệu quả.
+Hệ thống Quản lý Sửa chữa quản lý toàn bộ quy trình sửa chữa thiết bị, hệ thống công nghệ tại Doanh nghiệp A, từ tiếp nhận yêu cầu đến bàn giao và theo dõi hiệu quả.
 
 ### 6 nhóm quy trình chính
 
 | # | Quy trình | Mô tả |
 |---|-----------|-------|
-| 1 | Tiếp nhận & Phân loại | Tiếp nhận khí tài, ghi nhận tình trạng, phân loại sửa chữa (nhỏ/vừa/hiện trường) |
+| 1 | Tiếp nhận & Phân loại | Tiếp nhận thiết bị, ghi nhận tình trạng, phân loại sửa chữa (nhỏ/vừa/hiện trường) |
 | 2 | Tiếp nhận kết quả chẩn đoán | Nhận kết luận kỹ thuật từ phân hệ Sự cố & Chẩn đoán |
 | 3 | Lập lệnh & Kế hoạch | Lập lệnh sửa chữa, phân công nhân lực, lập lịch, chuẩn bị vật tư |
 | 4 | Thực hiện sửa chữa | Thực hiện theo công đoạn, thay thế/phục hồi linh kiện, ghi nhận quá trình |
@@ -115,7 +115,7 @@ pkkq-suachua/
 
 | # | Task | File | Mô tả |
 |---|------|------|-------|
-| 2.1 | Departments | `src/data/departments.ts` | Cơ cấu tổ chức Z119 (dùng chung) |
+| 2.1 | Departments | `src/data/departments.ts` | Cơ cấu tổ chức Doanh nghiệp A (dùng chung) |
 | 2.2 | Repair Requests | `src/data/repairRequests.ts` | Yêu cầu sửa chữa, phân loại |
 | 2.3 | Diagnostic Results | `src/data/diagnosticResults.ts` | Kết quả chẩn đoán từ phân hệ sự cố |
 | 2.4 | Work Orders | `src/data/workOrders.ts` | Lệnh sửa chữa, kế hoạch, phân công |
@@ -217,16 +217,16 @@ Priority:         critical | high | medium | low
 
 ## User Roles & Menu
 
-### Role: Kỹ thuật (`repair`) — Phòng Kỹ thuật / Phân xưởng
+### Role: Kỹ thuật (`repair`) — Phòng Kỹ thuật / Trung tâm
 - Người demo: **Trần Văn Đức** — Trưởng phòng Kỹ thuật
 - Menu: Dashboard, Tiếp nhận SC, Kết quả chẩn đoán, Lệnh SC, Thực hiện SC, Kiểm tra & Nghiệm thu, Bàn giao, Lịch sử SC, Chi phí, Giám sát
 
-### Role: Phòng ban (`department`) — Phân xưởng
+### Role: Phòng ban (`department`) — Trung tâm
 - Người demo: **Hoàng Minh Tuấn** — Trưởng phòng Kế hoạch
 - Menu: Dashboard, Lệnh SC (của đơn vị), Thực hiện SC, Giám sát (cảnh báo liên quan)
 
 ### Role: Ban Giám đốc (`director`)
-- Người demo: **Đại tá Phạm Quốc Hưng** — Giám đốc Nhà máy
+- Người demo: **Phạm Quốc Hưng** — Giám đốc
 - Menu: Dashboard, Phê duyệt lệnh SC, Lệnh SC, Chi phí, Giám sát, Báo cáo
 
 ---
@@ -308,6 +308,6 @@ Kiểm tra:    pending → passed | failed → retesting → passed
 | pkkq-suco (Sự cố & Chẩn đoán) | Nhận kết quả chẩn đoán, gửi yêu cầu chẩn đoán |
 | pkkq-chatluong (Chất lượng QA/QC) | Gửi yêu cầu kiểm tra, nhận kết quả QC |
 | pkkq-thunghiem (Thử nghiệm & Nghiệm thu) | Gửi yêu cầu thử nghiệm, nhận kết quả nghiệm thu |
-| pkkq-kho (Kho tàng) | Yêu cầu xuất vật tư, linh kiện |
+| pkkq-kho (Kho) | Yêu cầu xuất vật tư, linh kiện |
 | pkkq-vongdoi (Vòng đời & Cấu hình) | Cập nhật lịch sử sửa chữa thiết bị |
 | pkkq-taichinhketoan (Tài chính) | Ghi nhận chi phí sửa chữa |

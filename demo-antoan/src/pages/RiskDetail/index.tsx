@@ -120,7 +120,7 @@ const RiskDetailPage: React.FC = () => {
         {/* Info strip */}
         <div style={{ padding: '16px 24px 0', display: 'flex', gap: 40, flexWrap: 'wrap' }}>
           {[
-            { label: 'Phân xưởng', value: <span style={{ color: '#fff', fontWeight: 600 }}>{risk.workshopName}</span> },
+            { label: 'Trung tâm', value: <span style={{ color: '#fff', fontWeight: 600 }}>{risk.workshopName}</span> },
             { label: 'Thiết bị / Quy trình', value: <span style={{ color: '#fff', fontWeight: 600 }}>{risk.equipmentOrProcess}</span> },
             { label: 'Loại nguy cơ', value: <Tag style={{ color: catCfg.color, borderColor: catCfg.color, background: 'transparent', margin: 0 }}>{catCfg.label}</Tag> },
             ...(risk.dataSource ? [{
@@ -226,7 +226,7 @@ const RiskDetailPage: React.FC = () => {
                   span: 1,
                 },
                 {
-                  label: 'Phân xưởng',
+                  label: 'Trung tâm',
                   value: <Text strong>{risk.workshopName}</Text>,
                   span: 1,
                 },

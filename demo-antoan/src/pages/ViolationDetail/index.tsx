@@ -125,7 +125,7 @@ const ViolationDetailPage: React.FC = () => {
         {/* Info strip */}
         <div style={{ padding: '16px 24px 0', display: 'flex', gap: 40, flexWrap: 'wrap' }}>
           {[
-            { label: 'Phân xưởng', value: <span style={{ color: '#fff', fontWeight: 600 }}>{violation.workshopName}</span> },
+            { label: 'Trung tâm', value: <span style={{ color: '#fff', fontWeight: 600 }}>{violation.workshopName}</span> },
             { label: 'Loại nguy cơ', value: <Tag style={{ color: catCfg.color, borderColor: catCfg.color, background: 'transparent', margin: 0 }}>{catCfg.label}</Tag> },
             { label: 'Nguồn phát hiện', value: <span style={{ color: 'rgba(255,255,255,0.85)' }}>{sourceCfg.label}</span> },
             { label: 'Người phát hiện', value: <span style={{ color: '#fff', fontWeight: 600 }}>{violation.detectedBy}</span> },

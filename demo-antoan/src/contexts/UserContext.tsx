@@ -14,7 +14,7 @@ export interface AppUser {
 const userProfiles: Record<UserRole, AppUser> = {
   safety: {
     id: 'U001',
-    name: 'Trung tá Nguyễn Văn Đức',
+    name: 'Nguyễn Văn Đức',
     role: 'safety',
     departmentId: 'PKCDB',
     departmentName: 'Phòng KCS & Đảm bảo CL',
@@ -30,17 +30,17 @@ const userProfiles: Record<UserRole, AppUser> = {
   },
   director: {
     id: 'U003',
-    name: 'Đại tá Phạm Quốc Hưng',
+    name: 'Phạm Quốc Hưng',
     role: 'director',
     departmentId: 'BGD',
     departmentName: 'Ban Giám đốc',
-    position: 'Giám đốc Nhà máy',
+    position: 'Giám đốc Doanh nghiệp A',
   },
 };
 
 export const roleLabels: Record<UserRole, string> = {
   safety:     'Phòng An toàn',
-  department: 'Phòng ban / PX',
+  department: 'Phòng ban / TT',
   director:   'Ban Giám đốc',
 };
 

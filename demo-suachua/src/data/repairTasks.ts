@@ -1,7 +1,7 @@
 import type { RepairTask } from '../types';
 
 export const repairTasks: RepairTask[] = [
-  // WO001 - Đài radar P-18 (hoàn thành)
+  // WO001 - Hệ thống monitoring P-18 (hoàn thành)
   {
     id: 'RT001', workOrderId: 'WO001', workOrderCode: 'LSC-2026-001',
     taskName: 'Tháo mô-đun thu phát RF bị hỏng', description: 'Tháo rời mô-đun thu phát RF khỏi khung máy chính, kiểm tra visual',
@@ -26,7 +26,7 @@ export const repairTasks: RepairTask[] = [
     actualStart: '2026-01-29', actualEnd: '2026-02-03', progress: 100, status: 'completed',
     materials: [], notes: 'Đạt chuẩn các thông số kỹ thuật', sequence: 3,
   },
-  // WO002 - Đài radar 36D6 (đang thực hiện)
+  // WO002 - Hệ thống monitoring 36D6 (đang thực hiện)
   {
     id: 'RT004', workOrderId: 'WO002', workOrderCode: 'LSC-2026-002',
     taskName: 'Phục hồi encoder góc phương vị', description: 'Sửa chữa cơ khí encoder, thay thế đầu đọc bị mòn',
@@ -77,7 +77,7 @@ export const repairTasks: RepairTask[] = [
     actualStart: '2026-02-08', actualEnd: '2026-02-13', progress: 100, status: 'completed',
     materials: ['MAT010', 'MAT011'], notes: 'Hoàn thành, công suất phát đạt 95% định mức', sequence: 1,
   },
-  // WO005 - Đài radar P-37 (đang thực hiện)
+  // WO005 - Hệ thống monitoring P-37 (đang thực hiện)
   {
     id: 'RT010', workOrderId: 'WO005', workOrderCode: 'LSC-2026-005',
     taskName: 'Tháo và kiểm tra mô-đun nguồn', description: 'Tháo mô-đun nguồn, kiểm tra các thành phần bị hỏng',
@@ -92,7 +92,7 @@ export const repairTasks: RepairTask[] = [
     stage: 'electronic', assignee: 'KTV Nguyễn Anh Tuấn', assigneeId: 'PX1-01',
     plannedHours: 16, actualHours: 4, plannedStart: '2026-04-08', plannedEnd: '2026-04-12',
     actualStart: '2026-04-08', actualEnd: '', progress: 25, status: 'in_progress',
-    materials: ['MAT012'], notes: 'Đang lắp mô-đun nguồn từ Nhà máy Z111', sequence: 2,
+    materials: ['MAT012'], notes: 'Đang lắp mô-đun nguồn từ Trung tâm phần mềm Alpha', sequence: 2,
   },
 ];
 

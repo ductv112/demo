@@ -113,7 +113,7 @@ export const diagnosticResults: DiagnosticResult[] = [
     status: 'received',
     diagnosis: 'Hỏng module xử lý tín hiệu chính và lỗi bus dữ liệu nội bộ',
     rootCause: 'Module xử lý DSP bị lỗi chip, bus dữ liệu MIL-STD-1553 mất đồng bộ do connector bị oxi hóa',
-    affectedComponents: ['Module DSP radar dẫn bắn', 'Bus MIL-STD-1553', 'Connector hệ thống'],
+    affectedComponents: ['Module DSP xử lý chính', 'Bus MIL-STD-1553', 'Connector hệ thống'],
     recommendedAction: 'replacement',
     severity: 'critical',
     diagnosedBy: 'Kỹ sư Nguyễn Văn An', diagnosedDate: '2026-03-16',

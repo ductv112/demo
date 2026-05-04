@@ -152,10 +152,10 @@ const ImprovementsPage: React.FC = () => {
   ];
 
   const workshopOptions = [
-    { value: 'PX1', label: 'PX1 - Radar' },
-    { value: 'PX2', label: 'PX2 - Tên lửa' },
-    { value: 'PX3', label: 'PX3 - Cơ khí' },
-    { value: 'PX4', label: 'PX4 - Điện tử' },
+    { value: 'PX1', label: 'TT Phần mềm Alpha' },
+    { value: 'PX2', label: 'TT Phần mềm Beta' },
+    { value: 'PX3', label: 'TT Phần mềm Gamma' },
+    { value: 'PX4', label: 'TT DevOps' },
   ];
 
   return (
@@ -175,7 +175,7 @@ const ImprovementsPage: React.FC = () => {
               Theo dõi, Cải tiến & Phòng ngừa Rủi ro
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Quản lý đề xuất cải tiến phát sinh từ phân tích sự cố, rủi ro và vi phạm — Nhà máy Z119
+              Quản lý đề xuất cải tiến phát sinh từ phân tích sự cố, rủi ro và vi phạm — Doanh nghiệp A
             </Text>
           </div>
         </Space>
@@ -270,7 +270,7 @@ const ImprovementsPage: React.FC = () => {
           <Select placeholder="Ưu tiên" value={priorityFilter} onChange={v => setPriorityFilter(v)} allowClear style={{ width: 140 }}
             options={Object.entries(improvementPriorityConfig).map(([k, v]) => ({ value: k, label: v.label }))}
           />
-          <Select placeholder="Phân xưởng" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
+          <Select placeholder="Trung tâm" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
           <div style={{ marginLeft: 'auto', fontSize: 13, color: '#8c8c8c' }}>
             <Text strong>{filteredData.length}</Text>/{improvements.length} đề xuất
           </div>

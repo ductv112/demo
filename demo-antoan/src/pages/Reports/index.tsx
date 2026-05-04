@@ -53,10 +53,10 @@ const complianceTrendData = monthLabels.map((m, i) => ({
 }));
 
 const workshopComplianceData = [
-  { workshop: 'PX1 - Radar',    tuanThu: 85, vi_pham: 2, su_co: 2 },
-  { workshop: 'PX2 - Tên lửa', tuanThu: 76, vi_pham: 3, su_co: 3 },
-  { workshop: 'PX3 - Cơ khí',  tuanThu: 91, vi_pham: 2, su_co: 1 },
-  { workshop: 'PX4 - Điện tử', tuanThu: 88, vi_pham: 3, su_co: 2 },
+  { workshop: 'TT Phần mềm Alpha', tuanThu: 85, vi_pham: 2, su_co: 2 },
+  { workshop: 'TT Phần mềm Beta',  tuanThu: 76, vi_pham: 3, su_co: 3 },
+  { workshop: 'TT Phần mềm Gamma', tuanThu: 91, vi_pham: 2, su_co: 1 },
+  { workshop: 'TT DevOps',         tuanThu: 88, vi_pham: 3, su_co: 2 },
 ];
 
 const violationTrendData = [
@@ -116,7 +116,7 @@ const ReportsPage: React.FC = () => {
               Báo cáo Tổng hợp An toàn
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Phân tích xu hướng, tỷ lệ tuân thủ và hiệu quả kiểm soát rủi ro — Nhà máy Z119
+              Phân tích xu hướng, tỷ lệ tuân thủ và hiệu quả kiểm soát rủi ro — Doanh nghiệp A
             </Text>
           </div>
         </Space>
@@ -218,7 +218,7 @@ const ReportsPage: React.FC = () => {
         </Col>
       </Row>
 
-      {/* ─── Vi phạm theo tháng + Tuân thủ theo phân xưởng ─── */}
+      {/* ─── Vi phạm theo tháng + Tuân thủ theo trung tâm ─── */}
       <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
         <Col xs={24} lg={12}>
           <Card
@@ -253,7 +253,7 @@ const ReportsPage: React.FC = () => {
                 <div style={{ width: 28, height: 28, borderRadius: 7, background: 'linear-gradient(135deg, #1B3A5C, #2d5a8e)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <SafetyOutlined style={{ color: '#fff', fontSize: 13 }} />
                 </div>
-                <Text strong style={{ color: '#1B3A5C' }}>Tuân thủ theo phân xưởng</Text>
+                <Text strong style={{ color: '#1B3A5C' }}>Tuân thủ theo trung tâm</Text>
               </Space>
             }
             style={{ borderRadius: 14, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}

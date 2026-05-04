@@ -15,10 +15,10 @@ const { Text } = Typography;
 const { TextArea } = Input;
 
 const workshopOptions = [
-  { value: 'PX1', label: 'PX1 - Sửa chữa Radar' },
-  { value: 'PX2', label: 'PX2 - Sửa chữa Tên lửa' },
-  { value: 'PX3', label: 'PX3 - Cơ khí' },
-  { value: 'PX4', label: 'PX4 - Điện tử' },
+  { value: 'PX1', label: 'TT Phần mềm Alpha' },
+  { value: 'PX2', label: 'TT Phần mềm Beta' },
+  { value: 'PX3', label: 'TT Phần mềm Gamma' },
+  { value: 'PX4', label: 'TT DevOps' },
 ];
 
 const shiftOptions = [
@@ -37,11 +37,11 @@ const checkItemResultConfig: Record<CheckItemResult, { label: string; color: str
 const defaultCheckItems = [
   { id: 'ci1', category: 'dien_ap_cao' as HazardCategory, description: 'Kiểm tra cách điện và tiếp địa thiết bị', requirement: 'Điện trở cách điện ≥ 1 MΩ', result: 'pending' as CheckItemResult },
   { id: 'ci2', category: 'dien_ap_cao' as HazardCategory, description: 'Kiểm tra bảng điện và aptomat bảo vệ', requirement: 'Không có aptomat hỏng, tiếp xúc tốt', result: 'pending' as CheckItemResult },
-  { id: 'ci3', category: 'chay_no' as HazardCategory, description: 'Kiểm tra bình chữa cháy trong phân xưởng', requirement: 'Đủ số lượng, còn hạn sử dụng, dễ lấy', result: 'pending' as CheckItemResult },
+  { id: 'ci3', category: 'chay_no' as HazardCategory, description: 'Kiểm tra bình chữa cháy trong trung tâm', requirement: 'Đủ số lượng, còn hạn sử dụng, dễ lấy', result: 'pending' as CheckItemResult },
   { id: 'ci4', category: 'chay_no' as HazardCategory, description: 'Kiểm tra lối thoát hiểm và biển chỉ dẫn', requirement: 'Thông thoáng, biển chỉ dẫn rõ ràng', result: 'pending' as CheckItemResult },
   { id: 'ci5', category: 'co_hoc' as HazardCategory, description: 'Kiểm tra tình trạng thiết bị nâng hạ', requirement: 'Không có dấu hiệu nứt, mòn, bôi trơn đủ', result: 'pending' as CheckItemResult },
   { id: 'ci6', category: 'co_hoc' as HazardCategory, description: 'Kiểm tra bảo hộ lao động cá nhân', requirement: 'Đủ số lượng, đúng quy cách, còn hạn', result: 'pending' as CheckItemResult },
-  { id: 'ci7', category: 'nhiet_do' as HazardCategory, description: 'Kiểm tra nhiệt độ và thông gió phân xưởng', requirement: 'Nhiệt độ ≤ 35°C, thông gió đảm bảo', result: 'pending' as CheckItemResult },
+  { id: 'ci7', category: 'nhiet_do' as HazardCategory, description: 'Kiểm tra nhiệt độ và thông gió trung tâm', requirement: 'Nhiệt độ ≤ 35°C, thông gió đảm bảo', result: 'pending' as CheckItemResult },
 ];
 
 const SectionHeader: React.FC<{ icon: React.ReactNode; title: string; gradient: string }> = ({ icon, title, gradient }) => (
@@ -146,7 +146,7 @@ const SafetyControlFormPage: React.FC = () => {
             Tạo Phiếu Kiểm soát Điều kiện An toàn
           </div>
           <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 12, marginTop: 2 }}>
-            Kiểm soát điều kiện an toàn đầu ca theo phân xưởng — Nhà máy Z119
+            Kiểm soát điều kiện an toàn đầu ca theo trung tâm — Doanh nghiệp A
           </div>
         </div>
       </div>
@@ -162,11 +162,11 @@ const SafetyControlFormPage: React.FC = () => {
           <Row gutter={16}>
             <Col xs={24} sm={8}>
               <Form.Item
-                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Phân xưởng <span style={{ color: '#ff4d4f' }}>*</span></Text>}
+                label={<Text style={{ fontSize: 13, fontWeight: 500 }}>Trung tâm <span style={{ color: '#ff4d4f' }}>*</span></Text>}
                 name="workshopId"
-                rules={[{ required: true, message: 'Vui lòng chọn phân xưởng' }]}
+                rules={[{ required: true, message: 'Vui lòng chọn trung tâm' }]}
               >
-                <Select style={{ borderRadius: 8 }} placeholder="Chọn phân xưởng..." options={workshopOptions} />
+                <Select style={{ borderRadius: 8 }} placeholder="Chọn trung tâm..." options={workshopOptions} />
               </Form.Item>
             </Col>
             <Col xs={24} sm={8}>

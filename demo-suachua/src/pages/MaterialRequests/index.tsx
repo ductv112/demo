@@ -262,7 +262,7 @@ const MaterialRequestsPage: React.FC = () => {
         key: 'send',
         icon: <SendOutlined style={{ color: '#1890ff' }} />,
         label: <span style={{ color: '#1890ff', fontWeight: 500 }}>Gửi yêu cầu kho</span>,
-        onClick: () => message.success('Đã gửi yêu cầu sang phân hệ Kho tàng'),
+        onClick: () => message.success('Đã gửi yêu cầu sang phân hệ Kho'),
       });
     } else if (record.status === 'approved') {
       items.push({ key: 'div1', type: 'divider', label: '' });
@@ -376,7 +376,7 @@ const MaterialRequestsPage: React.FC = () => {
             </div>
             <div>
               <div style={{ fontSize: 16, fontWeight: 700, color: colors.navy }}>Yêu cầu vật tư</div>
-              <div style={{ fontSize: 12, color: '#8c8c8c' }}>Quản lý yêu cầu xuất kho vật tư liên kết phân hệ Kho tàng (pkkq-kho)</div>
+              <div style={{ fontSize: 12, color: '#8c8c8c' }}>Quản lý yêu cầu xuất kho vật tư liên kết phân hệ Kho (pkkq-kho)</div>
             </div>
           </div>
         </div>
@@ -388,7 +388,7 @@ const MaterialRequestsPage: React.FC = () => {
           display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: '#1a1a2e',
         }}>
           <InboxOutlined style={{ color: '#1890ff', fontSize: 15 }} />
-          <span>Phiếu yêu cầu vật tư được <b>tạo tự động</b> khi lệnh sửa chữa được phê duyệt, dựa trên danh sách vật tư trong lệnh SC. Liên kết phân hệ <b>Quản lý Kho tàng (pkkq-kho)</b>.</span>
+          <span>Phiếu yêu cầu vật tư được <b>tạo tự động</b> khi lệnh sửa chữa được phê duyệt, dựa trên danh sách vật tư trong lệnh SC. Liên kết phân hệ <b>Quản lý Kho (pkkq-kho)</b>.</span>
         </div>
 
         {/* Tabs */}
@@ -404,7 +404,7 @@ const MaterialRequestsPage: React.FC = () => {
         <Row gutter={[12, 12]} style={{ marginBottom: 20 }}>
           <Col xs={24} sm={10}>
             <Input
-              placeholder="Tìm kiếm mã phiếu, tên khí tài, mã lệnh SC, đơn vị..."
+              placeholder="Tìm kiếm mã phiếu, tên thiết bị, mã lệnh SC, đơn vị..."
               prefix={<SearchOutlined style={{ color: '#bbb' }} />}
               value={searchText}
               onChange={e => setSearchText(e.target.value)}
@@ -499,7 +499,7 @@ const MaterialRequestsPage: React.FC = () => {
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
               {selectedRequest.status === 'draft' && (
                 <Button type="primary" icon={<SendOutlined />}
-                  onClick={() => { message.success('Đã gửi yêu cầu sang phân hệ Kho tàng'); setDetailModalOpen(false); }}
+                  onClick={() => { message.success('Đã gửi yêu cầu sang phân hệ Kho'); setDetailModalOpen(false); }}
                   style={{ background: '#1890ff' }}>
                   Gửi yêu cầu kho
                 </Button>
@@ -565,7 +565,7 @@ const MaterialRequestsPage: React.FC = () => {
                   {selectedRequest.workOrderCode}
                 </a>
               </Descriptions.Item>
-              <Descriptions.Item label="Khí tài">{selectedRequest.equipmentName}</Descriptions.Item>
+              <Descriptions.Item label="Thiết bị">{selectedRequest.equipmentName}</Descriptions.Item>
               <Descriptions.Item label="Đơn vị">{selectedRequest.unitName}</Descriptions.Item>
               <Descriptions.Item label="Tổng chi phí dự kiến">
                 <span style={{ fontWeight: 700, color: colors.navy }}>{formatCurrency(selectedRequest.totalEstimatedCost)}</span>
@@ -614,7 +614,7 @@ const MaterialRequestsPage: React.FC = () => {
                 padding: '12px 16px', fontSize: 13, color: '#0050b3',
               }}>
                 <SendOutlined style={{ marginRight: 8 }} />
-                Phiếu đã được gửi sang phân hệ <b>Quản lý Kho tàng (pkkq-kho)</b>. Đang chờ kho duyệt.
+                Phiếu đã được gửi sang phân hệ <b>Quản lý Kho (pkkq-kho)</b>. Đang chờ kho duyệt.
               </div>
             )}
             {selectedRequest.status === 'issuing' && (

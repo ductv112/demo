@@ -185,7 +185,7 @@ const ViolationsPage: React.FC = () => {
       },
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'workshopName',
       width: 160,
       render: (name: string) => <Text style={{ fontSize: 13 }}>{name}</Text>,
@@ -253,10 +253,10 @@ const ViolationsPage: React.FC = () => {
   };
 
   const workshopOptions = [
-    { value: 'PX1', label: 'PX1 - Radar' },
-    { value: 'PX2', label: 'PX2 - Tên lửa' },
-    { value: 'PX3', label: 'PX3 - Cơ khí' },
-    { value: 'PX4', label: 'PX4 - Điện tử' },
+    { value: 'PX1', label: 'TT Phần mềm Alpha' },
+    { value: 'PX2', label: 'TT Phần mềm Beta' },
+    { value: 'PX3', label: 'TT Phần mềm Gamma' },
+    { value: 'PX4', label: 'TT DevOps' },
   ];
 
   return (
@@ -276,7 +276,7 @@ const ViolationsPage: React.FC = () => {
               Vi phạm An toàn Kỹ thuật
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Giám sát, ghi nhận và theo dõi khắc phục vi phạm tại Nhà máy Z119
+              Giám sát, ghi nhận và theo dõi khắc phục vi phạm tại Doanh nghiệp A
             </Text>
           </div>
         </Space>
@@ -307,7 +307,7 @@ const ViolationsPage: React.FC = () => {
           display: 'flex', flexWrap: 'wrap', gap: 12, alignItems: 'center',
         }}>
           <Input
-            placeholder="Tìm theo mã, nội dung, phân xưởng..."
+            placeholder="Tìm theo mã, nội dung, trung tâm..."
             prefix={<SearchOutlined style={{ color: '#8c8c8c' }} />}
             value={searchText}
             onChange={e => setSearchText(e.target.value)}
@@ -336,7 +336,7 @@ const ViolationsPage: React.FC = () => {
             options={Object.entries(hazardCategoryConfig).map(([k, v]) => ({ value: k, label: v.label }))}
           />
           <Select
-            placeholder="Phân xưởng"
+            placeholder="Trung tâm"
             value={workshopFilter}
             onChange={v => setWorkshopFilter(v)}
             allowClear style={{ width: 160 }}

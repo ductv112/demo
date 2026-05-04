@@ -11,7 +11,7 @@ export const safetyStandards: SafetyStandard[] = [
     hazardCategory: 'dien_ap_cao',
     applicableWorkshops: ['PX4', 'PX1'],
     description:
-      'Quy trình đảm bảo an toàn khi làm việc với thiết bị điện áp cao trên 1.000V tại các phân xưởng điện tử và hạ tầng giám sát.',
+      'Quy trình đảm bảo an toàn khi làm việc với thiết bị điện áp cao trên 1.000V tại các trung tâm điện tử và hạ tầng giám sát.',
     keyRequirements: [
       'Phải có ít nhất 2 kỹ thuật viên khi thao tác điện áp cao',
       'Bắt buộc đeo găng tay cách điện cấp 4 trở lên',
@@ -31,8 +31,8 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-03-10',
     effectiveFrom: '2025-03-15',
     distributionRecords: [
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2025-03-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2025-03-17' },
-      { workshopId: 'PX4', workshopName: 'PX4 - Điện tử',          receivedBy: 'Trần Minh Khoa', receivedAt: '2025-03-16', confirmedBy: 'Trần Minh Khoa', confirmedAt: '2025-03-18' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2025-03-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2025-03-17' },
+      { workshopId: 'PX4', workshopName: 'TT DevOps - Điện tử',          receivedBy: 'Trần Minh Khoa', receivedAt: '2025-03-16', confirmedBy: 'Trần Minh Khoa', confirmedAt: '2025-03-18' },
     ],
     createdAt: '2025-02-20',
     updatedAt: '2025-03-15',
@@ -65,7 +65,7 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2024-11-20',
     effectiveFrom: '2024-12-01',
     distributionRecords: [
-      { workshopId: 'PX2', workshopName: 'PX2 - Module sản phẩm', receivedBy: 'Nguyễn Thành Nam', receivedAt: '2024-12-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2024-12-03' },
+      { workshopId: 'PX2', workshopName: 'TT Phần mềm Beta - Module sản phẩm', receivedBy: 'Nguyễn Thành Nam', receivedAt: '2024-12-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2024-12-03' },
     ],
     createdAt: '2024-10-25',
     updatedAt: '2024-12-01',
@@ -100,7 +100,7 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2026-01-10',
     effectiveFrom: '2026-01-15',
     distributionRecords: [
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2026-01-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2026-01-17' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2026-01-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2026-01-17' },
     ],
     createdAt: '2025-12-20',
     updatedAt: '2026-01-15',
@@ -133,8 +133,8 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-06-08',
     effectiveFrom: '2025-06-15',
     distributionRecords: [
-      { workshopId: 'PX3', workshopName: 'PX3 - Cơ khí',           receivedBy: 'Phạm Văn Tú', receivedAt: '2025-06-16', confirmedBy: 'Phạm Văn Tú', confirmedAt: '2025-06-17' },
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2025-06-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2025-06-18' },
+      { workshopId: 'PX3', workshopName: 'TT Phần mềm Gamma - Cơ khí phần cứng',           receivedBy: 'Phạm Văn Tú', receivedAt: '2025-06-16', confirmedBy: 'Phạm Văn Tú', confirmedAt: '2025-06-17' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng', receivedAt: '2025-06-16', confirmedBy: 'Lê Văn Hùng', confirmedAt: '2025-06-18' },
     ],
     createdAt: '2025-05-20',
     updatedAt: '2025-06-15',
@@ -169,10 +169,10 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-01-20',
     effectiveFrom: '2025-02-01',
     distributionRecords: [
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-02-02', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-02-03' },
-      { workshopId: 'PX2', workshopName: 'PX2 - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-02-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-02-04' },
-      { workshopId: 'PX3', workshopName: 'PX3 - Cơ khí',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-02-03', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-02-04' },
-      { workshopId: 'PX4', workshopName: 'PX4 - Điện tử',          receivedBy: 'Trần Minh Khoa',  receivedAt: '2025-02-03' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-02-02', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-02-03' },
+      { workshopId: 'PX2', workshopName: 'TT Phần mềm Beta - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-02-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-02-04' },
+      { workshopId: 'PX3', workshopName: 'TT Phần mềm Gamma - Cơ khí phần cứng',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-02-03', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-02-04' },
+      { workshopId: 'PX4', workshopName: 'TT DevOps - Điện tử',          receivedBy: 'Trần Minh Khoa',  receivedAt: '2025-02-03' },
     ],
     createdAt: '2024-12-15',
     updatedAt: '2025-02-01',
@@ -206,9 +206,9 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-04-22',
     effectiveFrom: '2025-05-01',
     distributionRecords: [
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-05-02', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-05-03' },
-      { workshopId: 'PX2', workshopName: 'PX2 - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-05-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-05-04' },
-      { workshopId: 'PX3', workshopName: 'PX3 - Cơ khí',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-05-02', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-05-03' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-05-02', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-05-03' },
+      { workshopId: 'PX2', workshopName: 'TT Phần mềm Beta - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-05-02', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-05-04' },
+      { workshopId: 'PX3', workshopName: 'TT Phần mềm Gamma - Cơ khí phần cứng',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-05-02', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-05-03' },
     ],
     createdAt: '2025-04-01',
     updatedAt: '2025-05-01',
@@ -224,14 +224,14 @@ export const safetyStandards: SafetyStandard[] = [
     description:
       'Quy định về trang bị bảo hộ lao động bắt buộc cho từng khu vực sản xuất, sửa chữa và thử nghiệm.',
     keyRequirements: [
-      'PX1 (Hạ tầng giám sát): mũ bảo hiểm, kính chắn, thiết bị đo bức xạ',
-      'PX2 (Module sản phẩm): quần áo chống tĩnh điện, mặt nạ phòng độc',
-      'PX3 (Cơ khí): kính bảo hộ, giày mũi thép, găng tay cơ khí',
-      'PX4 (Điện tử): găng tay cách điện, giày cách điện khi cần',
+      'TT Phần mềm Alpha (Hạ tầng giám sát): mũ bảo hiểm, kính chắn, thiết bị đo bức xạ',
+      'TT Phần mềm Beta (Module sản phẩm): quần áo chống tĩnh điện, mặt nạ phòng độc',
+      'TT Phần mềm Gamma (Cơ khí phần cứng): kính bảo hộ, giày mũi thép, găng tay cơ khí',
+      'TT DevOps (Điện tử): găng tay cách điện, giày cách điện khi cần',
       'Kiểm tra tình trạng bảo hộ đầu mỗi ca',
     ],
     linkedProcesses: [
-      { module: 'san_xuat',   stage: 'Vào ca sản xuất tại phân xưởng' },
+      { module: 'san_xuat',   stage: 'Vào ca vận hành tại trung tâm' },
       { module: 'sua_chua',   stage: 'Bắt đầu công đoạn sửa chữa' },
       { module: 'dai_tu',     stage: 'Bắt đầu công đoạn đại tu' },
       { module: 'thu_nghiem', stage: 'Chuẩn bị vào phòng thử nghiệm' },
@@ -243,10 +243,10 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-07-08',
     effectiveFrom: '2025-07-15',
     distributionRecords: [
-      { workshopId: 'PX1', workshopName: 'PX1 - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-07-16', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-07-17' },
-      { workshopId: 'PX2', workshopName: 'PX2 - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-07-16', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-07-18' },
-      { workshopId: 'PX3', workshopName: 'PX3 - Cơ khí',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-07-17', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-07-17' },
-      { workshopId: 'PX4', workshopName: 'PX4 - Điện tử',          receivedBy: 'Trần Minh Khoa',  receivedAt: '2025-07-17', confirmedBy: 'Trần Minh Khoa',  confirmedAt: '2025-07-18' },
+      { workshopId: 'PX1', workshopName: 'TT Phần mềm Alpha - Hạ tầng giám sát', receivedBy: 'Lê Văn Hùng',     receivedAt: '2025-07-16', confirmedBy: 'Lê Văn Hùng',     confirmedAt: '2025-07-17' },
+      { workshopId: 'PX2', workshopName: 'TT Phần mềm Beta - Module sản phẩm',  receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-07-16', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-07-18' },
+      { workshopId: 'PX3', workshopName: 'TT Phần mềm Gamma - Cơ khí phần cứng',           receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-07-17', confirmedBy: 'Phạm Văn Tú',     confirmedAt: '2025-07-17' },
+      { workshopId: 'PX4', workshopName: 'TT DevOps - Điện tử',          receivedBy: 'Trần Minh Khoa',  receivedAt: '2025-07-17', confirmedBy: 'Trần Minh Khoa',  confirmedAt: '2025-07-18' },
     ],
     createdAt: '2025-06-20',
     updatedAt: '2025-07-15',
@@ -260,7 +260,7 @@ export const safetyStandards: SafetyStandard[] = [
     hazardCategory: 'khac',
     applicableWorkshops: ['PX1', 'PX2', 'PX3', 'PX4'],
     description:
-      'Danh mục kiểm tra bắt buộc trước khi bắt đầu ca làm việc tại các phân xưởng kỹ thuật.',
+      'Danh mục kiểm tra bắt buộc trước khi bắt đầu ca làm việc tại các trung tâm kỹ thuật.',
     keyRequirements: [
       'Kiểm tra tình trạng thiết bị bảo hộ cá nhân',
       'Kiểm tra hệ thống điện, áp suất, nhiệt độ',
@@ -288,7 +288,7 @@ export const safetyStandards: SafetyStandard[] = [
     hazardCategory: 'khac',
     applicableWorkshops: ['PX2', 'PX3'],
     description:
-      'Quy trình phát hiện, xử lý và báo cáo sự cố rò rỉ nhiên liệu, dầu thủy lực và hóa chất tại phân xưởng.',
+      'Quy trình phát hiện, xử lý và báo cáo sự cố rò rỉ nhiên liệu, dầu thủy lực và hóa chất tại trung tâm.',
     keyRequirements: [
       'Cô lập ngay khu vực rò rỉ bán kính 10m',
       'Dùng cát hoặc vật liệu hút thấm chuyên dụng',
@@ -307,8 +307,8 @@ export const safetyStandards: SafetyStandard[] = [
     approvedAt: '2025-10-08',
     effectiveFrom: '2025-10-15',
     distributionRecords: [
-      { workshopId: 'PX2', workshopName: 'PX2 - Module sản phẩm', receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-10-16', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-10-17' },
-      { workshopId: 'PX3', workshopName: 'PX3 - Cơ khí',          receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-10-16' },
+      { workshopId: 'PX2', workshopName: 'TT Phần mềm Beta - Module sản phẩm', receivedBy: 'Nguyễn Thành Nam', receivedAt: '2025-10-16', confirmedBy: 'Nguyễn Thành Nam', confirmedAt: '2025-10-17' },
+      { workshopId: 'PX3', workshopName: 'TT Phần mềm Gamma - Cơ khí phần cứng',          receivedBy: 'Phạm Văn Tú',     receivedAt: '2025-10-16' },
     ],
     createdAt: '2025-09-25',
     updatedAt: '2025-10-15',

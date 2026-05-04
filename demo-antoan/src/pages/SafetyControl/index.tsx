@@ -69,7 +69,7 @@ const SafetyControlPage: React.FC = () => {
       render: (code: string) => <Text style={{ fontWeight: 600, color: '#1B3A5C', fontSize: 13 }}>{code}</Text>,
     },
     {
-      title: 'Phân xưởng',
+      title: 'Trung tâm',
       dataIndex: 'workshopName',
       width: 180,
       render: (name: string) => <Text style={{ fontSize: 13 }}>{name}</Text>,
@@ -151,10 +151,10 @@ const SafetyControlPage: React.FC = () => {
   ];
 
   const workshopOptions = [
-    { value: 'PX1', label: 'PX1 - Radar' },
-    { value: 'PX2', label: 'PX2 - Tên lửa' },
-    { value: 'PX3', label: 'PX3 - Cơ khí' },
-    { value: 'PX4', label: 'PX4 - Điện tử' },
+    { value: 'PX1', label: 'TT Phần mềm Alpha' },
+    { value: 'PX2', label: 'TT Phần mềm Beta' },
+    { value: 'PX3', label: 'TT Phần mềm Gamma' },
+    { value: 'PX4', label: 'TT DevOps' },
   ];
 
   return (
@@ -174,7 +174,7 @@ const SafetyControlPage: React.FC = () => {
               Kiểm soát Điều kiện An toàn trong Vận hành
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Phiếu kiểm soát điều kiện an toàn đầu ca theo phân xưởng — Nhà máy Z119
+              Phiếu kiểm soát điều kiện an toàn đầu ca theo trung tâm — Doanh nghiệp A
             </Text>
           </div>
         </Space>
@@ -216,14 +216,14 @@ const SafetyControlPage: React.FC = () => {
         })}
       </Row>
 
-      {/* ─── Tỷ lệ đạt theo phân xưởng ─── */}
+      {/* ─── Tỷ lệ đạt theo trung tâm ─── */}
       <Row gutter={[16, 16]} style={{ marginBottom: 16 }}>
         <Col xs={24} md={12}>
           <Card
             style={{ borderRadius: 14, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
             styles={{ body: { padding: 16 } }}
           >
-            <Text strong style={{ color: '#1B3A5C', display: 'block', marginBottom: 12 }}>Tỷ lệ đạt theo phân xưởng</Text>
+            <Text strong style={{ color: '#1B3A5C', display: 'block', marginBottom: 12 }}>Tỷ lệ đạt theo trung tâm</Text>
             {workshopOptions.map(ws => {
               const wsSheets = controlSheets.filter(s => s.workshopId === ws.value && (s.status === 'passed' || s.status === 'failed'));
               const passed   = wsSheets.filter(s => s.status === 'passed').length;
@@ -274,7 +274,7 @@ const SafetyControlPage: React.FC = () => {
       <Card style={{ borderRadius: 14, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }} styles={{ body: { padding: 0 } }}>
         <div style={{ padding: '16px 20px', borderBottom: '1px solid #f0f0f0', display: 'flex', flexWrap: 'wrap', gap: 12, alignItems: 'center' }}>
           <Input
-            placeholder="Tìm theo mã, phân xưởng, người kiểm tra..."
+            placeholder="Tìm theo mã, trung tâm, người kiểm tra..."
             prefix={<SearchOutlined style={{ color: '#8c8c8c' }} />}
             value={searchText}
             onChange={e => setSearchText(e.target.value)}
@@ -286,7 +286,7 @@ const SafetyControlPage: React.FC = () => {
           <Select placeholder="Ca làm việc" value={shiftFilter} onChange={v => setShiftFilter(v)} allowClear style={{ width: 160 }}
             options={Object.entries(shiftConfig).map(([k, v]) => ({ value: k, label: v.label.split(' (')[0] }))}
           />
-          <Select placeholder="Phân xưởng" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
+          <Select placeholder="Trung tâm" value={workshopFilter} onChange={v => setWorkshopFilter(v)} allowClear style={{ width: 160 }} options={workshopOptions} />
           <div style={{ marginLeft: 'auto', fontSize: 13, color: '#8c8c8c' }}>
             <Text strong>{filteredData.length}</Text>/{controlSheets.length} phiếu
           </div>

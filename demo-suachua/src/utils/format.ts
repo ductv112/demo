@@ -130,9 +130,9 @@ export const receptionSourceConfig: Record<ReceptionSource, { label: string; col
 };
 
 export const equipmentTypeConfig: Record<EquipmentType, { label: string; color: string }> = {
-  radar: { label: 'Radar', color: 'blue' },
-  missile: { label: 'Tên lửa', color: 'red' },
-  communication: { label: 'Thông tin liên lạc', color: 'green' },
+  radar: { label: 'Hệ thống monitoring', color: 'blue' },
+  missile: { label: 'Module chủ lực', color: 'red' },
+  communication: { label: 'Truyền dữ liệu', color: 'green' },
   electronic: { label: 'Điện tử', color: 'purple' },
 };
 

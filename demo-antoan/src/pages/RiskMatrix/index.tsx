@@ -67,7 +67,7 @@ const RiskMatrixPage: React.FC = () => {
               Ma trận Rủi ro Kỹ thuật
             </Title>
             <Text type="secondary" style={{ fontSize: 12 }}>
-              Phân bổ rủi ro theo mức xác suất và mức độ tác động — Nhà máy Z119
+              Phân bổ rủi ro theo mức xác suất và mức độ tác động — Doanh nghiệp A
             </Text>
           </div>
         </Space>

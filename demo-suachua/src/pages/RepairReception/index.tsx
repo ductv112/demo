@@ -287,7 +287,7 @@ const RepairReception: React.FC = () => {
       <Row gutter={16}>
         <Col span={12}>
           <Form.Item name="equipmentName" label="Tên thiết bị" rules={[{ required: true, message: 'Vui lòng nhập tên' }]}>
-            <Input placeholder="VD: Đài radar P-18" />
+            <Input placeholder="VD: Hệ thống monitoring P-18" />
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -309,7 +309,7 @@ const RepairReception: React.FC = () => {
         </Col>
         <Col span={12}>
           <Form.Item name="unitName" label="Đơn vị gửi" rules={[{ required: true, message: 'Vui lòng nhập' }]}>
-            <Input placeholder="VD: Sư đoàn 361" />
+            <Input placeholder="VD: Khối Vận hành K01" />
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -435,7 +435,7 @@ const RepairReception: React.FC = () => {
               </div>
               <div>
                 <div style={{ fontWeight: 700, color: colors.navy, fontSize: 15 }}>Tiếp nhận & Phân loại sửa chữa</div>
-                <div style={{ fontSize: 12, color: '#999', fontWeight: 400 }}>Quản lý yêu cầu sửa chữa khí tài tại Nhà máy Z119</div>
+                <div style={{ fontSize: 12, color: '#999', fontWeight: 400 }}>Quản lý yêu cầu sửa chữa thiết bị tại Doanh nghiệp A</div>
               </div>
             </div>
             <Button type="primary" icon={<PlusOutlined />} onClick={handleCreateOpen}
@@ -612,7 +612,7 @@ const RepairReception: React.FC = () => {
               Tiếp nhận yêu cầu sửa chữa mới
             </div>
             <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: '18px' }}>
-              Đăng ký yêu cầu sửa chữa khí tài vào hệ thống
+              Đăng ký yêu cầu sửa chữa thiết bị vào hệ thống
             </div>
           </div>
         </div>
