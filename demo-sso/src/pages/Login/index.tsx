@@ -127,6 +127,26 @@ export default function Login() {
             </Form.Item>
           </Form>
 
+          <div
+            style={{
+              marginTop: 12,
+              padding: '10px 14px',
+              background: '#f0f5fa',
+              border: '1px dashed #c8d3e0',
+              borderRadius: 8,
+              fontSize: 12,
+              color: '#1B3A5C',
+              lineHeight: 1.6,
+            }}
+          >
+            <div style={{ fontWeight: 600, marginBottom: 4 }}>Tài khoản demo</div>
+            <div>
+              Username: <code style={{ background: '#fff', padding: '1px 6px', borderRadius: 4 }}>AdminDNA</code>
+              {' · '}
+              Password: <code style={{ background: '#fff', padding: '1px 6px', borderRadius: 4 }}>DNAdemo#2026</code>
+            </div>
+          </div>
+
           <div className="login-footer">
             <Text type="secondary" style={{ fontSize: 11 }}>
               Doanh nghiệp A — Nền tảng quản trị doanh nghiệp công nghệ
