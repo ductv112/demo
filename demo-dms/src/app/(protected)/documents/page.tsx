@@ -360,11 +360,11 @@ export default function DocumentsPage() {
                       : <ShieldOff className="h-4 w-4 text-emerald-600" />
                     }
                   </div>
-                  {toConfidential ? 'Đánh dấu là Mật' : 'Chuyển về Thường'}
+                  {toConfidential ? 'Đánh dấu là Nội bộ' : 'Chuyển về Thường'}
                 </AlertDialogTitle>
                 <AlertDialogDescription>
                   {toConfidential
-                    ? <>Tài liệu <strong className="text-foreground">{securityLevelTarget.fileName}</strong> sẽ được đánh dấu là <strong className="text-orange-600">Mật</strong>. Liên kết công khai (nếu có) sẽ bị vô hiệu hóa.</>
+                    ? <>Tài liệu <strong className="text-foreground">{securityLevelTarget.fileName}</strong> sẽ được đánh dấu là <strong className="text-orange-600">Nội bộ</strong>. Liên kết công khai (nếu có) sẽ bị vô hiệu hóa.</>
                     : <>Tài liệu <strong className="text-foreground">{securityLevelTarget.fileName}</strong> sẽ được chuyển về cấp độ <strong className="text-emerald-600">Thường</strong>.</>
                   }
                 </AlertDialogDescription>
@@ -378,7 +378,7 @@ export default function DocumentsPage() {
                     : 'bg-emerald-600 text-white hover:bg-emerald-700'
                   }
                 >
-                  {toConfidential ? 'Đánh dấu là Mật' : 'Chuyển về Thường'}
+                  {toConfidential ? 'Đánh dấu là Nội bộ' : 'Chuyển về Thường'}
                 </AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>

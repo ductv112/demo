@@ -4,7 +4,7 @@ import { createContext, useContext, useCallback } from 'react';
 import type { UserPermission } from '@/types/permission';
 
 /**
- * Stub auth context cho PKKQ DMS prototype.
+ * Stub auth context cho Doanh nghiệp A DMS prototype.
  * User luôn được đăng nhập, permissions wildcard — không gọi Keycloak.
  */
 
@@ -28,7 +28,7 @@ interface AuthContextValue {
 const STUB_USER: AuthUser = {
   keycloakId: 'user-1',
   username: 'hoangmt',
-  email: 'hmtuan@z119.mil.vn',
+  email: 'hmtuan@doanhnghiepa.vn',
   roles: ['department_manager'],
 };
 

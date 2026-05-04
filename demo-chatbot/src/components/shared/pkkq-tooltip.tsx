@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * PkkqTooltip — Recharts custom tooltip with PKKQ navy-bordered white look.
+ * PkkqTooltip — Recharts custom tooltip with navy-bordered white look.
  * Dùng thay cho <Tooltip content={...} /> mặc định của Recharts.
  */
 

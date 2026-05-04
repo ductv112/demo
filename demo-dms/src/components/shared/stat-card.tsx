@@ -4,8 +4,8 @@ import type { LucideIcon } from 'lucide-react';
 import { ArrowUp, ArrowDown, Minus } from 'lucide-react';
 
 /**
- * StatCard — Gradient KPI card chuẩn PKKQ.
- * Port từ pattern pkkq-taichinhketoan (.db-stat-card) sang Tailwind.
+ * StatCard — Gradient KPI card chuẩn Doanh nghiệp A.
+ * Port từ pattern Tài chính-Kế toán (.db-stat-card) sang Tailwind.
  *
  * - Full-card gradient background theo prop `gradient`
  * - Decorative background icon (64px) top-right, opacity 10%, xoay khi hover

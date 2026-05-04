@@ -1,11 +1,11 @@
 /**
- * PKKQ chart theme — shared Recharts styling tokens.
+ * Doanh nghiệp A chart theme — shared Recharts styling tokens.
  *
- * Đồng bộ look với các phần mềm khác của hệ thống PKKQ (Ant Design Charts).
- * Dùng cho mọi <BarChart>, <AreaChart>, <LineChart>, <PieChart> trong pkkq-dms.
+ * Đồng bộ look với các phần mềm khác của hệ thống Doanh nghiệp A (Ant Design Charts).
+ * Dùng cho mọi <BarChart>, <AreaChart>, <LineChart>, <PieChart> trong DMS.
  */
 
-// ── Palette (đồng nhất với PKKQ Navy + Gold system) ──────────────
+// ── Palette (đồng nhất với Doanh nghiệp A Navy + Gold system) ──────────────
 export const PKKQ_CHART_COLORS = {
   navy: '#1B3A5C',
   navyLight: '#2d5a8e',
@@ -22,7 +22,7 @@ export const PKKQ_CHART_COLORS = {
 
 // ── 6-color multi-series palette ─────────────────────────────────
 // Dùng cho charts có nhiều series (stacked bar, multi-line…) — tham
-// chiếu pkkq-taichinhketoan (roleColors + categoryTypeConfig).
+// chiếu Tài chính-Kế toán (roleColors + categoryTypeConfig).
 export const PKKQ_CHART_SERIES_COLORS = [
   '#1B3A5C', // navy
   '#7c3aed', // violet

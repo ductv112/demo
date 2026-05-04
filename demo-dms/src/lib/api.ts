@@ -1,4 +1,4 @@
-// Mock axios instance cho PKKQ DMS prototype.
+// Mock axios instance cho Doanh nghiệp A DMS prototype.
 // Thay vì gọi backend thật, interceptor URL trả về mock data từ mock-data.ts.
 // Giữ nguyên interface như axios để các *-api.ts không cần sửa.
 

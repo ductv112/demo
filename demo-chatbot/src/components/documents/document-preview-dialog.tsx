@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * DocumentPreviewDialog — rút gọn cho PKKQ prototype chatbot.
+ * DocumentPreviewDialog — rút gọn cho prototype chatbot Doanh nghiệp A.
  * Không load viewer nặng (PDF/DOCX/XLSX); hiển thị placeholder demo + excerpt.
  */
 
@@ -64,7 +64,7 @@ export function DocumentPreviewDialog({
               Xem trước không khả dụng — chế độ demo
             </p>
             <p className="text-[12px] text-slate-400 mt-1">
-              Nhà máy Z119 — Hệ thống phần mềm PKKQ
+              Doanh nghiệp A — Hệ thống phần mềm nội bộ
             </p>
           </div>
 

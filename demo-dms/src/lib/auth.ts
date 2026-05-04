@@ -1,4 +1,4 @@
-// Auth stub cho PKKQ DMS prototype — không dùng Keycloak.
+// Auth stub cho Doanh nghiệp A DMS prototype — không dùng Keycloak.
 // Giữ nguyên tên các export để code khác không cần sửa.
 
 const FAKE_ACCESS_TOKEN = 'mock.access.token';
@@ -74,7 +74,7 @@ export function parseJwt(_token: string): any {
   return {
     sub: 'user-1',
     preferred_username: 'hoangmt',
-    email: 'hmtuan@z119.mil.vn',
+    email: 'hmtuan@doanhnghiepa.vn',
     realm_access: { roles: ['department_manager'] },
     exp: Math.floor(Date.now() / 1000) + 365 * 24 * 3600,
   };

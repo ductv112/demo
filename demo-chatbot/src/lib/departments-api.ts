@@ -9,7 +9,7 @@ function delay(ms: number) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-const Z119_DEPTS: DepartmentTreeNode[] = [
+const DEPTS: DepartmentTreeNode[] = [
   { id: 'BGD', code: 'BGĐ', name: 'Ban Giám đốc', parentId: null, children: [] },
   { id: 'PKT', code: 'P.KT', name: 'Phòng Kỹ thuật', parentId: null, children: [] },
   { id: 'PKCDB', code: 'P.QA', name: 'Phòng QA & Đảm bảo CL', parentId: null, children: [] },
@@ -22,5 +22,5 @@ const Z119_DEPTS: DepartmentTreeNode[] = [
 
 export async function getDepartmentTree(): Promise<{ data: DepartmentTreeNode[] }> {
   await delay(80);
-  return { data: Z119_DEPTS };
+  return { data: DEPTS };
 }

@@ -11,7 +11,7 @@ interface DataClassificationProps {
   loading?: boolean;
 }
 
-// Bảng màu theo palette PKKQ — navy, gold, success, warning, danger, info
+// Bảng màu theo palette Doanh nghiệp A — navy, gold, success, warning, danger, info
 const BAR_COLORS = ['#1B3A5C', '#D4A843', '#52c41a', '#faad14', '#ff4d4f', '#1890ff'];
 
 export function DataClassification({ data, loading = false }: DataClassificationProps) {

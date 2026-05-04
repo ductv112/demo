@@ -1,13 +1,13 @@
 'use client';
 
 /**
- * AppSwitcher — Popover grid chuyển giữa các phần mềm trong hệ sinh thái PKKQ.
+ * AppSwitcher — Popover grid chuyển giữa các phần mềm trong hệ sinh thái Doanh nghiệp A.
  *
- * Port từ pkkq-taichinhketoan/src/components/AppSwitcher.tsx (AntD Popover)
- * sang shadcn/Radix Popover + Tailwind cho pkkq-dms (Next.js 16).
+ * Port từ module taichinhketoan/src/components/AppSwitcher.tsx (AntD Popover)
+ * sang shadcn/Radix Popover + Tailwind (Next.js 16).
  *
  * - Trigger: icon-only button (LayoutGrid) vừa header 56px
- * - Content: grid 4 cột, mỗi tile link tới `https://pkkq-<name>-staging.dft.vn`
+ * - Content: grid 4 cột, mỗi tile link tới `https://pkkq-<name>-staging.dft.vn` (DNS staging giữ nguyên)
  * - Highlight app hiện tại bằng ring gold `#D4A843`
  * - Bao phủ đủ 18 apps: 16 PM trong CLAUDE.md + DMS + Chatbot
  */
@@ -254,7 +254,7 @@ export function AppSwitcher({ currentApp = 'dms' }: AppSwitcherProps) {
               Ứng dụng
             </span>
             <span className="text-[11px] font-medium leading-tight text-muted-foreground">
-              Hệ thống phần mềm PKKQ — Nhà máy Z119
+              Hệ thống phần mềm — Doanh nghiệp A
             </span>
           </div>
           <a

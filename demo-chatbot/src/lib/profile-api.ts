@@ -1,6 +1,6 @@
 /**
- * Profile API — mock cho PKKQ prototype.
- * Luôn trả về user demo (Giám đốc Nhà máy Z119).
+ * Profile API — mock cho prototype Doanh nghiệp A.
+ * Luôn trả về user demo (Tổng giám đốc Doanh nghiệp A).
  */
 
 import type { UserProfile } from '@/types/user';

@@ -1,5 +1,5 @@
 /**
- * Auth stub — PKKQ prototype không cần Keycloak thực tế.
+ * Auth stub — prototype Doanh nghiệp A không cần Keycloak thực tế.
  * Tất cả hàm trả về giá trị giả lập để UI hoạt động.
  */
 
@@ -99,8 +99,8 @@ export function parseJwt(_token: string): any {
   return {
     sub: 'user-director',
     preferred_username: 'pqhung',
-    email: 'pqhung@z119.mil.vn',
-    realm_access: { roles: ['Giám đốc Nhà máy'] },
+    email: 'pqhung@doanhnghiepa.vn',
+    realm_access: { roles: ['Tổng giám đốc'] },
     exp: 9_999_999_999,
   };
 }

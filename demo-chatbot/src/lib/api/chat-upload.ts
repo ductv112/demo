@@ -1,5 +1,5 @@
 /**
- * Chat upload — mock (PKKQ prototype).
+ * Chat upload — mock (prototype Doanh nghiệp A).
  * Không upload thực; trả về metadata giả cho phép UI hiển thị bubble card.
  */
 
@@ -61,7 +61,7 @@ export async function saveChatUploadToDms(id: string): Promise<{
     fileSize: 0,
     mimeType: 'application/pdf',
     folderId: 'root',
-    folderName: 'Z119 DMS',
+    folderName: 'Doanh nghiệp A DMS',
   };
 }
 

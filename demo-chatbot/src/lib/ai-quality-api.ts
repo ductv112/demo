@@ -1,5 +1,5 @@
 /**
- * AI Quality API — mock cho PKKQ prototype.
+ * AI Quality API — mock cho prototype Doanh nghiệp A.
  */
 
 import { toast } from 'sonner';
@@ -66,8 +66,8 @@ export async function getMessageDetail(messageId: string): Promise<AiQualityMess
     createdAt: new Date().toISOString(),
     user: {
       id: 'user-director',
-      fullName: 'Đại tá Phạm Quốc Hưng',
-      email: 'pqhung@z119.mil.vn',
+      fullName: 'Phạm Quốc Hưng',
+      email: 'pqhung@doanhnghiepa.vn',
     },
   };
 }

@@ -1,5 +1,5 @@
 /**
- * Mock data — ngữ cảnh Nhà máy Z119 (PKKQ).
+ * Mock data — ngữ cảnh Trung tâm phần mềm Alpha (Doanh nghiệp A).
  * Dùng cho prototype Chatbot: sessions, messages, citations, AI Quality stats.
  */
 
@@ -28,11 +28,11 @@ import type {
 export const DEMO_USER = {
   id: 'user-director',
   username: 'pqhung',
-  fullName: 'Đại tá Phạm Quốc Hưng',
-  email: 'pqhung@z119.mil.vn',
+  fullName: 'Phạm Quốc Hưng',
+  email: 'pqhung@doanhnghiepa.vn',
   phone: '0912 345 678',
   avatarUrl: null,
-  role: 'Giám đốc Nhà máy',
+  role: 'Tổng giám đốc',
   department: 'Ban Giám đốc',
 };
 
@@ -44,7 +44,7 @@ export const DEMO_REPLY =
   'Cảm ơn câu hỏi của bạn. Đây là hệ thống demo với dữ liệu giả lập.';
 
 // ═══════════════════════════════════════════════════════════════════════
-// MOCK DOCUMENTS (Z119)
+// MOCK DOCUMENTS (Doanh nghiệp A)
 // ═══════════════════════════════════════════════════════════════════════
 
 export interface MockDocument {
@@ -66,53 +66,53 @@ const MIME = {
 export const MOCK_DOCUMENTS: MockDocument[] = [
   {
     id: 'doc-001',
-    fileName: 'Quy trình sửa chữa radar P-18.pdf',
-    title: 'Quy trình sửa chữa radar P-18',
+    fileName: 'Quy trình khắc phục sự cố hệ thống monitoring P-18.pdf',
+    title: 'Quy trình khắc phục sự cố hệ thống monitoring P-18',
     mimeType: MIME.pdf,
     fileSize: 2_457_600,
-    department: 'Phân xưởng Sửa chữa Radar (PX1)',
+    department: 'Trung tâm Hệ thống Monitoring (TT1)',
     excerpt:
-      'Quy trình kiểm tra, tháo lắp và sửa chữa đài radar cảnh giới P-18. Bao gồm các bước kiểm tra nguồn, anten, máy phát-thu...',
+      'Quy trình kiểm tra, chẩn đoán và khắc phục sự cố hệ thống monitoring P-18. Bao gồm các bước kiểm tra nguồn, kết nối mạng, module thu phát dữ liệu...',
   },
   {
     id: 'doc-002',
-    fileName: 'Biên bản nghiệm thu đại tu S-75.docx',
-    title: 'Biên bản nghiệm thu đại tu S-75',
+    fileName: 'Biên bản nghiệm thu nâng cấp lớn S-75.docx',
+    title: 'Biên bản nghiệm thu nâng cấp lớn S-75',
     mimeType: MIME.docx,
     fileSize: 184_320,
-    department: 'Phòng KCS & Đảm bảo CL',
+    department: 'Phòng QA & Đảm bảo chất lượng',
     excerpt:
-      'Biên bản nghiệm thu đại tu tên lửa S-75 Dvina cho Trung đoàn 261, sư đoàn 361. Các hạng mục đã kiểm tra, thông số đo được...',
+      'Biên bản nghiệm thu nâng cấp lớn module S-75 cho Phòng P12, Khối K01. Các hạng mục đã kiểm tra, thông số đo được...',
   },
   {
     id: 'doc-003',
-    fileName: 'Thông số kỹ thuật radar 36D6.xlsx',
-    title: 'Thông số kỹ thuật radar 36D6',
+    fileName: 'Thông số kỹ thuật hệ thống monitoring 36D6.xlsx',
+    title: 'Thông số kỹ thuật hệ thống monitoring 36D6',
     mimeType: MIME.xlsx,
     fileSize: 96_256,
     department: 'Phòng Kỹ thuật',
     excerpt:
-      'Thông số kỹ thuật chi tiết radar 36D6: tần số, công suất phát, cự ly phát hiện, độ chính xác...',
+      'Thông số kỹ thuật chi tiết hệ thống monitoring 36D6: tần suất polling, công suất xử lý, phạm vi giám sát, độ chính xác...',
   },
   {
     id: 'doc-004',
-    fileName: 'Quy định an toàn phân xưởng PX1.pdf',
-    title: 'Quy định an toàn phân xưởng PX1',
+    fileName: 'Quy định an toàn Trung tâm phần mềm Alpha.pdf',
+    title: 'Quy định an toàn Trung tâm phần mềm Alpha',
     mimeType: MIME.pdf,
     fileSize: 712_704,
-    department: 'Phân xưởng Sửa chữa Radar (PX1)',
+    department: 'Trung tâm Hệ thống Monitoring (TT1)',
     excerpt:
-      'Quy định an toàn lao động và vận hành thiết bị tại phân xưởng PX1 — Sửa chữa Radar. Các điểm cần tuân thủ...',
+      'Quy định an toàn lao động và vận hành thiết bị tại Trung tâm phần mềm Alpha — Hệ thống Monitoring. Các điểm cần tuân thủ...',
   },
   {
     id: 'doc-005',
-    fileName: 'Hướng dẫn vận hành tên lửa S-125.pdf',
-    title: 'Hướng dẫn vận hành tên lửa S-125',
+    fileName: 'Hướng dẫn vận hành module S-125.pdf',
+    title: 'Hướng dẫn vận hành module S-125',
     mimeType: MIME.pdf,
     fileSize: 3_276_800,
-    department: 'Phân xưởng Sửa chữa Tên lửa (PX2)',
+    department: 'Trung tâm Phát triển Sản phẩm (TT2)',
     excerpt:
-      'Hướng dẫn vận hành tổ hợp tên lửa S-125 Pechora. Quy trình triển khai, thu hồi, bảo quản đạn...',
+      'Hướng dẫn vận hành sản phẩm chủ lực S-125 Pechora. Quy trình triển khai, thu hồi, bảo trì license...',
   },
   {
     id: 'doc-006',
@@ -120,7 +120,7 @@ export const MOCK_DOCUMENTS: MockDocument[] = [
     title: 'Báo cáo kiểm định Q4-2025',
     mimeType: MIME.xlsx,
     fileSize: 215_040,
-    department: 'Trung tâm Đo lường Quân khu',
+    department: 'Trung tâm Đo lường Khu vực',
     excerpt:
       'Báo cáo kết quả kiểm định thiết bị đo lường quý 4/2025: máy hiện sóng Tektronix, máy phân tích phổ...',
   },
@@ -132,27 +132,27 @@ export const MOCK_DOCUMENTS: MockDocument[] = [
     fileSize: 128_000,
     department: 'Phòng Kế hoạch',
     excerpt:
-      'Lệnh sản xuất LSX-2026-0142 — sửa chữa đài radar P-37 cho Sư đoàn 363. Thời hạn hoàn thành 30/06/2026...',
+      'Lệnh sản xuất LSX-2026-0142 — khắc phục sự cố hệ thống monitoring P-37 cho Khối K03. Thời hạn hoàn thành 30/06/2026...',
   },
   {
     id: 'doc-008',
-    fileName: 'Sơ đồ khối radar ST-68.pdf',
-    title: 'Sơ đồ khối radar ST-68',
+    fileName: 'Sơ đồ khối hệ thống monitoring ST-68.pdf',
+    title: 'Sơ đồ khối hệ thống monitoring ST-68',
     mimeType: MIME.pdf,
     fileSize: 1_638_400,
     department: 'Phòng Kỹ thuật',
     excerpt:
-      'Sơ đồ khối chi tiết đài radar đo cao ST-68: khối máy phát, khối máy thu, khối xử lý tín hiệu...',
+      'Sơ đồ khối chi tiết hệ thống monitoring đo độ cao ST-68: module xử lý dữ liệu, module thu phát, module xử lý tín hiệu...',
   },
   {
     id: 'doc-009',
-    fileName: 'Quy trình đại tu động cơ.docx',
-    title: 'Quy trình đại tu động cơ',
+    fileName: 'Quy trình nâng cấp lớn động cơ.docx',
+    title: 'Quy trình nâng cấp lớn động cơ',
     mimeType: MIME.docx,
     fileSize: 245_760,
-    department: 'Phân xưởng Cơ khí (PX3)',
+    department: 'Trung tâm Hạ tầng (TT3)',
     excerpt:
-      'Quy trình đại tu động cơ cho các thiết bị cơ khí của đài radar và tổ hợp tên lửa...',
+      'Quy trình nâng cấp lớn động cơ cho các thiết bị hạ tầng của hệ thống monitoring và sản phẩm chủ lực...',
   },
   {
     id: 'doc-010',
@@ -162,7 +162,7 @@ export const MOCK_DOCUMENTS: MockDocument[] = [
     fileSize: 204_800,
     department: 'Phòng Kỹ thuật',
     excerpt:
-      'Thông số kỹ thuật tổ hợp tên lửa phòng không S-300PMU: cự ly, độ cao, tốc độ mục tiêu tiêu diệt...',
+      'Thông số kỹ thuật sản phẩm chủ lực S-300PMU: phạm vi xử lý, năng lực xử lý đồng thời, tốc độ phản hồi...',
   },
   {
     id: 'doc-011',
@@ -170,19 +170,19 @@ export const MOCK_DOCUMENTS: MockDocument[] = [
     title: 'Hướng dẫn sử dụng Tektronix',
     mimeType: MIME.pdf,
     fileSize: 1_945_600,
-    department: 'Phân xưởng Điện tử (PX4)',
+    department: 'Trung tâm DevOps (TT4)',
     excerpt:
-      'Hướng dẫn sử dụng máy hiện sóng Tektronix cho đo lường, kiểm tra thiết bị điện tử phòng không...',
+      'Hướng dẫn sử dụng máy hiện sóng Tektronix cho đo lường, kiểm tra thiết bị điện tử vận hành hệ thống...',
   },
   {
     id: 'doc-012',
-    fileName: 'Báo cáo sự cố PX2.docx',
-    title: 'Báo cáo sự cố PX2 tháng 12/2025',
+    fileName: 'Báo cáo sự cố TT2.docx',
+    title: 'Báo cáo sự cố TT2 tháng 12/2025',
     mimeType: MIME.docx,
     fileSize: 163_840,
-    department: 'Phân xưởng Sửa chữa Tên lửa (PX2)',
+    department: 'Trung tâm Phát triển Sản phẩm (TT2)',
     excerpt:
-      'Báo cáo tổng hợp các sự cố kỹ thuật tại phân xưởng PX2 trong tháng 12/2025. Hướng xử lý và kiến nghị...',
+      'Báo cáo tổng hợp các sự cố kỹ thuật tại Trung tâm Phát triển Sản phẩm trong tháng 12/2025. Hướng xử lý và kiến nghị...',
   },
 ];
 
@@ -202,17 +202,17 @@ interface SessionSeed {
 const SESSION_SEEDS: SessionSeed[] = [
   {
     id: 'sess-001',
-    title: 'Hỏi về quy trình sửa chữa radar P-18',
+    title: 'Hỏi về quy trình khắc phục sự cố hệ thống monitoring P-18',
     daysAgo: 0,
     turns: [
       {
-        q: 'Cho tôi quy trình sửa chữa đài radar P-18 của đơn vị?',
-        hint: 'Quy trình bao gồm kiểm tra nguồn, anten, máy phát và máy thu.',
+        q: 'Cho tôi quy trình khắc phục sự cố hệ thống monitoring P-18 của đơn vị?',
+        hint: 'Quy trình bao gồm kiểm tra nguồn, kết nối mạng, module thu phát và module xử lý.',
         docIds: ['doc-001', 'doc-004'],
       },
       {
-        q: 'Bước kiểm tra anten cần lưu ý những gì?',
-        hint: 'Lưu ý kiểm tra các điểm tiếp xúc cơ khí và cáp RF.',
+        q: 'Bước kiểm tra kết nối mạng cần lưu ý những gì?',
+        hint: 'Lưu ý kiểm tra các điểm tiếp xúc cáp mạng và cấu hình switch.',
         docIds: ['doc-001'],
       },
     ],
@@ -223,8 +223,8 @@ const SESSION_SEEDS: SessionSeed[] = [
     daysAgo: 0,
     turns: [
       {
-        q: 'Tìm biên bản nghiệm thu đại tu tên lửa S-75 cho Trung đoàn 261',
-        hint: 'Biên bản nghiệm thu S-75 đã lập cho Trung đoàn 261, Sư đoàn 361.',
+        q: 'Tìm biên bản nghiệm thu nâng cấp lớn module S-75 cho Phòng P12',
+        hint: 'Biên bản nghiệm thu S-75 đã lập cho Phòng P12, Khối K01.',
         docIds: ['doc-002'],
       },
     ],
@@ -235,42 +235,42 @@ const SESSION_SEEDS: SessionSeed[] = [
     daysAgo: 1,
     turns: [
       {
-        q: 'So sánh thông số radar 36D6 và P-37',
-        hint: '36D6 phát hiện mục tiêu, P-37 dẫn đường — dải tần và cự ly khác nhau.',
+        q: 'So sánh thông số hệ thống monitoring 36D6 và P-37',
+        hint: '36D6 phát hiện sự kiện, P-37 định tuyến — dải tần và phạm vi xử lý khác nhau.',
         docIds: ['doc-003'],
       },
       {
-        q: 'Radar nào phù hợp cho nhiệm vụ cảnh giới tầm xa hơn?',
-        hint: '36D6 có cự ly phát hiện xa hơn P-37.',
+        q: 'Hệ thống nào phù hợp cho nhiệm vụ giám sát phạm vi rộng hơn?',
+        hint: '36D6 có phạm vi giám sát rộng hơn P-37.',
         docIds: ['doc-003'],
       },
     ],
   },
   {
     id: 'sess-004',
-    title: 'Tra cứu quy định an toàn phân xưởng PX1',
+    title: 'Tra cứu quy định an toàn Trung tâm phần mềm Alpha',
     daysAgo: 1,
     turns: [
       {
-        q: 'Cho tôi các quy định an toàn khi làm việc tại phân xưởng PX1',
-        hint: 'Các quy định an toàn tại PX1 tập trung vào vận hành thiết bị điện cao áp.',
+        q: 'Cho tôi các quy định an toàn khi làm việc tại Trung tâm phần mềm Alpha',
+        hint: 'Các quy định an toàn tại Alpha tập trung vào vận hành thiết bị điện và data center.',
         docIds: ['doc-004'],
       },
     ],
   },
   {
     id: 'sess-005',
-    title: 'Hướng dẫn đại tu tên lửa S-125 Pechora',
+    title: 'Hướng dẫn nâng cấp lớn module S-125 Pechora',
     daysAgo: 2,
     turns: [
       {
-        q: 'Cho tôi hướng dẫn đại tu tên lửa S-125 Pechora',
-        hint: 'Hướng dẫn đại tu S-125 bao gồm triển khai, thu hồi và bảo quản đạn.',
+        q: 'Cho tôi hướng dẫn nâng cấp lớn module S-125 Pechora',
+        hint: 'Hướng dẫn nâng cấp lớn S-125 bao gồm triển khai, thu hồi và bảo trì license.',
         docIds: ['doc-005', 'doc-009'],
       },
       {
-        q: 'Thời gian đại tu trung bình là bao lâu?',
-        hint: 'Thời gian đại tu trung bình khoảng 45-60 ngày.',
+        q: 'Thời gian nâng cấp lớn trung bình là bao lâu?',
+        hint: 'Thời gian nâng cấp lớn trung bình khoảng 45-60 ngày.',
       },
     ],
   },
@@ -281,7 +281,7 @@ const SESSION_SEEDS: SessionSeed[] = [
     turns: [
       {
         q: 'Tìm cho tôi lệnh sản xuất LSX-2026-0142',
-        hint: 'Lệnh LSX-2026-0142 là sửa chữa radar P-37 cho Sư đoàn 363.',
+        hint: 'Lệnh LSX-2026-0142 là khắc phục sự cố hệ thống monitoring P-37 cho Khối K03.',
         docIds: ['doc-007'],
       },
     ],
@@ -292,20 +292,20 @@ const SESSION_SEEDS: SessionSeed[] = [
     daysAgo: 4,
     turns: [
       {
-        q: 'Thông số tổ hợp S-300PMU và chu kỳ bảo dưỡng?',
-        hint: 'S-300PMU có cự ly đến 150 km, bảo dưỡng định kỳ 6 tháng/lần.',
+        q: 'Thông số sản phẩm S-300PMU và chu kỳ bảo dưỡng?',
+        hint: 'S-300PMU có phạm vi xử lý đến 150 km, bảo dưỡng định kỳ 6 tháng/lần.',
         docIds: ['doc-010'],
       },
     ],
   },
   {
     id: 'sess-008',
-    title: 'Quy trình KCS nghiệm thu',
+    title: 'Quy trình QA nghiệm thu',
     daysAgo: 5,
     turns: [
       {
-        q: 'Quy trình KCS nghiệm thu sản phẩm sau sửa chữa như thế nào?',
-        hint: 'Quy trình KCS gồm kiểm tra chức năng, đo thông số, thử nghiệm và lập biên bản.',
+        q: 'Quy trình QA nghiệm thu sản phẩm sau khắc phục sự cố như thế nào?',
+        hint: 'Quy trình QA gồm kiểm tra chức năng, đo thông số, thử nghiệm và lập biên bản.',
         docIds: ['doc-002', 'doc-006'],
       },
     ],
@@ -324,24 +324,24 @@ const SESSION_SEEDS: SessionSeed[] = [
   },
   {
     id: 'sess-010',
-    title: 'Báo cáo sự cố PX2 T12-2025',
+    title: 'Báo cáo sự cố TT2 T12-2025',
     daysAgo: 7,
     turns: [
       {
-        q: 'Tổng hợp sự cố kỹ thuật tại PX2 tháng 12/2025?',
-        hint: 'Có 3 sự cố chính tại PX2 trong tháng 12/2025, đã xử lý 2/3.',
+        q: 'Tổng hợp sự cố kỹ thuật tại TT2 tháng 12/2025?',
+        hint: 'Có 3 sự cố chính tại TT2 trong tháng 12/2025, đã xử lý 2/3.',
         docIds: ['doc-012'],
       },
     ],
   },
   {
     id: 'sess-011',
-    title: 'Biên bản họp BGĐ Z119',
+    title: 'Biên bản họp Ban Giám đốc Doanh nghiệp A',
     daysAgo: 9,
     turns: [
       {
-        q: 'Tóm tắt biên bản họp Ban Giám đốc Z119 tuần trước',
-        hint: 'Nội dung chính xoay quanh tiến độ sửa chữa và kế hoạch Q1-2026.',
+        q: 'Tóm tắt biên bản họp Ban Giám đốc Doanh nghiệp A tuần trước',
+        hint: 'Nội dung chính xoay quanh tiến độ khắc phục sự cố và kế hoạch Q1-2026.',
       },
     ],
   },
@@ -351,13 +351,13 @@ const SESSION_SEEDS: SessionSeed[] = [
     daysAgo: 11,
     turns: [
       {
-        q: 'Quy trình vận hành đài radar đo cao ST-68?',
-        hint: 'ST-68 là radar đo cao, vận hành cần 3 người trong ca trực.',
+        q: 'Quy trình vận hành hệ thống monitoring đo độ cao ST-68?',
+        hint: 'ST-68 là hệ thống monitoring đo độ cao, vận hành cần 3 người trong ca trực.',
         docIds: ['doc-008'],
       },
       {
-        q: 'Chỉ báo khối máy phát có những dấu hiệu nào bất thường?',
-        hint: 'Các dấu hiệu bất thường thường gặp: đèn báo đỏ, công suất ra giảm.',
+        q: 'Module xử lý dữ liệu có những dấu hiệu nào bất thường?',
+        hint: 'Các dấu hiệu bất thường thường gặp: đèn báo đỏ, throughput giảm.',
         docIds: ['doc-008'],
       },
     ],
@@ -522,32 +522,32 @@ export function buildAiQualityFeedbacks(page: number, limit: number, search?: st
   const feedbacks: AiQualityFeedback[] = [];
   const samples = [
     {
-      q: 'Cho tôi quy trình sửa chữa radar P-18',
-      a: 'Quy trình bao gồm kiểm tra nguồn, anten, máy phát và máy thu. ' + DEMO_REPLY,
+      q: 'Cho tôi quy trình khắc phục sự cố hệ thống monitoring P-18',
+      a: 'Quy trình bao gồm kiểm tra nguồn, kết nối mạng, module thu phát và xử lý. ' + DEMO_REPLY,
       type: 'like' as const,
       tags: ['Chính xác', 'Hữu ích'],
     },
     {
       q: 'Tìm biên bản nghiệm thu S-75',
-      a: 'Biên bản nghiệm thu S-75 cho Trung đoàn 261. ' + DEMO_REPLY,
+      a: 'Biên bản nghiệm thu S-75 cho Phòng P12. ' + DEMO_REPLY,
       type: 'like' as const,
       tags: ['Đúng tài liệu cần tìm'],
     },
     {
       q: 'So sánh 36D6 và P-37',
-      a: '36D6 phát hiện, P-37 dẫn đường. ' + DEMO_REPLY,
+      a: '36D6 phát hiện, P-37 định tuyến. ' + DEMO_REPLY,
       type: 'dislike' as const,
       tags: ['Thiếu thông tin'],
     },
     {
-      q: 'Quy định an toàn PX1',
-      a: 'Quy định an toàn tập trung vào điện cao áp. ' + DEMO_REPLY,
+      q: 'Quy định an toàn Trung tâm phần mềm Alpha',
+      a: 'Quy định an toàn tập trung vào điện và data center. ' + DEMO_REPLY,
       type: 'like' as const,
       tags: ['Chính xác'],
     },
     {
       q: 'Hướng dẫn S-125 Pechora',
-      a: 'S-125 Pechora — triển khai, thu hồi, bảo quản. ' + DEMO_REPLY,
+      a: 'S-125 Pechora — triển khai, thu hồi, bảo trì license. ' + DEMO_REPLY,
       type: 'like' as const,
       tags: ['Đầy đủ'],
     },
@@ -574,8 +574,8 @@ export function buildAiQualityFeedbacks(page: number, limit: number, search?: st
       user: {
         id: 'user-' + (idx % 5),
         fullName:
-          ['Đại tá Phạm Quốc Hưng', 'Hoàng Minh Tuấn', 'Nguyễn Văn Hải', 'Trần Quốc Vinh', 'Lê Thành Nam'][idx % 5],
-        email: `user${idx % 5}@z119.mil.vn`,
+          ['Phạm Quốc Hưng', 'Hoàng Minh Tuấn', 'Nguyễn Văn Hải', 'Trần Quốc Vinh', 'Lê Thành Nam'][idx % 5],
+        email: `user${idx % 5}@doanhnghiepa.vn`,
       },
     });
   }
@@ -619,9 +619,9 @@ export function buildUsageTrend(period: string): UsageTrendItem[] {
 export function buildUsageByDept(): UsageByDeptItem[] {
   return [
     { departmentId: 'PKT', departmentName: 'Phòng Kỹ thuật', totalQuestions: 936, activeUsers: 18 },
-    { departmentId: 'PX1', departmentName: 'PX1 — Sửa chữa Radar', totalQuestions: 515, activeUsers: 14 },
-    { departmentId: 'PX2', departmentName: 'PX2 — Sửa chữa Tên lửa', totalQuestions: 421, activeUsers: 12 },
-    { departmentId: 'PKCDB', departmentName: 'Phòng KCS & Đảm bảo CL', totalQuestions: 281, activeUsers: 8 },
+    { departmentId: 'TT1', departmentName: 'TT1 — Hệ thống Monitoring', totalQuestions: 515, activeUsers: 14 },
+    { departmentId: 'TT2', departmentName: 'TT2 — Phát triển Sản phẩm', totalQuestions: 421, activeUsers: 12 },
+    { departmentId: 'PQA', departmentName: 'Phòng QA & Đảm bảo CL', totalQuestions: 281, activeUsers: 8 },
     { departmentId: 'PKH', departmentName: 'Phòng Kế hoạch', totalQuestions: 187, activeUsers: 6 },
   ];
 }
@@ -632,7 +632,7 @@ export function buildIntentBreakdown(): IntentBreakdownResponse {
     total,
     items: [
       { intent: 'Tra cứu tài liệu kỹ thuật', count: 819, percentage: 35.0 },
-      { intent: 'Quy trình sửa chữa', count: 515, percentage: 22.0 },
+      { intent: 'Quy trình khắc phục sự cố', count: 515, percentage: 22.0 },
       { intent: 'Kiểm tra nghiệm thu', count: 421, percentage: 18.0 },
       { intent: 'Thông số thiết bị', count: 351, percentage: 15.0 },
       { intent: 'Khác', count: 234, percentage: 10.0 },
@@ -652,14 +652,14 @@ export function buildRetryStats(): RetryStats {
 
 export function buildUserStats(page: number, limit: number): UserStatsResponse {
   const users = [
-    { id: 'u-01', name: 'Hoàng Minh Tuấn', email: 'hmtuan@z119.mil.vn', total: 187, sess: 62, fb: 68, rt: 2.1 },
-    { id: 'u-02', name: 'Nguyễn Văn Hải', email: 'nvhai@z119.mil.vn', total: 164, sess: 54, fb: 72, rt: 3.0 },
-    { id: 'u-03', name: 'Trần Quốc Vinh', email: 'tqvinh@z119.mil.vn', total: 142, sess: 48, fb: 65, rt: 4.2 },
-    { id: 'u-04', name: 'Lê Thành Nam', email: 'ltnam@z119.mil.vn', total: 128, sess: 44, fb: 58, rt: 5.5 },
-    { id: 'u-05', name: 'Phạm Quốc Hưng', email: 'pqhung@z119.mil.vn', total: 121, sess: 39, fb: 71, rt: 1.6 },
-    { id: 'u-06', name: 'Đỗ Xuân Bình', email: 'dxbinh@z119.mil.vn', total: 97, sess: 33, fb: 55, rt: 3.8 },
-    { id: 'u-07', name: 'Vũ Quang Trường', email: 'vqtruong@z119.mil.vn', total: 88, sess: 30, fb: 48, rt: 4.0 },
-    { id: 'u-08', name: 'Bùi Công Toàn', email: 'bctoan@z119.mil.vn', total: 74, sess: 27, fb: 40, rt: 6.1 },
+    { id: 'u-01', name: 'Hoàng Minh Tuấn', email: 'hmtuan@doanhnghiepa.vn', total: 187, sess: 62, fb: 68, rt: 2.1 },
+    { id: 'u-02', name: 'Nguyễn Văn Hải', email: 'nvhai@doanhnghiepa.vn', total: 164, sess: 54, fb: 72, rt: 3.0 },
+    { id: 'u-03', name: 'Trần Quốc Vinh', email: 'tqvinh@doanhnghiepa.vn', total: 142, sess: 48, fb: 65, rt: 4.2 },
+    { id: 'u-04', name: 'Lê Thành Nam', email: 'ltnam@doanhnghiepa.vn', total: 128, sess: 44, fb: 58, rt: 5.5 },
+    { id: 'u-05', name: 'Phạm Quốc Hưng', email: 'pqhung@doanhnghiepa.vn', total: 121, sess: 39, fb: 71, rt: 1.6 },
+    { id: 'u-06', name: 'Đỗ Xuân Bình', email: 'dxbinh@doanhnghiepa.vn', total: 97, sess: 33, fb: 55, rt: 3.8 },
+    { id: 'u-07', name: 'Vũ Quang Trường', email: 'vqtruong@doanhnghiepa.vn', total: 88, sess: 30, fb: 48, rt: 4.0 },
+    { id: 'u-08', name: 'Bùi Công Toàn', email: 'bctoan@doanhnghiepa.vn', total: 74, sess: 27, fb: 40, rt: 6.1 },
   ];
 
   const start = (page - 1) * limit;

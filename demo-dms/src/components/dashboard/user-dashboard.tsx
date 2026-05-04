@@ -87,7 +87,7 @@ export function UserDashboard({ period }: UserDashboardProps) {
 
   return (
     <div className="p-6 bg-slate-50 h-full overflow-y-auto space-y-6">
-      {/* Welcome Header — PKKQ navy gradient */}
+      {/* Welcome Header — Doanh nghiệp A navy gradient */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#0a1628] via-[#1B3A5C] to-[#2d5a8e] rounded-2xl p-6 text-white shadow-[0_2px_12px_rgba(27,58,92,0.15)]">
         <div
           className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"

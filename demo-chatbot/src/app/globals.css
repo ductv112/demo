@@ -63,7 +63,7 @@
   color-scheme: light;
   --radius: 0.625rem;
 
-  /* PKKQ palette — Navy primary + Gold accent */
+  /* Doanh nghiệp A palette — Navy primary + Gold accent */
   --background: #f0f2f5;
   --foreground: #0a1628;
   --card: #ffffff;
@@ -84,7 +84,7 @@
   --ring: #1B3A5C;
 
   /* Extended chart palette — 6-color series for multi-series charts.
-     Tham chiếu pkkq-taichinhketoan (roleColors, categoryTypeConfig). */
+     Tham chiếu module taichinhketoan (roleColors, categoryTypeConfig). */
   --chart-1: #1B3A5C; /* navy */
   --chart-2: #7c3aed; /* violet */
   --chart-3: #0891b2; /* cyan */
@@ -182,7 +182,7 @@ button[role="switch"][data-state="unchecked"] {
   background-color: #a1a1aa !important;
 }
 
-/* PKKQ sidebar gradient — gold active bar */
+/* Sidebar gradient — gold active bar */
 [data-slot="sidebar-container"] {
   background: linear-gradient(180deg, #0d1b2a 0%, #0a1628 30%, #071018 100%) !important;
 }
@@ -204,9 +204,9 @@ button[role="switch"][data-state="unchecked"] {
   position: relative;
 }
 
-/* ─── PKKQ card & stat card utilities ──────────────────────────
-   Tham chiếu pkkq-taichinhketoan/src/App.css: .db-chart-card, .db-stat-card.
-   Dùng cho các card ở Dashboard, AI Quality để đồng bộ look với hệ thống PKKQ.
+/* ─── Card & stat card utilities ──────────────────────────
+   Tham chiếu module taichinhketoan/src/App.css: .db-chart-card, .db-stat-card.
+   Dùng cho các card ở Dashboard, AI Quality để đồng bộ look với hệ thống Doanh nghiệp A.
 */
 .pkkq-card {
   border-radius: 14px;

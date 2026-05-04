@@ -27,7 +27,7 @@ import {
 import { Separator } from '@/components/ui/separator';
 
 // ─── Breadcrumb map (path → page label) ────────────────────────
-// pkkq-chatbot: 2 route chính (root `/` redirect sang `/chat`).
+// chatbot Doanh nghiệp A: 2 route chính (root `/` redirect sang `/chat`).
 const BREADCRUMB_MAP: Record<string, string> = {
   '/chat': 'Trợ lý thông minh',
   '/ai-quality': 'Báo cáo chất lượng AI',
@@ -64,7 +64,7 @@ export default function ProtectedLayout({
   }
 
   const getSubtitle = (): string | null => {
-    if (pathname === '/chat') return 'Trò chuyện với Trợ lý AI — Nhà máy Z119';
+    if (pathname === '/chat') return 'Trò chuyện với Trợ lý AI — Doanh nghiệp A';
     if (pathname === '/ai-quality') return 'Báo cáo chất lượng phản hồi AI';
     return null;
   };

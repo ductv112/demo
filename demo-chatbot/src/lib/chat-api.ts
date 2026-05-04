@@ -1,5 +1,5 @@
 /**
- * Chat API — mock cho PKKQ prototype.
+ * Chat API — mock cho prototype Doanh nghiệp A.
  * In-memory session store; replay messages + streaming giả lập.
  */
 
@@ -118,7 +118,7 @@ export async function generateSessionSummary(id: string): Promise<{ summary: str
   const msgs = MESSAGES[id] ?? [];
   const count = msgs.filter((m) => m.role === 'USER').length;
   return {
-    summary: `Tóm tắt phiên: ${count} câu hỏi về các chủ đề kỹ thuật Z119 (radar, tên lửa, quy trình). ${DEMO_REPLY}`,
+    summary: `Tóm tắt phiên: ${count} câu hỏi về các chủ đề kỹ thuật Doanh nghiệp A (hệ thống monitoring, module sản phẩm, quy trình). ${DEMO_REPLY}`,
   };
 }
 
@@ -254,14 +254,14 @@ export function createMockChatStream(params: {
   // Build reply — optional hint based on query keywords
   let hint = '';
   const q = query.toLowerCase();
-  if (q.includes('radar') || q.includes('p-18') || q.includes('36d6') || q.includes('p-37')) {
-    hint = 'Thông tin về radar được lưu trong các tài liệu kỹ thuật Z119. ';
-  } else if (q.includes('tên lửa') || q.includes('s-75') || q.includes('s-125') || q.includes('s-300')) {
-    hint = 'Các tổ hợp tên lửa phòng không được quản lý tại PX2 — Z119. ';
+  if (q.includes('monitoring') || q.includes('p-18') || q.includes('36d6') || q.includes('p-37')) {
+    hint = 'Thông tin về hệ thống monitoring được lưu trong các tài liệu kỹ thuật Doanh nghiệp A. ';
+  } else if (q.includes('module') || q.includes('s-75') || q.includes('s-125') || q.includes('s-300')) {
+    hint = 'Các module sản phẩm được quản lý tại Trung tâm Phát triển Sản phẩm (TT2) — Doanh nghiệp A. ';
   } else if (q.includes('an toàn') || q.includes('quy định')) {
-    hint = 'Quy định an toàn tại các phân xưởng Z119 được cập nhật định kỳ. ';
-  } else if (q.includes('nghiệm thu') || q.includes('kcs') || q.includes('chất lượng')) {
-    hint = 'Quy trình KCS & nghiệm thu tại Z119 do Phòng KCS đảm bảo chất lượng. ';
+    hint = 'Quy định an toàn tại các Trung tâm phần mềm Doanh nghiệp A được cập nhật định kỳ. ';
+  } else if (q.includes('nghiệm thu') || q.includes('qa') || q.includes('chất lượng')) {
+    hint = 'Quy trình QA & nghiệm thu tại Doanh nghiệp A do Phòng QA đảm bảo chất lượng. ';
   }
 
   const fullReply = hint + DEMO_REPLY;

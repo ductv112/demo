@@ -254,7 +254,7 @@ export function AppSwitcher({ currentApp = 'dms' }: AppSwitcherProps) {
               Ứng dụng
             </span>
             <span className="text-[11px] font-medium leading-tight text-muted-foreground">
-              Hệ thống phần mềm PKKQ — Nhà máy Z119
+              Hệ thống phần mềm Doanh nghiệp A — Tổng công ty
             </span>
           </div>
           <a

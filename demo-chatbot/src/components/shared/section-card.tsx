@@ -4,8 +4,8 @@ import type { LucideIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
 
 /**
- * SectionCard — Container chuẩn PKKQ cho chart/table.
- * Port từ pattern pkkq-taichinhketoan (.db-chart-card) sang Tailwind.
+ * SectionCard — Container chuẩn cho chart/table.
+ * Port từ pattern module taichinhketoan (.db-chart-card) sang Tailwind.
  *
  * - border-radius 14px (rounded-2xl)
  * - shadow: 0 2px 12px rgba(0,0,0,0.05), hover: 0 8px 24px rgba(27,58,92,0.1)

@@ -33,7 +33,7 @@ function toDocument(d: (typeof MOCK_DOCUMENTS)[number]): Document {
       id: 'user-director',
       username: 'pqhung',
       fullName: 'Phạm Quốc Hưng',
-      email: 'pqhung@z119.mil.vn',
+      email: 'pqhung@doanhnghiepa.vn',
     },
     departmentId: null,
     referenceNumber: null,
@@ -70,7 +70,7 @@ export async function getDocumentExtractedText(id: string): Promise<DocumentExtr
   await delay(100);
   const match = MOCK_DOCUMENTS.find((d) => d.id === id);
   const text = match
-    ? `${match.title}\n\n${match.excerpt}\n\nNội dung chi tiết (bản demo) — Nhà máy Z119, PKKQ.`
+    ? `${match.title}\n\n${match.excerpt}\n\nNội dung chi tiết (bản demo) — Trung tâm phần mềm Alpha, Doanh nghiệp A.`
     : 'Xem trước không khả dụng — chế độ demo.';
   return {
     extractedText: text,
@@ -160,12 +160,12 @@ export async function listDocumentVersions(id: string): Promise<DocumentVersion[
       changeNote: 'Bản đầu tiên',
       createdBy: 'user-director',
       createdAt: now,
-      editorDisplayName: 'Đại tá Phạm Quốc Hưng',
+      editorDisplayName: 'Phạm Quốc Hưng — Tổng giám đốc',
       creator: {
         id: 'user-director',
         username: 'pqhung',
         fullName: 'Phạm Quốc Hưng',
-        email: 'pqhung@z119.mil.vn',
+        email: 'pqhung@doanhnghiepa.vn',
       },
     },
   ];

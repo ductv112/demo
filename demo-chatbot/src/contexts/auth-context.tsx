@@ -1,8 +1,8 @@
 'use client';
 
 /**
- * Auth context stub — PKKQ prototype, không Keycloak, không phân quyền.
- * Luôn authenticated với user demo "Đại tá Phạm Quốc Hưng — Giám đốc Nhà máy".
+ * Auth context stub — prototype Doanh nghiệp A, không Keycloak, không phân quyền.
+ * Luôn authenticated với user demo "Phạm Quốc Hưng — Tổng giám đốc".
  */
 
 import { createContext, useContext } from 'react';
@@ -32,8 +32,8 @@ interface AuthContextValue {
 const DEMO_USER: AuthUser = {
   keycloakId: 'user-director',
   username: 'pqhung',
-  email: 'pqhung@z119.mil.vn',
-  roles: ['Giám đốc Nhà máy'],
+  email: 'pqhung@doanhnghiepa.vn',
+  roles: ['Tổng giám đốc'],
 };
 
 // Wildcard permissions — user có mọi quyền

@@ -3,8 +3,8 @@
 /**
  * DbStatCard — KPI card nền trắng + background icon xoay khi hover.
  *
- * Port từ pattern pkkq-taichinhketoan/src/App.css (.db-stat-card + .db-bg-icon)
- * sang Tailwind/React cho pkkq-dms.
+ * Port từ pattern module taichinhketoan/src/App.css (.db-stat-card + .db-bg-icon)
+ * sang Tailwind/React cho module này.
  *
  * Khi nào dùng:
  *   - `StatCard` (gradient) → hero KPI, spotlight metric (3-4 card nổi bật)

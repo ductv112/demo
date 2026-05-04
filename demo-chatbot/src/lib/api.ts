@@ -1,5 +1,5 @@
 /**
- * Axios stub — PKKQ prototype không cần backend thật.
+ * Axios stub — prototype Doanh nghiệp A không cần backend thật.
  * Giữ interface axios tương thích; các API file khác đã override
  * bằng mock data, nên api instance này chỉ cần không crash.
  */

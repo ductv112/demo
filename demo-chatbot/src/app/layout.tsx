@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Trợ lý Thông minh - Nhà máy Z119',
-  description: 'Hệ thống Trợ lý Thông minh - Nhà máy Z119 (PKKQ)',
+  title: 'Trợ lý Thông minh - Doanh nghiệp A',
+  description: 'Hệ thống Trợ lý Thông minh - Doanh nghiệp A',
   other: {
     'color-scheme': 'light',
   },

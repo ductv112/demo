@@ -9,8 +9,8 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      // PKKQ card look — rounded 14px, soft shadow, subtle hover lift.
-      // Tham chiếu: pkkq-taichinhketoan/.db-chart-card trong App.css.
+      // Doanh nghiệp A card look — rounded 14px, soft shadow, subtle hover lift.
+      // Tham chiếu: Tài chính-Kế toán /.db-chart-card trong App.css.
       "rounded-2xl border bg-card text-card-foreground shadow-[0_2px_12px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_24px_rgba(27,58,92,0.1)]",
       className
     )}
